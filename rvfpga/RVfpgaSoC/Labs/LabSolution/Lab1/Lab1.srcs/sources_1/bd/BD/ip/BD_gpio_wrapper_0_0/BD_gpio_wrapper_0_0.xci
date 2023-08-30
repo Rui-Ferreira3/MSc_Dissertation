@@ -1,37 +1,152 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<spirit:design xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <spirit:vendor>xilinx.com</spirit:vendor>
-  <spirit:library>xci</spirit:library>
-  <spirit:name>unknown</spirit:name>
-  <spirit:version>1.0</spirit:version>
-  <spirit:componentInstances>
-    <spirit:componentInstance>
-      <spirit:instanceName>BD_gpio_wrapper_0_0</spirit:instanceName>
-      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="module_ref" spirit:name="gpio_wrapper" spirit:version="1.0"/>
-      <spirit:configurableElementValues>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Component_Name">BD_gpio_wrapper_0_0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.ARCHITECTURE">artix7</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BASE_BOARD_PART">digilentinc.com:nexys-a7-100t:part0:1.0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BOARD_CONNECTIONS"/>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.DEVICE">xc7a100t</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.PACKAGE">csg324</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.PREFHDL">VERILOG</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.SILICON_REVISION"/>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.SIMULATOR_LANGUAGE">MIXED</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.SPEEDGRADE">-1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.STATIC_POWER"/>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.TEMPERATURE_GRADE"/>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_CUSTOMIZATION">TRUE</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_GENERATION">TRUE</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCONTEXT">IP_Integrator</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.MANAGED">TRUE</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.OUTPUTDIR">.</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SELECTEDSIMMODEL"/>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SHAREDDIR">../../ipshared</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SWVERSION">2019.2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SYNTHESISFLOW">OOC_HIERARCHICAL</spirit:configurableElementValue>
-      </spirit:configurableElementValues>
-    </spirit:componentInstance>
-  </spirit:componentInstances>
-</spirit:design>
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "BD_gpio_wrapper_0_0",
+    "cell_name": "gpio_wrapper_0",
+    "component_reference": "xilinx.com:module_ref:gpio_wrapper:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../Lab1.gen/sources_1/bd/BD/ip/BD_gpio_wrapper_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "BD_gpio_wrapper_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "artix7" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:nexys-a7-100t:part0:1.0" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7a100t" } ],
+        "PACKAGE": [ { "value": "csg324" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ],
+        "USE_RDI_CUSTOMIZATION": [ { "value": "TRUE" } ],
+        "USE_RDI_GENERATION": [ { "value": "TRUE" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Lab1.gen/sources_1/bd/BD/ip/BD_gpio_wrapper_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2022.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "wb_clk_i": [ { "direction": "in" } ],
+        "wb_rst_i": [ { "direction": "in" } ],
+        "wb_cyc_i": [ { "direction": "in" } ],
+        "wb_adr_i": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "wb_dat_i": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "wb_sel_i": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "wb_we_i": [ { "direction": "in" } ],
+        "wb_stb_i": [ { "direction": "in" } ],
+        "wb_dat_o": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "wb_ack_o": [ { "direction": "out" } ],
+        "wb_err_o": [ { "direction": "out" } ],
+        "wb_inta_o": [ { "direction": "out" } ],
+        "outp_0": [ { "direction": "in" } ],
+        "outp_1": [ { "direction": "in" } ],
+        "outp_2": [ { "direction": "in" } ],
+        "outp_3": [ { "direction": "in" } ],
+        "outp_4": [ { "direction": "in" } ],
+        "outp_5": [ { "direction": "in" } ],
+        "outp_6": [ { "direction": "in" } ],
+        "outp_7": [ { "direction": "in" } ],
+        "outp_8": [ { "direction": "in" } ],
+        "outp_9": [ { "direction": "in" } ],
+        "outp_10": [ { "direction": "in" } ],
+        "outp_11": [ { "direction": "in" } ],
+        "outp_12": [ { "direction": "in" } ],
+        "outp_13": [ { "direction": "in" } ],
+        "outp_14": [ { "direction": "in" } ],
+        "outp_15": [ { "direction": "in" } ],
+        "outp_16": [ { "direction": "in" } ],
+        "outp_17": [ { "direction": "in" } ],
+        "outp_18": [ { "direction": "in" } ],
+        "outp_19": [ { "direction": "in" } ],
+        "outp_20": [ { "direction": "in" } ],
+        "outp_21": [ { "direction": "in" } ],
+        "outp_22": [ { "direction": "in" } ],
+        "outp_23": [ { "direction": "in" } ],
+        "outp_24": [ { "direction": "in" } ],
+        "outp_25": [ { "direction": "in" } ],
+        "outp_26": [ { "direction": "in" } ],
+        "outp_27": [ { "direction": "in" } ],
+        "outp_28": [ { "direction": "in" } ],
+        "outp_29": [ { "direction": "in" } ],
+        "outp_30": [ { "direction": "in" } ],
+        "outp_31": [ { "direction": "in" } ],
+        "inp_0": [ { "direction": "out" } ],
+        "inp_1": [ { "direction": "out" } ],
+        "inp_2": [ { "direction": "out" } ],
+        "inp_3": [ { "direction": "out" } ],
+        "inp_4": [ { "direction": "out" } ],
+        "inp_5": [ { "direction": "out" } ],
+        "inp_6": [ { "direction": "out" } ],
+        "inp_7": [ { "direction": "out" } ],
+        "inp_8": [ { "direction": "out" } ],
+        "inp_9": [ { "direction": "out" } ],
+        "inp_10": [ { "direction": "out" } ],
+        "inp_11": [ { "direction": "out" } ],
+        "inp_12": [ { "direction": "out" } ],
+        "inp_13": [ { "direction": "out" } ],
+        "inp_14": [ { "direction": "out" } ],
+        "inp_15": [ { "direction": "out" } ],
+        "inp_16": [ { "direction": "out" } ],
+        "inp_17": [ { "direction": "out" } ],
+        "inp_18": [ { "direction": "out" } ],
+        "inp_19": [ { "direction": "out" } ],
+        "inp_20": [ { "direction": "out" } ],
+        "inp_21": [ { "direction": "out" } ],
+        "inp_22": [ { "direction": "out" } ],
+        "inp_23": [ { "direction": "out" } ],
+        "inp_24": [ { "direction": "out" } ],
+        "inp_25": [ { "direction": "out" } ],
+        "inp_26": [ { "direction": "out" } ],
+        "inp_27": [ { "direction": "out" } ],
+        "inp_28": [ { "direction": "out" } ],
+        "inp_29": [ { "direction": "out" } ],
+        "inp_30": [ { "direction": "out" } ],
+        "inp_31": [ { "direction": "out" } ],
+        "oe_0": [ { "direction": "out" } ],
+        "oe_1": [ { "direction": "out" } ],
+        "oe_2": [ { "direction": "out" } ],
+        "oe_3": [ { "direction": "out" } ],
+        "oe_4": [ { "direction": "out" } ],
+        "oe_5": [ { "direction": "out" } ],
+        "oe_6": [ { "direction": "out" } ],
+        "oe_7": [ { "direction": "out" } ],
+        "oe_8": [ { "direction": "out" } ],
+        "oe_9": [ { "direction": "out" } ],
+        "oe_10": [ { "direction": "out" } ],
+        "oe_11": [ { "direction": "out" } ],
+        "oe_12": [ { "direction": "out" } ],
+        "oe_13": [ { "direction": "out" } ],
+        "oe_14": [ { "direction": "out" } ],
+        "oe_15": [ { "direction": "out" } ],
+        "oe_16": [ { "direction": "out" } ],
+        "oe_17": [ { "direction": "out" } ],
+        "oe_18": [ { "direction": "out" } ],
+        "oe_19": [ { "direction": "out" } ],
+        "oe_20": [ { "direction": "out" } ],
+        "oe_21": [ { "direction": "out" } ],
+        "oe_22": [ { "direction": "out" } ],
+        "oe_23": [ { "direction": "out" } ],
+        "oe_24": [ { "direction": "out" } ],
+        "oe_25": [ { "direction": "out" } ],
+        "oe_26": [ { "direction": "out" } ],
+        "oe_27": [ { "direction": "out" } ],
+        "oe_28": [ { "direction": "out" } ],
+        "oe_29": [ { "direction": "out" } ],
+        "oe_30": [ { "direction": "out" } ],
+        "oe_31": [ { "direction": "out" } ]
+      }
+    }
+  }
+}

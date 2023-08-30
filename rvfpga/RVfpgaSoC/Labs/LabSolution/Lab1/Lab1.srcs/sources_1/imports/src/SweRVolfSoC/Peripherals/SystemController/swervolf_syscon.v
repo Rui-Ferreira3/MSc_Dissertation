@@ -316,7 +316,7 @@ module SevSegDisplays_Controller(
 
 
 
-  wire [ 7:0] [7:0] enable;
+  wire [7:0] [7:0] enable;
 
   assign enable[0] = (Enables_Reg | 8'hfe);
   assign enable[1] = (Enables_Reg | 8'hfd);
@@ -340,7 +340,7 @@ module SevSegDisplays_Controller(
   );
 
 
-  wire [ 7:0] [3:0] digits_concat;
+  wire [7:0] [3:0] digits_concat;
 
   assign digits_concat[0] = Digits_Reg[3:0];
   assign digits_concat[1] = Digits_Reg[7:4];

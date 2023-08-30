@@ -1,0 +1,772 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_syscon_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_syscon_wrapper_0_0 (xilinx.com:module_ref:syscon_wrapper:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_swerv_wrapper_verilog_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_swerv_wrapper_verilog_0_0 (xilinx.com:module_ref:swerv_wrapper_verilog:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_intcon_wrapper_bd_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_intcon_wrapper_bd_0_0 (xilinx.com:module_ref:intcon_wrapper_bd:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_gpio_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_gpio_wrapper_0_0 (xilinx.com:module_ref:gpio_wrapper:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bootrom_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bootrom_wrapper_0_0 (xilinx.com:module_ref:bootrom_wrapper:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_9_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_9_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_8_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_8_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_7_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_7_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_7_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_7_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_6_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_6_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_6_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_5_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_5_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_5_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_5_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_4_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_4_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_4_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_3_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_3_2 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_3_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_3_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_3_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_2_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_2_2 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_2_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_2_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_2_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_1_3'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_1_3 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_1_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_1_2 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_1_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_1_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_15_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_15_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_14_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_14_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_13_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_13_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_12_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_12_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_11_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_11_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_10_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_10_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_0_5'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_0_5 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_0_4 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_0_3 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_0_2 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_0_1 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug 25 16:41:48 2023
+| Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BD_bidirec_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BD_bidirec_0_0 (xilinx.com:module_ref:bidirec:1.0 (Rev. 1)) to Vivado generation flows.
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="BD_bidirec_4_1_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1622485654">
+<GenRun Id="BD_bidirec_4_1_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1693056383">
   <File Type="PA-TCL" Name="BD_bidirec_4_1.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="BD_bidirec_4_1_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BD_bidirec_4_1_reports.tcl"/>
@@ -12,6 +12,7 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BD_bidirec_4_1">
     <File Path="$PSRCDIR/sources_1/bd/BD/ip/BD_bidirec_4_1/BD_bidirec_4_1.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -25,6 +26,7 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BD_bidirec_4_1">
     <File Path="$PSRCDIR/sources_1/bd/BD/ip/BD_bidirec_4_1/BD_bidirec_4_1.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -37,10 +39,8 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PSRCDIR/utils_1/imports/Lab1/script.tcl">
+    <File Path="$PPRDIR/../../LabResources/Lab1/script.tcl">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../LabResources/Lab1/script.tcl"/>
-        <Attr Name="ImportTime" Val="1619997106"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -52,7 +52,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
       <Desc>Vivado Synthesis Defaults</Desc>
     </StratHandle>
     <Step Id="synth_design"/>

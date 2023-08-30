@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:E:/RvfpgaSoC/Labs/LabSolution/Lab1/Lab1.srcs/constrs_1/imports/src/liteDRAM.xdc rfile:../../../Lab1.srcs/constrs_1/imports/src/liteDRAM.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:E:/RvfpgaSoC/Labs/LabSolution/Lab1/Lab1.srcs/constrs_1/imports/src/rvfpga.xdc rfile:../../../Lab1.srcs/constrs_1/imports/src/rvfpga.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Rui/Rui/MSc_Dissertation/rvfpga/RVfpgaSoC/Labs/LabSolution/Lab1/Lab1.srcs/constrs_1/imports/src/liteDRAM.xdc rfile:../../../Lab1.srcs/constrs_1/imports/src/liteDRAM.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Rui/Rui/MSc_Dissertation/rvfpga/RVfpgaSoC/Labs/LabSolution/Lab1/Lab1.srcs/constrs_1/imports/src/rvfpga.xdc rfile:../../../Lab1.srcs/constrs_1/imports/src/rvfpga.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC M4 [get_ports ddram_a[0]]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
