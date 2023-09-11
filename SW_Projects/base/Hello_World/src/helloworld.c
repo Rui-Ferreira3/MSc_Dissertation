@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#define DELAY 1000000
+#define DELAY 10000000
 
 void main (void){
     int i, j = 0;
