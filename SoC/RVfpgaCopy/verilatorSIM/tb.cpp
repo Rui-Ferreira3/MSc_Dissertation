@@ -135,6 +135,7 @@ int main(int argc, char **argv, char **env)
 
   top->clk = 1;
   top->rst = 1;
+  top->i_sw0 = 0;
   while (!(done || Verilated::gotFinish())) {
     if (main_time == 100) {
       printf("Releasing reset\n");
@@ -174,6 +175,10 @@ int main(int argc, char **argv, char **env)
     }
     top->clk = !top->clk;
     main_time+=10;
+
+    if (main_time == 30000) {
+      top->i_sw0 = 1;
+    }
   }
 
   if (tfp)
