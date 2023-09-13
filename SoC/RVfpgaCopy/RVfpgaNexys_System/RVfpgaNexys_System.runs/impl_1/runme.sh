@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaCopy/RVfpgaNexys_System/RVfpgaNexys_System.runs/impl_1'
+HD_PWD='C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga/RVfpgaNexys_System/RVfpgaNexys_System.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log rvfpganexys.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source rvfpganexys.tcl -notrace
 
 
