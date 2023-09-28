@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "axi4_conv2D",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/Rui\/Rui\/MSc_Dissertation\/SoC\/Acelerador\/axi4_conv2D\/solution1\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "axi4_conv2D"
+              }]
+          }
+        }]
+    }]}
