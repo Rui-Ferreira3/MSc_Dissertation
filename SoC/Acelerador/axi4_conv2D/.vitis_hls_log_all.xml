@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_7') on array 'image_in' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.389+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_5') on array 'image_in' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.277+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_3') on array 'image_in' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.257+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_1') on array 'image_in' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.234+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

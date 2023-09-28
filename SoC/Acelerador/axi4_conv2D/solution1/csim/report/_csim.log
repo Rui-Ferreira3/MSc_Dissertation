@@ -1,0 +1,31 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../tb_axi4_conv2D.cpp in debug mode
+   Compiling ../../../axi4_conv2D.cpp in debug mode
+   Generating csim.exe
+Input Image
+
+11 12 13 14 15 16 
+
+21 22 23 24 25 26 
+
+31 32 33 34 35 36 
+
+41 42 43 44 45 46 
+
+51 52 53 54 55 56 
+
+61 62 63 64 65 66 
+
+Output Image
+
+  93   94   95   96 
+
+ 103  104  105  106 
+
+ 113  114  115  116 
+
+ 123  124  125  126 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
