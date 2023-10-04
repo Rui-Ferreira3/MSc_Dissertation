@@ -238,45 +238,41 @@ class AESL_RUNTIME_BC {
 };
 using hls::sim::Byte;
 struct __cosim_s4__ { char data[4]; };
-extern "C" void axi4_conv2D(Byte<1>*, Byte<1>*, Byte<1>*, __cosim_s4__);
+extern "C" void axi4_conv2D(Byte<1>*, int, int, int, __cosim_s4__);
 extern "C" void apatb_axi4_conv2D_hw(volatile void * __xlx_apatb_param_image_in, volatile void * __xlx_apatb_param_image_out, volatile void * __xlx_apatb_param_weights, __cosim_s4__* __xlx_apatb_param_bias) {
 using hls::sim::createStream;
-  // Collect __xlx_image_in__tmp_vec
-std::vector<Byte<1>> __xlx_image_in__tmp_vec;
+  // Collect __xlx_image_in_image_out_weights__tmp_vec
+std::vector<Byte<1>> __xlx_image_in_image_out_weights__tmp_vec;
 for (size_t i = 0; i < 36; ++i){
-__xlx_image_in__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_image_in)[i]);
+__xlx_image_in_image_out_weights__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_image_in)[i]);
 }
   int __xlx_size_param_image_in = 36;
   int __xlx_offset_param_image_in = 0;
   int __xlx_offset_byte_param_image_in = 0*1;
-  // Collect __xlx_image_out__tmp_vec
-std::vector<Byte<1>> __xlx_image_out__tmp_vec;
 for (size_t i = 0; i < 16; ++i){
-__xlx_image_out__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_image_out)[i]);
+__xlx_image_in_image_out_weights__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_image_out)[i]);
 }
   int __xlx_size_param_image_out = 16;
-  int __xlx_offset_param_image_out = 0;
-  int __xlx_offset_byte_param_image_out = 0*1;
-  // Collect __xlx_weights__tmp_vec
-std::vector<Byte<1>> __xlx_weights__tmp_vec;
+  int __xlx_offset_param_image_out = 36;
+  int __xlx_offset_byte_param_image_out = 36*1;
 for (size_t i = 0; i < 9; ++i){
-__xlx_weights__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_weights)[i]);
+__xlx_image_in_image_out_weights__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_weights)[i]);
 }
   int __xlx_size_param_weights = 9;
-  int __xlx_offset_param_weights = 0;
-  int __xlx_offset_byte_param_weights = 0*1;
+  int __xlx_offset_param_weights = 52;
+  int __xlx_offset_byte_param_weights = 52*1;
   // DUT call
-  axi4_conv2D(__xlx_image_in__tmp_vec.data(), __xlx_image_out__tmp_vec.data(), __xlx_weights__tmp_vec.data(), *__xlx_apatb_param_bias);
+  axi4_conv2D(__xlx_image_in_image_out_weights__tmp_vec.data(), __xlx_offset_byte_param_image_in, __xlx_offset_byte_param_image_out, __xlx_offset_byte_param_weights, *__xlx_apatb_param_bias);
 // print __xlx_apatb_param_image_in
 for (size_t i = 0; i < __xlx_size_param_image_in; ++i) {
-((Byte<1>*)__xlx_apatb_param_image_in)[i] = __xlx_image_in__tmp_vec[__xlx_offset_param_image_in+i];
+((Byte<1>*)__xlx_apatb_param_image_in)[i] = __xlx_image_in_image_out_weights__tmp_vec[__xlx_offset_param_image_in+i];
 }
 // print __xlx_apatb_param_image_out
 for (size_t i = 0; i < __xlx_size_param_image_out; ++i) {
-((Byte<1>*)__xlx_apatb_param_image_out)[i] = __xlx_image_out__tmp_vec[__xlx_offset_param_image_out+i];
+((Byte<1>*)__xlx_apatb_param_image_out)[i] = __xlx_image_in_image_out_weights__tmp_vec[__xlx_offset_param_image_out+i];
 }
 // print __xlx_apatb_param_weights
 for (size_t i = 0; i < __xlx_size_param_weights; ++i) {
-((Byte<1>*)__xlx_apatb_param_weights)[i] = __xlx_weights__tmp_vec[__xlx_offset_param_weights+i];
+((Byte<1>*)__xlx_apatb_param_weights)[i] = __xlx_image_in_image_out_weights__tmp_vec[__xlx_offset_param_weights+i];
 }
 }

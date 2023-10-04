@@ -47,30 +47,30 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1245_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_9_1:  '
-    FileOffset:      9
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
     FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\axi4_conv2D.cpp'
     Replacements:    
       - FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp'
-        Offset:          865394
+        Offset:          865780
         Length:          0
-        ReplacementText: 'VITIS_LOOP_9_1: '
+        ReplacementText: 'VITIS_LOOP_13_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_10_2:  '
-    FileOffset:      10
-    FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\axi4_conv2D.cpp'
-    Replacements:    
-      - FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp'
-        Offset:          865446
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_10_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_14_3:  '
+    Message:         'Added loop label VITIS_LOOP_14_2:  '
     FileOffset:      14
     FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\axi4_conv2D.cpp'
     Replacements:    
       - FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp'
-        Offset:          865581
+        Offset:          865832
         Length:          0
-        ReplacementText: 'VITIS_LOOP_14_3: '
+        ReplacementText: 'VITIS_LOOP_14_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_18_3:  '
+    FileOffset:      18
+    FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\axi4_conv2D.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp'
+        Offset:          865967
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_18_3: '
 ...

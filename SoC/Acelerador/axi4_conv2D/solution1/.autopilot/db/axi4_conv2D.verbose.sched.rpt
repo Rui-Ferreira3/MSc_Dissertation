@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'axi4_conv2D'
 ================================================================
-* Date:           Thu Sep 28 12:30:28 2023
+* Date:           Thu Sep 28 15:25:30 2023
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        axi4_conv2D
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.092 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       91|       91|  0.910 us|  0.910 us|   92|   92|       no|
+    |      310|      310|  3.100 us|  3.100 us|  311|  311|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -65,7 +65,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 7
+* Number of FSM states : 9
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -76,65 +76,66 @@ IsGatedGlobalClock: 0
 4 --> 5 
 5 --> 6 
 6 --> 7 
-7 --> 
+7 --> 8 
+8 --> 9 
+9 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.15>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%weights_addr = getelementptr i8 %weights, i64 0, i64 0"   --->   Operation 8 'getelementptr' 'weights_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [2/2] (2.15ns)   --->   "%weights_load = load i4 %weights_addr"   --->   Operation 9 'load' 'weights_load' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%weights_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %weights" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 10 'read' 'weights_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%image_out_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %image_out" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 11 'read' 'image_out_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%image_in_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %image_in" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 12 'read' 'image_in_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 
-State 2 <SV = 1> <Delay = 2.15>
-ST_2 : Operation 10 [1/2] (2.15ns)   --->   "%weights_load = load i4 %weights_addr"   --->   Operation 10 'load' 'weights_load' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%weights_addr_1 = getelementptr i8 %weights, i64 0, i64 1"   --->   Operation 11 'getelementptr' 'weights_addr_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [2/2] (2.15ns)   --->   "%weights_load_1 = load i4 %weights_addr_1"   --->   Operation 12 'load' 'weights_load_1' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%weights_addr_2 = getelementptr i8 %weights, i64 0, i64 2"   --->   Operation 13 'getelementptr' 'weights_addr_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [2/2] (2.15ns)   --->   "%weights_load_2 = load i4 %weights_addr_2"   --->   Operation 14 'load' 'weights_load_2' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i8 %gmem, i64 %image_out_read" [axi4_conv2D/axi4_conv2D.cpp:13]   --->   Operation 13 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (7.30ns)   --->   "%empty_16 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i8 %gmem_addr, i32 16" [axi4_conv2D/axi4_conv2D.cpp:13]   --->   Operation 14 'writereq' 'empty_16' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 3 <SV = 2> <Delay = 2.15>
-ST_3 : Operation 15 [1/2] (2.15ns)   --->   "%weights_load_1 = load i4 %weights_addr_1"   --->   Operation 15 'load' 'weights_load_1' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_3 : Operation 16 [1/2] (2.15ns)   --->   "%weights_load_2 = load i4 %weights_addr_2"   --->   Operation 16 'load' 'weights_load_2' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%weights_addr_3 = getelementptr i8 %weights, i64 0, i64 3"   --->   Operation 17 'getelementptr' 'weights_addr_3' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 18 [2/2] (2.15ns)   --->   "%weights_load_3 = load i4 %weights_addr_3"   --->   Operation 18 'load' 'weights_load_3' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%weights_addr_4 = getelementptr i8 %weights, i64 0, i64 4"   --->   Operation 19 'getelementptr' 'weights_addr_4' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 20 [2/2] (2.15ns)   --->   "%weights_load_4 = load i4 %weights_addr_4"   --->   Operation 20 'load' 'weights_load_4' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+State 3 <SV = 2> <Delay = 3.56>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%bias_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %bias" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 15 'read' 'bias_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%empty = trunc i32 %bias_read" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 16 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%trunc_ln840 = trunc i32 %bias_read"   --->   Operation 17 'trunc' 'trunc_ln840' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (3.56ns)   --->   "%add_ln186_1 = add i64 %weights_read, i64 1"   --->   Operation 18 'add' 'add_ln186_1' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 19 [1/1] (3.56ns)   --->   "%add_ln186_3 = add i64 %weights_read, i64 2"   --->   Operation 19 'add' 'add_ln186_3' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 20 [1/1] (3.56ns)   --->   "%add_ln186_5 = add i64 %weights_read, i64 3"   --->   Operation 20 'add' 'add_ln186_5' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 21 [1/1] (3.56ns)   --->   "%add_ln186_7 = add i64 %weights_read, i64 4"   --->   Operation 21 'add' 'add_ln186_7' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 22 [1/1] (3.56ns)   --->   "%add_ln186_9 = add i64 %weights_read, i64 5"   --->   Operation 22 'add' 'add_ln186_9' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (3.56ns)   --->   "%add_ln186_11 = add i64 %weights_read, i64 6"   --->   Operation 23 'add' 'add_ln186_11' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (3.56ns)   --->   "%add_ln186_13 = add i64 %weights_read, i64 7"   --->   Operation 24 'add' 'add_ln186_13' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (3.56ns)   --->   "%add_ln186_15 = add i64 %weights_read, i64 8"   --->   Operation 25 'add' 'add_ln186_15' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 26 [1/1] (3.56ns)   --->   "%add_ln186_18 = add i64 %image_in_read, i64 6"   --->   Operation 26 'add' 'add_ln186_18' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 27 [1/1] (3.56ns)   --->   "%add_ln186_19 = add i64 %image_in_read, i64 12"   --->   Operation 27 'add' 'add_ln186_19' <Predicate = true> <Delay = 3.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln6 = call void @axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2, i8 %gmem, i64 %image_out_read, i64 %add_ln186_15, i64 %add_ln186_13, i64 %add_ln186_11, i64 %add_ln186_9, i64 %add_ln186_7, i64 %add_ln186_5, i64 %add_ln186_3, i64 %add_ln186_1, i64 %weights_read, i64 %image_in_read, i64 %add_ln186_18, i64 %add_ln186_19, i21 %empty, i8 %trunc_ln840" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 28 'call' 'call_ln6' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 4 <SV = 3> <Delay = 2.15>
-ST_4 : Operation 21 [1/2] (2.15ns)   --->   "%weights_load_3 = load i4 %weights_addr_3"   --->   Operation 21 'load' 'weights_load_3' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_4 : Operation 22 [1/2] (2.15ns)   --->   "%weights_load_4 = load i4 %weights_addr_4"   --->   Operation 22 'load' 'weights_load_4' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%weights_addr_5 = getelementptr i8 %weights, i64 0, i64 5"   --->   Operation 23 'getelementptr' 'weights_addr_5' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 24 [2/2] (2.15ns)   --->   "%weights_load_5 = load i4 %weights_addr_5"   --->   Operation 24 'load' 'weights_load_5' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%weights_addr_6 = getelementptr i8 %weights, i64 0, i64 6"   --->   Operation 25 'getelementptr' 'weights_addr_6' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 26 [2/2] (2.15ns)   --->   "%weights_load_6 = load i4 %weights_addr_6"   --->   Operation 26 'load' 'weights_load_6' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln6 = call void @axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2, i8 %gmem, i64 %image_out_read, i64 %add_ln186_15, i64 %add_ln186_13, i64 %add_ln186_11, i64 %add_ln186_9, i64 %add_ln186_7, i64 %add_ln186_5, i64 %add_ln186_3, i64 %add_ln186_1, i64 %weights_read, i64 %image_in_read, i64 %add_ln186_18, i64 %add_ln186_19, i21 %empty, i8 %trunc_ln840" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 29 'call' 'call_ln6' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 5 <SV = 4> <Delay = 2.15>
-ST_5 : Operation 27 [1/2] (2.15ns)   --->   "%weights_load_5 = load i4 %weights_addr_5"   --->   Operation 27 'load' 'weights_load_5' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_5 : Operation 28 [1/2] (2.15ns)   --->   "%weights_load_6 = load i4 %weights_addr_6"   --->   Operation 28 'load' 'weights_load_6' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%weights_addr_7 = getelementptr i8 %weights, i64 0, i64 7"   --->   Operation 29 'getelementptr' 'weights_addr_7' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 30 [2/2] (2.15ns)   --->   "%weights_load_7 = load i4 %weights_addr_7"   --->   Operation 30 'load' 'weights_load_7' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_5 : Operation 31 [1/1] (0.00ns)   --->   "%weights_addr_8 = getelementptr i8 %weights, i64 0, i64 8"   --->   Operation 31 'getelementptr' 'weights_addr_8' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 32 [2/2] (2.15ns)   --->   "%weights_load_8 = load i4 %weights_addr_8"   --->   Operation 32 'load' 'weights_load_8' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 30 [5/5] (7.30ns)   --->   "%empty_17 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr" [axi4_conv2D/axi4_conv2D.cpp:40]   --->   Operation 30 'writeresp' 'empty_17' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 6 <SV = 5> <Delay = 2.15>
-ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%bias_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %bias" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 33 'read' 'bias_read' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%empty = trunc i32 %bias_read" [axi4_conv2D/axi4_conv2D.cpp:6]   --->   Operation 34 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%trunc_ln840 = trunc i32 %bias_read"   --->   Operation 35 'trunc' 'trunc_ln840' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 36 [1/2] (2.15ns)   --->   "%weights_load_7 = load i4 %weights_addr_7"   --->   Operation 36 'load' 'weights_load_7' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_6 : Operation 37 [1/2] (2.15ns)   --->   "%weights_load_8 = load i4 %weights_addr_8"   --->   Operation 37 'load' 'weights_load_8' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
-ST_6 : Operation 38 [2/2] (0.00ns)   --->   "%call_ln186 = call void @axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2, i8 %image_in, i8 %weights_load, i8 %weights_load_1, i8 %weights_load_2, i8 %weights_load_3, i8 %weights_load_4, i8 %weights_load_5, i8 %weights_load_6, i8 %weights_load_7, i8 %weights_load_8, i21 %empty, i8 %trunc_ln840, i8 %image_out"   --->   Operation 38 'call' 'call_ln186' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 31 [4/5] (7.30ns)   --->   "%empty_17 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr" [axi4_conv2D/axi4_conv2D.cpp:40]   --->   Operation 31 'writeresp' 'empty_17' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 39 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [axi4_conv2D/axi4_conv2D.cpp:3]   --->   Operation 39 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %image_in, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %image_in"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %image_out, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %image_out"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %weights, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %weights"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %bias"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bias, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln186 = call void @axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2, i8 %image_in, i8 %weights_load, i8 %weights_load_1, i8 %weights_load_2, i8 %weights_load_3, i8 %weights_load_4, i8 %weights_load_5, i8 %weights_load_6, i8 %weights_load_7, i8 %weights_load_8, i21 %empty, i8 %trunc_ln840, i8 %image_out"   --->   Operation 48 'call' 'call_ln186' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_7 : Operation 49 [1/1] (0.00ns)   --->   "%ret_ln36 = ret" [axi4_conv2D/axi4_conv2D.cpp:36]   --->   Operation 49 'ret' 'ret_ln36' <Predicate = true> <Delay = 0.00>
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 32 [3/5] (7.30ns)   --->   "%empty_17 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr" [axi4_conv2D/axi4_conv2D.cpp:40]   --->   Operation 32 'writeresp' 'empty_17' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 33 [2/5] (7.30ns)   --->   "%empty_17 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr" [axi4_conv2D/axi4_conv2D.cpp:40]   --->   Operation 33 'writeresp' 'empty_17' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 34 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_10" [axi4_conv2D/axi4_conv2D.cpp:3]   --->   Operation 34 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %gmem"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %image_in, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_5, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %image_in, void @empty_7, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %image_out, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_8, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %image_out, void @empty_7, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_9, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights, void @empty_7, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %bias"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bias, void @empty_7, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 45 [1/5] (7.30ns)   --->   "%empty_17 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr" [axi4_conv2D/axi4_conv2D.cpp:40]   --->   Operation 45 'writeresp' 'empty_17' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln40 = ret" [axi4_conv2D/axi4_conv2D.cpp:40]   --->   Operation 46 'ret' 'ret_ln40' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -142,33 +143,41 @@ ST_7 : Operation 49 [1/1] (0.00ns)   --->   "%ret_ln36 = ret" [axi4_conv2D/axi4_
 ============================================================
 Target clock period: 10ns, clock uncertainty: 2.7ns.
 
- <State 1>: 2.15ns
+ <State 1>: 1ns
 The critical path consists of the following:
-	'getelementptr' operation ('weights_addr') [16]  (0 ns)
-	'load' operation ('weights_load') on array 'weights' [17]  (2.15 ns)
+	s_axi read operation ('weights_read', axi4_conv2D/axi4_conv2D.cpp:6) on port 'weights' (axi4_conv2D/axi4_conv2D.cpp:6) [18]  (1 ns)
 
- <State 2>: 2.15ns
+ <State 2>: 7.3ns
 The critical path consists of the following:
-	'load' operation ('weights_load') on array 'weights' [17]  (2.15 ns)
+	'getelementptr' operation ('gmem_addr', axi4_conv2D/axi4_conv2D.cpp:13) [22]  (0 ns)
+	bus request operation ('empty_16', axi4_conv2D/axi4_conv2D.cpp:13) on port 'gmem' (axi4_conv2D/axi4_conv2D.cpp:13) [23]  (7.3 ns)
 
- <State 3>: 2.15ns
+ <State 3>: 3.56ns
 The critical path consists of the following:
-	'load' operation ('weights_load_1') on array 'weights' [20]  (2.15 ns)
+	'add' operation ('add_ln186_1') [25]  (3.56 ns)
 
- <State 4>: 2.15ns
+ <State 4>: 0ns
 The critical path consists of the following:
-	'load' operation ('weights_load_3') on array 'weights' [24]  (2.15 ns)
 
- <State 5>: 2.15ns
+ <State 5>: 7.3ns
 The critical path consists of the following:
-	'load' operation ('weights_load_5') on array 'weights' [28]  (2.15 ns)
+	bus response operation ('empty_17', axi4_conv2D/axi4_conv2D.cpp:40) on port 'gmem' (axi4_conv2D/axi4_conv2D.cpp:40) [36]  (7.3 ns)
 
- <State 6>: 2.15ns
+ <State 6>: 7.3ns
 The critical path consists of the following:
-	'load' operation ('weights_load_7') on array 'weights' [32]  (2.15 ns)
+	bus response operation ('empty_17', axi4_conv2D/axi4_conv2D.cpp:40) on port 'gmem' (axi4_conv2D/axi4_conv2D.cpp:40) [36]  (7.3 ns)
 
- <State 7>: 0ns
+ <State 7>: 7.3ns
 The critical path consists of the following:
+	bus response operation ('empty_17', axi4_conv2D/axi4_conv2D.cpp:40) on port 'gmem' (axi4_conv2D/axi4_conv2D.cpp:40) [36]  (7.3 ns)
+
+ <State 8>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_17', axi4_conv2D/axi4_conv2D.cpp:40) on port 'gmem' (axi4_conv2D/axi4_conv2D.cpp:40) [36]  (7.3 ns)
+
+ <State 9>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_17', axi4_conv2D/axi4_conv2D.cpp:40) on port 'gmem' (axi4_conv2D/axi4_conv2D.cpp:40) [36]  (7.3 ns)
 
 
 ============================================================
@@ -186,6 +195,8 @@ N/A
 	State 5
 	State 6
 	State 7
+	State 8
+	State 9
 
 
 ============================================================

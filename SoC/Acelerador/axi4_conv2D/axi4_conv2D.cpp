@@ -5,6 +5,10 @@ void axi4_conv2D(input_image_t image_in[IMAGE_HEIGHT * IMAGE_WIDTH],
                  weight_t weights[KERNEL_SIZE * KERNEL_SIZE],
                  bias_t bias) {
 
+#pragma HLS INTERFACE m_axi port=image_in offset=slave
+#pragma HLS INTERFACE m_axi port=image_out offset=slave
+#pragma HLS INTERFACE m_axi port=weights offset=slave
+#pragma HLS INTERFACE m_axi port=bias offset=slave
 
     for (count_t i = 0; i < OUTPUT_HEIGHT; i++) {
         for (count_t j = 0; j < OUTPUT_WIDTH; j++) {

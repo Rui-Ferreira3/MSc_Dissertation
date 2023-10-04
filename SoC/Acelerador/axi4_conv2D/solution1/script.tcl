@@ -5,13 +5,13 @@
 ############################################################
 open_project axi4_conv2D
 set_top axi4_conv2D
-add_files axi4_conv2D/axi4_conv2D.cpp
 add_files axi4_conv2D/axi4_conv2D.h
-add_files -tb axi4_conv2D/tb_axi4_conv2D.cpp
+add_files axi4_conv2D/axi4_conv2D.cpp
+add_files -tb axi4_conv2D/tb_axi4_conv2D.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
-set_part {xc7a100tcsg324-1}
+set_part {xc7a100t-csg324-1}
 create_clock -period 10 -name default
-#source "./axi4_conv2D/solution1/directives.tcl"
+source "./axi4_conv2D/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design

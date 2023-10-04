@@ -5732,14 +5732,22 @@ __attribute__((sdx_kernel("axi4_conv2D", 0))) void axi4_conv2D(input_image_t ima
 #pragma HLSDIRECTIVE TOP name=axi4_conv2D
 # 6 "axi4_conv2D/axi4_conv2D.cpp"
 
+#line 6 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/Acelerador/axi4_conv2D/solution1/directives.tcl"
+#pragma HLSDIRECTIVE TOP name=axi4_conv2D
+# 6 "axi4_conv2D/axi4_conv2D.cpp"
 
 
-    VITIS_LOOP_9_1: for (count_t i = 0; i < (6 - 3 + 1); i++) {
-        VITIS_LOOP_10_2: for (count_t j = 0; j < (6 - 3 + 1); j++) {
+#pragma HLS INTERFACE m_axi port=image_in offset=slave
+#pragma HLS INTERFACE m_axi port=image_out offset=slave
+#pragma HLS INTERFACE m_axi port=weights offset=slave
+#pragma HLS INTERFACE m_axi port=bias offset=slave
+
+ VITIS_LOOP_13_1: for (count_t i = 0; i < (6 - 3 + 1); i++) {
+        VITIS_LOOP_14_2: for (count_t j = 0; j < (6 - 3 + 1); j++) {
             accum_t acc = (accum_t) bias;
             output_image_t acc_sat;
 
-            VITIS_LOOP_14_3: for (count_t k = 0; k < 3; k++) {
+            VITIS_LOOP_18_3: for (count_t k = 0; k < 3; k++) {
 
 
              count_t kernel_1d_idx = k * 3 ;

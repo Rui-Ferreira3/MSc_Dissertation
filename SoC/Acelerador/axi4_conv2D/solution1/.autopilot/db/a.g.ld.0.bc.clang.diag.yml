@@ -1031,7 +1031,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 9, Column: 58 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 13, Column: 56 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1046,7 +1046,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 10, Column: 63 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 14, Column: 63 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1061,7 +1061,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 33, Column: 23 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 37, Column: 23 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1076,7 +1076,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 33, Column: 39 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 37, Column: 39 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1091,7 +1091,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 33, Column: 25 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 37, Column: 25 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1106,7 +1106,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 28, Column: 26 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 32, Column: 26 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1121,7 +1121,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 26, Column: 21 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 30, Column: 21 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1136,7 +1136,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 14, Column: 57 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 57 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1151,7 +1151,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 20, Column: 64 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 64 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1166,7 +1166,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 20, Column: 66 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 66 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1181,7 +1181,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 20, Column: 47 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 47 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1196,7 +1196,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 20, Column: 49 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 49 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1211,7 +1211,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 20, Column: 44 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 44 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1226,7 +1226,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 21, Column: 25 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 25, Column: 25 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1241,7 +1241,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 21, Column: 51 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 25, Column: 51 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1256,7 +1256,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 21, Column: 62 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 25, Column: 62 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1271,7 +1271,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 21, Column: 36 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 25, Column: 36 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1286,7 +1286,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 20, Column: 39 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 39 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1301,7 +1301,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 49 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 22, Column: 49 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1316,7 +1316,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 45 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 22, Column: 45 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1331,7 +1331,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 40 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 22, Column: 40 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1346,7 +1346,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 17, Column: 40 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 21, Column: 40 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1361,7 +1361,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 14, Column: 52 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 52 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1376,7 +1376,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 10, Column: 48 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 14, Column: 48 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1391,7 +1391,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 9, Column: 43 }
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 13, Column: 41 }
 Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -1402,4 +1402,281 @@ Args:
   - Caller:          'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
     DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
   - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 30 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.load.9
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weightsseq
+  - String:          ' '
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_3
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:18:30'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 17 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.load.15
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       image_in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        loop_x
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:24:17'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 13, Column: 19 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc41.store.12
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        image_outseq
+  - String:          ' '
+  - ArrayName:       image_out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:13:19'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 17 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       image_in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_3
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:18:30'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 30 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weightsseq
+  - String:          ' '
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_14_2
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:14:26'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 13, Column: 19 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        image_outseq
+  - String:          ' '
+  - ArrayName:       image_out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_14_2
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:14:26'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 30 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weightsseq
+  - String:          ' '
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        loop_x
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:24:17'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 24, Column: 17 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       image_in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        loop_x
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:24:17'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 18, Column: 30 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 13, Column: 19 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          ' '
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:13:19'
+  - String:          ' '
+  - Function:        'axi4_conv2D(ap_uint<8>*, ap_uint<8>*, ap_int<8>*, ap_int<32>)'
+    DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: axi4_conv2D/axi4_conv2D.cpp, Line: 13, Column: 19 }
+Function:        _Z11axi4_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '''('
+  - LoopLoc:         'axi4_conv2D/axi4_conv2D.cpp:13:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...

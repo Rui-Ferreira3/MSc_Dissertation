@@ -1,202 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1695900629877">
-  <ports id="1" name="image_in" type="PortType" coreName="RAM" coreId="4294967295" bitwidth="8" iftype="IfTypeRegister" arraysize="36">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1695911131846">
+  <ports id="1" name="gmem" type="PortType" coreId="1953394531" bitwidth="8" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="image_out" type="PortType" coreName="RAM" coreId="1953394531" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="16">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="3" name="weights" type="PortType" coreName="RAM" coreId="1953394531" bitwidth="8" iftype="IfTypeRegister" arraysize="9">
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-    <dataOutputObjs>getelementptr</dataOutputObjs>
-  </ports>
-  <ports id="4" name="bias" type="PortType" originalName="bias.V" coreId="1953394531" bitwidth="32">
+  <ports id="2" name="image_in" type="PortType" originalName="image_in.V" coreId="1953394531" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <edges id="40" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
-  <edges id="41" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
-  <edges id="42" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.2"/>
-  <edges id="46" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
-  <edges id="47" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
-  <edges id="48" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="52" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="53" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.7"/>
-  <edges id="57" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
-  <edges id="58" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.9"/>
-  <edges id="62" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
-  <edges id="63" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.11"/>
-  <edges id="67" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
-  <edges id="68" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.13"/>
-  <edges id="72" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
-  <edges id="73" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.15"/>
-  <edges id="77" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
-  <edges id="78" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.17"/>
-  <edges id="82" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
-  <edges id="83" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.19"/>
-  <edges id="87" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
-  <edges id="90" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="91" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="92" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="93" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="94" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="95" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="96" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="97" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="98" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="99" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="100" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="101" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.21"/>
-  <edges id="102" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@ports.1"/>
-  <blocks id="37" name="axi4_conv2D" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="bias_read" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreId="0" contextFuncName="axi4_conv2D" bitwidth="32" opcode="read" nodeLabel="5.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+  <ports id="3" name="image_out" type="PortType" originalName="image_out.V" coreId="1953394531" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="weights" type="PortType" originalName="weights.V" coreId="1953394531" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="bias" type="PortType" originalName="bias.V" coreId="1953394531" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="41" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="44" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="46" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="48" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="49" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="50" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="54" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="57" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="61" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="64" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="73" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="89" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="94" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="99" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="101" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="102" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="104" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="107" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="283" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="284" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="-50" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@ports.0"/>
+  <edges id="-89" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@ports.0"/>
+  <blocks id="38" name="axi4_conv2D" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="bias_read" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreId="0" contextFuncName="axi4_conv2D" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="6" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
       <dataInputObjs>bias</dataInputObjs>
       <dataOutputObjs>trunc</dataOutputObjs>
       <dataOutputObjs>trunc</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="empty" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." rtlName="empty_fu_165_p1" coreId="0" contextFuncName="axi4_conv2D" bitwidth="21" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="weights_read" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="axi4_conv2D" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="6" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+      <dataInputObjs>weights</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="image_out_read" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="axi4_conv2D" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="6" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+      <dataInputObjs>image_out</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="image_in_read" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="axi4_conv2D" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="6" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+      <dataInputObjs>image_in</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="empty" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." rtlName="empty_fu_133_p1" coreId="0" contextFuncName="axi4_conv2D" bitwidth="21" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="6" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="weights_addr" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="gmem_addr" lineNumber="13" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreId="0" contextFuncName="axi4_conv2D" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="13" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="empty_16" lineNumber="13" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="axi4_conv2D" bitwidth="1" opcode="writereq" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="13" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="weights_load" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
-      <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="trunc_ln840" lineNumber="840" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="trunc_ln840_fu_170_p1" coreId="1975254911" contextFuncName="operator_add_assign_16_true" bitwidth="8" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="trunc_ln840" lineNumber="840" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="trunc_ln840_fu_138_p1" coreId="0" contextFuncName="operator_add_assign_16_true" bitwidth="8" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="operator+=&amp;lt;16, true&amp;gt;"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="weights_addr_1" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="add_ln186_1" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_1_fu_143_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="9" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="weights_load_1" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="add_ln186_3" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_3_fu_149_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="10" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="weights_addr_2" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="weights_load_2" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="add_ln186_5" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_5_fu_155_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="11" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="weights_addr_3" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="weights_load_3" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="add_ln186_7" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_7_fu_161_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="12" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="weights_addr_4" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="weights_load_4" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="add_ln186_9" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_9_fu_167_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="13" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="weights_addr_5" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="weights_load_5" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="add_ln186_11" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_11_fu_173_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="14" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="weights_addr_6" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1579302683" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="weights_load_6" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="add_ln186_13" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_13_fu_179_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="15" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="weights_addr_7" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1772277301" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="weights_load_7" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="add_ln186_15" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_15_fu_185_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_true_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="16" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="weights_addr_8" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="574452846" contextFuncName="ap_int_base_8_true_s" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>weights</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="weights_load_8" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="ap_int_base_8_true_s" bitwidth="8" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="18" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>getelementptr</dataInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="add_ln186_18" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_18_fu_191_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_false_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, false&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln186" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="grp_axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2_fu_144" coreId="1767862369" contextFuncName="ap_int_base_8_true_s" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
-      <dataInputObjs>image_in</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>load</dataInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="add_ln186_19" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_19_fu_197_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_8_false_s" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.56" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="ap_int_base&amp;lt;8, false&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln6" lineNumber="6" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." rtlName="grp_axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2_fu_106" coreId="54" contextFuncName="axi4_conv2D" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="6" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
-      <dataOutputObjs>image_out</dataOutputObjs>
-      <constName>axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2</constName>
+      <dataOutputObjs>gmem</dataOutputObjs>
+      <constName>axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln36" lineNumber="36" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreId="1852405087" contextFuncName="axi4_conv2D" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="36" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="empty_17" lineNumber="40" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="axi4_conv2D" bitwidth="1" opcode="writeresp" nodeLabel="4.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="40" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln40" lineNumber="40" fileName="axi4_conv2D/axi4_conv2D.cpp" fileDirectory=".." coreId="0" contextFuncName="axi4_conv2D" opcode="ret" nodeLabel="8.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi4_conv2D/axi4_conv2D.cpp" linenumber="40" fileDirectory="C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador" functionName="axi4_conv2D"/>
     </node_objs>
     <fileValidLineNumbers fileName="axi4_conv2D/axi4_conv2D.cpp">
       <validLinenumbers>6</validLinenumbers>
-      <validLinenumbers>36</validLinenumbers>
+      <validLinenumbers>13</validLinenumbers>
+      <validLinenumbers>40</validLinenumbers>
     </fileValidLineNumbers>
     <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
-      <validLinenumbers>186</validLinenumbers>
       <validLinenumbers>840</validLinenumbers>
+      <validLinenumbers>186</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
@@ -206,186 +219,187 @@
   <ScheduleInfo time="4"/>
   <ScheduleInfo time="5"/>
   <ScheduleInfo time="6"/>
-  <regnodes realName="weights_load_8_reg_270">
-    <nodeIds>34</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_addr_8_reg_250">
-    <nodeIds>33</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_addr_7_reg_245">
-    <nodeIds>31</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_addr_3_reg_205">
-    <nodeIds>23</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_reg_180">
-    <nodeIds>17</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_2_reg_200">
-    <nodeIds>22</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_7_reg_265">
-    <nodeIds>32</nodeIds>
-  </regnodes>
-  <regnodes realName="trunc_ln840_reg_260">
-    <nodeIds>18</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_4_reg_220">
-    <nodeIds>26</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_addr_5_reg_225">
-    <nodeIds>27</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_addr_4_reg_210">
-    <nodeIds>25</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_5_reg_235">
-    <nodeIds>28</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_1_reg_195">
-    <nodeIds>20</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_addr_6_reg_230">
-    <nodeIds>29</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_3_reg_215">
-    <nodeIds>24</nodeIds>
-  </regnodes>
-  <regnodes realName="weights_load_6_reg_240">
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <regnodes realName="add_ln186_11_reg_269">
     <nodeIds>30</nodeIds>
   </regnodes>
-  <regnodes realName="empty_reg_255">
-    <nodeIds>15</nodeIds>
+  <regnodes realName="trunc_ln840_reg_239">
+    <nodeIds>24</nodeIds>
   </regnodes>
-  <regnodes realName="weights_addr_2_reg_190">
-    <nodeIds>21</nodeIds>
+  <regnodes realName="add_ln186_18_reg_284">
+    <nodeIds>33</nodeIds>
   </regnodes>
-  <regnodes realName="weights_addr_reg_175">
-    <nodeIds>16</nodeIds>
+  <regnodes realName="add_ln186_5_reg_254">
+    <nodeIds>27</nodeIds>
   </regnodes>
-  <regnodes realName="weights_addr_1_reg_185">
+  <regnodes realName="add_ln186_3_reg_249">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln186_15_reg_279">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln186_13_reg_274">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="image_in_read_reg_222">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln186_9_reg_264">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_reg_229">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="weights_read_reg_203">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="image_out_read_reg_216">
     <nodeIds>19</nodeIds>
   </regnodes>
-  <expressionNodes realName="empty_fu_165">
-    <nodeIds>15</nodeIds>
+  <regnodes realName="add_ln186_19_reg_289">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln186_1_reg_244">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln186_7_reg_259">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_234">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <expressionNodes realName="gmem_addr_fu_127">
+    <nodeIds>22</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weights_addr_8_gep_fu_135">
+  <expressionNodes realName="add_ln186_3_fu_149">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln186_18_fu_191">
     <nodeIds>33</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weights_addr_3_gep_fu_90">
-    <nodeIds>23</nodeIds>
+  <expressionNodes realName="add_ln186_11_fu_173">
+    <nodeIds>30</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weights_addr_7_gep_fu_126">
-    <nodeIds>31</nodeIds>
+  <expressionNodes realName="add_ln186_19_fu_197">
+    <nodeIds>34</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weights_addr_5_gep_fu_108">
-    <nodeIds>27</nodeIds>
+  <expressionNodes realName="add_ln186_15_fu_185">
+    <nodeIds>32</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weights_addr_gep_fu_54">
-    <nodeIds>16</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weights_addr_4_gep_fu_99">
-    <nodeIds>25</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weights_addr_6_gep_fu_117">
-    <nodeIds>29</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weights_addr_2_gep_fu_81">
+  <expressionNodes realName="empty_fu_133">
     <nodeIds>21</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weights_addr_1_gep_fu_68">
-    <nodeIds>19</nodeIds>
+  <expressionNodes realName="add_ln186_5_fu_155">
+    <nodeIds>27</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln840_fu_170">
-    <nodeIds>18</nodeIds>
+  <expressionNodes realName="trunc_ln840_fu_138">
+    <nodeIds>24</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2_fu_144">
+  <expressionNodes realName="add_ln186_13_fu_179">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln186_9_fu_167">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln186_7_fu_161">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln186_1_fu_143">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2_fu_106">
     <nodeIds>35</nodeIds>
   </moduleNodes>
-  <ioNodes realName="bias_read_read_fu_48">
-    <nodeIds>14</nodeIds>
+  <ioNodes realName="image_out_read_read_fu_80">
+    <nodeIds>19</nodeIds>
   </ioNodes>
-  <memoryPorts dataString="weights">
+  <ioNodes realName="weights_read_read_fu_74">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="bias_read_read_fu_99">
     <nodeIds>17</nodeIds>
-    <nodeIds>22</nodeIds>
-    <nodeIds>24</nodeIds>
-    <nodeIds>28</nodeIds>
-    <nodeIds>32</nodeIds>
-  </memoryPorts>
-  <memoryPorts dataString="weights" portID="1">
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_92">
+    <nodeIds>23</nodeIds>
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_in_read_read_fu_86">
     <nodeIds>20</nodeIds>
-    <nodeIds>26</nodeIds>
-    <nodeIds>30</nodeIds>
-    <nodeIds>34</nodeIds>
-  </memoryPorts>
+  </ioNodes>
   <ioPorts name="bias">
     <contents name="read">
-      <nodeIds>14</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="weights(p0)">
-    <contents name="load">
       <nodeIds>17</nodeIds>
-      <nodeIds>22</nodeIds>
-      <nodeIds>24</nodeIds>
-      <nodeIds>28</nodeIds>
-      <nodeIds>32</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="weights(p1)">
-    <contents name="load">
+  <ioPorts name="gmem">
+    <contents name="call">
+      <nodeIds>35</nodeIds>
+    </contents>
+    <contents name="writereq">
+      <nodeIds>23</nodeIds>
+    </contents>
+    <contents name="writeresp">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_in">
+    <contents name="read">
       <nodeIds>20</nodeIds>
-      <nodeIds>26</nodeIds>
-      <nodeIds>30</nodeIds>
-      <nodeIds>34</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_out">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="weights">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
     <states id="1">
-      <operations id="16" stage="1" latency="1"/>
-      <operations id="17" stage="2" latency="2"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
     </states>
     <states id="2">
-      <operations id="17" stage="1" latency="2"/>
-      <operations id="19" stage="1" latency="1"/>
-      <operations id="20" stage="2" latency="2"/>
-      <operations id="21" stage="1" latency="1"/>
-      <operations id="22" stage="2" latency="2"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
     </states>
     <states id="3">
-      <operations id="20" stage="1" latency="2"/>
-      <operations id="22" stage="1" latency="2"/>
-      <operations id="23" stage="1" latency="1"/>
-      <operations id="24" stage="2" latency="2"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
       <operations id="25" stage="1" latency="1"/>
-      <operations id="26" stage="2" latency="2"/>
-    </states>
-    <states id="4">
-      <operations id="24" stage="1" latency="2"/>
-      <operations id="26" stage="1" latency="2"/>
+      <operations id="26" stage="1" latency="1"/>
       <operations id="27" stage="1" latency="1"/>
-      <operations id="28" stage="2" latency="2"/>
+      <operations id="28" stage="1" latency="1"/>
       <operations id="29" stage="1" latency="1"/>
-      <operations id="30" stage="2" latency="2"/>
-    </states>
-    <states id="5">
-      <operations id="28" stage="1" latency="2"/>
-      <operations id="30" stage="1" latency="2"/>
+      <operations id="30" stage="1" latency="1"/>
       <operations id="31" stage="1" latency="1"/>
-      <operations id="32" stage="2" latency="2"/>
+      <operations id="32" stage="1" latency="1"/>
       <operations id="33" stage="1" latency="1"/>
-      <operations id="34" stage="2" latency="2"/>
-    </states>
-    <states id="6">
-      <operations id="14" stage="1" latency="1"/>
-      <operations id="15" stage="1" latency="1"/>
-      <operations id="18" stage="1" latency="1"/>
-      <operations id="32" stage="1" latency="2"/>
-      <operations id="34" stage="1" latency="2"/>
+      <operations id="34" stage="1" latency="1"/>
       <operations id="35" stage="2" latency="2"/>
     </states>
+    <states id="4">
+      <operations id="35" stage="1" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="36" stage="5" latency="5"/>
+    </states>
+    <states id="6">
+      <operations id="36" stage="4" latency="5"/>
+    </states>
     <states id="7">
-      <operations id="5" stage="1" latency="1"/>
+      <operations id="36" stage="3" latency="5"/>
+    </states>
+    <states id="8">
+      <operations id="36" stage="2" latency="5"/>
+    </states>
+    <states id="9">
       <operations id="6" stage="1" latency="1"/>
       <operations id="7" stage="1" latency="1"/>
       <operations id="8" stage="1" latency="1"/>
@@ -394,8 +408,11 @@
       <operations id="11" stage="1" latency="1"/>
       <operations id="12" stage="1" latency="1"/>
       <operations id="13" stage="1" latency="1"/>
-      <operations id="35" stage="1" latency="2"/>
-      <operations id="36" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="5"/>
+      <operations id="37" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
@@ -415,10 +432,16 @@
     <transitions inState="6" outState="7">
       <condition id="-1"/>
     </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="axi4_conv2D" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="91" mMaxLatency="91">
-      <basicBlocks>37</basicBlocks>
+    <cfgRegions mId="1" mTag="axi4_conv2D" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="310" mMaxLatency="310">
+      <basicBlocks>38</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

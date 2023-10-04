@@ -23,18 +23,18 @@ C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilo
       ^~~
       VITIS_LOOP_1245_1: 
 C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:3937:7: note: FIX-IT applied suggested code changes
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5737:5: warning: Added loop label VITIS_LOOP_9_1:   [xilinx-label-all-loops]
-    for (count_t i = 0; i < (6 - 3 + 1); i++) {
-    ^~~
-    VITIS_LOOP_9_1: 
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5737:5: note: FIX-IT applied suggested code changes
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5738:9: warning: Added loop label VITIS_LOOP_10_2:   [xilinx-label-all-loops]
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5745:2: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+ for (count_t i = 0; i < (6 - 3 + 1); i++) {
+ ^~~
+ VITIS_LOOP_13_1: 
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5745:2: note: FIX-IT applied suggested code changes
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5746:9: warning: Added loop label VITIS_LOOP_14_2:   [xilinx-label-all-loops]
         for (count_t j = 0; j < (6 - 3 + 1); j++) {
         ^~~
-        VITIS_LOOP_10_2: 
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5738:9: note: FIX-IT applied suggested code changes
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5742:13: warning: Added loop label VITIS_LOOP_14_3:   [xilinx-label-all-loops]
+        VITIS_LOOP_14_2: 
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5746:9: note: FIX-IT applied suggested code changes
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5750:13: warning: Added loop label VITIS_LOOP_18_3:   [xilinx-label-all-loops]
             for (count_t k = 0; k < 3; k++) {
             ^~~
-            VITIS_LOOP_14_3: 
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5742:13: note: FIX-IT applied suggested code changes
+            VITIS_LOOP_18_3: 
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\Acelerador\axi4_conv2D\solution1\.autopilot\db\axi4_conv2D.pp.0.cpp:5750:13: note: FIX-IT applied suggested code changes

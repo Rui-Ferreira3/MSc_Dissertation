@@ -3,24 +3,24 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_7') on array 'image_in' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.389+0100" type="Warning"/>
-        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_5') on array 'image_in' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.277+0100" type="Warning"/>
-        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_3') on array 'image_in' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.257+0100" type="Warning"/>
-        <logs message="WARNING: [HLS 200-885] The II Violation in module 'axi4_conv2D_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'): Unable to schedule 'load' operation ('image_in_load_1') on array 'image_in' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'image_in'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T12:30:27.234+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:31.344+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_BREADY' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.692+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWUSER' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.678+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWREGION' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.662+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWQOS' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.635+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWPROT' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.624+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWCACHE' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.599+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWLOCK' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.579+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWBURST' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.563+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWSIZE' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.545+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWLEN' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.523+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2/m_axi_gmem_AWID' to 0." projectName="axi4_conv2D" solutionName="solution1" date="2023-09-28T15:25:30.496+0100" type="Warning"/>
       </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

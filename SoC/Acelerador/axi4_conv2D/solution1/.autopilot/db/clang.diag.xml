@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>C:/Users/Rui/Rui/MSc_Dissertation/SoC/Acelerador/axi4_conv2D/solution1/.autopilot/db/axi4_conv2D.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>axi4_conv2D/axi4_conv2D.cpp</string>
+      <key>line</key>
+      <integer>11</integer>
+      <key>column</key>
+      <integer>34</integer>
+      <key>message</key>
+      <string>Unsupported interface port data type in &apos;#pragma HLS interface m_axi&apos;</string>
+      <key>ID</key>
+      <integer>5557</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

@@ -5,6 +5,11 @@
                 <option name="name" value="axi4_conv2D"/>
             </pragma>
         </directive>
+        <directive functionName="axi4_conv2D" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="axi4_conv2D"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

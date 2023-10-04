@@ -10,7 +10,7 @@ target triple = "fpga64-xilinx-none"
 %"struct.ap_int_base<32, true>" = type { %"struct.ssdm_int<32, true>" }
 %"struct.ssdm_int<32, true>" = type { i32 }
 
-; Function Attrs: argmemonly noinline
+; Function Attrs: inaccessiblemem_or_argmemonly noinline
 define void @apatb_axi4_conv2D_ir(%"struct.ap_uint<8>"* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="36" %image_in, %"struct.ap_uint<8>"* noalias nocapture nonnull "fpga.decayed.dim.hint"="16" %image_out, %"struct.ap_uint<8>"* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="9" %weights, %"struct.ap_int<32>"* nocapture readonly %bias) local_unnamed_addr #0 {
 entry:
   %image_in_copy = alloca [36 x i8], align 512
@@ -212,7 +212,7 @@ entry:
 
 declare void @axi4_conv2D_hw_stub(%"struct.ap_uint<8>"*, %"struct.ap_uint<8>"*, %"struct.ap_uint<8>"*, %"struct.ap_int<32>"*)
 
-attributes #0 = { argmemonly noinline "fpga.wrapper.func"="wrapper" }
+attributes #0 = { inaccessiblemem_or_argmemonly noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline norecurse "fpga.wrapper.func"="copyin" }
 attributes #2 = { argmemonly noinline norecurse "fpga.wrapper.func"="copyout" }
 attributes #3 = { argmemonly noinline norecurse "fpga.wrapper.func"="onebyonecpy_hls" }
