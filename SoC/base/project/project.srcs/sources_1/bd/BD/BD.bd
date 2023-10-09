@@ -10,7 +10,6 @@
       "tool_version": "2022.2"
     },
     "design_tree": {
-      "bootrom_wrapper_0": "",
       "gpio_wrapper_0": "",
       "syscon_wrapper_0": "",
       "bidirec_0": "",
@@ -46,7 +45,8 @@
       "bidirec_30": "",
       "bidirec_31": "",
       "swerv_wrapper_verilog_0": "",
-      "intcon_wrapper_bd_0": ""
+      "intcon_wrapper_bd_0": "",
+      "bootrom_wrapper_0": ""
     },
     "ports": {
       "clk_0": {
@@ -363,65 +363,6 @@
       }
     },
     "components": {
-      "bootrom_wrapper_0": {
-        "vlnv": "xilinx.com:module_ref:bootrom_wrapper:1.0",
-        "xci_name": "BD_bootrom_wrapper_0_0",
-        "xci_path": "ip\\BD_bootrom_wrapper_0_0\\BD_bootrom_wrapper_0_0.xci",
-        "inst_hier_path": "bootrom_wrapper_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "bootrom_wrapper",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "i_clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "i_rst",
-                "value_src": "constant"
-              }
-            }
-          },
-          "i_rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "i_wb_adr": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "i_wb_dat": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "i_wb_sel": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "i_wb_we": {
-            "direction": "I"
-          },
-          "i_wb_cyc": {
-            "direction": "I"
-          },
-          "i_wb_stb": {
-            "direction": "I"
-          },
-          "o_wb_ack": {
-            "direction": "O"
-          },
-          "o_wb_rdt": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          }
-        }
-      },
       "gpio_wrapper_0": {
         "vlnv": "xilinx.com:module_ref:gpio_wrapper:1.0",
         "xci_name": "BD_gpio_wrapper_0_0",
@@ -3498,6 +3439,65 @@
             "direction": "I"
           }
         }
+      },
+      "bootrom_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:bootrom_wrapper:1.0",
+        "xci_name": "BD_bootrom_wrapper_0_0",
+        "xci_path": "ip\\BD_bootrom_wrapper_0_0\\BD_bootrom_wrapper_0_0.xci",
+        "inst_hier_path": "bootrom_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bootrom_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "i_wb_adr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_dat": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_sel": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_wb_we": {
+            "direction": "I"
+          },
+          "i_wb_cyc": {
+            "direction": "I"
+          },
+          "i_wb_stb": {
+            "direction": "I"
+          },
+          "o_wb_ack": {
+            "direction": "O"
+          },
+          "o_wb_rdt": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
@@ -3900,11 +3900,11 @@
       "clk_0_1": {
         "ports": [
           "clk_0",
-          "bootrom_wrapper_0/i_clk",
           "gpio_wrapper_0/wb_clk_i",
           "syscon_wrapper_0/i_clk",
           "swerv_wrapper_verilog_0/clk",
-          "intcon_wrapper_bd_0/clk_i_wrapper"
+          "intcon_wrapper_bd_0/clk_i_wrapper",
+          "bootrom_wrapper_0/i_clk"
         ]
       },
       "dmi_hard_reset_0_1": {
@@ -4870,11 +4870,11 @@
       "rst_0_1": {
         "ports": [
           "rst_0",
-          "bootrom_wrapper_0/i_rst",
           "gpio_wrapper_0/wb_rst_i",
           "syscon_wrapper_0/i_rst",
           "swerv_wrapper_verilog_0/rst",
-          "intcon_wrapper_bd_0/rst_ni_wrapper"
+          "intcon_wrapper_bd_0/rst_ni_wrapper",
+          "bootrom_wrapper_0/i_rst"
         ]
       },
       "swerv_wrapper_verilog_0_dmi_reg_rdata": {
