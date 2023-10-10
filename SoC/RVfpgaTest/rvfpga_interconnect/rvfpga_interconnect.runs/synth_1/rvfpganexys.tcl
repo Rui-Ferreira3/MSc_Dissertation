@@ -77,8 +77,10 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.cache/wt [current_project]
 set_property parent.project_path C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
@@ -117,18 +119,9 @@ set_property file_type "Verilog Header" [get_files C:/Users/Rui/Rui/MSc_Disserta
 set_property file_type "Verilog Header" [get_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/include/build.h]
 read_mem C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/BootROM/sw/boot_main.mem
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cf_math_pkg.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_pkg.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_atop_filter.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cdc.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_intf.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/binary_to_gray.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/bscan_tap.sv
@@ -148,8 +141,6 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_alu_ctl.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_div_ctl.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/fifo_v2.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/gray_to_binary.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_aln_ctl.sv
@@ -169,13 +160,10 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_lsc_ctl.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_stbuf.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_trigger.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/mem.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/mem_lib.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/pic/pic_ctrl.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_register.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper_dmi.sv
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v
@@ -187,6 +175,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/clk_gen_nexys.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/BootROM/dpram64.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/spi/fifo4.v
+  c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_core.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_top.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/matmul/matmul_top.v
@@ -219,6 +208,19 @@ read_verilog -library xil_defaultlib {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/BootROM/wb_mem_wrapper.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v
 }
+add_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.srcs/sources_1/bd/interconnect_3S3M/interconnect_3S3M.bd
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_xbar_0/interconnect_3S3M_xbar_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s00_data_fifo_0/interconnect_3S3M_s00_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s00_data_fifo_0/interconnect_3S3M_s00_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s00_data_fifo_0/interconnect_3S3M_s00_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s01_data_fifo_0/interconnect_3S3M_s01_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s01_data_fifo_0/interconnect_3S3M_s01_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s01_data_fifo_0/interconnect_3S3M_s01_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s02_data_fifo_0/interconnect_3S3M_s02_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s02_data_fifo_0/interconnect_3S3M_s02_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s02_data_fifo_0/interconnect_3S3M_s02_data_fifo_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/interconnect_3S3M_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -234,7 +236,11 @@ set_property used_in_implementation false [get_files C:/Users/Rui/Rui/MSc_Disser
 read_xdc C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc
 set_property used_in_implementation false [get_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.srcs/utils_1/imports/synth_1/rvfpganexys.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Oct  9 15:30:49 2023
-# Process ID: 37088
+# Start of session at: Tue Oct 10 16:35:59 2023
+# Process ID: 2464
 # Current directory: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1
 # Command line: vivado.exe -log rvfpganexys.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rvfpganexys.tcl
 # Log file: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/rvfpganexys.vds
@@ -11,6 +11,12 @@
 # Running On: DESKTOP-8UFOBMP, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 16869 MB
 #-----------------------------------------------------------
 source rvfpganexys.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.srcs/utils_1/imports/synth_1/rvfpganexys.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.srcs/utils_1/imports/synth_1/rvfpganexys.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top rvfpganexys -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -18,7 +24,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 35296
+INFO: [Synth 8-7075] Helper process launched with PID 8492
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 WARNING: [Synth 8-6901] identifier 'Enables_Reg' is used before its declaration [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:220]
 WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:223]
@@ -34,9 +40,15 @@ WARNING: [Synth 8-11065] parameter 'WBR2' becomes localparam in 'axi2wb' with fo
 WARNING: [Synth 8-11065] parameter 'WBRACK2' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:91]
 WARNING: [Synth 8-11065] parameter 'BAXI' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:92]
 WARNING: [Synth 8-11065] parameter 'RRAXI' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:93]
+CRITICAL WARNING: [Synth 8-9339] data object 'clk_i' is already declared [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:366]
+INFO: [Synth 8-6826] previous declaration of 'clk_i' is from here [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:189]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'clk_i' is ignored [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:366]
+CRITICAL WARNING: [Synth 8-9339] data object 'rst_ni' is already declared [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:502]
+INFO: [Synth 8-6826] previous declaration of 'rst_ni' is from here [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:190]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'rst_ni' is ignored [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:502]
 WARNING: [Synth 8-11065] parameter 'slave_sel_bits' becomes localparam in 'wb_mux' with formal parameter declaration list [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v:87]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1859.617 ; gain = 409.062
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1882.844 ; gain = 411.172
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'rvfpganexys' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.sv:25]
 INFO: [Synth 8-6157] synthesizing module 'clk_gen_nexys' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/clk_gen_nexys.v:24]
@@ -418,162 +430,33 @@ INFO: [Synth 8-6155] done synthesizing module 'bscan_tap' (0#1) [C:/Users/Rui/Ru
 INFO: [Synth 8-6157] synthesizing module 'swervolf_core' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/swervolf_core.v:22]
 	Parameter bootrom_file bound to: boot_main.mem - type: string 
 	Parameter clk_freq_hz bound to: 50000000 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_intercon' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'axi_xbar' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv:15]
-	Parameter Cfg[NoSlvPorts] bound to: 32'b00000000000000000000000000000011 
-	Parameter Cfg[NoMstPorts] bound to: 32'b00000000000000000000000000000010 
-	Parameter Cfg[MaxMstTrans] bound to: 32'b00000000000000000000000000001010 
-	Parameter Cfg[MaxSlvTrans] bound to: 32'b00000000000000000000000000000110 
-	Parameter Cfg[FallThrough] bound to: 1'b0 
-	Parameter Cfg[LatencyMode] bound to: 10'b1001010010 
-	Parameter Cfg[AxiIdWidthSlvPorts] bound to: 32'b00000000000000000000000000000100 
-	Parameter Cfg[AxiIdUsedSlvPorts] bound to: 32'b00000000000000000000000000000100 
-	Parameter Cfg[AxiAddrWidth] bound to: 32'b00000000000000000000000000100000 
-	Parameter Cfg[AxiDataWidth] bound to: 32'b00000000000000000000000001000000 
-	Parameter Cfg[NoAddrRules] bound to: 32'b00000000000000000000000000000010 
-	Parameter ATOPs bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'addr_decode' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv:30]
-	Parameter NoIndices bound to: 32'b00000000000000000000000000000010 
-	Parameter NoRules bound to: 32'b00000000000000000000000000000010 
-INFO: [Synth 8-6155] done synthesizing module 'addr_decode' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv:30]
-INFO: [Synth 8-6157] synthesizing module 'axi_demux' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:17]
-	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100 
-	Parameter NoMstPorts bound to: 32'b00000000000000000000000000000011 
-	Parameter MaxTrans bound to: 32'b00000000000000000000000000001010 
-	Parameter AxiLookBits bound to: 32'b00000000000000000000000000000100 
-	Parameter FallThrough bound to: 1'b0 
-	Parameter SpillAw bound to: 1'b1 
-	Parameter SpillW bound to: 1'b0 
-	Parameter SpillB bound to: 1'b0 
-	Parameter SpillAr bound to: 1'b1 
-	Parameter SpillR bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized2' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized2' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'axi_demux_id_counters' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:538]
-	Parameter AxiIdBits bound to: 32'b00000000000000000000000000000100 
-	Parameter CounterWidth bound to: 32'b00000000000000000000000000000100 
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-6157] synthesizing module 'delta_counter' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
-	Parameter WIDTH bound to: 32'b00000000000000000000000000000100 
-	Parameter STICKY_OVERFLOW bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'delta_counter' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
-INFO: [Synth 8-6155] done synthesizing module 'axi_demux_id_counters' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:538]
-INFO: [Synth 8-6157] synthesizing module 'fifo_v3' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-	Parameter FALL_THROUGH bound to: 1'b0 
-	Parameter DEPTH bound to: 32'b00000000000000000000000000001010 
-INFO: [Synth 8-6155] done synthesizing module 'fifo_v3' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized3' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized3' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized4' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized4' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-	Parameter NumIn bound to: 32'b00000000000000000000000000000011 
-	Parameter AxiVldRdy bound to: 1'b1 
-	Parameter LockIn bound to: 1'b1 
-INFO: [Synth 8-6157] synthesizing module 'lzc' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv:25]
-	Parameter WIDTH bound to: 32'b00000000000000000000000000000011 
-	Parameter MODE bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'lzc' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized5' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized5' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized6' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized6' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-	Parameter NumIn bound to: 32'b00000000000000000000000000000011 
-	Parameter AxiVldRdy bound to: 1'b1 
-	Parameter LockIn bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-INFO: [Synth 8-6155] done synthesizing module 'axi_demux' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'axi_err_slv' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv:16]
-	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100 
-	Parameter Resp bound to: 2'b11 
-	Parameter ATOPs bound to: 1'b0 
-	Parameter MaxTrans bound to: 32'b00000000000000000000000000000100 
-INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-	Parameter FALL_THROUGH bound to: 1'b1 
-	Parameter DEPTH bound to: 32'b00000000000000000000000000000100 
-INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized1' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-	Parameter FALL_THROUGH bound to: 1'b0 
-	Parameter DEPTH bound to: 32'b00000000000000000000000000000010 
-INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized1' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-	Parameter FALL_THROUGH bound to: 1'b0 
-	Parameter DEPTH bound to: 32'b00000000000000000000000000000100 
-INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:14]
-	Parameter WIDTH bound to: 32'b00000000000000000000000000001000 
-INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
-	Parameter WIDTH bound to: 32'b00000000000000000000000000001000 
-	Parameter STICKY_OVERFLOW bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
-INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:14]
-INFO: [Synth 8-6155] done synthesizing module 'axi_err_slv' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'axi_mux' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv:25]
-	Parameter SlvAxiIDWidth bound to: 32'b00000000000000000000000000000100 
-	Parameter NoSlvPorts bound to: 32'b00000000000000000000000000000011 
-	Parameter MaxWTrans bound to: 32'b00000000000000000000000000000110 
-	Parameter FallThrough bound to: 1'b0 
-	Parameter SpillAw bound to: 1'b1 
-	Parameter SpillW bound to: 1'b0 
-	Parameter SpillB bound to: 1'b0 
-	Parameter SpillAr bound to: 1'b1 
-	Parameter SpillR bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'axi_id_prepend' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv:16]
-	Parameter NoBus bound to: 1 - type: integer 
-	Parameter AxiIdWidthSlvPort bound to: 32'b00000000000000000000000000000100 
-	Parameter AxiIdWidthMstPort bound to: 32'b00000000000000000000000000000110 
-INFO: [Synth 8-6155] done synthesizing module 'axi_id_prepend' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-	Parameter NumIn bound to: 32'b00000000000000000000000000000011 
-	Parameter AxiVldRdy bound to: 1'b1 
-	Parameter LockIn bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-	Parameter FALL_THROUGH bound to: 1'b0 
-	Parameter DEPTH bound to: 32'b00000000000000000000000000000110 
-INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized7' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized7' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized8' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized8' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-	Parameter NumIn bound to: 32'b00000000000000000000000000000011 
-	Parameter AxiVldRdy bound to: 1'b1 
-	Parameter LockIn bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized2' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized9' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized9' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized10' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-	Parameter Bypass bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized10' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
-INFO: [Synth 8-6155] done synthesizing module 'axi_mux' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'axi_xbar' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv:15]
-INFO: [Synth 8-6155] done synthesizing module 'axi_intercon' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_3S3M_wrapper' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_3S3M' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:12]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_3S3M_axi_interconnect_0_0' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:909]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1MDSCRM' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:2259]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1MDSCRM' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:2259]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1GEVM5F' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:2545]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1GEVM5F' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:2545]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_TQ097G' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:2831]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_3S3M_s00_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_s00_data_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_3S3M_s00_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_s00_data_fifo_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 's00_data_fifo' of module 'interconnect_3S3M_s00_data_fifo_0' has 38 connections declared, but only 37 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:2986]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_TQ097G' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:2831]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1JOHY5' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:3026]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_3S3M_s01_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_s01_data_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_3S3M_s01_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_s01_data_fifo_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 's01_data_fifo' of module 'interconnect_3S3M_s01_data_fifo_0' has 80 connections declared, but only 78 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:3345]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1JOHY5' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:3026]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1EI85Y6' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:3426]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_3S3M_s02_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_s02_data_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_3S3M_s02_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_s02_data_fifo_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 's02_data_fifo' of module 'interconnect_3S3M_s02_data_fifo_0' has 80 connections declared, but only 78 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:3745]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1EI85Y6' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:3426]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_3S3M_xbar_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_3S3M_xbar_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/.Xil/Vivado-2464-DESKTOP-8UFOBMP/realtime/interconnect_3S3M_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_3S3M_axi_interconnect_0_0' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:909]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_3S3M' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/synth/interconnect_3S3M.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_3S3M_wrapper' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'wb_intercon' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v:1]
 INFO: [Synth 8-6157] synthesizing module 'wb_mux' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v:45]
 	Parameter num_slaves bound to: 7 - type: integer 
@@ -604,13 +487,13 @@ INFO: [Synth 8-6157] synthesizing module 'SevSegDisplays_Controller' [C:/Users/R
 INFO: [Synth 8-6157] synthesizing module 'SevenSegDecoder' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:370]
 INFO: [Synth 8-226] default block is never used [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:373]
 INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecoder' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:370]
-INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:14]
 	Parameter WIDTH bound to: 32'b00000000000000000000000000010100 
-INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized1' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'delta_counter' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
 	Parameter WIDTH bound to: 32'b00000000000000000000000000010100 
 	Parameter STICKY_OVERFLOW bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized1' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
-INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:14]
 INFO: [Synth 8-6157] synthesizing module 'SevSegMux' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:398]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter N_IN bound to: 8 - type: integer 
@@ -628,33 +511,69 @@ INFO: [Synth 8-6155] done synthesizing module 'fifo4' (0#1) [C:/Users/Rui/Rui/MS
 INFO: [Synth 8-6155] done synthesizing module 'simple_spi' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v:69]
 INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_top.v:137]
 INFO: [Synth 8-6157] synthesizing module 'uart_wb' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_wb.v:139]
-INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6155] done synthesizing module 'uart_wb' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_wb.v:139]
+INFO: [Synth 8-6157] synthesizing module 'uart_regs' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_regs.v:227]
 	Parameter SIM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v:150]
 	Parameter SIM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_tfifo' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v:140]
+INFO: [Synth 8-6157] synthesizing module 'raminfr' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/raminfr.v:83]
 	Parameter addr_width bound to: 4 - type: integer 
 	Parameter data_width bound to: 8 - type: integer 
 	Parameter depth bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'raminfr' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/raminfr.v:83]
 INFO: [Synth 8-6155] done synthesizing module 'uart_tfifo' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v:140]
 INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v:150]
-INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'uart_sync_flops' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v:67]
 	Parameter width bound to: 1 - type: integer 
 	Parameter init_value bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'uart_sync_flops' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v:67]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v:196]
+INFO: [Synth 8-6157] synthesizing module 'uart_rfifo' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v:146]
 	Parameter fifo_width bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rfifo' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v:196]
+INFO: [Synth 8-6155] done synthesizing module 'uart_regs' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_regs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/uart/uart_top.v:137]
+INFO: [Synth 8-6157] synthesizing module 'bidirec' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/swervolf_core.v:635]
+INFO: [Synth 8-6155] done synthesizing module 'bidirec' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/swervolf_core.v:635]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/matmul/matmul_top.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/matmul/matmul_top.v:115]
 WARNING: [Synth 8-7023] instance 'gpio_module' of module 'gpio_top' has 17 connections declared, but only 15 given [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/swervolf_core.v:338]
+INFO: [Synth 8-6157] synthesizing module 'ptc_top' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:67]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:313]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:314]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:317]
+INFO: [Synth 8-6155] done synthesizing module 'ptc_top' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:67]
+INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_dmi' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper_dmi.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'swerv' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rvoclkhdr' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:184]
+INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:184]
+INFO: [Synth 8-6157] synthesizing module 'dbg' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
 	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
 	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
 	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
 	Parameter WIDTH bound to: 3 - type: integer 
 	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized1' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized1' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
 	Parameter WIDTH bound to: 32 - type: integer 
 	Parameter WIDTH bound to: 32 - type: integer 
 	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized2' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized2' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:203]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter WIDTH bound to: 4 - type: integer 
 	Parameter WIDTH bound to: 4 - type: integer 
 	Parameter WIDTH bound to: 1 - type: integer 
@@ -877,19 +796,7 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip04_
 WARNING: [Synth 8-3936] Found unconnected internal register 'a7ddrphy_bitslip152_reg' and it is trimmed from '8' to '4' bits. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_core.v:4241]
 WARNING: [Synth 8-6014] Unused sequential element sdram_dfi_p1_cs_n_reg was removed.  [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_core.v:4323]
 WARNING: [Synth 8-6014] Unused sequential element memadr_2_reg was removed.  [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_core.v:18937]
-WARNING: [Synth 8-3848] Net masters_req[2][aw][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[2][w][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[2][ar][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[1][aw][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[1][w][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[1][ar][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[0][aw][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[0][w][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net masters_req[0][ar][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:239]
-WARNING: [Synth 8-3848] Net slaves_resp[1][b][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:242]
-WARNING: [Synth 8-3848] Net slaves_resp[1][r][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:242]
-WARNING: [Synth 8-3848] Net slaves_resp[0][b][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:242]
-WARNING: [Synth 8-3848] Net slaves_resp[0][r][user] in module/entity axi_intercon does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:242]
+WARNING: [Synth 8-3848] Net o_ram_bready in module/entity interconnect_3S3M_wrapper does not have driver. [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/hdl/interconnect_3S3M_wrapper.v:358]
 WARNING: [Synth 8-6014] Unused sequential element aw_req_reg was removed.  [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:130]
 WARNING: [Synth 8-6014] Unused sequential element w_req_reg was removed.  [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:131]
 WARNING: [Synth 8-6014] Unused sequential element ar_req_reg was removed.  [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:132]
@@ -1017,24 +924,32 @@ WARNING: [Synth 8-7129] Port dma_axi_arlen[0] in module dma_ctrl is either uncon
 WARNING: [Synth 8-7129] Port dma_axi_arburst[1] in module dma_ctrl is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2408.395 ; gain = 957.840
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 2411.867 ; gain = 940.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2408.395 ; gain = 957.840
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 2411.867 ; gain = 940.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2408.395 ; gain = 957.840
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 2411.867 ; gain = 940.195
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2408.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.973 . Memory (MB): peak = 2411.867 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_xbar_0/interconnect_3S3M_xbar_0/interconnect_3S3M_xbar_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_xbar_0/interconnect_3S3M_xbar_0/interconnect_3S3M_xbar_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s00_data_fifo_0/interconnect_3S3M_s00_data_fifo_0/interconnect_3S3M_s00_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s00_data_fifo_0/interconnect_3S3M_s00_data_fifo_0/interconnect_3S3M_s00_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s01_data_fifo_0/interconnect_3S3M_s01_data_fifo_0/interconnect_3S3M_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s01_couplers/s01_data_fifo'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s01_data_fifo_0/interconnect_3S3M_s01_data_fifo_0/interconnect_3S3M_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s01_couplers/s01_data_fifo'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s02_data_fifo_0/interconnect_3S3M_s02_data_fifo_0/interconnect_3S3M_s02_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s02_couplers/s02_data_fifo'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.gen/sources_1/bd/interconnect_3S3M/ip/interconnect_3S3M_s02_data_fifo_0/interconnect_3S3M_s02_data_fifo_0/interconnect_3S3M_s02_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s02_couplers/s02_data_fifo'
 Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc]
 Finished Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpganexys_propImpl.xdc].
@@ -1043,10 +958,12 @@ Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/
 Finished Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpganexys_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpganexys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/dont_touch.xdc]
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2587.523 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2575.699 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 28 instances were transformed.
   FD => FDRE: 8 instances
@@ -1055,23 +972,143 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
   PLLE2_BASE => PLLE2_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 2587.523 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.183 . Memory (MB): peak = 2575.699 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/xbar' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s00_couplers/s00_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s01_couplers/s01_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s02_couplers/s02_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 2587.523 ; gain = 1136.969
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 2575.699 ; gain = 1104.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 2587.523 ; gain = 1136.969
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 2575.699 ; gain = 1104.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s01_couplers/s01_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0/s02_couplers/s02_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/interconnect_3S3M_wrapper/interconnect_3S3M_i/axi_interconnect_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 2587.523 ; gain = 1136.969
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 2575.699 ; gain = 1104.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch delta_counter
+got a mismatch counter
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:21 ; elapsed = 00:00:51 . Memory (MB): peak = 2575.699 ; gain = 1104.027
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Over 50% of partitions are impacted by design changes. Reverting to default synthesis
+WARNING: [Synth 8-6702] IncrSynth : Reverting to default synthesis
+litedram_top__GC0litedram_core__GC0---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:22 ; elapsed = 00:00:53 . Memory (MB): peak = 2575.699 ; gain = 1104.027
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'subfragments_refresher_state_reg' in module 'litedram_core'
 INFO: [Synth 8-802] inferred FSM for state register 'litedramcore_state_reg' in module 'litedram_core'
@@ -1156,12 +1193,22 @@ INFO: [Synth 8-3354] encoded FSM with state register 'tstate_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'sequential' in module 'uart_receiver'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:01 . Memory (MB): peak = 2587.523 ; gain = 1136.969
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:01:10 . Memory (MB): peak = 2588.695 ; gain = 1117.023
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'swervolf/swerv_eh1/swerv/dbg/axi_bready_ff' (rvdffs) to 'swervolf/swerv_eh1/swerv/dbg/axi_rready_ff'
 INFO: [Synth 8-223] decloning instance 'swervolf/swerv_eh1/swerv/exu/div_e1/dividend_c' (rvtwoscomp) to 'swervolf/swerv_eh1/swerv/exu/div_e1/q_ff_c'
 INFO: [Synth 8-223] decloning instance 'swervolf/swerv_eh1/swerv/lsu/bus_intf/bus_buffer/lsu_axi_bready_ff' (rvdff_fpga__parameterized0) to 'swervolf/swerv_eh1/swerv/lsu/bus_intf/bus_buffer/lsu_axi_rready_ff'
 RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Change is too high
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1179,21 +1226,19 @@ Detailed RTL Component Info :
 	   2 Input   19 Bit       Adders := 14    
 	   2 Input   13 Bit       Adders := 9     
 	   2 Input   10 Bit       Adders := 2     
-	   3 Input    9 Bit       Adders := 3     
 	   2 Input    8 Bit       Adders := 4     
 	   2 Input    6 Bit       Adders := 1     
 	   3 Input    6 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 26    
-	   3 Input    5 Bit       Adders := 96    
-	   2 Input    4 Bit       Adders := 62    
+	   2 Input    5 Bit       Adders := 23    
+	   2 Input    4 Bit       Adders := 54    
 	   8 Input    4 Bit       Adders := 5     
 	  14 Input    4 Bit       Adders := 1     
 	  11 Input    4 Bit       Adders := 1     
-	   2 Input    3 Bit       Adders := 68    
+	   2 Input    3 Bit       Adders := 55    
 	   4 Input    3 Bit       Adders := 1     
 	   3 Input    2 Bit       Adders := 5     
-	   2 Input    2 Bit       Adders := 47    
-	   2 Input    1 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 32    
+	   2 Input    1 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     39 Bit         XORs := 2     
 	   2 Input     32 Bit         XORs := 2     
@@ -1235,7 +1280,7 @@ Detailed RTL Component Info :
 	               37 Bit    Registers := 5     
 	               34 Bit    Registers := 18    
 	               33 Bit    Registers := 6     
-	               32 Bit    Registers := 226   
+	               32 Bit    Registers := 206   
 	               31 Bit    Registers := 34    
 	               28 Bit    Registers := 1     
 	               27 Bit    Registers := 2     
@@ -1252,15 +1297,15 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 7     
 	               11 Bit    Registers := 6     
 	               10 Bit    Registers := 20    
-	                9 Bit    Registers := 13    
-	                8 Bit    Registers := 84    
+	                9 Bit    Registers := 10    
+	                8 Bit    Registers := 52    
 	                7 Bit    Registers := 3     
-	                6 Bit    Registers := 36    
-	                5 Bit    Registers := 143   
-	                4 Bit    Registers := 220   
-	                3 Bit    Registers := 257   
-	                2 Bit    Registers := 438   
-	                1 Bit    Registers := 1032  
+	                6 Bit    Registers := 18    
+	                5 Bit    Registers := 44    
+	                4 Bit    Registers := 110   
+	                3 Bit    Registers := 197   
+	                2 Bit    Registers := 243   
+	                1 Bit    Registers := 945   
 +---Multipliers : 
 	              33x33  Multipliers := 1     
 +---RAMs : 
@@ -1286,8 +1331,8 @@ Detailed RTL Component Info :
 	   2 Input   74 Bit        Muxes := 15    
 	   2 Input   68 Bit        Muxes := 6     
 	   2 Input   67 Bit        Muxes := 5     
-	   2 Input   64 Bit        Muxes := 60    
-	   3 Input   64 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 54    
+	   3 Input   64 Bit        Muxes := 1     
 	   4 Input   64 Bit        Muxes := 2     
 	  10 Input   64 Bit        Muxes := 1     
 	   2 Input   63 Bit        Muxes := 2     
@@ -1297,7 +1342,7 @@ Detailed RTL Component Info :
 	   2 Input   37 Bit        Muxes := 5     
 	   2 Input   34 Bit        Muxes := 5     
 	   2 Input   33 Bit        Muxes := 7     
-	   2 Input   32 Bit        Muxes := 353   
+	   2 Input   32 Bit        Muxes := 335   
 	   5 Input   32 Bit        Muxes := 1     
 	   6 Input   32 Bit        Muxes := 8     
 	   4 Input   32 Bit        Muxes := 3     
@@ -1327,45 +1372,44 @@ Detailed RTL Component Info :
 	  11 Input   11 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 5     
 	   8 Input   10 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 20    
-	   2 Input    8 Bit        Muxes := 183   
-	   4 Input    8 Bit        Muxes := 6     
-	   3 Input    8 Bit        Muxes := 8     
+	   2 Input    9 Bit        Muxes := 11    
+	   2 Input    8 Bit        Muxes := 165   
+	   4 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 6     
 	  11 Input    8 Bit        Muxes := 2     
 	   9 Input    8 Bit        Muxes := 1     
 	   2 Input    7 Bit        Muxes := 7     
 	   6 Input    7 Bit        Muxes := 2     
-	   2 Input    6 Bit        Muxes := 42    
-	   2 Input    5 Bit        Muxes := 332   
+	   2 Input    6 Bit        Muxes := 21    
+	   2 Input    5 Bit        Muxes := 41    
 	   4 Input    5 Bit        Muxes := 1     
 	   6 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 242   
+	   2 Input    4 Bit        Muxes := 150   
 	   6 Input    4 Bit        Muxes := 2     
 	   3 Input    4 Bit        Muxes := 2     
 	  11 Input    4 Bit        Muxes := 5     
-	   4 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 2     
 	   8 Input    4 Bit        Muxes := 1     
 	   3 Input    3 Bit        Muxes := 7     
 	   7 Input    3 Bit        Muxes := 29    
-	   2 Input    3 Bit        Muxes := 338   
+	   2 Input    3 Bit        Muxes := 209   
 	   6 Input    3 Bit        Muxes := 5     
 	   4 Input    3 Bit        Muxes := 4     
 	   5 Input    3 Bit        Muxes := 1     
 	  11 Input    3 Bit        Muxes := 2     
 	   8 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 622   
+	   2 Input    2 Bit        Muxes := 515   
 	   3 Input    2 Bit        Muxes := 17    
 	   4 Input    2 Bit        Muxes := 7     
 	  11 Input    2 Bit        Muxes := 2     
 	   8 Input    2 Bit        Muxes := 2     
 	  26 Input    2 Bit        Muxes := 1     
-	   6 Input    2 Bit        Muxes := 96    
-	   2 Input    1 Bit        Muxes := 2070  
+	   2 Input    1 Bit        Muxes := 1585  
 	   4 Input    1 Bit        Muxes := 42    
 	  11 Input    1 Bit        Muxes := 29    
-	   3 Input    1 Bit        Muxes := 38    
+	   3 Input    1 Bit        Muxes := 28    
 	   7 Input    1 Bit        Muxes := 104   
-	   6 Input    1 Bit        Muxes := 245   
+	   6 Input    1 Bit        Muxes := 53    
 	   8 Input    1 Bit        Muxes := 31    
 	  10 Input    1 Bit        Muxes := 10    
 	  13 Input    1 Bit        Muxes := 1     
@@ -1384,19 +1428,126 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_4_reg' and it is trimmed from '10' to '8' bits. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_core.v:16750]
-WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_2_reg' and it is trimmed from '10' to '8' bits. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_core.v:16733]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_4_reg' and it is trimmed from '10' to '8' bits. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:16750]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_2_reg' and it is trimmed from '10' to '8' bits. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:16733]
 INFO: [Synth 8-5546] ROM "sdram_cmd_payload_a1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sdram_cmd_payload_a1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "sdram_choose_req_want_writes" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "sdram_choose_req_want_reads" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM rf_ram/memory_reg to conserve power
-WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_18_reg' and it is trimmed from '74' to '66' bits. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/litedram_core.v:18819]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_18_reg' and it is trimmed from '74' to '66' bits. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:18819]
 RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
 INFO: [Synth 8-7067] Removed DRAM instance i_285/storage_12_reg_0_15_6_7 from module litedram_core__GC0 due to constant propagation
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (serv_rf_top/\cpu/csr/timer_irq_r_reg )
+INFO: [Synth 8-3886] merging instance 'serv_rf_top/cpu/decode/o_rf_rs2_addr_reg[0]' (FDE) to 'serv_rf_top/cpu/decode/op20_reg'
+INFO: [Synth 8-3886] merging instance 'serv_rf_top/cpu/decode/o_rf_rs2_addr_reg[1]' (FDE) to 'serv_rf_top/cpu/decode/op21_reg'
+INFO: [Synth 8-3886] merging instance 'serv_rf_top/cpu/decode/o_rf_rs2_addr_reg[2]' (FDE) to 'serv_rf_top/cpu/decode/op22_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (serv_rf_top/\cpu/state/irq_sync_reg )
+INFO: [Synth 8-3886] merging instance 'litedramcore_interface1_bank_bus_dat_r_reg[7]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'litedramcore_interface1_bank_bus_dat_r_reg[1]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'litedramcore_interface1_bank_bus_dat_r_reg[3]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sdram_postponer_count_reg)
+INFO: [Synth 8-3886] merging instance 'litedramcore_interface1_bank_bus_dat_r_reg[5]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'litedramcore_interface1_bank_bus_dat_r_reg[4]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'litedramcore_interface1_bank_bus_dat_r_reg[2]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'litedramcore_interface1_bank_bus_dat_r_reg[6]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_dqspattern_o1_reg[7]' (FD) to 'a7ddrphy_dqspattern_o1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_dqspattern_o1_reg[6]' (FD) to 'a7ddrphy_dqspattern_o1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_dqspattern_o1_reg[5]' (FD) to 'a7ddrphy_dqspattern_o1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_dqspattern_o1_reg[4]' (FD) to 'a7ddrphy_dqspattern_o1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_dqspattern_o1_reg[3]' (FD) to 'a7ddrphy_dqspattern_o1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_dqspattern_o1_reg[1]' (FD) to 'sdram_cmd_payload_ba_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_ba_reg[0]' (FD) to 'sdram_cmd_payload_ba_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_ba_reg[1]' (FD) to 'sdram_cmd_payload_ba_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sdram_cmd_payload_ba_reg[2] )
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[0]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[1]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[2]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[3]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[4]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[5]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[6]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[7]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[8]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[9]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[11]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sdram_cmd_payload_a_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sdram_sequencer_count_reg)
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[7]' (FD) to 'a7ddrphy_bitslip15_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[6]' (FD) to 'a7ddrphy_bitslip15_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[5]' (FD) to 'a7ddrphy_bitslip15_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip15_r0_reg[4]' (FD) to 'a7ddrphy_bitslip0_r2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[7]' (FD) to 'a7ddrphy_bitslip14_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[6]' (FD) to 'a7ddrphy_bitslip14_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[5]' (FD) to 'a7ddrphy_bitslip14_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip14_r0_reg[4]' (FD) to 'a7ddrphy_bitslip0_r2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[7]' (FD) to 'a7ddrphy_bitslip13_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[6]' (FD) to 'a7ddrphy_bitslip13_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[5]' (FD) to 'a7ddrphy_bitslip13_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip13_r0_reg[4]' (FD) to 'a7ddrphy_bitslip0_r2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[7]' (FD) to 'a7ddrphy_bitslip12_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[6]' (FD) to 'a7ddrphy_bitslip12_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[5]' (FD) to 'a7ddrphy_bitslip12_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip12_r0_reg[4]' (FD) to 'a7ddrphy_bitslip0_r2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[7]' (FD) to 'a7ddrphy_bitslip11_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[6]' (FD) to 'a7ddrphy_bitslip11_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[5]' (FD) to 'a7ddrphy_bitslip11_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip11_r0_reg[4]' (FD) to 'a7ddrphy_bitslip0_r2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[7]' (FD) to 'a7ddrphy_bitslip10_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[6]' (FD) to 'a7ddrphy_bitslip10_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[5]' (FD) to 'a7ddrphy_bitslip10_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip10_r0_reg[4]' (FD) to 'a7ddrphy_bitslip0_r2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[7]' (FD) to 'a7ddrphy_bitslip9_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[6]' (FD) to 'a7ddrphy_bitslip9_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[5]' (FD) to 'a7ddrphy_bitslip9_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip9_r0_reg[4]' (FD) to 'a7ddrphy_bitslip0_r2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip8_r0_reg[15]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip8_r0_reg[14]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip8_r0_reg[13]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip8_r0_reg[12]' (FDR) to 'a7ddrphy_bitslip0_r2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip8_r0_reg[7]' (FD) to 'a7ddrphy_bitslip8_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip8_r0_reg[6]' (FD) to 'a7ddrphy_bitslip8_r0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a7ddrphy_bitslip8_r0_reg[5]' (FD) to 'a7ddrphy_bitslip8_r0_reg[4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a7ddrphy_bitslip1_r1_reg[12] )
 INFO: [Synth 8-7067] Removed DRAM instance i_285/storage_12_reg_0_15_6_7 from module litedram_core__GC0 due to constant propagation
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (serv_rf_top/\cpu/state/o_pending_irq_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sdram_cmd_payload_ba_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sdram_cmd_payload_ba_reg[2] )
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'decode/freeze_before_ff/dout_reg[0]' (FDC) to 'decode/freezeff/dout_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlu/\mip_ff/dout_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (arf/\bankid_ff/dffs/dout_reg[0] )
 WARNING: [Synth 8-3917] design lsu__GB1 has port lsu_freeze_c2_dc2_clk driven by constant 0
 WARNING: [Synth 8-3917] design lsu__GB1 has port lsu_freeze_c2_dc3_clk driven by constant 0
 WARNING: [Synth 8-3917] design lsu__GB1 has port lsu_freeze_c1_dc2_clk driven by constant 0
@@ -1432,8 +1583,9 @@ INFO: [Synth 8-3886] merging instance 'pic_ctrl_inst/claimid_ff/dout_reg[6]' (FD
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pic_ctrl_inst/claimid_ff/dout_reg[7] )
 INFO: [Synth 8-3886] merging instance 'ifu/mem_ctl/ifu_pmu_sigs_ff/dout_reg[4]' (FDC) to 'ifu/mem_ctl/act_miss_ff/dout_reg[0]'
 INFO: [Synth 8-3886] merging instance 'ifu/mem_ctl/dma_ok_prev_ff/dout_reg[0]' (FDC) to 'ifu/mem_ctl/sbiccm_err_ff/dout_reg[0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ifu/mem_ctl/\sbiccm_err_ff/dout_reg[0] )
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv:108]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_tlu_ctl.sv:108]
 DSP Report: Generating DSP prod_e20, operation Mode is: A*B.
 DSP Report: operator prod_e20 is absorbed into DSP prod_e20.
 DSP Report: operator prod_e20 is absorbed into DSP prod_e20.
@@ -1454,204 +1606,45 @@ INFO: [Synth 8-5544] ROM "regs/receiver/toc_value" won't be mapped to Block RAM 
 INFO: [Synth 8-5544] ROM "regs/receiver/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "regs/trigger_level" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clkcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'gpio_module/sync_clk_reg' (FDC) to 'gpio_module/wb_err_o_reg'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_w_fifo/read_pointer_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_w_fifo/read_pointer_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/write_pointer_q_reg[0] )
-INFO: [Synth 8-3886] merging instance 'uart16550_0/regs/delayed_modem_signals_reg[0]' (FDC) to 'uart16550_0/regs/delayed_modem_signals_reg[3]'
-INFO: [Synth 8-3886] merging instance 'uart16550_0/regs/delayed_modem_signals_reg[1]' (FDC) to 'uart16550_0/regs/delayed_modem_signals_reg[3]'
-INFO: [Synth 8-3886] merging instance 'uart16550_0/regs/delayed_modem_signals_reg[2]' (FDC) to 'uart16550_0/regs/delayed_modem_signals_reg[3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[1][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[0][3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/mem_q_reg[0][3] )
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[1][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[0][2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/mem_q_reg[0][2] )
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[1][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[0][1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/mem_q_reg[0][1] )
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[1][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_err_slv/i_b_fifo/mem_q_reg[0][0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/read_pointer_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/mem_q_reg[0][0] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (spi2/\spcr_reg[4] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (spi/\spcr_reg[4] )
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][atop][5]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][qos][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][qos][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][qos][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][qos][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][region][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][region][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][region][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][region][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][prot][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][prot][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][prot][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][cache][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][cache][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][cache][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][cache][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][lock]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][burst][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][burst][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][size][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][size][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][size][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][4]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][5]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][6]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][len][7]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][4]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][5]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][6]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][7]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][8]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][9]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][10]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][11]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][12]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][13]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][14]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][15]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][16]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][17]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][18]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][19]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][20]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][21]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][22]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][23]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][24]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][25]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][26]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][27]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][28]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][29]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][30]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][addr][31]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][atop][5]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[1].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][atop][5] )
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][0]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][id][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_select][1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.a_full_q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_select][0] )
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_select][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[0].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_select][1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/wb_err_o_reg)
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.a_data_q_reg[ar_chan][id][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.a_data_q_reg[ar_chan][id][2]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.b_data_q_reg[ar_chan][id][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.b_data_q_reg[ar_chan][id][1]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.a_data_q_reg[ar_chan][id][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.a_data_q_reg[ar_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.b_data_q_reg[ar_chan][id][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_ar_spill_reg/gen_spill_reg.b_data_q_reg[ar_chan][id][1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_ar_spill_reg/gen_spill_reg.a_data_q_reg[ar_chan][id][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_ar_spill_reg/gen_spill_reg.a_data_q_reg[ar_chan][id][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/status_cnt_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_b_fifo/status_cnt_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_b_mux/gen_arbiter.gen_int_rr.rr_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_b_mux/gen_arbiter.gen_int_rr.rr_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/read_pointer_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/read_pointer_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/read_pointer_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/read_pointer_q_reg[3] )
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][id][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][1]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][2]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][id][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][id][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.a_data_q_reg[aw_chan][id][3] )
-INFO: [Synth 8-3886] merging instance 'gpio_module/wb_err_o_reg' (FDC) to 'gpio_module/clk_s_reg'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/clk_s_reg)
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[3][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[2][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[2][2]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[1][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[1][2]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[0][3]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[3][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[2][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[2][1]'
-INFO: [Synth 8-3886] merging instance 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[1][2]' (FDCE) to 'axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_err_slv/i_w_fifo/mem_q_reg[1][1]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[1].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.b_full_q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_ar_id_counter/gen_counters[4].mst_select_q_reg[4][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_ar_id_counter/gen_counters[4].mst_select_q_reg[4][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_ar_spill_reg/gen_spill_reg.b_data_q_reg[ar_chan][id][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_ar_spill_reg/gen_spill_reg.b_data_q_reg[ar_chan][id][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[4].mst_select_q_reg[4][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[4].mst_select_q_reg[4][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_aw_spill_reg/gen_spill_reg.b_data_q_reg[aw_chan][atop][5] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/clk_r_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_w_fifo/mem_q_reg[3][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_w_fifo/mem_q_reg[2][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_w_fifo/mem_q_reg[1][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_w_fifo/mem_q_reg[0][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_w_fifo/status_cnt_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_w_fifo/status_cnt_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_w_fifo/status_cnt_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_r_fifo/mem_q_reg[3][id][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_r_fifo/mem_q_reg[2][id][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_r_fifo/mem_q_reg[1][id][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_err_slv /\i_r_fifo/mem_q_reg[0][id][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_r_fifo/mem_q_reg[3][id][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_r_fifo/mem_q_reg[2][id][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_r_fifo/mem_q_reg[1][id][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[2].i_axi_err_slv /\i_r_fifo/mem_q_reg[0][id][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.lock_aw_valid_q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[0].mst_select_q_reg[0][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/p_0_out_inferred /\gen_demux.i_w_fifo/status_cnt_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/p_0_out_inferred /\gen_demux.i_w_fifo/status_cnt_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/p_0_out_inferred /\gen_demux.i_w_fifo/status_cnt_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/p_0_out_inferred /\gen_demux.i_w_fifo/status_cnt_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_w_fifo/p_0_out_inferred /\gen_demux.i_w_fifo/status_cnt_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[0].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[0].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[0].i_in_flight_cnt/counter_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[0].i_in_flight_cnt/counter_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[0].i_in_flight_cnt/counter_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[1].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[1].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[1].i_in_flight_cnt/counter_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[1].i_in_flight_cnt/counter_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[1].i_in_flight_cnt/counter_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[2].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[2].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[2].i_in_flight_cnt/counter_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[2].i_in_flight_cnt/counter_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[2].i_in_flight_cnt/counter_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[3].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[3].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[3].i_in_flight_cnt/counter_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[3].i_in_flight_cnt/counter_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[3].i_in_flight_cnt/counter_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[4].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[4].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[4].i_in_flight_cnt/counter_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[4].i_in_flight_cnt/counter_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[4].i_in_flight_cnt/counter_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[5].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[5].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[5].i_in_flight_cnt/counter_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[5].i_in_flight_cnt/counter_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[5].i_in_flight_cnt/counter_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[6].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[6].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[6].i_in_flight_cnt/counter_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[6].i_in_flight_cnt/counter_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[6].i_in_flight_cnt/counter_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[7].i_in_flight_cnt/counter_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_intercon/axi_xbar /\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_id_counter/gen_counters[7].i_in_flight_cnt/counter_q_reg[0] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:03:00 . Memory (MB): peak = 2587.523 ; gain = 1136.969
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:02:01 . Memory (MB): peak = 2617.340 ; gain = 1145.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1754,13 +1747,13 @@ Start Applying XDC Timing Constraints
 WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc:8]
 WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 206 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc:206]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:03:09 . Memory (MB): peak = 2587.523 ; gain = 1136.969
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:02:10 . Memory (MB): peak = 2617.340 ; gain = 1145.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:03:54 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:02:51 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1909,7 +1902,8 @@ INFO: [Synth 8-7052] The timing for the instance swervolf/swerv_eh1/mem/icm/ic_d
 INFO: [Synth 8-7052] The timing for the instance swervolf/swerv_eh1/mem/icm/ic_data_inst/WAYS[3].SUBBANKS[2].ic_bank_sb_way_data/ram_core_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance swervolf/swerv_eh1/mem/icm/ic_data_inst/WAYS[3].SUBBANKS[3].ic_bank_sb_way_data/ram_core_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance swervolf/swerv_eh1/mem/icm/ic_data_inst/WAYS[3].SUBBANKS[3].ic_bank_sb_way_data/ram_core_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-7052] The timing for the instance swervolfi_8/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolfi_8/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance ldci_1/ddr2/ldc/serv_rf_top/rf_ram/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance ldci_1/ddr2/ldc/storage_10_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance ldci_1/ddr2/ldc/storage_10_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
@@ -1924,22 +1918,20 @@ INFO: [Synth 8-7052] The timing for the instance ldci_1/ddr2/ldc/memdat_reg_4 (i
 INFO: [Synth 8-7052] The timing for the instance ldci_1/ddr2/ldc/memdat_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance ldci_1/ddr2/ldc/memdat_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance ldci_1/ddr2/ldc/memdat_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:36]
-INFO: [Synth 8-7052] The timing for the instance swervolfi_8/swervolf/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance swervolfi_8/swervolf/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:36]
 WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc:8]
 WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 206 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc:206]
 WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/rvfpganexys.xdc:8]
 WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 206 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/src/LiteDRAM/liteDRAM.xdc:206]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:04:16 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:03:13 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1978,37 +1970,37 @@ INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instan
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:59 ; elapsed = 00:04:23 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:03:21 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:59 ; elapsed = 00:04:24 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:03:21 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:02 ; elapsed = 00:04:30 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:03:28 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:02 ; elapsed = 00:04:31 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:03:29 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:03 ; elapsed = 00:04:32 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:03:31 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:03 ; elapsed = 00:04:33 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:03:31 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2042,63 +2034,71 @@ DSP Final Report (the ' indicates corresponding REG is set)
 
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |interconnect_3S3M_xbar_0          |         1|
+|2     |interconnect_3S3M_s00_data_fifo_0 |         1|
+|3     |interconnect_3S3M_s01_data_fifo_0 |         1|
+|4     |interconnect_3S3M_s02_data_fifo_0 |         1|
++------+----------------------------------+----------+
 
 Report Cell Usage: 
-+------+-----------+------+
-|      |Cell       |Count |
-+------+-----------+------+
-|1     |BSCANE2    |     3|
-|2     |BUFG       |    11|
-|3     |CARRY4     |   845|
-|4     |DSP48E1    |     4|
-|5     |IDELAYCTRL |     1|
-|6     |IDELAYE2   |    16|
-|7     |ISERDESE2  |    16|
-|8     |LUT1       |   488|
-|9     |LUT2       |  2237|
-|10    |LUT3       |  4873|
-|11    |LUT4       |  6188|
-|12    |LUT5       |  7681|
-|13    |LUT6       | 17501|
-|14    |MUXF7      |   461|
-|15    |MUXF8      |    34|
-|16    |OSERDESE2  |    44|
-|17    |PLLE2_ADV  |     1|
-|18    |PLLE2_BASE |     1|
-|19    |RAM32M     |    56|
-|20    |RAM32X1D   |    29|
-|21    |RAMB18E1   |    30|
-|25    |RAMB36E1   |    29|
-|37    |SRL16E     |     3|
-|38    |STARTUPE2  |     1|
-|39    |FD         |     8|
-|40    |FDCE       | 15771|
-|41    |FDPE       |    49|
-|42    |FDRE       |  3061|
-|43    |FDSE       |   215|
-|44    |IBUF       |     5|
-|45    |IOBUF      |    32|
-|46    |IOBUFDS    |     2|
-|47    |OBUF       |    61|
-|48    |OBUFDS     |     1|
-+------+-----------+------+
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |interconnect_3S3M_s00_data_fifo |     1|
+|2     |interconnect_3S3M_s01_data_fifo |     1|
+|3     |interconnect_3S3M_s02_data_fifo |     1|
+|4     |interconnect_3S3M_xbar          |     1|
+|5     |BSCANE2                         |     3|
+|6     |BUFG                            |    11|
+|7     |CARRY4                          |   787|
+|8     |DSP48E1                         |     4|
+|9     |IDELAYCTRL                      |     1|
+|10    |IDELAYE2                        |    16|
+|11    |ISERDESE2                       |    16|
+|12    |LUT1                            |   388|
+|13    |LUT2                            |  1917|
+|14    |LUT3                            |  4538|
+|15    |LUT4                            |  5828|
+|16    |LUT5                            |  7049|
+|17    |LUT6                            | 16978|
+|18    |MUXF7                           |   455|
+|19    |MUXF8                           |    34|
+|20    |OSERDESE2                       |    44|
+|21    |PLLE2_ADV                       |     1|
+|22    |PLLE2_BASE                      |     1|
+|23    |RAM32M                          |    56|
+|24    |RAM32X1D                        |    29|
+|25    |RAMB18E1                        |    30|
+|29    |RAMB36E1                        |    29|
+|41    |SRL16E                          |     3|
+|42    |STARTUPE2                       |     1|
+|43    |FD                              |     8|
+|44    |FDCE                            | 14549|
+|45    |FDPE                            |    49|
+|46    |FDRE                            |  3123|
+|47    |FDSE                            |   215|
+|48    |IBUF                            |     5|
+|49    |IOBUF                           |    32|
+|50    |IOBUFDS                         |     2|
+|51    |OBUF                            |    61|
+|52    |OBUFDS                          |     1|
++------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:03 ; elapsed = 00:04:33 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:03:31 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 232 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:04:20 . Memory (MB): peak = 2625.930 ; gain = 996.246
-Synthesis Optimization Complete : Time (s): cpu = 00:02:03 ; elapsed = 00:04:34 . Memory (MB): peak = 2625.930 ; gain = 1175.375
+Synthesis finished with 0 errors, 0 critical warnings and 234 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:03:18 . Memory (MB): peak = 2826.070 ; gain = 1190.566
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:03:33 . Memory (MB): peak = 2826.070 ; gain = 1354.398
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2625.930 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1566 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2826.070 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1502 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 3 inverter(s) to 34 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2632.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2837.461 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 129 instances were transformed.
   FD => FDRE: 8 instances
@@ -2109,12 +2109,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 56 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 29 instances
 
-Synth Design complete, checksum: b051233e
+Synth Design complete, checksum: afa914a9
 INFO: [Common 17-83] Releasing license: Synthesis
-605 Infos, 473 Warnings, 0 Critical Warnings and 0 Errors encountered.
+545 Infos, 470 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:12 ; elapsed = 00:04:51 . Memory (MB): peak = 2632.922 ; gain = 1596.836
+synth_design: Time (s): cpu = 00:01:35 ; elapsed = 00:03:49 . Memory (MB): peak = 2837.461 ; gain = 1755.980
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaTest/rvfpga_interconnect/rvfpga_interconnect.runs/synth_1/rvfpganexys.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2632.922 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2837.461 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct  9 15:35:58 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 10 16:40:11 2023...

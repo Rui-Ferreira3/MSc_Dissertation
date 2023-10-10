@@ -175,7 +175,7 @@ wire        ram_rlast;
 wire        ram_rvalid;
 wire        ram_rready;
 
-axi_intercon axi_intercon
+interconnect_3S3M_wrapper interconnect_3S3M_wrapper
    (.clk_i          (clk),
     .rst_ni         (rst_n),
     .i_ifu_arid     (ifu_arid),
