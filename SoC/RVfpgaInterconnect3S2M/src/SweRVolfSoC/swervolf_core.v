@@ -97,7 +97,7 @@ module swervolf_core
 
    wire [31:0] nmi_vec;
 
-`include "axi_intercon.vh"
+`include "axi_intercon3s2m.vh"
 
    assign o_ram_awid     = ram_awid;
    assign o_ram_awaddr   = ram_awaddr;

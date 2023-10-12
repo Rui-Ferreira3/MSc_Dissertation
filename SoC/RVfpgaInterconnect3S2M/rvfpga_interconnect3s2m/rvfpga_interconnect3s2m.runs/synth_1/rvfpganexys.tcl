@@ -97,8 +97,8 @@ read_verilog {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh
+  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/rvfpga_interconnect3s2m/rvfpga_interconnect3s2m.srcs/sources_1/axi_intercon3s2m.vh
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh
-  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Peripherals/uart/uart_defines.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh
@@ -176,7 +176,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/BootROM/dpram64.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Peripherals/spi/fifo4.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v
-  c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/rvfpga_interconnect3s2m/rvfpga_interconnect3s2m.gen/sources_1/bd/interconnect3s2m/hdl/interconnect3s2m_wrapper.v
+  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/rvfpga_interconnect3s2m/rvfpga_interconnect3s2m.gen/sources_1/bd/interconnect3s2m/hdl/interconnect3s2m_wrapper.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/LiteDRAM/litedram_core.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/LiteDRAM/litedram_top.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v
@@ -239,6 +239,8 @@ set_property used_in_implementation false [get_files C:/Users/Rui/Rui/MSc_Disser
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect3S2M/rvfpga_interconnect3s2m/rvfpga_interconnect3s2m.srcs/utils_1/imports/synth_1/rvfpganexys.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

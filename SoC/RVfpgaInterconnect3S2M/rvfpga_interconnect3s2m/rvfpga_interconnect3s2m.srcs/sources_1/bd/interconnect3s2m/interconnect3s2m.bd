@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x8DBC72E5CA6F0A26",
+      "boundary_crc": "0x26D1C51A4D98E9F9",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../rvfpga_interconnect3s2m.gen/sources_1/bd/interconnect3s2m",
       "name": "interconnect3s2m",
@@ -1662,7 +1662,7 @@
       }
     },
     "ports": {
-      "clk_i": {
+      "clk": {
         "type": "clk",
         "direction": "I",
         "parameters": {
@@ -1671,8 +1671,7 @@
             "value_src": "default"
           },
           "ASSOCIATED_RESET": {
-            "value": "rst_ni",
-            "value_src": "default"
+            "value": "rst"
           },
           "CLK_DOMAIN": {
             "value": "interconnect3s2m_ACLK_0",
@@ -1695,7 +1694,7 @@
           }
         }
       },
-      "rst_ni": {
+      "rst": {
         "type": "rst",
         "direction": "I",
         "parameters": {
@@ -2427,7 +2426,7 @@
     "nets": {
       "ACLK_0_1": {
         "ports": [
-          "clk_i",
+          "clk",
           "axi_interconnect_0/ACLK",
           "axi_interconnect_0/S00_ACLK",
           "axi_interconnect_0/M00_ACLK",
@@ -2438,7 +2437,7 @@
       },
       "ARESETN_0_1": {
         "ports": [
-          "rst_ni",
+          "rst",
           "axi_interconnect_0/ARESETN",
           "axi_interconnect_0/S00_ARESETN",
           "axi_interconnect_0/M00_ARESETN",

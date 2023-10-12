@@ -13,5 +13,6 @@ int main ( void )
         switches_value = switches_value >> 16; // shift into lower 16 bits
         WRITE_GPIO(GPIO_LEDs, switches_value); // display switch value on LEDs
     }
+    // while (1) ;
     return(0);
 }

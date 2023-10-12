@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Oct 10 17:31:38 2023
+| Date         : Thu Oct 12 16:38:57 2023
 | Host         : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
 | Design       : rvfpganexys
@@ -160,9 +160,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 | FDCE       | 14549 |        Flop & Latch |
 | LUT5       |  7049 |                 LUT |
 | LUT4       |  5828 |                 LUT |
-| LUT3       |  4538 |                 LUT |
+| LUT3       |  4540 |                 LUT |
 | FDRE       |  3131 |        Flop & Latch |
-| LUT2       |  1917 |                 LUT |
+| LUT2       |  1915 |                 LUT |
 | CARRY4     |   787 |          CarryLogic |
 | MUXF7      |   455 |               MuxFx |
 | RAMD32     |   394 |  Distributed Memory |

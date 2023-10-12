@@ -18,6 +18,6 @@ int main(void)
     while (1) {
         printfNexys("Hello RVfpga users! Iteration: %d\n", j);
         for (i=0; i < DELAY; i++) ; // delay between printf's
-            j++;
+        j++;
     }
 }

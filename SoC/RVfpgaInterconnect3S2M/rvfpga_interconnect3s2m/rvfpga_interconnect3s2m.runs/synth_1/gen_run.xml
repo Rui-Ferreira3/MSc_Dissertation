@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1696955178">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1697124773" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpganexys.dcp">
   <File Type="PA-TCL" Name="rvfpganexys.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="rvfpganexys_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="rvfpganexys_reports.tcl"/>
@@ -215,14 +215,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh">
+    <File Path="$PSRCDIR/sources_1/axi_intercon3s2m.vh">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
         <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh">
+    <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -710,6 +710,14 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cf_math_pkg.sv">
@@ -1615,18 +1623,21 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/rvfpganexys.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="interconnect3s2m_s02_data_fifo_0"/>
   <BlockFileSet Type="BlockSrcs" Name="interconnect3s2m_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="interconnect3s2m_s00_data_fifo_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="interconnect3s2m_s01_data_fifo_0"/>
 </GenRun>
