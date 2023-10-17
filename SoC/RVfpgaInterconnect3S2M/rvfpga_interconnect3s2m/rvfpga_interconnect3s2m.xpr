@@ -97,16 +97,6 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/interconnect3s2m/interconnect3s2m.bd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-        <CompFileExtendedInfo CompFileName="interconnect3s2m.bd" FileRelPathName="ip/interconnect3s2m_xbar_0/interconnect3s2m_xbar_0.xci">
-          <Proxy FileSetName="interconnect3s2m_xbar_0"/>
-        </CompFileExtendedInfo>
-      </File>
       <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -143,13 +133,6 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../src/SweRVolfSoC/Peripherals/gpio/gpio_top.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PGENDIR/sources_1/bd/interconnect3s2m/hdl/interconnect3s2m_wrapper.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -296,14 +279,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/axi_intercon3s2m.vh">
+      <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh">
+      <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -793,7 +776,26 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh">
+      <File Path="$PSRCDIR/sources_1/bd/interconnect3s2m/interconnect3s2m.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="interconnect3s2m.bd" FileRelPathName="ip/interconnect3s2m_xbar_0/interconnect3s2m_xbar_0.xci">
+          <Proxy FileSetName="interconnect3s2m_xbar_0"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PGENDIR/sources_1/bd/interconnect3s2m/hdl/interconnect3s2m_wrapper.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/axi_intercon3s2m.vh">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
