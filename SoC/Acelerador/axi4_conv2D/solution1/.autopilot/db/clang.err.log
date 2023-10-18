@@ -1,4 +1,0 @@
-axi4_conv2D/axi4_conv2D.cpp:11:34: warning: Unsupported interface port data type in '#pragma HLS interface m_axi' [-Wignored-hls-pragmas]
-#pragma HLS INTERFACE m_axi port=bias offset=slave
-                                 ^
-1 warning generated.

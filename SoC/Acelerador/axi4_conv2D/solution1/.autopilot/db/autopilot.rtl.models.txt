@@ -1,6 +1,0 @@
-axi4_conv2D_mul_8ns_8s_16_1_1
-axi4_conv2D_flow_control_loop_pipe_sequential_init
-axi4_conv2D_gmem_m_axi
-axi4_conv2D_control_s_axi
-axi4_conv2D_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2
-axi4_conv2D
