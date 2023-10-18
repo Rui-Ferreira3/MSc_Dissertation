@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Oct 18 18:54:08 2023
+# Process ID: 26916
+# Current directory: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21272 C:\Users\Rui\Rui\MSc_Dissertation\SoC\RVfpgaInterconnect\rvfpga\rvfpga.xpr
+# Log file: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga/vivado.log
+# Journal file: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga\vivado.jou
+# Running On: DESKTOP-8UFOBMP, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 16869 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga/rvfpga.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga/rvfpga' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1858.434 ; gain = 442.645
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga/rvfpga.srcs/utils_1/imports/synth_1/rvfpganexys.dcp with file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga/rvfpga.runs/synth_1/rvfpganexys.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Oct 18 18:55:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga/rvfpga.runs/synth_1/runme.log
+[Wed Oct 18 18:55:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaInterconnect/rvfpga/rvfpga.runs/impl_1/runme.log
+set_property top rvfpganexys [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2430.953 ; gain = 2.480
+INFO: [Netlist 29-17] Analyzing 1616 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3349.953 ; gain = 22.172
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3349.953 ; gain = 22.172
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3349.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 175 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 101 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 29 instances
+  SRLC32E => SRL16E: 10 instances
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 3494.453 ; gain = 1559.969
+open_report: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 3663.375 ; gain = 152.637
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4340.902 ; gain = 462.527
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 19:15:44 2023...
