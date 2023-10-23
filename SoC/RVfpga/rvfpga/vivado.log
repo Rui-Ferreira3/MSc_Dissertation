@@ -2,15 +2,16 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Oct 20 14:29:18 2023
-# Process ID: 27764
-# Current directory: C:/Users/Rui/AppData/Roaming/Xilinx/Vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22252
-# Log file: C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/vivado.log
-# Journal file: C:/Users/Rui/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Start of session at: Fri Oct 20 15:46:31 2023
+# Process ID: 30456
+# Current directory: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20648 C:\Users\Rui\Rui\MSc_Dissertation\SoC\RVfpga_\rvfpga\rvfpga.xpr
+# Log file: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/vivado.log
+# Journal file: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga\vivado.jou
 # Running On: DESKTOP-8UFOBMP, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 16869 MB
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
@@ -20,68 +21,261 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-create_project rvfpga C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga -part xc7a100tcsg324-1
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.934 ; gain = 0.000
-set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
-add_files -scan_for_includes {C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/serial_deglitch.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_2phase.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_delayer.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/isochronous_spill_register.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_div_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_aln_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/exp_backoff.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_filter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/spi/fifo4.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_xbar.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sub_per_hash.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/swervolf_core.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_mem_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/dmi/dmi_jtag_to_core_sync.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_ib_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/pulp_sync_wedge.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_modify_address.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_mux.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ic_mem.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_top.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cut.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_serializer.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_to_axi.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_fifo_gray.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_defines.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_arbiter.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_dw_upsizer.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_compress_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/jtag_vpi_0-r5/jtagServer.h C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/pic/pic_ctrl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_propagator.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_fifo_2phase.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/clock_divider_counter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/cdc_utils_0.1-r1/sync2_pgen.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/jtag_vpi_0-r5/jtag_common.h C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_detect.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/fifo_v2.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_addrcheck.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lfsr_8bit.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/clock_divider.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_demux.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_buffer.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_join.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/ecc_pkg.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_gpr_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_to_mem.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/raminfr.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/mv_filter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/onehot_to_bin.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/pulp_sync.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cb_filter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_dw_converter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_arbiter_flushable.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_propagator_tx.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/include/pic_map_auto.h C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/BootROM/wb_mem_wrapper.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_fifo.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_mailbox.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_arbiter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/bscan_tap.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/fifo_v1.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_top.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/dmi/dmi_wrapper.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/jtag_vpi_0-r5/jtag_vpi.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/BootROM/dpram64.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/include/build.h C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_regs.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3/wb_common_params.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fall_through_register.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_isolate.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3/wb_common.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/litedram_core.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_mux.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_mem.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_data_resize.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/clk_div.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/rvfpgasim.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rstgen_bypass.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/include/global.h C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/axi4_to_ahb.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_to_apb.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_demux.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_multicut.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/clk_gen_nexys.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/binary_to_gray.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_ecc.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/id_queue.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_delay.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/plru_tree.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_trigger.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_omega_net.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lfsr_16bit.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/shift_reg.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lfsr.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_decode_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_state.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cdc.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/dmi/rvjtag_tap.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/prioarbiter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_intf.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/axi_mem_wrapper.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/generic_LFSR_8bit.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/max_counter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/rvfpganexys.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_to_axi_lite.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_dw_downsizer.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_join.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_burst_splitter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/include/swerv_types.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_lsc_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/generic_fifo.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_intf.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/ecc_decode.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/find_first_one.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/verilog-arbiter_0-r3/src/arbiter.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_iccm_mem.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/BootROM/sw/boot_main.vh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_propagator_rx.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_trigger.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_xbar.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_atop_filter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_intf.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/mem_lib.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper_dmi.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells/registers.svh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ifc_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_tlu_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/mem.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cf_math_pkg.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/litedram_top.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/dma/dma_ctrl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_fork_dynamic.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_fork.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_cdc.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/gray_to_binary.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_register.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sync_wedge.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_alu_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sync.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_pkg.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_clkdomain.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_stbuf.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/unread.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_bp_ctl.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_regs.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_join.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/cdc_utils_0.1-r1/cc561.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/ecc_encode.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/rrarbiter.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rstgen.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cb_filter_pkg.sv C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_wb.v C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/ahb_to_axi4.sv}
-INFO: [filemgmt 56-200] Setting project included file 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v' to type 'Verilog Header'.
-INFO: [filemgmt 56-200] Setting project included file 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/uart/uart_defines.v' to type 'Verilog Header'.
-INFO: [filemgmt 56-200] Setting project included file 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3/wb_common_params.v' to type 'Verilog Header'.
-INFO: [filemgmt 56-200] Setting project included file 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v' to type 'Verilog Header'.
-import_files -force
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
-import_files -fileset constrs_1 -force -norecurse {C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/rvfpganexys.xdc C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/LiteDRAM/liteDRAM.xdc}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-set_property top rvfpganexys [current_fileset]
-update_compile_order -fileset sources_1
-set_property is_global_include true [get_files  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh]
-update_compile_order -fileset sources_1
-add_files -norecurse -scan_for_includes C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/BootROM/sw/boot_main.mem
-import_files -norecurse C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/BootROM/sw/boot_main.mem
-set_property include_dirs {C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include} [current_fileset]
-set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
-archive_project C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga.xpr.zip -temp_dir C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-27764-DESKTOP-8UFOBMP -force -exclude_run_results -include_config_settings
-INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-27764-DESKTOP-8UFOBMP' for archiving project
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1849.000 ; gain = 331.812
+update_compile_order -fileset sources_1
+create_bd_design "interconnect"
+Wrote  : <C:\Users\Rui\Rui\MSc_Dissertation\SoC\RVfpga_\rvfpga\rvfpga.srcs\sources_1\bd\interconnect\interconnect.bd> 
+create_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1974.316 ; gain = 104.117
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+set_property -dict [list \
+  CONFIG.NUM_MI {2} \
+  CONFIG.NUM_SI {3} \
+  CONFIG.S00_HAS_DATA_FIFO {2} \
+  CONFIG.S01_HAS_DATA_FIFO {2} \
+  CONFIG.S02_HAS_DATA_FIFO {2} \
+  CONFIG.STRATEGY {2} \
+] [get_bd_cells axi_interconnect_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/ARESETN]
+make_bd_intf_pins_external  [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins axi_interconnect_0/S01_AXI] [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins axi_interconnect_0/S02_AXI]
+endgroup
+set_property name clk [get_bd_ports ACLK_0]
+set_property name rst [get_bd_ports ARESETN_0]
+set_property name ifu [get_bd_intf_ports S00_AXI_0]
+set_property -dict [list CONFIG.DATA_WIDTH 64 CONFIG.ID_WIDTH 3] [get_bd_intf_ports ifu]
+set_property name lsu [get_bd_intf_ports S01_AXI_0]
+set_property -dict [list CONFIG.DATA_WIDTH 64 CONFIG.ID_WIDTH 4] [get_bd_intf_ports lsu]
+set_property -dict [list CONFIG.READ_WRITE_MODE READ_ONLY] [get_bd_intf_ports ifu]
+set_property name sb [get_bd_intf_ports S02_AXI_0]
+set_property -dict [list CONFIG.DATA_WIDTH 64 CONFIG.ID_WIDTH 1] [get_bd_intf_ports sb]
+set_property name io [get_bd_intf_ports M00_AXI_0]
+set_property -dict [list CONFIG.DATA_WIDTH 64] [get_bd_intf_ports io]
+set_property name ram [get_bd_intf_ports M01_AXI_0]
+set_property -dict [list CONFIG.DATA_WIDTH 64] [get_bd_intf_ports ram]
+assign_bd_address
+Slave segment '/io/Reg' is being assigned into address space '/ifu' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/io/Reg' is being assigned into address space '/lsu' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/io/Reg' is being assigned into address space '/sb' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/ram/Reg' is being assigned into address space '/ifu' at <0x44A1_0000 [ 64K ]>.
+Slave segment '/ram/Reg' is being assigned into address space '/lsu' at <0x44A1_0000 [ 64K ]>.
+Slave segment '/ram/Reg' is being assigned into address space '/sb' at <0x44A1_0000 [ 64K ]>.
+set_property offset 0x08000000 [get_bd_addr_segs {ifu/SEG_io_Reg}]
+set_property offset 0x08000000 [get_bd_addr_segs {ifu/SEG_io_Reg}]
+set_property offset 0x08000000 [get_bd_addr_segs {lsu/SEG_io_Reg}]
+set_property offset 0x08000000 [get_bd_addr_segs {sb/SEG_io_Reg}]
+set_property range 16K [get_bd_addr_segs {ifu/SEG_io_Reg}]
+set_property range 16K [get_bd_addr_segs {lsu/SEG_io_Reg}]
+set_property range 16K [get_bd_addr_segs {sb/SEG_io_Reg}]
+set_property offset 0x00000000 [get_bd_addr_segs {ifu/SEG_ram_Reg}]
+set_property offset 0x00000000 [get_bd_addr_segs {ifu/SEG_ram_Reg}]
+set_property offset 0x00000000 [get_bd_addr_segs {lsu/SEG_ram_Reg}]
+set_property offset 0x00000000 [get_bd_addr_segs {sb/SEG_ram_Reg}]
+set_property range 128M [get_bd_addr_segs {ifu/SEG_ram_Reg}]
+set_property range 128M [get_bd_addr_segs {lsu/SEG_ram_Reg}]
+set_property range 128M [get_bd_addr_segs {sb/SEG_ram_Reg}]
+set_property offset 0x80000000 [get_bd_addr_segs {ifu/SEG_io_Reg}]
+set_property offset 0x80000000 [get_bd_addr_segs {ifu/SEG_io_Reg}]
+set_property offset 0x80000000 [get_bd_addr_segs {lsu/SEG_io_Reg}]
+set_property offset 0x80000000 [get_bd_addr_segs {sb/SEG_io_Reg}]
+validate_bd_design
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/axi_interconnect_0/S00_ACLK
+/axi_interconnect_0/M00_ACLK
+/axi_interconnect_0/M01_ACLK
+/axi_interconnect_0/S01_ACLK
+/axi_interconnect_0/S02_ACLK
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+connect_bd_net [get_bd_ports clk] [get_bd_pins axi_interconnect_0/S00_ACLK]
+connect_bd_net [get_bd_ports rst] [get_bd_pins axi_interconnect_0/S00_ARESETN]
+connect_bd_net [get_bd_ports clk] [get_bd_pins axi_interconnect_0/M00_ACLK]
+connect_bd_net [get_bd_ports rst] [get_bd_pins axi_interconnect_0/M00_ARESETN]
+connect_bd_net [get_bd_ports clk] [get_bd_pins axi_interconnect_0/M01_ACLK]
+connect_bd_net [get_bd_ports rst] [get_bd_pins axi_interconnect_0/M01_ARESETN]
+connect_bd_net [get_bd_ports clk] [get_bd_pins axi_interconnect_0/S01_ACLK]
+connect_bd_net [get_bd_ports rst] [get_bd_pins axi_interconnect_0/S01_ARESETN]
+connect_bd_net [get_bd_ports clk] [get_bd_pins axi_interconnect_0/S02_ACLK]
+connect_bd_net [get_bd_ports rst] [get_bd_pins axi_interconnect_0/S02_ARESETN]
+validate_bd_design
+generate_target all [get_files  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/interconnect.bd]
+INFO: [BD 41-1662] The design 'interconnect.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Rui\Rui\MSc_Dissertation\SoC\RVfpga_\rvfpga\rvfpga.srcs\sources_1\bd\interconnect\interconnect.bd> 
+Wrote  : <C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/ui/bd_254c15ee.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s00_couplers/s00_data_fifo/m_axi_rid'(3) to pin: '/axi_interconnect_0/s00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/s01_data_fifo/m_axi_bid'(4) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/s01_data_fifo/m_axi_rid'(4) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s02_couplers/s02_data_fifo/m_axi_bid'(1) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s02_couplers/s02_data_fifo/m_axi_rid'(1) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_arid'(6) to pin: '/axi_interconnect_0/s00_couplers/M_AXI_arid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_arid'(6) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_arid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_awid'(6) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_awid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_arid'(6) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_awid'(6) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+Verilog Output written to : C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s00_couplers/s00_data_fifo/m_axi_rid'(3) to pin: '/axi_interconnect_0/s00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/s01_data_fifo/m_axi_bid'(4) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s01_couplers/s01_data_fifo/m_axi_rid'(4) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s02_couplers/s02_data_fifo/m_axi_bid'(1) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/s02_couplers/s02_data_fifo/m_axi_rid'(1) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_arid'(6) to pin: '/axi_interconnect_0/s00_couplers/M_AXI_arid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_arid'(6) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_arid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_awid'(6) to pin: '/axi_interconnect_0/s01_couplers/M_AXI_awid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_arid'(6) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_0/xbar/s_axi_awid'(6) to pin: '/axi_interconnect_0/s02_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+Verilog Output written to : C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/sim/interconnect.v
+Verilog Output written to : C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/hdl/interconnect_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/s00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/s01_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s02_couplers/s02_data_fifo .
+Exporting to file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/hw_handoff/interconnect.hwh
+Generated Hardware Definition File C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.hwdef
+catch { config_ip_cache -export [get_ips -all interconnect_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_xbar_0
+catch { config_ip_cache -export [get_ips -all interconnect_s00_data_fifo_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_s00_data_fifo_0
+catch { config_ip_cache -export [get_ips -all interconnect_s01_data_fifo_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_s01_data_fifo_0
+catch { config_ip_cache -export [get_ips -all interconnect_s02_data_fifo_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_s02_data_fifo_0
+export_ip_user_files -of_objects [get_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/interconnect.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/interconnect.bd]
+launch_runs interconnect_xbar_0_synth_1 interconnect_s00_data_fifo_0_synth_1 interconnect_s01_data_fifo_0_synth_1 interconnect_s02_data_fifo_0_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_s00_data_fifo_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_s01_data_fifo_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_s02_data_fifo_0
+[Fri Oct 20 15:52:18 2023] Launched interconnect_xbar_0_synth_1, interconnect_s00_data_fifo_0_synth_1, interconnect_s01_data_fifo_0_synth_1, interconnect_s02_data_fifo_0_synth_1...
+Run output will be captured here:
+interconnect_xbar_0_synth_1: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/interconnect_xbar_0_synth_1/runme.log
+interconnect_s00_data_fifo_0_synth_1: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/interconnect_s00_data_fifo_0_synth_1/runme.log
+interconnect_s01_data_fifo_0_synth_1: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/interconnect_s01_data_fifo_0_synth_1/runme.log
+interconnect_s02_data_fifo_0_synth_1: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/interconnect_s02_data_fifo_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/interconnect.bd] -directory C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.ip_user_files -ipstatic_source_dir C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.cache/compile_simlib/modelsim} {questa=C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.cache/compile_simlib/questa} {riviera=C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.cache/compile_simlib/riviera} {activehdl=C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/utils_1/imports/synth_1/rvfpganexys.dcp with file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/synth_1/rvfpganexys.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 20 15:53:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/synth_1/runme.log
+[Fri Oct 20 15:53:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/impl_1/runme.log
+set_property include_dirs {C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include} [current_fileset]
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 20 15:54:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/synth_1/runme.log
+[Fri Oct 20 15:54:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2452.398 ; gain = 0.000
+make_wrapper -files [get_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/interconnect.bd] -top
+add_files -norecurse c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.gen/sources_1/bd/interconnect/hdl/interconnect_wrapper.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 20 15:56:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/synth_1/runme.log
+[Fri Oct 20 15:56:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/impl_1/runme.log
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 20 15:57:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/synth_1/runme.log
+[Fri Oct 20 15:57:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2761.750 ; gain = 2.840
+INFO: [Netlist 29-17] Analyzing 1616 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 3672.973 ; gain = 22.512
+Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 3672.973 ; gain = 22.512
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 3672.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 175 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 101 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 29 instances
+  SRLC32E => SRL16E: 10 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 3809.566 ; gain = 1357.168
+open_report: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 3917.188 ; gain = 80.840
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4526.379 ; gain = 315.098
+archive_project C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpgaInterconnect.xpr.zip -temp_dir C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/.Xil/Vivado-30456-DESKTOP-8UFOBMP -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/.Xil/Vivado-30456-DESKTOP-8UFOBMP' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
 INFO: [Coretcl 2-1211] Creating project copy for archival...
 INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
 INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Project 1-1161] Replacing file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/.Xil/Vivado-30456-DESKTOP-8UFOBMP/PrjAr/_X_/rvfpga.srcs/utils_1/imports/synth_1/rvfpganexys.dcp with file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/.Xil/Vivado-30456-DESKTOP-8UFOBMP/PrjAr/_X_/rvfpga.runs/synth_1/rvfpganexys.dcp
+WARNING: [Coretcl 2-105] Run 'interconnect_xbar_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'interconnect_xbar_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'interconnect_s00_data_fifo_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s00_data_fifo_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'interconnect_s01_data_fifo_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s01_data_fifo_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'interconnect_s02_data_fifo_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s02_data_fifo_0_synth_1'...
 INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'interconnect_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s00_data_fifo_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s01_data_fifo_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s02_data_fifo_0_impl_1'...
 INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'interconnect_s00_data_fifo_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'interconnect_s00_data_fifo_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'interconnect_s01_data_fifo_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'interconnect_s01_data_fifo_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'interconnect_s02_data_fifo_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'interconnect_s02_data_fifo_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'interconnect_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'interconnect_xbar_0'
 INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'utils_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpgaInterconnect.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 4527.867 ; gain = 1.488
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 20 16:41:08 2023...
