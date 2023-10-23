@@ -1,0 +1,259 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+* Section (5) - CONFIGURATION SETTINGS/FILES
+*  This section summarizes the configuration settings/files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = rvfpga
+Directory = C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = 
+
+Section (2) - Excluded Runs
+---------------------------
+The run results were excluded for the following runs in the archived project:-
+
+<synth_1>
+<impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include
+C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<constrs_1>
+None
+
+<sim_1>
+None
+
+<sources_1>
+C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh
+C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells/registers.svh
+C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh
+
+<utils_1>
+None
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v
+./rvfpga.srcs/sources_1/imports/src/OtherSources/clk_gen_nexys.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/dpram64.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/spi/fifo4.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/litedram_core.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/litedram_top.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/raminfr.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_state.v
+./rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_top.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_defines.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_regs.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_top.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_wb.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/wb_mem_wrapper.v
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cf_math_pkg.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_pkg.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_atop_filter.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cdc.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_intf.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/binary_to_gray.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/bscan_tap.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_fifo_gray.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/global.h
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/swerv_types.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_decode_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_gpr_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_ib_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_tlu_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_trigger.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dma/dma_ctrl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_alu_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_div_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/fifo_v2.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/gray_to_binary.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_aln_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_bp_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_compress_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ic_mem.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ifc_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_mem_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_addrcheck.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_buffer.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_intf.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_clkdomain.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_mem.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_ecc.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_lsc_ctl.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_stbuf.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_trigger.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/mem.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/mem_lib.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/pic_map_auto.h
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/pic/pic_ctrl.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_register.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/build.h
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper_dmi.sv
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sync.sv
+./rvfpga.srcs/sources_1/imports/src/rvfpganexys.sv
+./rvfpga.srcs/sources_1/imports/sw/boot_main.mem
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh
+./rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells/registers.svh
+./rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh
+
+<constrs_1>
+./rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc
+./rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc
+
+<sim_1>
+None
+
+<utils_1>
+None
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+None
+
+None
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/vivado.jou
+Archived Location = ./rvfpga/vivado.jou
+
+Source File = C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/vivado.log
+Archived Location = ./rvfpga/vivado.log
+
+Section (5) - CONFIGURATION SETTINGS/FILES
+------------------------------------------
+List of configuration settings/files that were added to the archived project:-
+
+
