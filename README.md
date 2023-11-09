@@ -9,7 +9,7 @@ organização deste repositório:
 
 ### Como gerar o bitstream da placa?
 1. exportar o projeto vivado SoC/rvfpga.zip
-2. correr o script importMissing.py para copiar os ficheiros que o vivado não exporta da pasta das sources do rvfpga [MSc_Dissertation\rvfpga\RVfpga\src] para a pasta das sources do projeto do vivado: ```python3 importMissing.py [source] [destination]```
+2. correr o script importMissing.py para copiar os ficheiros que o vivado não exporta da pasta das sources do rvfpga [MSc_Dissertation\SoC\src] para a pasta das sources do projeto do vivado: ```python3 importMissing.py [source] [destination]```
 3. abrir o projeto vivado e gerar o bitstream
 
 ### Como correr um programa na placa com platformIO?

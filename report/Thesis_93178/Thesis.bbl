@@ -1,0 +1,79 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Greengard(2020)]{Will_RISC-V_Revolutionize_Computing}
+Samuel Greengard.
+\newblock Will risc-v revolutionize computing?
+\newblock \emph{Commun. ACM}, 63\penalty0 (5):\penalty0 30–32, apr 2020.
+\newblock ISSN 0001-0782.
+\newblock \doi{10.1145/3386377}.
+\newblock URL \url{https://doi.org/10.1145/3386377}.
+
+\bibitem[Waterman and Asanovic(2019)]{RISCV_manual_1}
+Andrew Waterman and Krste Asanovic.
+\newblock \emph{The RISC-V Instruction Set Manual, Volume I: User-Level ISA}.
+\newblock RISC-V International, 20191213 edition, December 2019.
+
+\bibitem[Andrew~Waterman and Hauser(2021)]{RISCV_manual_2}
+Krste~Asanovic Andrew~Waterman and John Hauser.
+\newblock \emph{The RISC-V Instruction Set Manual, Volume II: Privileged
+  Architecture}.
+\newblock RISC-V International, 20211203 edition, December 2021.
+
+\bibitem[RIS({\natexlab{a}})]{RISCV_International}
+Risc-v international.
+\newblock \url{https://riscv.org/}, {\natexlab{a}}.
+\newblock Accessed: 2023-04-15.
+
+\bibitem[RIS({\natexlab{b}})]{RISCV_list}
+Risc-v cores and soc overview.
+\newblock \url{https://github.com/riscvarchive/riscv-cores-list},
+  {\natexlab{b}}.
+\newblock Accessed: 2023-04-15.
+
+\bibitem[Lit()]{LiteX}
+Litex documentation.
+\newblock \url{https://github.com/enjoy-digital/litex}.
+\newblock Accessed: 2023-05-06.
+
+\bibitem[Swe()]{SweRVolf}
+Swervolf documentation.
+\newblock \url{https://github.com/chipsalliance/Cores-SweRVolf}.
+\newblock Accessed: 2023-05-06.
+
+\bibitem[NEO()]{NEORV32}
+The neorv32 risc-v processor.
+\newblock \url{https://github.com/stnolting/neorv32}.
+\newblock Accessed: 2023-05-06.
+
+\bibitem[RTO()]{RTOS_List}
+List of open source real-time operating systems.
+\newblock \url{https://www.osrtos.com/}.
+\newblock Accessed: 2023-05-28.
+
+\bibitem[fre()]{freeRTOS}
+Freertos: Real-time operating system for microcontrollers.
+\newblock \url{https://freertos.org/}.
+\newblock Accessed: 2023-05-28.
+
+\bibitem[Baccelli et~al.(2018)Baccelli, Gündoğan, Hahm, Kietzmann, Lenders,
+  Petersen, Schleiser, Schmidt, and Wählisch]{RIOT}
+Emmanuel Baccelli, Cenk Gündoğan, Oliver Hahm, Peter Kietzmann, Martine~S.
+  Lenders, Hauke Petersen, Kaspar Schleiser, Thomas~C. Schmidt, and Matthias
+  Wählisch.
+\newblock Riot: An open source operating system for low-end embedded devices in
+  the iot.
+\newblock \emph{IEEE Internet of Things Journal}, 5\penalty0 (6):\penalty0
+  4428--4440, 2018.
+\newblock \doi{10.1109/JIOT.2018.2815038}.
+
+\bibitem[zep()]{zephyr}
+Zephyr project, a linux foundation project.
+\newblock \url{https://www.zephyrproject.org/}.
+\newblock Accessed: 2023-05-28.
+
+\end{thebibliography}

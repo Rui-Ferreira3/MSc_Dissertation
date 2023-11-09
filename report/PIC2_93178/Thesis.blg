@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: unsrtnat.bst
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+Database file #1: Thesis_bib_DB.bib
+Warning--empty year in RISCV_International
+Warning--empty year in RISCV_list
+Warning--empty year in LiteX
+Warning--empty year in SweRVolf
+Warning--empty year in NEORV32
+Warning--empty year in RTOS_List
+Warning--empty year in freeRTOS
+Warning--empty year in zephyr
+Warning--empty year in Vivado
+Warning--empty year in gitrepo
+Warning--empty year in platformio
+Warning--empty year in Verilator
+Warning--empty year in fusesoc
+You've used 17 entries,
+            2481 wiz_defined-function locations,
+            638 strings with 6540 characters,
+and the built_in function-call counts, 4455 in all, are:
+= -- 406
+> -- 94
+< -- 3
++ -- 63
+- -- 28
+* -- 275
+:= -- 559
+add.period$ -- 55
+call.type$ -- 17
+change.case$ -- 34
+chr.to.int$ -- 16
+cite$ -- 43
+duplicate$ -- 252
+empty$ -- 541
+format.name$ -- 36
+if$ -- 1024
+int.to.chr$ -- 2
+int.to.str$ -- 18
+missing$ -- 2
+newline$ -- 97
+num.names$ -- 12
+pop$ -- 230
+preamble$ -- 1
+purify$ -- 17
+quote$ -- 0
+skip$ -- 140
+stack$ -- 0
+substring$ -- 95
+swap$ -- 41
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 119
+warning$ -- 13
+while$ -- 10
+width$ -- 0
+write$ -- 212
+(There were 13 warnings)

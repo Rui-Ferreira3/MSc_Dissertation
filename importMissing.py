@@ -3,67 +3,86 @@ import sys
 import platform
 import shutil
 
+def copy_file(src, dest, fileName):
+    if not os.path.exists(src):
+        print("Could not find: " + src)
+        exit()
+    if not os.path.exists(dest + sep + fileName):
+        shutil.copy(src + sep + fileName, dest)
+
 def main():
     source = sys.argv[1]
+    if not os.path.exists(source):
+        print("Invalid source directory!")
+        exit()
     destination = sys.argv[2]
+    if not os.path.exists(destination):
+        print("Invalid destination directory!")
+        exit()
 
     if platform.system() == 'Linux':
         sep = '/'
     elif platform.system() == 'Windows':
         sep = '\\'
     
+    print("\n\nCopying files from " + source + " to " + destination + "...\n\n")
+
     # LiteDRAM
     src = source + sep + 'LiteDRAM'
     dest = destination + sep + 'LiteDRAM'
-    shutil.copy(src + sep + 'liteDRAM.xdc', dest)
-    shutil.copy(src + sep + 'litedram_core.init', dest)
-    shutil.copy(src + sep + 'mem_1.init', dest)
+    copy_file(src, dest, 'liteDRAM.xdc')
+    copy_file(src, dest, 'litedram_core.init')
+    copy_file(src, dest, 'mem_1.init')
 
     # OtherSources/ConfigFiles
     src = source + sep + 'OtherSources' + sep + 'ConfigFiles'
     dest = destination + sep + 'OtherSources' + sep + 'ConfigFiles'
-    os.mkdir(dest)
-    shutil.copy(src + sep + 'swervolf_nexys_debug.cfg', dest)
-    shutil.copy(src + sep + 'swervolf_nexys_program.cfg', dest)
+    if not os.path.exists(dest):
+        os.mkdir(dest)
+    copy_file(src, dest, 'swervolf_nexys_debug.cfg')
+    copy_file(src, dest, 'swervolf_nexys_program.cfg')
     
     # OtherSources/jtag_vpi_0-r5
     src = source + sep + 'OtherSources' + sep + 'jtag_vpi_0-r5'
     dest = destination + sep + 'OtherSources' + sep + 'jtag_vpi_0-r5'
-    shutil.copy(src + sep + 'jtagServer.cpp', dest)
-    shutil.copy(src + sep + 'jtag_common.c', dest)
-    shutil.copy(src + sep + 'jtag_vpi.c', dest)
+    copy_file(src, dest, 'jtagServer.cpp')
+    copy_file(src, dest, 'jtag_common.c')
+    copy_file(src, dest, 'jtag_vpi.c')
 
     # SweRVolfSoC/BootROM/sw
     src = source + sep + 'SweRVolfSoC' + sep + 'BootROM' + sep + 'sw'
     dest = destination + sep + 'SweRVolfSoC' + sep + 'BootROM' + sep + 'sw'
-    shutil.copy(src + sep + 'Makefile', dest)
-    shutil.copy(src + sep + 'boot_main.S', dest)
-    shutil.copy(src + sep + 'boot_main.bin', dest)
-    shutil.copy(src + sep + 'boot_main.elf', dest)
-    shutil.copy(src + sep + 'boot_main.mem', dest)
-    shutil.copy(src + sep + 'link.ld', dest)
-    shutil.copy(src + sep + 'makehex.py', dest)
+    copy_file(src, dest, 'Makefile')
+    copy_file(src, dest, 'boot_main.S')
+    copy_file(src, dest, 'boot_main.bin')
+    copy_file(src, dest, 'boot_main.elf')
+    copy_file(src, dest, 'boot_main.mem')
+    copy_file(src, dest, 'link.ld')
+    copy_file(src, dest, 'makehex.py')
 
     # SweRVolfSoC/Peripherals/matmul
     src = source + sep + 'SweRVolfSoC' + sep + 'Peripherals' + sep + 'matmul'
     dest = destination + sep + 'SweRVolfSoC' + sep + 'Peripherals' + sep + 'matmul'
-    os.mkdir(dest)
-    shutil.copy(src + sep + 'matmul_defines.v', dest)
-    shutil.copy(src + sep + 'matmul_top.v', dest)
+    if not os.path.exists(dest):
+        os.mkdir(dest)
+    copy_file(src, dest, 'matmul_defines.v')
+    copy_file(src, dest, 'matmul_top.v')
                 
     # SweRVolfSoC/SweRVEh1CoreComplex/dec
     src = source + sep + 'SweRVolfSoC' + sep + 'SweRVEh1CoreComplex' + sep + 'dec'
     dest = destination + sep + 'SweRVolfSoC' + sep + 'SweRVEh1CoreComplex' + sep + 'dec'
-    shutil.copy(src + sep + 'addassign', dest)
-    shutil.copy(src + sep + 'coredecode', dest)
-    shutil.copy(src + sep + 'decode', dest)
-    shutil.copy(src + sep + 'espresso.exe', dest)
-    shutil.copy(src + sep + 'espresso.linux', dest)
+    copy_file(src, dest, 'addassign')
+    copy_file(src, dest, 'coredecode')
+    copy_file(src, dest, 'decode')
+    copy_file(src, dest, 'espresso.exe')
+    copy_file(src, dest, 'espresso.linux')
 
     # SweRVolfSoC/SweRVEh1CoreComplex/include
     src = source + sep + 'SweRVolfSoC' + sep + 'SweRVEh1CoreComplex' + sep + 'include'
     dest = destination + sep + 'SweRVolfSoC' + sep + 'SweRVEh1CoreComplex' + sep + 'include'
-    shutil.copy(src + sep + 'swerv.config', dest)
+    copy_file(src, dest, 'swerv.config')
+
+    print("Files copied!\n\n")
 
 
 

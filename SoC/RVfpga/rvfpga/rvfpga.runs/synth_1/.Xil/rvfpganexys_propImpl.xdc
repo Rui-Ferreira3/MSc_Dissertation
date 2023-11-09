@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc rfile:../../../rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga_/rvfpga/rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc rfile:../../../rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga/rvfpga/rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc rfile:../../../rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpga/rvfpga/rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc rfile:../../../rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }];
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
