@@ -1,0 +1,234 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'matprod'" level="0">
+<item name = "Date">Wed Nov 29 19:42:40 2023
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">first_accel</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a100t-csg324-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.728 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">12, ?, 0.120 us, ?, 13, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_matprod_Pipeline_1_fu_153">matprod_Pipeline_1, 4, 4611686018427387904, 40.000 ns, 4.6e+10 sec, 4, 4611686018427387904, no</column>
+<column name="grp_matprod_Pipeline_2_fu_162">matprod_Pipeline_2, 4, 4611686018427387904, 40.000 ns, 4.6e+10 sec, 4, 4611686018427387904, no</column>
+<column name="grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171">matprod_Pipeline_VITIS_LOOP_26_1, 2, 1008, 20.000 ns, 10.080 us, 2, 1008, no</column>
+<column name="grp_matprod_Pipeline_4_fu_185">matprod_Pipeline_4, 5, 4611686018427387904, 50.000 ns, 4.6e+10 sec, 5, 4611686018427387904, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 60, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, 12, 2952, 3007, -</column>
+<column name="Memory">6, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 459, -</column>
+<column name="Register">-, -, 631, -, -</column>
+<specialColumn name="Available">270, 240, 126800, 63400, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 5, 2, 5, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="BUS1_s_axi_U">BUS1_s_axi, 0, 0, 360, 616, 0</column>
+<column name="gmem_m_axi_U">gmem_m_axi, 0, 0, 718, 1282, 0</column>
+<column name="grp_matprod_Pipeline_1_fu_153">matprod_Pipeline_1, 0, 0, 286, 155, 0</column>
+<column name="grp_matprod_Pipeline_2_fu_162">matprod_Pipeline_2, 0, 0, 286, 155, 0</column>
+<column name="grp_matprod_Pipeline_4_fu_185">matprod_Pipeline_4, 0, 0, 226, 155, 0</column>
+<column name="grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171">matprod_Pipeline_VITIS_LOOP_26_1, 0, 3, 581, 494, 0</column>
+<column name="mul_32s_32s_32_2_1_U27">mul_32s_32s_32_2_1, 0, 3, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U28">mul_32s_32s_32_2_1, 0, 3, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U29">mul_32s_32s_32_2_1, 0, 3, 165, 50, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="m1_buffer_U">m1_buffer_RAM_AUTO_1R1W, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="m2_buffer_U">m1_buffer_RAM_AUTO_1R1W, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="m3_buffer_U">m1_buffer_RAM_AUTO_1R1W, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state13_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state24_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state34">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln23_fu_206_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln24_fu_234_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln42_fu_262_p2">icmp, 0, 0, 18, 32, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">159, 35, 1, 35</column>
+<column name="gmem_ARADDR">21, 5, 64, 320</column>
+<column name="gmem_ARLEN">21, 5, 32, 160</column>
+<column name="gmem_ARVALID">17, 4, 1, 4</column>
+<column name="gmem_AWADDR">13, 3, 64, 192</column>
+<column name="gmem_AWLEN">13, 3, 32, 96</column>
+<column name="gmem_AWVALID">13, 3, 1, 3</column>
+<column name="gmem_BREADY">13, 3, 1, 3</column>
+<column name="gmem_RREADY">13, 3, 1, 3</column>
+<column name="gmem_WVALID">9, 2, 1, 2</column>
+<column name="gmem_blk_n_AR">9, 2, 1, 2</column>
+<column name="gmem_blk_n_AW">9, 2, 1, 2</column>
+<column name="gmem_blk_n_B">9, 2, 1, 2</column>
+<column name="grp_fu_202_ce">9, 2, 1, 2</column>
+<column name="grp_fu_202_p0">13, 3, 32, 96</column>
+<column name="grp_fu_202_p1">13, 3, 32, 96</column>
+<column name="m1_buffer_address0">13, 3, 10, 30</column>
+<column name="m1_buffer_ce0">13, 3, 1, 3</column>
+<column name="m1_buffer_we0">9, 2, 1, 2</column>
+<column name="m2_buffer_address0">13, 3, 10, 30</column>
+<column name="m2_buffer_ce0">13, 3, 1, 3</column>
+<column name="m2_buffer_we0">9, 2, 1, 2</column>
+<column name="m3_buffer_address0">13, 3, 10, 30</column>
+<column name="m3_buffer_ce0">13, 3, 1, 3</column>
+<column name="m3_buffer_we0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="N1_read_reg_300">32, 0, 32, 0</column>
+<column name="N2_read_reg_293">32, 0, 32, 0</column>
+<column name="N3_read_reg_286">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">34, 0, 34, 0</column>
+<column name="grp_matprod_Pipeline_1_fu_153_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_matprod_Pipeline_2_fu_162_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_matprod_Pipeline_4_fu_185_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln23_reg_339">1, 0, 1, 0</column>
+<column name="icmp_ln24_reg_361">1, 0, 1, 0</column>
+<column name="icmp_ln42_reg_383">1, 0, 1, 0</column>
+<column name="m1_read_reg_317">64, 0, 64, 0</column>
+<column name="m2_read_reg_312">64, 0, 64, 0</column>
+<column name="m3_read_reg_307">64, 0, 64, 0</column>
+<column name="mul_ln23_reg_332">32, 0, 32, 0</column>
+<column name="mul_ln24_reg_354">32, 0, 32, 0</column>
+<column name="mul_ln42_reg_376">32, 0, 32, 0</column>
+<column name="p_cast1_reg_365">62, 0, 62, 0</column>
+<column name="p_cast3_reg_387">62, 0, 62, 0</column>
+<column name="p_cast_reg_343">62, 0, 62, 0</column>
+<column name="trunc_ln6_1_reg_327">10, 0, 10, 0</column>
+<column name="trunc_ln6_reg_322">10, 0, 10, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_BUS1_AWVALID">in, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_AWREADY">out, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_AWADDR">in, 7, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_WVALID">in, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_WREADY">out, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_WDATA">in, 32, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_WSTRB">in, 4, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_ARVALID">in, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_ARREADY">out, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_ARADDR">in, 7, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_RVALID">out, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_RREADY">in, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_RDATA">out, 32, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_RRESP">out, 2, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_BVALID">out, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_BREADY">in, 1, s_axi, BUS1, scalar</column>
+<column name="s_axi_BUS1_BRESP">out, 2, s_axi, BUS1, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, matprod, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, matprod, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, matprod, return value</column>
+<column name="m_axi_gmem_AWVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLEN">out, 8, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WDATA">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WSTRB">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WLAST">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLEN">out, 8, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RDATA">in, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RLAST">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RUSER">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BUSER">in, 1, m_axi, gmem, pointer</column>
+</table>
+</item>
+</section>
+</profile>

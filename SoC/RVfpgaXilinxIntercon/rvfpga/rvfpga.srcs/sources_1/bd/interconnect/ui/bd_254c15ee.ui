@@ -1,27 +1,31 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.25493",
-   "Default View_TopLeft":"-279,-23",
+   "Default View_ScaleFactor":"0.692",
+   "Default View_TopLeft":"-597,0",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port ram -pg 1 -lvl 2 -x 320 -y 60 -defaultsOSRD
-preplace port io -pg 1 -lvl 2 -x 320 -y 30 -defaultsOSRD
-preplace port lsu -pg 1 -lvl 0 -x -20 -y -90 -defaultsOSRD
-preplace port ifu -pg 1 -lvl 0 -x -20 -y -120 -defaultsOSRD
-preplace port sb -pg 1 -lvl 0 -x -20 -y -60 -defaultsOSRD
-preplace port port-id_clk -pg 1 -lvl 0 -x -20 -y -30 -defaultsOSRD
-preplace port port-id_rst -pg 1 -lvl 0 -x -20 -y 0 -defaultsOSRD
-preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 160 -y 40 -defaultsOSRD
-preplace netloc ACLK_0_1 1 0 1 10J -40n
-preplace netloc ARESETN_0_1 1 0 1 0J -20n
-preplace netloc axi_interconnect_0_M01_AXI 1 1 1 300J 50n
-preplace netloc axi_interconnect_0_M00_AXI 1 1 1 NJ 30
-preplace netloc S01_AXI_0_1 1 0 1 10J -90n
-preplace netloc S00_AXI_0_1 1 0 1 10J -120n
-preplace netloc S02_AXI_0_1 1 0 1 NJ -60
-levelinfo -pg 1 -20 160 320
-pagesize -pg 1 -db -bbox -sgen -90 -160 400 280
+preplace port ram -pg 1 -lvl 2 -x 330 -y 250 -defaultsOSRD
+preplace port io -pg 1 -lvl 2 -x 330 -y 220 -defaultsOSRD
+preplace port lsu -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port ifu -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port sb -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port accel_mem -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port accel_ctrl -pg 1 -lvl 2 -x 330 -y 280 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 170 -y 250 -defaultsOSRD
+preplace netloc ACLK_0_1 1 0 1 20 140n
+preplace netloc ARESETN_0_1 1 0 1 30 160n
+preplace netloc S00_AXI_0_1 1 0 1 20J 40n
+preplace netloc S01_AXI_0_1 1 0 1 20J 70n
+preplace netloc S02_AXI_0_1 1 0 1 NJ 100
+preplace netloc axi_interconnect_0_M00_AXI 1 1 1 310J 220n
+preplace netloc axi_interconnect_0_M01_AXI 1 1 1 NJ 250
+preplace netloc S03_AXI_0_1 1 0 1 20J 120n
+preplace netloc axi_interconnect_0_M02_AXI 1 1 1 310J 270n
+levelinfo -pg 1 0 170 330
+pagesize -pg 1 -db -bbox -sgen -120 0 440 500
 "
 }
-
+0

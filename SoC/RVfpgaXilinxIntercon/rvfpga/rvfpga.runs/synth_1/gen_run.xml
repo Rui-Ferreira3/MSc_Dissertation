@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1698061684" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpganexys.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1701277941" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpganexys.dcp">
   <File Type="PA-TCL" Name="rvfpganexys.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="rvfpganexys_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="rvfpganexys_reports.tcl"/>
   <File Type="RDS-RDS" Name="rvfpganexys.vds"/>
   <File Type="RDS-UTIL" Name="rvfpganexys_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="rvfpganexys_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="rvfpganexys.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="rvfpganexys_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="rvfpganexys_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh">
@@ -410,18 +413,18 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh">
+    <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh"/>
         <Attr Name="ImportTime" Val="1643770828"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
         <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh">
+    <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh"/>
         <Attr Name="ImportTime" Val="1643770828"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -2049,7 +2052,5 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="interconnect_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="interconnect_s00_data_fifo_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="interconnect_s01_data_fifo_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="interconnect_s02_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="interconnect_s03_data_fifo_0"/>
 </GenRun>

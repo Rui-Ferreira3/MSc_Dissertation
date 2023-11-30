@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
+        Offset:          63019
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+...

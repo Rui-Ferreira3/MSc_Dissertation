@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.424+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_BREADY' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.259+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWUSER' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.241+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWREGION' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.225+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWQOS' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.204+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWPROT' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.189+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWCACHE' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.173+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWLOCK' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.148+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWBURST' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.137+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWSIZE' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.125+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWLEN' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.112+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWID' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.094+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWADDR' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.084+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWVALID' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:40.065+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'regc' is power-on initialization." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.624+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARUSER' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.435+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARREGION' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.417+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARQOS' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.397+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARPROT' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.382+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARCACHE' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.365+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARLOCK' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.352+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARBURST' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.334+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARSIZE' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.323+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARLEN' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.301+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARID' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.284+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARADDR' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.265+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARVALID' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.230+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARUSER' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.027+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARREGION' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:39.010+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARQOS' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.994+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARPROT' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.978+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARCACHE' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.959+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARLOCK' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.946+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARBURST' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.917+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARSIZE' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.902+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARLEN' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.880+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARID' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.864+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARADDR' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.839+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARVALID' to 0." projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:38.815+0000" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'matprod_Pipeline_VITIS_LOOP_26_1' consists of the following:&#x9;'load' operation ('j_load', first_accel/matprod.cpp:17) on local variable 'j' [28]  (0 ns)&#xD;&#xA;&#x9;'add' operation ('j', first_accel/matprod.cpp:36) [63]  (2.7 ns)&#xD;&#xA;&#x9;'icmp' operation ('icmp_ln37', first_accel/matprod.cpp:37) [64]  (2.44 ns)&#xD;&#xA;&#x9;blocking operation 2.59 ns on control path)&#xD;&#xA;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1016.html" projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:37.733+0000" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (7.728ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-871.html" projectName="first_accel" solutionName="solution1" date="2023-11-29T19:42:37.714+0000" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

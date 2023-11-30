@@ -1,3 +1,10 @@
+-makelib xcelium_lib/xpm -sv \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../rvfpga.gen/sources_1/bd/interconnect/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 -endlib
@@ -24,10 +31,11 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/interconnect/ip/interconnect_xbar_0/sim/interconnect_xbar_0.v" \
+  "../../../bd/interconnect/sim/interconnect.v" \
   "../../../bd/interconnect/ip/interconnect_s00_data_fifo_0/sim/interconnect_s00_data_fifo_0.v" \
   "../../../bd/interconnect/ip/interconnect_s01_data_fifo_0/sim/interconnect_s01_data_fifo_0.v" \
   "../../../bd/interconnect/ip/interconnect_s02_data_fifo_0/sim/interconnect_s02_data_fifo_0.v" \
-  "../../../bd/interconnect/sim/interconnect.v" \
+  "../../../bd/interconnect/ip/interconnect_s03_data_fifo_0/sim/interconnect_s03_data_fifo_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

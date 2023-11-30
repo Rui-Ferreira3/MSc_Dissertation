@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="exitcond65_fu_88_p2" SOURCE="" VARIABLE="exitcond65" MODULE="example_Pipeline_1" LOOP="Loop 1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="empty_16_fu_94_p2" SOURCE="" VARIABLE="empty_16" MODULE="example_Pipeline_1" LOOP="Loop 1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln39_fu_59_p2" SOURCE="test/example.cpp:39" VARIABLE="icmp_ln39" MODULE="example_Pipeline_VITIS_LOOP_39_1" LOOP="VITIS_LOOP_39_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_65_p2" SOURCE="test/example.cpp:39" VARIABLE="add_ln39" MODULE="example_Pipeline_VITIS_LOOP_39_1" LOOP="VITIS_LOOP_39_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="buff_d0" SOURCE="test/example.cpp:40" VARIABLE="add_ln40" MODULE="example_Pipeline_VITIS_LOOP_39_1" LOOP="VITIS_LOOP_39_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="exitcond3_fu_93_p2" SOURCE="" VARIABLE="exitcond3" MODULE="example_Pipeline_3" LOOP="Loop 1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="empty_15_fu_99_p2" SOURCE="" VARIABLE="empty_15" MODULE="example_Pipeline_3" LOOP="Loop 1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage ram_s2p" ID="" IMPL="auto" LATENCY="1" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="buff_U" SOURCE="test/example.cpp:31" VARIABLE="buff" MODULE="example" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="2" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="example" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axi_master" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="gmem_m_axi_U" SOURCE="" VARIABLE="" MODULE="example" LOOP="" BUNDLEDNAME="gmem" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

@@ -1,0 +1,5 @@
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\test\solution1\.autopilot\db\example.pp.0.cpp:1113:5: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+    for (i = 0; i < 50; i++) {
+    ^~~
+    VITIS_LOOP_39_1: 
+C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\test\solution1\.autopilot\db\example.pp.0.cpp:1113:5: note: FIX-IT applied suggested code changes

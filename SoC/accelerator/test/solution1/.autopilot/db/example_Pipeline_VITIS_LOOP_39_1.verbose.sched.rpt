@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'example_Pipeline_VITIS_LOOP_39_1'
+================================================================
+* Date:           Tue Nov 28 22:20:02 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        test
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.959 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       53|       53|  0.530 us|  0.530 us|   53|   53|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_39_1  |       51|       51|         3|          1|          1|    50|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.55>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.61ns)   --->   "%store_ln0 = store i6 0, i6 %i"   --->   Operation 7 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_1 = load i6 %i" [test/example.cpp:39]   --->   Operation 9 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 10 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.45ns)   --->   "%icmp_ln39 = icmp_eq  i6 %i_1, i6 50" [test/example.cpp:39]   --->   Operation 11 'icmp' 'icmp_ln39' <Predicate = true> <Delay = 1.45> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.45> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 50, i64 50, i64 50"   --->   Operation 12 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.94ns)   --->   "%add_ln39 = add i6 %i_1, i6 1" [test/example.cpp:39]   --->   Operation 13 'add' 'add_ln39' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln39 = br i1 %icmp_ln39, void %for.inc.split, void %for.end.exitStub" [test/example.cpp:39]   --->   Operation 14 'br' 'br_ln39' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%i_cast = zext i6 %i_1" [test/example.cpp:39]   --->   Operation 15 'zext' 'i_cast' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%buff_addr = getelementptr i32 %buff, i64 0, i64 %i_cast" [test/example.cpp:40]   --->   Operation 16 'getelementptr' 'buff_addr' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (3.25ns)   --->   "%buff_load = load i6 %buff_addr" [test/example.cpp:40]   --->   Operation 17 'load' 'buff_load' <Predicate = (!icmp_ln39)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_1 : Operation 18 [1/1] (1.61ns)   --->   "%store_ln39 = store i6 %add_ln39, i6 %i" [test/example.cpp:39]   --->   Operation 18 'store' 'store_ln39' <Predicate = (!icmp_ln39)> <Delay = 1.61>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 19 [1/2] (3.25ns)   --->   "%buff_load = load i6 %buff_addr" [test/example.cpp:40]   --->   Operation 19 'load' 'buff_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 24 'ret' 'ret_ln0' <Predicate = (icmp_ln39)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.95>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln30 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [test/example.cpp:30]   --->   Operation 20 'specloopname' 'specloopname_ln30' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (2.70ns)   --->   "%add_ln40 = add i32 %buff_load, i32 100" [test/example.cpp:40]   --->   Operation 21 'add' 'add_ln40' <Predicate = true> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 22 [1/1] (3.25ns)   --->   "%store_ln40 = store i32 %add_ln40, i6 %buff_addr" [test/example.cpp:40]   --->   Operation 22 'store' 'store_ln40' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln39 = br void %for.inc" [test/example.cpp:39]   --->   Operation 23 'br' 'br_ln39' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.56ns
+The critical path consists of the following:
+	'alloca' operation ('i') [2]  (0 ns)
+	'load' operation ('i', test/example.cpp:39) on local variable 'i' [6]  (0 ns)
+	'add' operation ('add_ln39', test/example.cpp:39) [10]  (1.95 ns)
+	'store' operation ('store_ln39', test/example.cpp:39) of variable 'add_ln39', test/example.cpp:39 on local variable 'i' [19]  (1.61 ns)
+
+ <State 2>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('buff_load', test/example.cpp:40) on array 'buff' [16]  (3.26 ns)
+
+ <State 3>: 5.96ns
+The critical path consists of the following:
+	'add' operation ('add_ln40', test/example.cpp:40) [17]  (2.7 ns)
+	'store' operation ('store_ln40', test/example.cpp:40) of variable 'add_ln40', test/example.cpp:40 on array 'buff' [18]  (3.26 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

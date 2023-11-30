@@ -1,0 +1,11 @@
+<pragmas>
+<pragma file="first_accel/matprod.cpp" line="28" pragmaType="pipeline" parentfunction="matprod" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="first_accel/matprod.cpp" line="27" pragmaType="loop_tripcount" parentfunction="matprod" min="0" max="1000" avg="500"/>
+<pragma file="first_accel/matprod.cpp" line="7" pragmaType="interface" parentfunction="matprod" mode="s_axilite" port="" bundle="BUS1" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="first_accel/matprod.cpp" line="8" pragmaType="interface" parentfunction="matprod" mode="s_axilite" port="N1" bundle="BUS1" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="first_accel/matprod.cpp" line="9" pragmaType="interface" parentfunction="matprod" mode="s_axilite" port="N2" bundle="BUS1" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="first_accel/matprod.cpp" line="10" pragmaType="interface" parentfunction="matprod" mode="s_axilite" port="N3" bundle="BUS1" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="first_accel/matprod.cpp" line="12" pragmaType="interface" parentfunction="matprod" mode="m_axi" port="m1" bundle="" offset="" name="" depth="32" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="first_accel/matprod.cpp" line="13" pragmaType="interface" parentfunction="matprod" mode="m_axi" port="m2" bundle="" offset="" name="" depth="32" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="first_accel/matprod.cpp" line="14" pragmaType="interface" parentfunction="matprod" mode="m_axi" port="m3" bundle="" offset="" name="" depth="32" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+</pragmas>

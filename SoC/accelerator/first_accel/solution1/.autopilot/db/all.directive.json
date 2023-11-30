@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "matprod",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/Rui\/Rui\/MSc_Dissertation\/SoC\/accelerator\/first_accel\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matprod"
+              }]
+          }
+        },
+        {
+          "functionName": "matprod",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/Rui\/Rui\/MSc_Dissertation\/SoC\/accelerator\/first_accel\/solution1\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matprod"
+              }]
+          }
+        }
+      ]
+    }]}
