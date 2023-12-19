@@ -160,7 +160,7 @@ extern "C" {
 
 
 
-__attribute__((sdx_kernel("matprod", 0))) void matprod(int *m1, int *m2, int *m3, int N1, int N2, int N3);
+__attribute__((sdx_kernel("matprod", 0))) void matprod(double *m1, double *m2, double *m3, int N1, int N2, int N3);
 # 2 "first_accel/matprod.cpp" 2
 
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 1 3
@@ -1099,8 +1099,8 @@ extern "C" {
 # 191 "C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 2 3
 # 5 "first_accel/matprod.cpp" 2
 
-__attribute__((sdx_kernel("matprod", 0))) void matprod(int *m1, int *m2, int *m3, int N1, int N2, int N3) {
-#line 15 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl"
+__attribute__((sdx_kernel("matprod", 0))) void matprod(double *m1, double *m2, double *m3, int N1, int N2, int N3) {
+#line 16 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=matprod
 # 6 "first_accel/matprod.cpp"
 
@@ -1117,20 +1117,18 @@ __attribute__((sdx_kernel("matprod", 0))) void matprod(int *m1, int *m2, int *m3
 #pragma HLS INTERFACE m_axi port = m2 depth=1024/32
 #pragma HLS INTERFACE m_axi port = m3 depth=1024/32
 
- static int regc=0;
+ static double regc=0;
  int i, j, k;
 
- int m1_buffer[1024];
- int m2_buffer[1024];
- int m3_buffer[1024];
+ double m1_buffer[1024];
+ double m2_buffer[1024];
+ double m3_buffer[1024];
 
- memcpy(m1_buffer, (const int*)m1, N1*N2 * sizeof(int));
- memcpy(m2_buffer, (const int*)m2, N2*N3 * sizeof(int));
+ memcpy(m1_buffer, (const double*)m1, N1*N2 * sizeof(double));
+ memcpy(m2_buffer, (const double*)m2, N2*N3 * sizeof(double));
 
  VITIS_LOOP_26_1: for (i=0, j=0, k=0; i<N1; ) {
-#pragma HLS LOOP_TRIPCOUNT max=1000
-#pragma HLS PIPELINE
- int mul = m1_buffer[i*N2+k] * m2_buffer[k*N3+j];
+  double mul = m1_buffer[i*N2+k] * m2_buffer[k*N3+j];
   if (k == 0) regc = mul;
   else regc += mul;
   k++;
@@ -1143,5 +1141,5 @@ __attribute__((sdx_kernel("matprod", 0))) void matprod(int *m1, int *m2, int *m3
  }
 
 
- memcpy((int*)m3, m3_buffer, N1*N3 * sizeof(int));
+ memcpy((double*)m3, m3_buffer, N1*N3 * sizeof(double));
 }

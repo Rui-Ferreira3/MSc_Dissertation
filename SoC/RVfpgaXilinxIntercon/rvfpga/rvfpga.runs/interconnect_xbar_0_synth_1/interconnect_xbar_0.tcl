@@ -85,6 +85,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
+set_property ip_repo_paths c:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs {

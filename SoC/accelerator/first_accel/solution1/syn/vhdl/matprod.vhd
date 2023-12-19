@@ -14,7 +14,7 @@ generic (
     C_M_AXI_GMEM_ADDR_WIDTH : INTEGER := 64;
     C_M_AXI_GMEM_ID_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM_AWUSER_WIDTH : INTEGER := 1;
-    C_M_AXI_GMEM_DATA_WIDTH : INTEGER := 32;
+    C_M_AXI_GMEM_DATA_WIDTH : INTEGER := 64;
     C_M_AXI_GMEM_WUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM_ARUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM_RUSER_WIDTH : INTEGER := 1;
@@ -96,7 +96,7 @@ end;
 architecture behav of matprod is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "matprod_matprod,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100t-csg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.728000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=6,HLS_SYN_DSP=0,HLS_SYN_FF=3583,HLS_SYN_LUT=3526,HLS_VERSION=2022_2}";
+    "matprod_matprod,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100t-csg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=12,HLS_SYN_DSP=0,HLS_SYN_FF=4960,HLS_SYN_LUT=4650,HLS_VERSION=2022_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (33 downto 0) := "0000000000000000000000000000000001";
@@ -161,6 +161,7 @@ architecture behav of matprod is
     constant ap_const_lv32_3F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000111111";
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
+    constant ap_const_lv64_0 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
     constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
 
     signal ap_rst_n_inv : STD_LOGIC;
@@ -190,7 +191,7 @@ architecture behav of matprod is
     signal gmem_blk_n_B : STD_LOGIC;
     signal ap_CS_fsm_state34 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state34 : signal is "none";
-    signal icmp_ln42_reg_383 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln40_reg_383 : STD_LOGIC_VECTOR (0 downto 0);
     signal N3_read_reg_286 : STD_LOGIC_VECTOR (31 downto 0);
     signal N2_read_reg_293 : STD_LOGIC_VECTOR (31 downto 0);
     signal N1_read_reg_300 : STD_LOGIC_VECTOR (31 downto 0);
@@ -209,7 +210,7 @@ architecture behav of matprod is
     signal icmp_ln23_reg_339 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal p_cast_reg_343 : STD_LOGIC_VECTOR (61 downto 0);
+    signal p_cast_reg_343 : STD_LOGIC_VECTOR (60 downto 0);
     signal grp_fu_230_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln24_reg_354 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state14 : STD_LOGIC;
@@ -218,27 +219,27 @@ architecture behav of matprod is
     signal icmp_ln24_reg_361 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state15 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state15 : signal is "none";
-    signal p_cast1_reg_365 : STD_LOGIC_VECTOR (61 downto 0);
+    signal p_cast1_reg_365 : STD_LOGIC_VECTOR (60 downto 0);
     signal grp_fu_258_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal mul_ln42_reg_376 : STD_LOGIC_VECTOR (31 downto 0);
+    signal mul_ln40_reg_376 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state25 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state25 : signal is "none";
-    signal icmp_ln42_fu_262_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln40_fu_262_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state26 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state26 : signal is "none";
-    signal p_cast3_reg_387 : STD_LOGIC_VECTOR (61 downto 0);
+    signal p_cast3_reg_387 : STD_LOGIC_VECTOR (60 downto 0);
     signal m1_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal m1_buffer_ce0 : STD_LOGIC;
     signal m1_buffer_we0 : STD_LOGIC;
-    signal m1_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal m1_buffer_q0 : STD_LOGIC_VECTOR (63 downto 0);
     signal m2_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal m2_buffer_ce0 : STD_LOGIC;
     signal m2_buffer_we0 : STD_LOGIC;
-    signal m2_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal m2_buffer_q0 : STD_LOGIC_VECTOR (63 downto 0);
     signal m3_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal m3_buffer_ce0 : STD_LOGIC;
     signal m3_buffer_we0 : STD_LOGIC;
-    signal m3_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal m3_buffer_q0 : STD_LOGIC_VECTOR (63 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_ap_idle : STD_LOGIC;
@@ -256,8 +257,8 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WVALID : STD_LOGIC;
-    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WLAST : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WID : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WUSER : STD_LOGIC_VECTOR (0 downto 0);
@@ -278,7 +279,7 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_1_fu_153_m1_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m1_buffer_ce0 : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_m1_buffer_we0 : STD_LOGIC;
-    signal grp_matprod_Pipeline_1_fu_153_m1_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_matprod_Pipeline_1_fu_153_m1_buffer_d0 : STD_LOGIC_VECTOR (63 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_ap_idle : STD_LOGIC;
@@ -296,8 +297,8 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WVALID : STD_LOGIC;
-    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WLAST : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WID : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WUSER : STD_LOGIC_VECTOR (0 downto 0);
@@ -318,7 +319,7 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_2_fu_162_m2_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m2_buffer_ce0 : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_m2_buffer_we0 : STD_LOGIC;
-    signal grp_matprod_Pipeline_2_fu_162_m2_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_matprod_Pipeline_2_fu_162_m2_buffer_d0 : STD_LOGIC_VECTOR (63 downto 0);
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_idle : STD_LOGIC;
@@ -330,10 +331,7 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_ce0 : STD_LOGIC;
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_we0 : STD_LOGIC;
-    signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_ce : STD_LOGIC;
+    signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_d0 : STD_LOGIC_VECTOR (63 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_4_fu_185_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_4_fu_185_ap_idle : STD_LOGIC;
@@ -351,8 +349,8 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WVALID : STD_LOGIC;
-    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WLAST : STD_LOGIC;
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WID : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WUSER : STD_LOGIC_VECTOR (0 downto 0);
@@ -384,7 +382,7 @@ architecture behav of matprod is
     signal gmem_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
     signal gmem_RVALID : STD_LOGIC;
     signal gmem_RREADY : STD_LOGIC;
-    signal gmem_RDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal gmem_RDATA : STD_LOGIC_VECTOR (63 downto 0);
     signal gmem_RFIFONUM : STD_LOGIC_VECTOR (8 downto 0);
     signal gmem_BVALID : STD_LOGIC;
     signal gmem_BREADY : STD_LOGIC;
@@ -406,7 +404,6 @@ architecture behav of matprod is
     signal ap_CS_fsm_state24 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state24 : signal is "none";
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start_reg : STD_LOGIC := '0';
-    signal ap_NS_fsm_state25 : STD_LOGIC;
     signal grp_matprod_Pipeline_4_fu_185_ap_start_reg : STD_LOGIC := '0';
     signal ap_NS_fsm_state28 : STD_LOGIC;
     signal ap_CS_fsm_state28 : STD_LOGIC;
@@ -419,11 +416,8 @@ architecture behav of matprod is
     signal ap_block_state34 : BOOLEAN;
     signal trunc_ln6_fu_194_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal trunc_ln6_1_fu_198_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_202_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_202_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal grp_fu_202_ce : STD_LOGIC;
     signal grp_fu_230_ce : STD_LOGIC;
     signal ap_block_state13_on_subcall_done : BOOLEAN;
     signal grp_fu_258_ce : STD_LOGIC;
@@ -487,8 +481,8 @@ architecture behav of matprod is
         m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WVALID : OUT STD_LOGIC;
         m_axi_gmem_WREADY : IN STD_LOGIC;
-        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
         m_axi_gmem_WLAST : OUT STD_LOGIC;
         m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -507,7 +501,7 @@ architecture behav of matprod is
         m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RVALID : IN STD_LOGIC;
         m_axi_gmem_RREADY : OUT STD_LOGIC;
-        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
         m_axi_gmem_RLAST : IN STD_LOGIC;
         m_axi_gmem_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -518,11 +512,11 @@ architecture behav of matprod is
         m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        p_cast_cast : IN STD_LOGIC_VECTOR (61 downto 0);
+        p_cast_cast : IN STD_LOGIC_VECTOR (60 downto 0);
         m1_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m1_buffer_ce0 : OUT STD_LOGIC;
         m1_buffer_we0 : OUT STD_LOGIC;
-        m1_buffer_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m1_buffer_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
         sext_ln23 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
@@ -550,8 +544,8 @@ architecture behav of matprod is
         m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WVALID : OUT STD_LOGIC;
         m_axi_gmem_WREADY : IN STD_LOGIC;
-        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
         m_axi_gmem_WLAST : OUT STD_LOGIC;
         m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -570,7 +564,7 @@ architecture behav of matprod is
         m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RVALID : IN STD_LOGIC;
         m_axi_gmem_RREADY : OUT STD_LOGIC;
-        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
         m_axi_gmem_RLAST : IN STD_LOGIC;
         m_axi_gmem_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -581,11 +575,11 @@ architecture behav of matprod is
         m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        p_cast1_cast : IN STD_LOGIC_VECTOR (61 downto 0);
+        p_cast1_cast : IN STD_LOGIC_VECTOR (60 downto 0);
         m2_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m2_buffer_ce0 : OUT STD_LOGIC;
         m2_buffer_we0 : OUT STD_LOGIC;
-        m2_buffer_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m2_buffer_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
         sext_ln24 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
@@ -602,21 +596,17 @@ architecture behav of matprod is
         trunc_ln6_1 : IN STD_LOGIC_VECTOR (9 downto 0);
         m1_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m1_buffer_ce0 : OUT STD_LOGIC;
-        m1_buffer_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        m1_buffer_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
         trunc_ln6 : IN STD_LOGIC_VECTOR (9 downto 0);
         m2_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m2_buffer_ce0 : OUT STD_LOGIC;
-        m2_buffer_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        m2_buffer_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
         N2 : IN STD_LOGIC_VECTOR (31 downto 0);
         m3_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m3_buffer_ce0 : OUT STD_LOGIC;
         m3_buffer_we0 : OUT STD_LOGIC;
-        m3_buffer_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        N3 : IN STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_202_p_din0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_202_p_din1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_202_p_dout0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_202_p_ce : OUT STD_LOGIC );
+        m3_buffer_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        N3 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
@@ -643,8 +633,8 @@ architecture behav of matprod is
         m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WVALID : OUT STD_LOGIC;
         m_axi_gmem_WREADY : IN STD_LOGIC;
-        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
         m_axi_gmem_WLAST : OUT STD_LOGIC;
         m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -663,7 +653,7 @@ architecture behav of matprod is
         m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RVALID : IN STD_LOGIC;
         m_axi_gmem_RREADY : OUT STD_LOGIC;
-        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
         m_axi_gmem_RLAST : IN STD_LOGIC;
         m_axi_gmem_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -674,11 +664,11 @@ architecture behav of matprod is
         m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        p_cast3_cast : IN STD_LOGIC_VECTOR (61 downto 0);
+        p_cast3_cast : IN STD_LOGIC_VECTOR (60 downto 0);
         m3_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m3_buffer_ce0 : OUT STD_LOGIC;
-        m3_buffer_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        sext_ln42 : IN STD_LOGIC_VECTOR (31 downto 0) );
+        m3_buffer_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        sext_ln40 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
@@ -710,8 +700,8 @@ architecture behav of matprod is
         address0 : IN STD_LOGIC_VECTOR (9 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+        d0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        q0 : OUT STD_LOGIC_VECTOR (63 downto 0) );
     end component;
 
 
@@ -831,7 +821,7 @@ architecture behav of matprod is
         I_ARLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_RVALID : OUT STD_LOGIC;
         I_RREADY : IN STD_LOGIC;
-        I_RDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        I_RDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
         I_RFIFONUM : OUT STD_LOGIC_VECTOR (8 downto 0);
         I_AWVALID : IN STD_LOGIC;
         I_AWREADY : OUT STD_LOGIC;
@@ -839,8 +829,8 @@ architecture behav of matprod is
         I_AWLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_WVALID : IN STD_LOGIC;
         I_WREADY : OUT STD_LOGIC;
-        I_WDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        I_WSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
+        I_WDATA : IN STD_LOGIC_VECTOR (63 downto 0);
+        I_WSTRB : IN STD_LOGIC_VECTOR (7 downto 0);
         I_BVALID : OUT STD_LOGIC;
         I_BREADY : IN STD_LOGIC );
     end component;
@@ -850,7 +840,7 @@ architecture behav of matprod is
 begin
     m1_buffer_U : component matprod_m1_buffer_RAM_AUTO_1R1W
     generic map (
-        DataWidth => 32,
+        DataWidth => 64,
         AddressRange => 1024,
         AddressWidth => 10)
     port map (
@@ -864,7 +854,7 @@ begin
 
     m2_buffer_U : component matprod_m1_buffer_RAM_AUTO_1R1W
     generic map (
-        DataWidth => 32,
+        DataWidth => 64,
         AddressRange => 1024,
         AddressWidth => 10)
     port map (
@@ -878,7 +868,7 @@ begin
 
     m3_buffer_U : component matprod_m1_buffer_RAM_AUTO_1R1W
     generic map (
-        DataWidth => 32,
+        DataWidth => 64,
         AddressRange => 1024,
         AddressWidth => 10)
     port map (
@@ -1034,11 +1024,7 @@ begin
         m3_buffer_ce0 => grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_ce0,
         m3_buffer_we0 => grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_we0,
         m3_buffer_d0 => grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_d0,
-        N3 => N3_read_reg_286,
-        grp_fu_202_p_din0 => grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din0,
-        grp_fu_202_p_din1 => grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din1,
-        grp_fu_202_p_dout0 => grp_fu_202_p2,
-        grp_fu_202_p_ce => grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_ce);
+        N3 => N3_read_reg_286);
 
     grp_matprod_Pipeline_4_fu_185 : component matprod_matprod_Pipeline_4
     port map (
@@ -1083,7 +1069,7 @@ begin
         m_axi_gmem_ARUSER => grp_matprod_Pipeline_4_fu_185_m_axi_gmem_ARUSER,
         m_axi_gmem_RVALID => ap_const_logic_0,
         m_axi_gmem_RREADY => grp_matprod_Pipeline_4_fu_185_m_axi_gmem_RREADY,
-        m_axi_gmem_RDATA => ap_const_lv32_0,
+        m_axi_gmem_RDATA => ap_const_lv64_0,
         m_axi_gmem_RLAST => ap_const_logic_0,
         m_axi_gmem_RID => ap_const_lv1_0,
         m_axi_gmem_RFIFONUM => ap_const_lv9_0,
@@ -1098,7 +1084,7 @@ begin
         m3_buffer_address0 => grp_matprod_Pipeline_4_fu_185_m3_buffer_address0,
         m3_buffer_ce0 => grp_matprod_Pipeline_4_fu_185_m3_buffer_ce0,
         m3_buffer_q0 => m3_buffer_q0,
-        sext_ln42 => mul_ln42_reg_376);
+        sext_ln40 => mul_ln40_reg_376);
 
     BUS1_s_axi_U : component matprod_BUS1_s_axi
     generic map (
@@ -1155,7 +1141,7 @@ begin
         C_PROT_VALUE => C_M_AXI_GMEM_PROT_VALUE,
         C_CACHE_VALUE => C_M_AXI_GMEM_CACHE_VALUE,
         USER_RFIFONUM_WIDTH => 9,
-        USER_DW => 32,
+        USER_DW => 64,
         USER_AW => 64,
         NUM_READ_OUTSTANDING => 16,
         NUM_WRITE_OUTSTANDING => 16)
@@ -1227,7 +1213,7 @@ begin
         I_BVALID => gmem_BVALID,
         I_BREADY => gmem_BREADY);
 
-    mul_32s_32s_32_2_1_U27 : component matprod_mul_32s_32s_32_2_1
+    mul_32s_32s_32_2_1_U30 : component matprod_mul_32s_32s_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -1237,12 +1223,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        din0 => grp_fu_202_p0,
-        din1 => grp_fu_202_p1,
-        ce => grp_fu_202_ce,
+        din0 => N2_read_reg_293,
+        din1 => N1_read_reg_300,
+        ce => ap_const_logic_1,
         dout => grp_fu_202_p2);
 
-    mul_32s_32s_32_2_1_U28 : component matprod_mul_32s_32s_32_2_1
+    mul_32s_32s_32_2_1_U31 : component matprod_mul_32s_32s_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -1257,7 +1243,7 @@ begin
         ce => grp_fu_230_ce,
         dout => grp_fu_230_p2);
 
-    mul_32s_32s_32_2_1_U29 : component matprod_mul_32s_32s_32_2_1
+    mul_32s_32s_32_2_1_U32 : component matprod_mul_32s_32s_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -1342,7 +1328,7 @@ begin
             if (ap_rst_n_inv = '1') then
                 grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_logic_1 = ap_NS_fsm_state25) and (ap_const_logic_1 = ap_CS_fsm_state24))) then 
+                if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
                     grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start_reg <= ap_const_logic_1;
                 elsif ((grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_ready = ap_const_logic_1)) then 
                     grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start_reg <= ap_const_logic_0;
@@ -1386,7 +1372,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state26)) then
-                icmp_ln42_reg_383 <= icmp_ln42_fu_262_p2;
+                icmp_ln40_reg_383 <= icmp_ln40_fu_262_p2;
             end if;
         end if;
     end process;
@@ -1410,7 +1396,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then
-                mul_ln42_reg_376 <= grp_fu_258_p2;
+                mul_ln40_reg_376 <= grp_fu_258_p2;
             end if;
         end if;
     end process;
@@ -1418,15 +1404,15 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state15) and (icmp_ln24_fu_234_p2 = ap_const_lv1_0))) then
-                p_cast1_reg_365 <= m2_read_reg_312(63 downto 2);
+                p_cast1_reg_365 <= m2_read_reg_312(63 downto 3);
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((icmp_ln42_fu_262_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state26))) then
-                p_cast3_reg_387 <= m3_read_reg_307(63 downto 2);
+            if (((icmp_ln40_fu_262_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state26))) then
+                p_cast3_reg_387 <= m3_read_reg_307(63 downto 3);
             end if;
         end if;
     end process;
@@ -1434,12 +1420,12 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state4) and (icmp_ln23_fu_206_p2 = ap_const_lv1_0))) then
-                p_cast_reg_343 <= m1_read_reg_317(63 downto 2);
+                p_cast_reg_343 <= m1_read_reg_317(63 downto 3);
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state5, ap_CS_fsm_state16, ap_CS_fsm_state27, ap_CS_fsm_state34, icmp_ln42_reg_383, icmp_ln23_fu_206_p2, ap_CS_fsm_state4, icmp_ln24_fu_234_p2, ap_CS_fsm_state15, icmp_ln42_fu_262_p2, ap_CS_fsm_state26, grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done, grp_matprod_Pipeline_4_fu_185_ap_done, gmem_AWREADY, gmem_ARREADY, gmem_BVALID, ap_CS_fsm_state13, ap_CS_fsm_state24, ap_CS_fsm_state29, ap_block_state13_on_subcall_done, ap_block_state24_on_subcall_done)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state5, ap_CS_fsm_state16, ap_CS_fsm_state27, ap_CS_fsm_state34, icmp_ln40_reg_383, icmp_ln23_fu_206_p2, ap_CS_fsm_state4, icmp_ln24_fu_234_p2, ap_CS_fsm_state15, icmp_ln40_fu_262_p2, ap_CS_fsm_state26, grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done, grp_matprod_Pipeline_4_fu_185_ap_done, gmem_AWREADY, gmem_ARREADY, gmem_BVALID, ap_CS_fsm_state13, ap_CS_fsm_state24, ap_CS_fsm_state29, ap_block_state13_on_subcall_done, ap_block_state24_on_subcall_done)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -1521,9 +1507,9 @@ begin
             when ap_ST_fsm_state25 => 
                 ap_NS_fsm <= ap_ST_fsm_state26;
             when ap_ST_fsm_state26 => 
-                if (((grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done = ap_const_logic_1) and (icmp_ln42_fu_262_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state26))) then
+                if (((grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done = ap_const_logic_1) and (icmp_ln40_fu_262_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state26))) then
                     ap_NS_fsm <= ap_ST_fsm_state34;
-                elsif (((grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done = ap_const_logic_1) and (icmp_ln42_fu_262_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state26))) then
+                elsif (((grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done = ap_const_logic_1) and (icmp_ln40_fu_262_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state26))) then
                     ap_NS_fsm <= ap_ST_fsm_state27;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state26;
@@ -1551,7 +1537,7 @@ begin
             when ap_ST_fsm_state33 => 
                 ap_NS_fsm <= ap_ST_fsm_state34;
             when ap_ST_fsm_state34 => 
-                if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln42_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34))) then
+                if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln40_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state34;
@@ -1582,7 +1568,6 @@ begin
     ap_CS_fsm_state5 <= ap_CS_fsm(4);
     ap_NS_fsm_state12 <= ap_NS_fsm(11);
     ap_NS_fsm_state23 <= ap_NS_fsm(22);
-    ap_NS_fsm_state25 <= ap_NS_fsm(24);
     ap_NS_fsm_state28 <= ap_NS_fsm(27);
     ap_ST_fsm_state10_blk <= ap_const_logic_0;
     ap_ST_fsm_state11_blk <= ap_const_logic_0;
@@ -1674,9 +1659,9 @@ begin
     ap_ST_fsm_state32_blk <= ap_const_logic_0;
     ap_ST_fsm_state33_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state34_blk_assign_proc : process(icmp_ln42_reg_383, gmem_BVALID)
+    ap_ST_fsm_state34_blk_assign_proc : process(icmp_ln40_reg_383, gmem_BVALID)
     begin
-        if (((gmem_BVALID = ap_const_logic_0) and (icmp_ln42_reg_383 = ap_const_lv1_0))) then 
+        if (((gmem_BVALID = ap_const_logic_0) and (icmp_ln40_reg_383 = ap_const_lv1_0))) then 
             ap_ST_fsm_state34_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state34_blk <= ap_const_logic_0;
@@ -1712,15 +1697,15 @@ begin
     end process;
 
 
-    ap_block_state34_assign_proc : process(icmp_ln42_reg_383, gmem_BVALID)
+    ap_block_state34_assign_proc : process(icmp_ln40_reg_383, gmem_BVALID)
     begin
-                ap_block_state34 <= ((gmem_BVALID = ap_const_logic_0) and (icmp_ln42_reg_383 = ap_const_lv1_0));
+                ap_block_state34 <= ((gmem_BVALID = ap_const_logic_0) and (icmp_ln40_reg_383 = ap_const_lv1_0));
     end process;
 
 
-    ap_done_assign_proc : process(ap_CS_fsm_state34, icmp_ln42_reg_383, gmem_BVALID)
+    ap_done_assign_proc : process(ap_CS_fsm_state34, icmp_ln40_reg_383, gmem_BVALID)
     begin
-        if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln42_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34))) then 
+        if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln40_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -1738,9 +1723,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state34, icmp_ln42_reg_383, gmem_BVALID)
+    ap_ready_assign_proc : process(ap_CS_fsm_state34, icmp_ln40_reg_383, gmem_BVALID)
     begin
-        if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln42_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34))) then 
+        if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln40_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -1812,10 +1797,10 @@ begin
     end process;
 
 
-    gmem_AWLEN_assign_proc : process(ap_CS_fsm_state27, mul_ln42_reg_376, grp_matprod_Pipeline_4_fu_185_m_axi_gmem_AWLEN, gmem_AWREADY, ap_CS_fsm_state28, ap_CS_fsm_state29)
+    gmem_AWLEN_assign_proc : process(ap_CS_fsm_state27, mul_ln40_reg_376, grp_matprod_Pipeline_4_fu_185_m_axi_gmem_AWLEN, gmem_AWREADY, ap_CS_fsm_state28, ap_CS_fsm_state29)
     begin
         if (((gmem_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state27))) then 
-            gmem_AWLEN <= mul_ln42_reg_376;
+            gmem_AWLEN <= mul_ln40_reg_376;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state28))) then 
             gmem_AWLEN <= grp_matprod_Pipeline_4_fu_185_m_axi_gmem_AWLEN;
         else 
@@ -1836,9 +1821,9 @@ begin
     end process;
 
 
-    gmem_BREADY_assign_proc : process(ap_CS_fsm_state34, icmp_ln42_reg_383, grp_matprod_Pipeline_4_fu_185_m_axi_gmem_BREADY, gmem_BVALID, ap_CS_fsm_state28, ap_CS_fsm_state29)
+    gmem_BREADY_assign_proc : process(ap_CS_fsm_state34, icmp_ln40_reg_383, grp_matprod_Pipeline_4_fu_185_m_axi_gmem_BREADY, gmem_BVALID, ap_CS_fsm_state28, ap_CS_fsm_state29)
     begin
-        if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln42_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34) and (icmp_ln42_reg_383 = ap_const_lv1_0))) then 
+        if ((not(((gmem_BVALID = ap_const_logic_0) and (icmp_ln40_reg_383 = ap_const_lv1_0))) and (ap_const_logic_1 = ap_CS_fsm_state34) and (icmp_ln40_reg_383 = ap_const_lv1_0))) then 
             gmem_BREADY <= ap_const_logic_1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state28))) then 
             gmem_BREADY <= grp_matprod_Pipeline_4_fu_185_m_axi_gmem_BREADY;
@@ -1890,46 +1875,12 @@ begin
     end process;
 
 
-    gmem_blk_n_B_assign_proc : process(m_axi_gmem_BVALID, ap_CS_fsm_state34, icmp_ln42_reg_383)
+    gmem_blk_n_B_assign_proc : process(m_axi_gmem_BVALID, ap_CS_fsm_state34, icmp_ln40_reg_383)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state34) and (icmp_ln42_reg_383 = ap_const_lv1_0))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state34) and (icmp_ln40_reg_383 = ap_const_lv1_0))) then 
             gmem_blk_n_B <= m_axi_gmem_BVALID;
         else 
             gmem_blk_n_B <= ap_const_logic_1;
-        end if; 
-    end process;
-
-
-    grp_fu_202_ce_assign_proc : process(ap_CS_fsm_state26, grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_ce)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state26)) then 
-            grp_fu_202_ce <= grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_ce;
-        else 
-            grp_fu_202_ce <= ap_const_logic_1;
-        end if; 
-    end process;
-
-
-    grp_fu_202_p0_assign_proc : process(N2_read_reg_293, ap_CS_fsm_state26, grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din0, ap_CS_fsm_state2)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state26)) then 
-            grp_fu_202_p0 <= grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            grp_fu_202_p0 <= N2_read_reg_293;
-        else 
-            grp_fu_202_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    grp_fu_202_p1_assign_proc : process(N1_read_reg_300, ap_CS_fsm_state26, grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din1, ap_CS_fsm_state2)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state26)) then 
-            grp_fu_202_p1 <= grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_grp_fu_202_p_din1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            grp_fu_202_p1 <= N1_read_reg_300;
-        else 
-            grp_fu_202_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
@@ -1959,7 +1910,7 @@ begin
     grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start <= grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start_reg;
     icmp_ln23_fu_206_p2 <= "1" when (mul_ln23_reg_332 = ap_const_lv32_0) else "0";
     icmp_ln24_fu_234_p2 <= "1" when (mul_ln24_reg_354 = ap_const_lv32_0) else "0";
-    icmp_ln42_fu_262_p2 <= "1" when (mul_ln42_reg_376 = ap_const_lv32_0) else "0";
+    icmp_ln40_fu_262_p2 <= "1" when (mul_ln40_reg_376 = ap_const_lv32_0) else "0";
 
     m1_buffer_address0_assign_proc : process(icmp_ln23_reg_339, ap_CS_fsm_state26, grp_matprod_Pipeline_1_fu_153_m1_buffer_address0, grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m1_buffer_address0, ap_CS_fsm_state13)
     begin

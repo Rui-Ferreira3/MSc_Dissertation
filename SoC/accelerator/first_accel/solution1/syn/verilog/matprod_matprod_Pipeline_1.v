@@ -91,8 +91,8 @@ output  [3:0] m_axi_gmem_AWREGION;
 output  [0:0] m_axi_gmem_AWUSER;
 output   m_axi_gmem_WVALID;
 input   m_axi_gmem_WREADY;
-output  [31:0] m_axi_gmem_WDATA;
-output  [3:0] m_axi_gmem_WSTRB;
+output  [63:0] m_axi_gmem_WDATA;
+output  [7:0] m_axi_gmem_WSTRB;
 output   m_axi_gmem_WLAST;
 output  [0:0] m_axi_gmem_WID;
 output  [0:0] m_axi_gmem_WUSER;
@@ -111,7 +111,7 @@ output  [3:0] m_axi_gmem_ARREGION;
 output  [0:0] m_axi_gmem_ARUSER;
 input   m_axi_gmem_RVALID;
 output   m_axi_gmem_RREADY;
-input  [31:0] m_axi_gmem_RDATA;
+input  [63:0] m_axi_gmem_RDATA;
 input   m_axi_gmem_RLAST;
 input  [0:0] m_axi_gmem_RID;
 input  [8:0] m_axi_gmem_RFIFONUM;
@@ -122,11 +122,11 @@ output   m_axi_gmem_BREADY;
 input  [1:0] m_axi_gmem_BRESP;
 input  [0:0] m_axi_gmem_BID;
 input  [0:0] m_axi_gmem_BUSER;
-input  [61:0] p_cast_cast;
+input  [60:0] p_cast_cast;
 output  [9:0] m1_buffer_address0;
 output   m1_buffer_ce0;
 output   m1_buffer_we0;
-output  [31:0] m1_buffer_d0;
+output  [63:0] m1_buffer_d0;
 input  [31:0] sext_ln23;
 
 reg ap_idle;
@@ -151,16 +151,16 @@ reg    ap_ready_int;
 reg    gmem_blk_n_R;
 wire    ap_block_pp0_stage0;
 reg    ap_block_pp0_stage0_11001;
-wire  signed [61:0] sext_ln23_cast_fu_86_p1;
-reg  signed [61:0] sext_ln23_cast_reg_134;
-reg   [61:0] loop_index9_load_reg_144;
-reg   [31:0] gmem_addr_read_reg_149;
-wire   [61:0] empty_fu_108_p2;
-reg   [61:0] empty_reg_154;
-reg   [0:0] exitcond15_reg_159;
+wire  signed [60:0] sext_ln23_cast_fu_86_p1;
+reg  signed [60:0] sext_ln23_cast_reg_138;
+reg   [60:0] loop_index9_load_reg_148;
+reg   [63:0] gmem_addr_read_reg_153;
+wire   [60:0] empty_26_fu_108_p2;
+reg   [60:0] empty_26_reg_158;
+reg   [0:0] exitcond15_reg_163;
 wire   [63:0] loop_index9_cast_fu_119_p1;
-reg   [61:0] loop_index9_fu_52;
-reg   [61:0] ap_sig_allocacmp_loop_index9_load;
+reg   [60:0] loop_index9_fu_52;
+reg   [60:0] ap_sig_allocacmp_loop_index9_load;
 wire    ap_loop_init;
 reg    ap_done_reg;
 wire    ap_continue_int;
@@ -247,20 +247,20 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
         if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-            loop_index9_fu_52 <= 62'd0;
-        end else if (((ap_enable_reg_pp0_iter2 == 1'b1) & (exitcond15_reg_159 == 1'd0))) begin
-            loop_index9_fu_52 <= empty_reg_154;
+            loop_index9_fu_52 <= 61'd0;
+        end else if (((ap_enable_reg_pp0_iter2 == 1'b1) & (exitcond15_reg_163 == 1'd0))) begin
+            loop_index9_fu_52 <= empty_26_reg_158;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        empty_reg_154 <= empty_fu_108_p2;
-        exitcond15_reg_159 <= exitcond15_fu_114_p2;
-        gmem_addr_read_reg_149 <= m_axi_gmem_RDATA;
-        loop_index9_load_reg_144 <= ap_sig_allocacmp_loop_index9_load;
-        sext_ln23_cast_reg_134 <= sext_ln23_cast_fu_86_p1;
+        empty_26_reg_158 <= empty_26_fu_108_p2;
+        exitcond15_reg_163 <= exitcond15_fu_114_p2;
+        gmem_addr_read_reg_153 <= m_axi_gmem_RDATA;
+        loop_index9_load_reg_148 <= ap_sig_allocacmp_loop_index9_load;
+        sext_ln23_cast_reg_138 <= sext_ln23_cast_fu_86_p1;
     end
 end
 
@@ -305,8 +305,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1) & (exitcond15_reg_159 == 1'd0))) begin
-        ap_sig_allocacmp_loop_index9_load = empty_reg_154;
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1) & (exitcond15_reg_163 == 1'd0))) begin
+        ap_sig_allocacmp_loop_index9_load = empty_26_reg_158;
     end else begin
         ap_sig_allocacmp_loop_index9_load = loop_index9_fu_52;
     end
@@ -381,15 +381,15 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter1_stage0;
 
-assign empty_fu_108_p2 = (ap_sig_allocacmp_loop_index9_load + 62'd1);
+assign empty_26_fu_108_p2 = (ap_sig_allocacmp_loop_index9_load + 61'd1);
 
-assign exitcond15_fu_114_p2 = ((empty_fu_108_p2 == sext_ln23_cast_reg_134) ? 1'b1 : 1'b0);
+assign exitcond15_fu_114_p2 = ((empty_26_fu_108_p2 == sext_ln23_cast_reg_138) ? 1'b1 : 1'b0);
 
-assign loop_index9_cast_fu_119_p1 = loop_index9_load_reg_144;
+assign loop_index9_cast_fu_119_p1 = loop_index9_load_reg_148;
 
 assign m1_buffer_address0 = loop_index9_cast_fu_119_p1;
 
-assign m1_buffer_d0 = gmem_addr_read_reg_149;
+assign m1_buffer_d0 = gmem_addr_read_reg_153;
 
 assign m_axi_gmem_ARADDR = 64'd0;
 
@@ -441,13 +441,13 @@ assign m_axi_gmem_AWVALID = 1'b0;
 
 assign m_axi_gmem_BREADY = 1'b0;
 
-assign m_axi_gmem_WDATA = 32'd0;
+assign m_axi_gmem_WDATA = 64'd0;
 
 assign m_axi_gmem_WID = 1'd0;
 
 assign m_axi_gmem_WLAST = 1'b0;
 
-assign m_axi_gmem_WSTRB = 4'd0;
+assign m_axi_gmem_WSTRB = 8'd0;
 
 assign m_axi_gmem_WUSER = 1'd0;
 

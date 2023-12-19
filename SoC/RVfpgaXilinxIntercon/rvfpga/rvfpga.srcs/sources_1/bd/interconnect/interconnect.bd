@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x9FBE14ED6A0A8F1B",
+      "boundary_crc": "0x260FD3AF8B0A0638",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../rvfpga.gen/sources_1/bd/interconnect",
       "name": "interconnect",
@@ -1661,7 +1661,7 @@
             "value": "1"
           },
           "ID_WIDTH": {
-            "value": "0"
+            "value": "4"
           },
           "INSERT_VIP": {
             "value": "0",
@@ -1900,6 +1900,30 @@
           "RREADY": {
             "physical_name": "accel_mem_rready",
             "direction": "I"
+          },
+          "ARID": {
+            "physical_name": "accel_mem_arid",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "AWID": {
+            "physical_name": "accel_mem_awid",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "BID": {
+            "physical_name": "accel_mem_bid",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "RID": {
+            "physical_name": "accel_mem_rid",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
           }
         }
       },
@@ -1938,8 +1962,7 @@
             "value_src": "default"
           },
           "HAS_BURST": {
-            "value": "1",
-            "value_src": "default"
+            "value": "0"
           },
           "HAS_CACHE": {
             "value": "1",

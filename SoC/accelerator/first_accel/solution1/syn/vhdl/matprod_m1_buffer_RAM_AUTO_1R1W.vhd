@@ -11,7 +11,7 @@ use ieee.std_logic_unsigned.all;
 entity matprod_m1_buffer_RAM_AUTO_1R1W is 
     generic(
         MEM_TYPE        : string    := "auto"; 
-        DataWidth       : integer   := 32; 
+        DataWidth       : integer   := 64; 
         AddressWidth    : integer   := 10;
         AddressRange    : integer   := 1024
     ); 

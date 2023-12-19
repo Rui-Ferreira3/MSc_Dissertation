@@ -37,7 +37,7 @@
               <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <direction>2</direction>
           <if_type>4</if_type>
@@ -106,7 +106,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967294</coreId>
+              <coreId>1969317477</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -142,7 +142,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953394531</coreId>
+              <coreId>1869182069</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -178,7 +178,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>16843009</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -214,7 +214,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953394531</coreId>
+              <coreId>6107185</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -646,7 +646,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1766615907</coreId>
+              <coreId>644116338</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -702,7 +702,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4014829992</coreId>
+              <coreId>1952541999</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -761,7 +761,7 @@
               <coreId>82</coreId>
               <rtlModuleName>matprod_m1_buffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -817,7 +817,7 @@
               <coreId>82</coreId>
               <rtlModuleName>matprod_m1_buffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -873,7 +873,7 @@
               <coreId>82</coreId>
               <rtlModuleName>matprod_m1_buffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -919,7 +919,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32s_32s_32_2_1_U27</rtlName>
+              <rtlName>mul_32s_32s_32_2_1_U30</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -1040,7 +1040,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>825045040</coreId>
+              <coreId>757935405</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1098,10 +1098,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4014831112</coreId>
+              <coreId>1936018748</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>62</bitwidth>
+            <bitwidth>61</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
@@ -1157,7 +1157,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953394531</coreId>
+              <coreId>1128351314</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1206,17 +1206,17 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32s_32s_32_2_1_U27</rtlName>
+              <rtlName/>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967040</coreId>
+              <coreId>774905914</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -1328,7 +1328,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>574451311</coreId>
+              <coreId>1768715620</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1375,7 +1375,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4014835032</coreId>
+              <coreId>1699560457</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1424,7 +1424,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32s_32s_32_2_1_U28</rtlName>
+              <rtlName>mul_32s_32s_32_2_1_U31</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -1545,7 +1545,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4014839528</coreId>
+              <coreId>1629892959</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1603,10 +1603,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4014840072</coreId>
+              <coreId>543716455</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>62</bitwidth>
+            <bitwidth>61</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
@@ -1662,7 +1662,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953067621</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1718,10 +1718,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>943271480</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -1743,7 +1743,7 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>empty_20</name>
+              <name>empty_28</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>6</lineNumber>
@@ -1835,7 +1835,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1179535650</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1885,7 +1885,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508187</coreId>
+              <coreId>775648111</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1941,7 +1941,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1431323424</coreId>
+              <coreId>1801676136</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1969,7 +1969,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>2.43</m_delay>
           <m_topoIndex>31</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1978,10 +1978,10 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>mul_ln42</name>
+              <name>mul_ln40</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>40</lineNumber>
               <contextFuncName>matprod</contextFuncName>
               <contextNormFuncName>matprod</contextNormFuncName>
               <inlineStackInfo>
@@ -1997,13 +1997,13 @@
                         <first>first_accel/matprod.cpp</first>
                         <second>matprod</second>
                       </first>
-                      <second>42</second>
+                      <second>40</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32s_32s_32_2_1_U29</rtlName>
+              <rtlName>mul_32s_32s_32_2_1_U32</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -2035,10 +2035,10 @@
             <Obj>
               <type>0</type>
               <id>63</id>
-              <name>icmp_ln42</name>
+              <name>icmp_ln40</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>40</lineNumber>
               <contextFuncName>matprod</contextFuncName>
               <contextNormFuncName>matprod</contextNormFuncName>
               <inlineStackInfo>
@@ -2054,13 +2054,13 @@
                         <first>first_accel/matprod.cpp</first>
                         <second>matprod</second>
                       </first>
-                      <second>42</second>
+                      <second>40</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln42_fu_262_p2</rtlName>
+              <rtlName>icmp_ln40_fu_262_p2</rtlName>
               <control>auto</control>
               <opType>icmp</opType>
               <implIndex>auto</implIndex>
@@ -2092,10 +2092,10 @@
             <Obj>
               <type>0</type>
               <id>64</id>
-              <name>br_ln42</name>
+              <name>br_ln40</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>40</lineNumber>
               <contextFuncName>matprod</contextFuncName>
               <contextNormFuncName>matprod</contextNormFuncName>
               <inlineStackInfo>
@@ -2111,7 +2111,7 @@
                         <first>first_accel/matprod.cpp</first>
                         <second>matprod</second>
                       </first>
-                      <second>42</second>
+                      <second>40</second>
                     </item>
                   </second>
                 </item>
@@ -2124,7 +2124,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1414750023</coreId>
+              <coreId>1634956133</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2182,10 +2182,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852795252</coreId>
+              <coreId>640163950</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>62</bitwidth>
+            <bitwidth>61</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
@@ -2241,7 +2241,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1768189545</coreId>
+              <coreId>1769104758</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2297,10 +2297,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1936683105</coreId>
+              <coreId>1953460082</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -2322,7 +2322,7 @@
             <Obj>
               <type>0</type>
               <id>69</id>
-              <name>empty_21</name>
+              <name>empty_29</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>6</lineNumber>
@@ -2414,7 +2414,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1663056755</coreId>
+              <coreId>1969365102</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2449,10 +2449,10 @@
             <Obj>
               <type>0</type>
               <id>71</id>
-              <name>empty_22</name>
+              <name>empty_30</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>43</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>matprod</contextFuncName>
               <contextNormFuncName>matprod</contextNormFuncName>
               <inlineStackInfo>
@@ -2468,7 +2468,7 @@
                         <first>first_accel/matprod.cpp</first>
                         <second>matprod</second>
                       </first>
-                      <second>43</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
@@ -2509,10 +2509,10 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>br_ln43</name>
+              <name>br_ln41</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>43</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>matprod</contextFuncName>
               <contextNormFuncName>matprod</contextNormFuncName>
               <inlineStackInfo>
@@ -2528,7 +2528,7 @@
                         <first>first_accel/matprod.cpp</first>
                         <second>matprod</second>
                       </first>
-                      <second>43</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
@@ -2541,7 +2541,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>536885299</coreId>
+              <coreId>1030185332</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2565,10 +2565,10 @@
             <Obj>
               <type>0</type>
               <id>74</id>
-              <name>_ln43</name>
+              <name>_ln41</name>
               <fileName>first_accel/matprod.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>43</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>matprod</contextFuncName>
               <contextNormFuncName>matprod</contextNormFuncName>
               <inlineStackInfo>
@@ -2584,7 +2584,7 @@
                         <first>first_accel/matprod.cpp</first>
                         <second>matprod</second>
                       </first>
-                      <second>43</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
@@ -2597,7 +2597,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1936028192</coreId>
+              <coreId>858861106</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2642,7 +2642,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2673,7 +2673,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>225179984</coreId>
+              <coreId>744957216</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2704,13 +2704,13 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3964861010</coreId>
+              <coreId>1414750020</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>2</content>
+          <content>3</content>
         </item>
         <item class_id_reference="16" object_id="_52">
           <Value>
@@ -2735,7 +2735,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953394531</coreId>
+              <coreId>695430688</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2797,7 +2797,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
+              <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2828,7 +2828,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>757935405</coreId>
+              <coreId>1852793632</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2859,7 +2859,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1431323424</coreId>
+              <coreId>1685025392</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2893,7 +2893,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2228327</coreId>
+            <coreId>1627914922</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -2937,7 +2937,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>168</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -2973,7 +2973,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1998613601</coreId>
+            <coreId>168</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -3006,7 +3006,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1330405203</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -3042,7 +3042,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>2036689696</coreId>
+            <coreId>100</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -3076,7 +3076,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1112350774</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -3113,7 +3113,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>543520108</coreId>
+            <coreId>2</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -3974,7 +3974,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>12</mMinLatency>
+        <mMinLatency>-1</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -5259,11 +5259,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>718</second>
+              <second>772</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1282</second>
+              <second>1468</second>
             </item>
           </second>
         </item>
@@ -5274,11 +5274,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>286</second>
+              <second>314</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>155</second>
+              <second>153</second>
             </item>
           </second>
         </item>
@@ -5289,11 +5289,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>286</second>
+              <second>314</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>155</second>
+              <second>153</second>
             </item>
           </second>
         </item>
@@ -5304,11 +5304,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>226</second>
+              <second>255</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>155</second>
+              <second>153</second>
             </item>
           </second>
         </item>
@@ -5319,20 +5319,20 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>3</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>581</second>
+              <second>1822</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>494</second>
+              <second>1473</second>
             </item>
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U27 (mul_32s_32s_32_2_1)</first>
+          <first>mul_32s_32s_32_2_1_U30 (mul_32s_32s_32_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5351,7 +5351,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U28 (mul_32s_32s_32_2_1)</first>
+          <first>mul_32s_32s_32_2_1_U31 (mul_32s_32s_32_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5370,7 +5370,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U29 (mul_32s_32s_32_2_1)</first>
+          <first>mul_32s_32s_32_2_1_U32 (mul_32s_32s_32_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5508,7 +5508,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln42_fu_262_p2 ( icmp ) </first>
+          <first>icmp_ln40_fu_262_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5549,7 +5549,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>64</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -5557,11 +5557,11 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>32768</second>
+              <second>65536</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
@@ -5588,7 +5588,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>64</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -5596,11 +5596,11 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>32768</second>
+              <second>65536</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
@@ -5627,7 +5627,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>64</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -5635,11 +5635,11 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>32768</second>
+              <second>65536</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
@@ -5657,7 +5657,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>25</count>
+        <count>22</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -5955,75 +5955,6 @@
             <item>
               <first>LUT</first>
               <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_202_ce</first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_202_p0</first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>13</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_202_p1</first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>13</second>
             </item>
           </second>
         </item>
@@ -6429,7 +6360,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln42_reg_383</first>
+          <first>icmp_ln40_reg_383</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6543,7 +6474,7 @@
           </second>
         </item>
         <item>
-          <first>mul_ln42_reg_376</first>
+          <first>mul_ln40_reg_376</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6568,7 +6499,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>62</second>
+              <second>61</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -6576,7 +6507,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>62</second>
+              <second>61</second>
             </item>
           </second>
         </item>
@@ -6587,7 +6518,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>62</second>
+              <second>61</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -6595,7 +6526,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>62</second>
+              <second>61</second>
             </item>
           </second>
         </item>
@@ -6606,7 +6537,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>62</second>
+              <second>61</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -6614,7 +6545,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>62</second>
+              <second>61</second>
             </item>
           </second>
         </item>
@@ -6703,21 +6634,21 @@
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U27</first>
+          <first>mul_32s_32s_32_2_1_U30</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U28</first>
+          <first>mul_32s_32s_32_2_1_U31</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U29</first>
+          <first>mul_32s_32s_32_2_1_U32</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -6760,16 +6691,15 @@
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U27 (mul_32s_32s_32_2_1)</first>
+          <first>mul_32s_32s_32_2_1_U30 (mul_32s_32s_32_2_1)</first>
           <second>
-            <count>2</count>
+            <count>1</count>
             <item_version>0</item_version>
             <item>39</item>
-            <item>45</item>
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U28 (mul_32s_32s_32_2_1)</first>
+          <first>mul_32s_32s_32_2_1_U31 (mul_32s_32s_32_2_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6777,7 +6707,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32s_32s_32_2_1_U29 (mul_32s_32s_32_2_1)</first>
+          <first>mul_32s_32s_32_2_1_U32 (mul_32s_32s_32_2_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6805,7 +6735,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln42_fu_262_p2 ( icmp ) </first>
+          <first>icmp_ln40_fu_262_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7530,7 +7460,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln42_fu_262</first>
+        <first>icmp_ln40_fu_262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8026,7 +7956,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln42_reg_383</first>
+        <first>icmp_ln40_reg_383</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8074,7 +8004,7 @@
         </second>
       </item>
       <item>
-        <first>mul_ln42_reg_376</first>
+        <first>mul_ln40_reg_376</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

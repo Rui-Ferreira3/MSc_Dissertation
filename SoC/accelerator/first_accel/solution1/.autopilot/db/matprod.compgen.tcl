@@ -87,7 +87,7 @@ dict set axilite_register_dict BUS1 $port_BUS1
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 32 \
+			id 35 \
 			corename matprod_BUS1_axilite \
 			name matprod_BUS1_s_axi \
 			ports {$port_BUS1} \

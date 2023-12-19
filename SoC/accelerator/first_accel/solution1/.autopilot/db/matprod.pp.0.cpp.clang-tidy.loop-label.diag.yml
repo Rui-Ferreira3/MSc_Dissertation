@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          63019
+        Offset:          63061
         Length:          0
         ReplacementText: 'VITIS_LOOP_26_1: '
 ...

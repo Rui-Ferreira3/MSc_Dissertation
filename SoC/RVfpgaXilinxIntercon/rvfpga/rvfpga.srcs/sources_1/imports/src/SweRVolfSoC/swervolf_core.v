@@ -138,6 +138,8 @@ module swervolf_core
    assign ram_rlast      = i_ram_rlast;
    assign ram_rvalid     = i_ram_rvalid;
    assign o_ram_rready   = ram_rready;
+   
+   `include "accel.vh"
 
    wire 		      wb_clk = clk;
    wire 		      wb_rst = ~rst_n;

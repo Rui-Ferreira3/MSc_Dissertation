@@ -1801,27 +1801,27 @@ using std::wctomb;
 
 
 # 4 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h"
-void matprod(int *m1, int *m2, int *m3, int N1, int N2, int N3);
+void matprod(double *m1, double *m2, double *m3, int N1, int N2, int N3);
 # 5 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
 
 
 
 
 
-static int matA[4*4];
-static int matB[4*4];
-static int matC[4*4];
-static int matChw[4*4];
+static double matA[4*4];
+static double matB[4*4];
+static double matC[4*4];
+static double matChw[4*4];
 
 
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_matprod_sw(int *, int *, int *, int, int, int);
+void apatb_matprod_sw(double *, double *, double *, int, int, int);
 #endif
 # 15 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
-void matprod(int *m1, int *m2, int *m3, int rowsA, int rowsB, int rowsC);
+void matprod(double *m1, double *m2, double *m3, int rowsA, int rowsB, int rowsC);
 
 void init_vecs()
 {
@@ -1837,12 +1837,12 @@ void init_vecs()
  }
 }
 
-void print_mat(int *x, int rows, int cols)
+void print_mat(double *x, int rows, int cols)
 {
  int i;
  for (i=0; i<rows; i++) {
   for (int j=0; j<cols; j++) {
-   printf("%5d ", x[i*cols+j]);
+   printf("%5d ", (int)x[i*cols+j]);
   }
   printf("\n");
  }
@@ -1855,7 +1855,7 @@ void SW_dot_product()
  for (i=0; i<4; i++) {
   for (j=0; j<4; j++) {
    for (k=0; k<4; k++) {
-    int mul = matA[i*4 +k] * matB[k*4 +j];
+    double mul = matA[i*4 +k] * matB[k*4 +j];
     if (k==0) matC[i*4 +j] = mul;
     else matC[i*4 +j] += mul;
    }
@@ -1878,7 +1878,7 @@ matprod(matA, matB, matChw, 4, 4, 4);
 #undef matprod
 # 63 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 
- printf("sw/hw dot product: %d\n", matChw[7]);
+ printf("sw/hw dot product: %f\n", matChw[7]);
 }
 
 int check_matC()
@@ -1906,10 +1906,8 @@ int main()
  print_mat(matC, 4, 4);
  print_mat(matChw, 4, 4);
 
- check_matC();
-
- return (0);
+ return (check_matC());
 }
 #endif
-# 92 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 90 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 

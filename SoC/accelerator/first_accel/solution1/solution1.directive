@@ -5,11 +5,6 @@
                 <option name="name" value="matprod"/>
             </pragma>
         </directive>
-        <directive functionName="matprod" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="matprod"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

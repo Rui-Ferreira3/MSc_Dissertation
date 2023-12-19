@@ -10,14 +10,15 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source rvfpganexys.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.512 ; gain = 156.617
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1037.055 ; gain = 153.344
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.cache/ip 
 Command: read_checkpoint -auto_incremental -incremental C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/utils_1/imports/synth_1/rvfpganexys.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/utils_1/imports/synth_1/rvfpganexys.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-read_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1083.883 ; gain = 5.984
 Command: synth_design -top rvfpganexys -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -25,7 +26,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14764
+INFO: [Synth 8-7075] Helper process launched with PID 38664
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 WARNING: [Synth 8-6901] identifier 'Enables_Reg' is used before its declaration [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:220]
 WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:223]
@@ -43,7 +44,7 @@ WARNING: [Synth 8-11065] parameter 'BAXI' becomes localparam in 'axi2wb' with fo
 WARNING: [Synth 8-11065] parameter 'RRAXI' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:93]
 WARNING: [Synth 8-11065] parameter 'slave_sel_bits' becomes localparam in 'wb_mux' with formal parameter declaration list [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v:87]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1889.062 ; gain = 411.684
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1884.656 ; gain = 411.496
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'rvfpganexys' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/rvfpganexys.sv:25]
 INFO: [Synth 8-6157] synthesizing module 'clk_gen_nexys' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/clk_gen_nexys.v:24]
@@ -427,41 +428,54 @@ INFO: [Synth 8-6157] synthesizing module 'swervolf_core' [C:/Users/Rui/Rui/MSc_D
 	Parameter clk_freq_hz bound to: 50000000 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'interconnect_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/hdl/interconnect_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'interconnect' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:12]
-INFO: [Synth 8-6157] synthesizing module 'interconnect_axi_interconnect_0_0' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:1283]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_Q3JV7T' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3165]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_Q3JV7T' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3165]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_KAQ96X' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3451]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_KAQ96X' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3451]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_V6GJ0P' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3737]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_V6GJ0P' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3737]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_IOJTWA' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4023]
-INFO: [Synth 8-6157] synthesizing module 'interconnect_s00_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s00_data_fifo_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'interconnect_s00_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s00_data_fifo_0_stub.v:5]
-WARNING: [Synth 8-7023] instance 's00_data_fifo' of module 'interconnect_s00_data_fifo_0' has 38 connections declared, but only 37 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4178]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_IOJTWA' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4023]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_NFX9SQ' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4218]
-INFO: [Synth 8-6157] synthesizing module 'interconnect_s01_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s01_data_fifo_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'interconnect_s01_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s01_data_fifo_0_stub.v:5]
-WARNING: [Synth 8-7023] instance 's01_data_fifo' of module 'interconnect_s01_data_fifo_0' has 80 connections declared, but only 78 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4537]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_NFX9SQ' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4218]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_U8Y0M2' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4618]
-INFO: [Synth 8-6157] synthesizing module 'interconnect_s02_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s02_data_fifo_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'interconnect_s02_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s02_data_fifo_0_stub.v:5]
-WARNING: [Synth 8-7023] instance 's02_data_fifo' of module 'interconnect_s02_data_fifo_0' has 80 connections declared, but only 78 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4937]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_U8Y0M2' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4618]
-INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_XWCDI2' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:5018]
-INFO: [Synth 8-6157] synthesizing module 'interconnect_s03_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s03_data_fifo_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'interconnect_s03_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_s03_data_fifo_0_stub.v:5]
-WARNING: [Synth 8-7023] instance 's03_data_fifo' of module 'interconnect_s03_data_fifo_0' has 72 connections declared, but only 70 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:5305]
-INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_XWCDI2' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:5018]
-INFO: [Synth 8-6157] synthesizing module 'interconnect_xbar_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'interconnect_xbar_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-19016-DESKTOP-8UFOBMP/realtime/interconnect_xbar_0_stub.v:5]
-WARNING: [Synth 8-689] width (18) of port connection 's_axi_bid' does not match port width (24) of module 'interconnect_xbar_0' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3148]
-WARNING: [Synth 8-689] width (18) of port connection 's_axi_rid' does not match port width (24) of module 'interconnect_xbar_0' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3153]
-INFO: [Synth 8-6155] done synthesizing module 'interconnect_axi_interconnect_0_0' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:1283]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_axi_interconnect_0_0' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:1303]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_Q3JV7T' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3213]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_Q3JV7T' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3213]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_KAQ96X' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3499]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_KAQ96X' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3499]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_V6GJ0P' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3785]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_V6GJ0P' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:3785]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_IOJTWA' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4071]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_s00_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s00_data_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_s00_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s00_data_fifo_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 's00_data_fifo' of module 'interconnect_s00_data_fifo_0' has 38 connections declared, but only 37 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4226]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_IOJTWA' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4071]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_NFX9SQ' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4266]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_s01_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s01_data_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_s01_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s01_data_fifo_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 's01_data_fifo' of module 'interconnect_s01_data_fifo_0' has 80 connections declared, but only 78 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4585]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_NFX9SQ' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4266]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_U8Y0M2' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4666]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_s02_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s02_data_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_s02_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s02_data_fifo_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 's02_data_fifo' of module 'interconnect_s02_data_fifo_0' has 80 connections declared, but only 78 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4985]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_U8Y0M2' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:4666]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_XWCDI2' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:5066]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_s03_data_fifo_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s03_data_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_s03_data_fifo_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_s03_data_fifo_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 's03_data_fifo' of module 'interconnect_s03_data_fifo_0' has 80 connections declared, but only 78 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:5385]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_XWCDI2' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:5066]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_xbar_0' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_xbar_0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/interconnect_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_axi_interconnect_0_0' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:1303]
 INFO: [Synth 8-6155] done synthesizing module 'interconnect' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/synth/interconnect.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'interconnect_wrapper' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/hdl/interconnect_wrapper.v:12]
-WARNING: [Synth 8-7023] instance 'interconnect_wrapper' of module 'interconnect_wrapper' has 250 connections declared, but only 176 given [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:176]
+INFO: [Synth 8-6157] synthesizing module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/hdl/accel_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'accel' [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/synth/accel.v:12]
+INFO: [Synth 8-6157] synthesizing module 'accel_matprod_0_2' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/accel_matprod_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'accel_matprod_0_2' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/.Xil/Vivado-27212-DESKTOP-8UFOBMP/realtime/accel_matprod_0_2_stub.v:5]
+WARNING: [Synth 8-7023] instance 'matprod_0' of module 'accel_matprod_0_2' has 60 connections declared, but only 59 given [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/synth/accel.v:252]
+INFO: [Synth 8-6155] done synthesizing module 'accel' (0#1) [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/synth/accel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'accel_wrapper' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/hdl/accel_wrapper.v:12]
+WARNING: [Synth 8-689] width (32) of port connection 'accel_ctrl_araddr' does not match port width (7) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:4]
+WARNING: [Synth 8-689] width (32) of port connection 'accel_ctrl_awaddr' does not match port width (7) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:7]
+WARNING: [Synth 8-689] width (64) of port connection 'accel_ctrl_rdata' does not match port width (32) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:13]
+WARNING: [Synth 8-689] width (64) of port connection 'accel_ctrl_wdata' does not match port width (32) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:17]
+WARNING: [Synth 8-689] width (8) of port connection 'accel_ctrl_wstrb' does not match port width (4) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:19]
+WARNING: [Synth 8-689] width (32) of port connection 'accel_mem_araddr' does not match port width (64) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:21]
+WARNING: [Synth 8-689] width (1) of port connection 'accel_mem_arlock' does not match port width (2) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:26]
+WARNING: [Synth 8-689] width (32) of port connection 'accel_mem_awaddr' does not match port width (64) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:33]
+WARNING: [Synth 8-689] width (1) of port connection 'accel_mem_awlock' does not match port width (2) of module 'accel_wrapper' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh:38]
 INFO: [Synth 8-6157] synthesizing module 'wb_intercon' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v:1]
 INFO: [Synth 8-6157] synthesizing module 'wb_mux' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v:45]
 	Parameter num_slaves bound to: 7 - type: integer 
@@ -540,11 +554,11 @@ INFO: [Synth 8-6155] done synthesizing module 'uart_rfifo' (0#1) [C:/Users/Rui/R
 INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v:196]
 INFO: [Synth 8-6155] done synthesizing module 'uart_regs' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_regs.v:227]
 INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_top.v:137]
-INFO: [Synth 8-6157] synthesizing module 'bidirec' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v:635]
-INFO: [Synth 8-6155] done synthesizing module 'bidirec' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v:635]
+INFO: [Synth 8-6157] synthesizing module 'bidirec' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v:637]
+INFO: [Synth 8-6155] done synthesizing module 'bidirec' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v:637]
 INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v:115]
 INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v:115]
-WARNING: [Synth 8-7023] instance 'gpio_module' of module 'gpio_top' has 17 connections declared, but only 15 given [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v:338]
+WARNING: [Synth 8-7023] instance 'gpio_module' of module 'gpio_top' has 17 connections declared, but only 15 given [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v:340]
 INFO: [Synth 8-6157] synthesizing module 'ptc_top' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:67]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:313]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:314]
@@ -552,11 +566,8 @@ WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Ru
 INFO: [Synth 8-6155] done synthesizing module 'ptc_top' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:67]
 INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_dmi' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper_dmi.sv:26]
 INFO: [Synth 8-6157] synthesizing module 'swerv' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'rvoclkhdr' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:184]
-INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:184]
-INFO: [Synth 8-6157] synthesizing module 'dbg' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv:24]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs' [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:184]
 	Parameter WIDTH bound to: 1 - type: integer 
 	Parameter WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'rvdff' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
@@ -564,12 +575,9 @@ INFO: [Synth 8-6155] done synthesizing module 'rvdffs' (0#1) [C:/Users/Rui/Rui/M
 	Parameter WIDTH bound to: 5 - type: integer 
 	Parameter WIDTH bound to: 5 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized0' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
-	Parameter WIDTH bound to: 3 - type: integer 
-	Parameter WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized1' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:19]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized1' (0#1) [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:45]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter WIDTH bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
 	Parameter WIDTH bound to: 32 - type: integer 
 	Parameter WIDTH bound to: 32 - type: integer 
 	Parameter WIDTH bound to: 32 - type: integer 
@@ -816,6 +824,9 @@ WARNING: [Synth 8-3848] Net exu_mp_pkt[br_error] in module/entity exu does not h
 WARNING: [Synth 8-3848] Net exu_mp_pkt[br_start_error] in module/entity exu does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv:159]
 WARNING: [Synth 8-3848] Net exu_mp_pkt[prett] in module/entity exu does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv:159]
 WARNING: [Synth 8-3848] Net dma_bus_clk in module/entity dma_ctrl does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dma/dma_ctrl.sv:187]
+WARNING: [Synth 8-3848] Net accel_ctrl_bid in module/entity swervolf_core does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:25]
+WARNING: [Synth 8-3848] Net accel_ctrl_rid in module/entity swervolf_core does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:30]
+WARNING: [Synth 8-3848] Net accel_ctrl_rlast in module/entity swervolf_core does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:31]
 WARNING: [Synth 8-3848] Net wb_s2m_gpio_rty in module/entity swervolf_core does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh:74]
 WARNING: [Synth 8-3848] Net wb_s2m_ptc_rty in module/entity swervolf_core does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh:88]
 WARNING: [Synth 8-3848] Net wb_s2m_spi_accel_err in module/entity swervolf_core does not have driver. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh:101]
@@ -922,40 +933,41 @@ WARNING: [Synth 8-7129] Port dma_axi_arlen[0] in module dma_ctrl is either uncon
 WARNING: [Synth 8-7129] Port dma_axi_arburst[1] in module dma_ctrl is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 2421.605 ; gain = 944.227
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 2419.836 ; gain = 946.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:53 . Memory (MB): peak = 2421.605 ; gain = 944.227
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 2436.195 ; gain = 963.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:53 . Memory (MB): peak = 2421.605 ; gain = 944.227
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 2436.195 ; gain = 963.035
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 2421.605 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.961 . Memory (MB): peak = 2448.246 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0/interconnect_xbar_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/xbar'
-Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0/interconnect_xbar_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/xbar'
-Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
-Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
-Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s01_couplers/s01_data_fifo'
-Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s01_couplers/s01_data_fifo'
-Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s02_couplers/s02_data_fifo'
-Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s02_couplers/s02_data_fifo'
-Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s03_couplers/s03_data_fifo'
-Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s03_couplers/s03_data_fifo'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/ip/accel_matprod_0_2/accel_matprod_0_2/accel_matprod_0_2_in_context.xdc] for cell 'swervolf/accelerator/accel_i/matprod_0'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/ip/accel_matprod_0_2/accel_matprod_0_2/accel_matprod_0_2_in_context.xdc] for cell 'swervolf/accelerator/accel_i/matprod_0'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0/interconnect_xbar_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0/interconnect_xbar_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s01_couplers/s01_data_fifo'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0/interconnect_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s01_couplers/s01_data_fifo'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s02_couplers/s02_data_fifo'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s02_couplers/s02_data_fifo'
+Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0/interconnect_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s03_couplers/s03_data_fifo'
+Finished Parsing XDC File [c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0/interconnect_s01_data_fifo_0_in_context.xdc] for cell 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s03_couplers/s03_data_fifo'
 Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc]
 Finished Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpganexys_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpganexys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc]
-get_nets: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2565.184 ; gain = 0.000
 Finished Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpganexys_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpganexys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -964,7 +976,7 @@ Finished Parsing XDC File [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxInt
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2585.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2610.199 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 28 instances were transformed.
   FD => FDRE: 8 instances
@@ -973,34 +985,34 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
   PLLE2_BASE => PLLE2_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.289 . Memory (MB): peak = 2585.840 ; gain = 0.000
-WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/xbar' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s00_couplers/s00_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s01_couplers/s01_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s02_couplers/s02_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect_wrapper/interconnect_i/axi_interconnect_0/s03_couplers/s03_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 2610.199 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect/interconnect_i/axi_interconnect_0/xbar' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s00_couplers/s00_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s01_couplers/s01_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s02_couplers/s02_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'swervolf/interconnect/interconnect_i/axi_interconnect_0/s03_couplers/s03_data_fifo' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:01:52 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:36 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:45 ; elapsed = 00:02:02 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished Doing Graph Differ : Time (s): cpu = 00:00:16 ; elapsed = 00:00:42 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
-lsu__GB0memlsu__GB1swerv__GCB0swervolf_core__GC0rvfpganexys__GC0litedram_top__GC0dec__GB1exulitedram_core__GC0dec__GB0---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:46 ; elapsed = 00:02:04 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+memdec__GB1lsu__GB1exuswervolf_core__GC0lsu__GB0litedram_top__GC0dec__GB0swerv__GCB0litedram_core__GC0rvfpganexys__GC0---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:16 ; elapsed = 00:00:44 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:02:07 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:46 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Mimic Skeleton from Reference
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:48 ; elapsed = 00:02:09 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
 
@@ -1015,15 +1027,16 @@ Incremental Synthesis Report Summary:
 2. Change Summary
 
 Report Incremental Modules: 
-+-+----------------+------------+----------+----------+
-| |Changed Modules |Replication |Instances |Changed % |
-+-+----------------+------------+----------+----------+
-+-+----------------+------------+----------+----------+
++------+----------------+------------+----------+----------+
+|      |Changed Modules |Replication |Instances |Changed % |
++------+----------------+------------+----------+----------+
+|1     |accel           |           1|         1|    0.0005|
++------+----------------+------------+----------+----------+
 
 
-   Full Design Size (number of cells) : 200973
+   Full Design Size (number of cells) : 201309
    Resynthesis Design Size (number of cells) : 19
-   Resynth % : 0.0095,  Reuse % : 99.9905
+   Resynth % : 0.0094,  Reuse % : 99.9906
 
 3. Reference Checkpoint Information
 
@@ -1079,13 +1092,13 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:02:13 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:01:00 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Stitch Unchanged AreaOpt Partitions
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:49 ; elapsed = 00:02:14 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:19 ; elapsed = 00:01:01 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -1093,13 +1106,13 @@ Start Applying XDC Timing Constraints
 WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/rvfpganexys.xdc:8]
 WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 206 of C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc. [C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/constrs_1/imports/src/LiteDRAM/liteDRAM.xdc:206]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:02:31 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:01:09 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:02:32 . Memory (MB): peak = 2585.840 ; gain = 1108.461
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:01:09 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -1107,13 +1120,13 @@ Start Technology Mapping
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:02:32 . Memory (MB): peak = 2594.691 ; gain = 1117.312
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:01:09 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Stitch Unchanged Partitions
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:57 ; elapsed = 00:02:36 . Memory (MB): peak = 2594.691 ; gain = 1117.312
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:23 ; elapsed = 00:01:10 . Memory (MB): peak = 2610.199 ; gain = 1137.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1211,37 +1224,37 @@ INFO: [Synth 8-7052] The timing for the instance swervolf/bootrom/ram/mem_reg (i
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:03:12 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:03:13 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:03:29 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:01:22 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:03:30 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:01:23 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:03:31 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:01:24 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:03:31 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:01:24 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1278,70 +1291,72 @@ Report BlackBoxes:
 +------+-----------------------------+----------+
 |      |BlackBox name                |Instances |
 +------+-----------------------------+----------+
-|1     |interconnect_xbar_0          |         1|
-|2     |interconnect_s00_data_fifo_0 |         1|
-|3     |interconnect_s01_data_fifo_0 |         1|
-|4     |interconnect_s02_data_fifo_0 |         1|
-|5     |interconnect_s03_data_fifo_0 |         1|
+|1     |accel_matprod_0_2            |         1|
+|2     |interconnect_xbar_0          |         1|
+|3     |interconnect_s00_data_fifo_0 |         1|
+|4     |interconnect_s01_data_fifo_0 |         1|
+|5     |interconnect_s02_data_fifo_0 |         1|
+|6     |interconnect_s03_data_fifo_0 |         1|
 +------+-----------------------------+----------+
 
 Report Cell Usage: 
 +------+---------------------------+------+
 |      |Cell                       |Count |
 +------+---------------------------+------+
-|1     |interconnect_s00_data_fifo |     1|
-|2     |interconnect_s01_data_fifo |     1|
-|3     |interconnect_s02_data_fifo |     1|
-|4     |interconnect_s03_data_fifo |     1|
-|5     |interconnect_xbar          |     1|
-|6     |BSCANE2                    |     3|
-|7     |BUFG                       |    11|
-|8     |CARRY4                     |   787|
-|9     |DSP48E1                    |     4|
-|10    |IDELAYCTRL                 |     1|
-|11    |IDELAYE2                   |    16|
-|12    |ISERDESE2                  |    16|
-|13    |LUT1                       |   388|
-|14    |LUT2                       |  1915|
-|15    |LUT3                       |  4540|
-|16    |LUT4                       |  5828|
-|17    |LUT5                       |  7049|
-|18    |LUT6                       | 16978|
-|19    |MUXF7                      |   455|
-|20    |MUXF8                      |    34|
-|21    |OSERDESE2                  |    44|
-|22    |PLLE2_ADV                  |     1|
-|23    |PLLE2_BASE                 |     1|
-|24    |RAM32M                     |    56|
-|25    |RAM32X1D                   |    29|
-|26    |RAMB18E1                   |    30|
-|27    |RAMB36E1                   |    29|
-|28    |SRL16E                     |     3|
-|29    |STARTUPE2                  |     1|
-|30    |FD                         |     8|
-|31    |FDCE                       | 14549|
-|32    |FDPE                       |    49|
-|33    |FDRE                       |  3123|
-|34    |FDSE                       |   215|
-|35    |IBUF                       |     5|
-|36    |IOBUF                      |    32|
-|37    |IOBUFDS                    |     2|
-|38    |OBUF                       |    61|
-|39    |OBUFDS                     |     1|
+|1     |accel_matprod_0            |     1|
+|2     |interconnect_s00_data_fifo |     1|
+|3     |interconnect_s01_data_fifo |     1|
+|4     |interconnect_s02_data_fifo |     1|
+|5     |interconnect_s03_data_fifo |     1|
+|6     |interconnect_xbar          |     1|
+|7     |BSCANE2                    |     3|
+|8     |BUFG                       |    11|
+|9     |CARRY4                     |   787|
+|10    |DSP48E1                    |     4|
+|11    |IDELAYCTRL                 |     1|
+|12    |IDELAYE2                   |    16|
+|13    |ISERDESE2                  |    16|
+|14    |LUT1                       |   388|
+|15    |LUT2                       |  1915|
+|16    |LUT3                       |  4540|
+|17    |LUT4                       |  5828|
+|18    |LUT5                       |  7049|
+|19    |LUT6                       | 16978|
+|20    |MUXF7                      |   455|
+|21    |MUXF8                      |    34|
+|22    |OSERDESE2                  |    44|
+|23    |PLLE2_ADV                  |     1|
+|24    |PLLE2_BASE                 |     1|
+|25    |RAM32M                     |    56|
+|26    |RAM32X1D                   |    29|
+|27    |RAMB18E1                   |    30|
+|28    |RAMB36E1                   |    29|
+|29    |SRL16E                     |     3|
+|30    |STARTUPE2                  |     1|
+|31    |FD                         |     8|
+|32    |FDCE                       | 14549|
+|33    |FDPE                       |    49|
+|34    |FDRE                       |  3123|
+|35    |FDSE                       |   215|
+|36    |IBUF                       |     5|
+|37    |IOBUF                      |    32|
+|38    |IOBUFDS                    |     2|
+|39    |OBUF                       |    61|
+|40    |OBUFDS                     |     1|
 +------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:03:32 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:01:25 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:02:49 . Memory (MB): peak = 2629.957 ; gain = 988.344
-Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:03:32 . Memory (MB): peak = 2629.957 ; gain = 1152.578
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:01:14 . Memory (MB): peak = 2614.250 ; gain = 967.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:01:28 . Memory (MB): peak = 2614.250 ; gain = 1141.090
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2638.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2623.621 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1502 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 3 inverter(s) to 34 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2682.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2679.055 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 129 instances were transformed.
   FD => FDRE: 8 instances
@@ -1352,12 +1367,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 56 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 29 instances
 
-Synth Design complete, checksum: fa488bca
+Synth Design complete, checksum: e794e90d
 INFO: [Common 17-83] Releasing license: Synthesis
-322 Infos, 446 Warnings, 0 Critical Warnings and 0 Errors encountered.
+322 Infos, 457 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:03:54 . Memory (MB): peak = 2682.527 ; gain = 1598.645
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:01:44 . Memory (MB): peak = 2679.055 ; gain = 1596.801
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/synth_1/rvfpganexys.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2682.527 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2679.055 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 29 17:16:47 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 18:54:08 2023...

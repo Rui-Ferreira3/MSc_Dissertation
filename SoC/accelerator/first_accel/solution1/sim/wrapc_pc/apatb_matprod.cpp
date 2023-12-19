@@ -1039,8 +1039,8 @@ void apatb_matprod_hw(void* __xlx_apatb_param_m1, void* __xlx_apatb_param_m2, vo
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port6 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 64,
+    .asize = 8,
     .hbm = false,
     .name = { "gmem" },
 #ifdef POST_CHECK
@@ -1062,9 +1062,9 @@ void apatb_matprod_hw(void* __xlx_apatb_param_m1, void* __xlx_apatb_param_m2, vo
 #endif
 #endif
   };
-  __xlx_offset_byte_param_m1 = 0*4;
-  __xlx_offset_byte_param_m2 = 32*4;
-  __xlx_offset_byte_param_m3 = 64*4;
+  __xlx_offset_byte_param_m1 = 0*8;
+  __xlx_offset_byte_param_m2 = 32*8;
+  __xlx_offset_byte_param_m3 = 64*8;
   port6.param = { __xlx_apatb_param_m1, __xlx_apatb_param_m2, __xlx_apatb_param_m3 };
   port6.depth = { 32, 32, 32 };
   port6.offset = { 0, 32, 64 };

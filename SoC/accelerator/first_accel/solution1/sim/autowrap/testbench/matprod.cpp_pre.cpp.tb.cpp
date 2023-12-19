@@ -11,7 +11,7 @@
 
 
 
-void matprod(int *m1, int *m2, int *m3, int N1, int N2, int N3);
+void matprod(double *m1, double *m2, double *m3, int N1, int N2, int N3);
 # 2 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
 
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
@@ -1165,7 +1165,7 @@ extern "C" {
 
 
 # 6 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
-void matprod(int *m1, int *m2, int *m3, int N1, int N2, int N3) {
+void matprod(double *m1, double *m2, double *m3, int N1, int N2, int N3) {
 #pragma HLS INTERFACE s_axilite port=return bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N1 bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N2 bundle=BUS1
@@ -1175,20 +1175,18 @@ void matprod(int *m1, int *m2, int *m3, int N1, int N2, int N3) {
 #pragma HLS INTERFACE m_axi port = m2 depth=MAX_MAT_SIZE
 #pragma HLS INTERFACE m_axi port = m3 depth=MAX_MAT_SIZE
 
- static int regc=0;
+ static double regc=0;
  int i, j, k;
 
- int m1_buffer[1024];
- int m2_buffer[1024];
- int m3_buffer[1024];
+ double m1_buffer[1024];
+ double m2_buffer[1024];
+ double m3_buffer[1024];
 
- memcpy(m1_buffer, (const int*)m1, N1*N2 * sizeof(int));
- memcpy(m2_buffer, (const int*)m2, N2*N3 * sizeof(int));
+ memcpy(m1_buffer, (const double*)m1, N1*N2 * sizeof(double));
+ memcpy(m2_buffer, (const double*)m2, N2*N3 * sizeof(double));
 
  for (i=0, j=0, k=0; i<N1; ) {
-#pragma HLS LOOP_TRIPCOUNT max=1000
-#pragma HLS PIPELINE
-  int mul = m1_buffer[i*N2+k] * m2_buffer[k*N3+j];
+  double mul = m1_buffer[i*N2+k] * m2_buffer[k*N3+j];
   if (k == 0) regc = mul;
   else regc += mul;
   k++;
@@ -1201,27 +1199,27 @@ void matprod(int *m1, int *m2, int *m3, int N1, int N2, int N3) {
  }
 
 
- memcpy((int*)m3, m3_buffer, N1*N3 * sizeof(int));
+ memcpy((double*)m3, m3_buffer, N1*N3 * sizeof(double));
 }
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_matprod_ir(int *, int *, int *, int, int, int);
+void apatb_matprod_ir(double *, double *, double *, int, int, int);
 #ifdef __cplusplus
 extern "C"
 #endif
-void matprod_hw_stub(int *m1, int *m2, int *m3, int N1, int N2, int N3){
+void matprod_hw_stub(double *m1, double *m2, double *m3, int N1, int N2, int N3){
 matprod(m1, m2, m3, N1, N2, N3);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_matprod_sw(int *m1, int *m2, int *m3, int N1, int N2, int N3){
+void apatb_matprod_sw(double *m1, double *m2, double *m3, int N1, int N2, int N3){
 apatb_matprod_ir(m1, m2, m3, N1, N2, N3);
 return ;
 }
 #endif
-# 43 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
+# 41 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
 

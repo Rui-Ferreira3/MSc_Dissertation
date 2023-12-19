@@ -7,6 +7,8 @@ set SynModuleInfo {
   {SRCNAME matprod_Pipeline_2 MODELNAME matprod_Pipeline_2 RTLNAME matprod_matprod_Pipeline_2}
   {SRCNAME matprod_Pipeline_VITIS_LOOP_26_1 MODELNAME matprod_Pipeline_VITIS_LOOP_26_1 RTLNAME matprod_matprod_Pipeline_VITIS_LOOP_26_1
     SUBMODULES {
+      {MODELNAME matprod_dadd_64ns_64ns_64_8_full_dsp_1 RTLNAME matprod_dadd_64ns_64ns_64_8_full_dsp_1 BINDTYPE op TYPE dadd IMPL fulldsp LATENCY 7 ALLOW_PRAGMA 1}
+      {MODELNAME matprod_dmul_64ns_64ns_64_7_max_dsp_1 RTLNAME matprod_dmul_64ns_64ns_64_7_max_dsp_1 BINDTYPE op TYPE dmul IMPL maxdsp LATENCY 6 ALLOW_PRAGMA 1}
       {MODELNAME matprod_mac_muladd_10s_10s_10s_10_4_1 RTLNAME matprod_mac_muladd_10s_10s_10s_10_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
       {MODELNAME matprod_mac_muladd_10s_10s_10ns_10_4_1 RTLNAME matprod_mac_muladd_10s_10s_10ns_10_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
     }

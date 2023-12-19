@@ -46,6 +46,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../accelerator/ips"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -58,20 +59,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-100t"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="1"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="4"/>
-    <Option Name="WTModelSimExportSim" Val="4"/>
-    <Option Name="WTQuestaExportSim" Val="4"/>
+    <Option Name="WTXSimExportSim" Val="17"/>
+    <Option Name="WTModelSimExportSim" Val="17"/>
+    <Option Name="WTQuestaExportSim" Val="17"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="4"/>
-    <Option Name="WTRivieraExportSim" Val="4"/>
-    <Option Name="WTActivehdlExportSim" Val="4"/>
+    <Option Name="WTVcsExportSim" Val="17"/>
+    <Option Name="WTRivieraExportSim" Val="17"/>
+    <Option Name="WTActivehdlExportSim" Val="17"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -99,18 +100,32 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/accel/accel.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="accel.bd" FileRelPathName="ip/accel_matprod_0_2/accel_matprod_0_2.xci">
+          <Proxy FileSetName="accel_matprod_0_2"/>
+        </CompFileExtendedInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/interconnect/interconnect.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0.xci">
-          <Proxy FileSetName="interconnect_s03_data_fifo_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_xbar_0/interconnect_xbar_0.xci">
           <Proxy FileSetName="interconnect_xbar_0"/>
         </CompFileExtendedInfo>
+      </File>
+      <File Path="$PGENDIR/sources_1/bd/accel/hdl/accel_wrapper.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v">
         <FileInfo>
@@ -366,6 +381,13 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh"/>
           <Attr Name="ImportTime" Val="1643770828"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/accel.vh">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="IsVisible" Val="1"/>
@@ -2160,9 +2182,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="interconnect_s03_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/interconnect_s03_data_fifo_0" RelGenDir="$PGENDIR/interconnect_s03_data_fifo_0">
+    <FileSet Name="accel_matprod_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/accel_matprod_0_2" RelGenDir="$PGENDIR/accel_matprod_0_2">
       <Config>
-        <Option Name="TopModule" Val="interconnect_s03_data_fifo_0"/>
+        <Option Name="TopModule" Val="accel_matprod_0_2"/>
         <Option Name="VerilogDir" Val="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include"/>
         <Option Name="VerilogDir" Val="$PSRCDIR/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include"/>
         <Option Name="dataflowViewerSettings" Val="min_width=16"/>
@@ -2209,11 +2231,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="interconnect_s03_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="interconnect_s03_data_fifo_0" Part="xc7a100tcsg324-1" ConstrsSet="interconnect_s03_data_fifo_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/interconnect_s03_data_fifo_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/interconnect_s03_data_fifo_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/interconnect_s03_data_fifo_0_synth_1">
+    <Run Id="accel_matprod_0_2_synth_1" Type="Ft3:Synth" SrcSet="accel_matprod_0_2" Part="xc7a100tcsg324-1" ConstrsSet="accel_matprod_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/accel_matprod_0_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/accel_matprod_0_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/accel_matprod_0_2_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -2256,11 +2276,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="interconnect_s03_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="interconnect_s03_data_fifo_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="interconnect_s03_data_fifo_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/interconnect_s03_data_fifo_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/interconnect_s03_data_fifo_0_impl_1">
+    <Run Id="accel_matprod_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="accel_matprod_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="accel_matprod_0_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/accel_matprod_0_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/accel_matprod_0_2_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

@@ -14,9 +14,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motivation}
 \label{section:motivation}
-% Porque queremos hardware accelerators num RTOS?
-% Porque é que queremos RISC-V ISA?
-% With the fast increase in the volume of data and its processing requirements, the use of centralized data processing is becoming insufficient. Bringing the computation to the source can solve some shortcomings that come with centralized computing such as real-time constraints of real-time systems (RTS), security and energy consumption \cite{Overview_on_Edge_Computing}. However, since the computation is done close to the data source, the systems have limited resources and need to have increased capabilities to process the data.
+FIXME Melhorar
 
 A Real-Time operating system (RTOS) is one of the components that support the execution of applications in a computational system that can improve the performance of that system. RTOS are often designed to meet the timing requirements of real-time systems, therefore, its use is suitable to manage multiple tasks with varying priorities. An RTOS also provides inter-task communication, mutual exclusion, task synchronization, and power modes. These capabilities are crucial for the system's functioning and to manage the system's resources.
 
@@ -30,20 +28,14 @@ In addition to the performance increase that a hardware accelerator provides, th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Objectives}
 \label{section:objectives}
-% explicar os critérios de escolha da implementação de RISC-V e do RTOS
-% PERGUNTA: ponho ja aqui o objetivo da tese final? ou falo só dos objetivos do PIC?
-% dizer objetivo da tese e realçar no que estou dedicado neste momento
+FIXME Mudar os objetivos para refletir melhor a tese
+
 The primary objective of this thesis is to incorporate a RTOS into a RISC-V processor inside an SoC programmed in a field programmable gate array (FPGA), and use the RTOS capabilities to manage and use a hardware accelerator. The initial work is to survey the existing SoC based on RISC-V implementations and RTOS. After choosing a RISC-V core and system on chip (SoC), they will be targeted on an FPGA. The third stage is to implement and evaluate how the RTOS performs in the RISC-V Soc. The following action is to include a hardware accelerator in the system. Finally, the last stage is to evaluate the performance of the system and to observe how the use of an accelerator will impact the performance of the RTOS.
 
 
 \section{Document Outline}
-The next chapter, Chapter \ref{chapter:RISC-V}, provides an overview of the RISC-V instruction set architecture and a comparison between RISC-V SoCs. 
+TODO Document Outline para o projeto final
 
-Chapter \ref{chapter:RTOS} provides an overview of the inner mechanisms of real-time operating systems, going more in dept to mechanisms that will be important to this thesis work such as how RTOS manages threads and switches between contexts as well as how RTOS share resources between the different tasks.
-
-Chapter \ref{chapter:PreliminaryWork} introduces the work that will be done on this thesis. After that, it presents the first solutions for the integration of hardware accelerators into a RTOS that will be studied, as well as the preliminary work already done to implement the most appropriate RTOS on the chosen hardware. It also includes performance metrics that will be used to evaluate the use of RTOS in the RISC-V based hardware accelerators.
-
-Chapter \ref{chapter:conclusions} presents the conclusions taken from this initial work and presents the work plan for the thesis development.
 
 % mudar forma das frases
 

@@ -84,6 +84,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
+set_property ip_repo_paths c:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs {
@@ -99,6 +101,7 @@ read_verilog {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh
+  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/new/accel.vh
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_defines.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh
@@ -171,6 +174,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/rvfpganexys.sv
 }
 read_verilog -library xil_defaultlib {
+  C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/hdl/accel_wrapper.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/clk_gen_nexys.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/dpram64.v
@@ -208,6 +212,10 @@ read_verilog -library xil_defaultlib {
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/wb_mem_wrapper.v
   C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v
 }
+add_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/bd/accel/accel.bd
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/ip/accel_matprod_0_2/constraints/matprod_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/accel_ooc.xdc]
+
 add_files C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/interconnect.bd
 set_property used_in_implementation false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0_clocks.xdc]

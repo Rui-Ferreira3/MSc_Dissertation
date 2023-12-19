@@ -5,6 +5,12 @@
 
 # XDC: imports/src/LiteDRAM/liteDRAM.xdc
 
+# Block Designs: bd/accel/accel.bd
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel || ORIG_REF_NAME==accel} -quiet] -quiet
+
+# IP: bd/accel/ip/accel_matprod_0_2/accel_matprod_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel_matprod_0_2 || ORIG_REF_NAME==accel_matprod_0_2} -quiet] -quiet
+
 # Block Designs: bd/interconnect/interconnect.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect || ORIG_REF_NAME==interconnect} -quiet] -quiet
 
@@ -25,5 +31,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnec
 
 # IP: bd/interconnect/ip/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_s03_data_fifo_0 || ORIG_REF_NAME==interconnect_s03_data_fifo_0} -quiet] -quiet
+
+# XDC: c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/accel_ooc.xdc
 
 # XDC: c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/interconnect_ooc.xdc

@@ -1,6 +1,4 @@
 <pragmas>
-<pragma file="first_accel/matprod.cpp" line="28" pragmaType="pipeline" parentfunction="matprod" off="0" ii="-1" rewind="0" style=""/>
-<pragma file="first_accel/matprod.cpp" line="27" pragmaType="loop_tripcount" parentfunction="matprod" min="0" max="1000" avg="500"/>
 <pragma file="first_accel/matprod.cpp" line="7" pragmaType="interface" parentfunction="matprod" mode="s_axilite" port="" bundle="BUS1" offset="-1" name="" clock="" impl="" register="0"/>
 <pragma file="first_accel/matprod.cpp" line="8" pragmaType="interface" parentfunction="matprod" mode="s_axilite" port="N1" bundle="BUS1" offset="-1" name="" clock="" impl="" register="0"/>
 <pragma file="first_accel/matprod.cpp" line="9" pragmaType="interface" parentfunction="matprod" mode="s_axilite" port="N2" bundle="BUS1" offset="-1" name="" clock="" impl="" register="0"/>

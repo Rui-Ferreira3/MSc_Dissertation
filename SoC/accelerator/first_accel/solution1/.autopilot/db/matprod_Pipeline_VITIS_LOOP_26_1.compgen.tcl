@@ -1,6 +1,18 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 10
+set name matprod_dadd_64ns_64ns_64_8_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dadd} IMPL {fulldsp} LATENCY 7 ALLOW_PRAGMA 1
+}
+
+
+set name matprod_dmul_64ns_64ns_64_7_max_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dmul} IMPL {maxdsp} LATENCY 6 ALLOW_PRAGMA 1
+}
+
+
+set id 11
 set name matprod_mac_muladd_10s_10s_10s_10_4_1
 set corename simcore_mac
 set op mac
@@ -59,7 +71,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 }
 
 
-set id 11
+set id 12
 set name matprod_mac_muladd_10s_10s_10ns_10_4_1
 set corename simcore_mac
 set op mac
@@ -129,14 +141,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 17 \
+    id 20 \
     name m1_buffer \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename m1_buffer \
     op interface \
-    ports { m1_buffer_address0 { O 10 vector } m1_buffer_ce0 { O 1 bit } m1_buffer_q0 { I 32 vector } } \
+    ports { m1_buffer_address0 { O 10 vector } m1_buffer_ce0 { O 1 bit } m1_buffer_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm1_buffer'"
@@ -148,14 +160,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 19 \
+    id 22 \
     name m2_buffer \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename m2_buffer \
     op interface \
-    ports { m2_buffer_address0 { O 10 vector } m2_buffer_ce0 { O 1 bit } m2_buffer_q0 { I 32 vector } } \
+    ports { m2_buffer_address0 { O 10 vector } m2_buffer_ce0 { O 1 bit } m2_buffer_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm2_buffer'"
@@ -167,14 +179,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 21 \
+    id 24 \
     name m3_buffer \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename m3_buffer \
     op interface \
-    ports { m3_buffer_address0 { O 10 vector } m3_buffer_ce0 { O 1 bit } m3_buffer_we0 { O 1 bit } m3_buffer_d0 { O 32 vector } } \
+    ports { m3_buffer_address0 { O 10 vector } m3_buffer_ce0 { O 1 bit } m3_buffer_we0 { O 1 bit } m3_buffer_d0 { O 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm3_buffer'"
@@ -185,7 +197,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 18 \
     name N1 \
     type other \
     dir I \
@@ -200,7 +212,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 16 \
+    id 19 \
     name trunc_ln6_1 \
     type other \
     dir I \
@@ -215,7 +227,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
+    id 21 \
     name trunc_ln6 \
     type other \
     dir I \
@@ -230,7 +242,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 20 \
+    id 23 \
     name N2 \
     type other \
     dir I \
@@ -245,7 +257,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 22 \
+    id 25 \
     name N3 \
     type other \
     dir I \

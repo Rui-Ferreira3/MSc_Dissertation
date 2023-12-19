@@ -7,12 +7,12 @@
 #define N2 4
 #define N3 4
 
-static int matA[N1*N2];
-static int matB[N2*N3];
-static int matC[N1*N3];
-static int matChw[N1*N3];
+static double matA[N1*N2];
+static double matB[N2*N3];
+static double matC[N1*N3];
+static double matChw[N1*N3];
 
-void matprod(int *m1, int *m2, int *m3, int rowsA, int rowsB, int rowsC);
+void matprod(double *m1, double *m2, double *m3, int rowsA, int rowsB, int rowsC);
 
 void init_vecs()
 {
@@ -28,12 +28,12 @@ void init_vecs()
 	}
 }
 
-void print_mat(int *x, int rows, int cols)
+void print_mat(double *x, int rows, int cols)
 {
 	int i;
 	for (i=0; i<rows; i++) {
 		for (int j=0; j<cols; j++) {
-			printf("%5d ", x[i*cols+j]);
+			printf("%5d ", (int)x[i*cols+j]);
 		}
 		printf("\n");
 	}
@@ -46,7 +46,7 @@ void SW_dot_product()
 	for (i=0; i<N1; i++) {
 		for (j=0; j<N3; j++) {
 			for (k=0; k<N2; k++) {
-				int mul = matA[i*N2+k] * matB[k*N3+j];
+				double mul = matA[i*N2+k] * matB[k*N3+j];
 				if (k==0) matC[i*N3+j] = mul;
 				else matC[i*N3+j] += mul;
 			}
@@ -61,7 +61,7 @@ void simul_HW_SW_dot_product()
 	int i;
 
 	matprod(matA, matB, matChw, N1, N2, N3);
-	printf("sw/hw dot product: %d\n", matChw[7]);
+	printf("sw/hw dot product: %f\n", matChw[7]);
 }
 
 int check_matC()
