@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -69,7 +69,7 @@ module interconnect_xbar_0 (
   input bit_as_bool aclk,
   input bit_as_bool aresetn,
   input bit [23 : 0] s_axi_awid,
-  input bit [127 : 0] s_axi_awaddr,
+  input bit [255 : 0] s_axi_awaddr,
   input bit [31 : 0] s_axi_awlen,
   input bit [11 : 0] s_axi_awsize,
   input bit [7 : 0] s_axi_awburst,
@@ -89,7 +89,7 @@ module interconnect_xbar_0 (
   output bit [3 : 0] s_axi_bvalid,
   input bit [3 : 0] s_axi_bready,
   input bit [23 : 0] s_axi_arid,
-  input bit [127 : 0] s_axi_araddr,
+  input bit [255 : 0] s_axi_araddr,
   input bit [31 : 0] s_axi_arlen,
   input bit [11 : 0] s_axi_arsize,
   input bit [7 : 0] s_axi_arburst,
@@ -106,7 +106,7 @@ module interconnect_xbar_0 (
   output bit [3 : 0] s_axi_rvalid,
   input bit [3 : 0] s_axi_rready,
   output bit [17 : 0] m_axi_awid,
-  output bit [95 : 0] m_axi_awaddr,
+  output bit [191 : 0] m_axi_awaddr,
   output bit [23 : 0] m_axi_awlen,
   output bit [8 : 0] m_axi_awsize,
   output bit [5 : 0] m_axi_awburst,
@@ -127,7 +127,7 @@ module interconnect_xbar_0 (
   input bit [2 : 0] m_axi_bvalid,
   output bit [2 : 0] m_axi_bready,
   output bit [17 : 0] m_axi_arid,
-  output bit [95 : 0] m_axi_araddr,
+  output bit [191 : 0] m_axi_araddr,
   output bit [23 : 0] m_axi_arlen,
   output bit [8 : 0] m_axi_arsize,
   output bit [5 : 0] m_axi_arburst,
@@ -156,7 +156,7 @@ module interconnect_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,s_axi_awlen,s_a
   input bit aclk;
   input bit aresetn;
   input bit [23 : 0] s_axi_awid;
-  input bit [127 : 0] s_axi_awaddr;
+  input bit [255 : 0] s_axi_awaddr;
   input bit [31 : 0] s_axi_awlen;
   input bit [11 : 0] s_axi_awsize;
   input bit [7 : 0] s_axi_awburst;
@@ -176,7 +176,7 @@ module interconnect_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,s_axi_awlen,s_a
   output wire [3 : 0] s_axi_bvalid;
   input bit [3 : 0] s_axi_bready;
   input bit [23 : 0] s_axi_arid;
-  input bit [127 : 0] s_axi_araddr;
+  input bit [255 : 0] s_axi_araddr;
   input bit [31 : 0] s_axi_arlen;
   input bit [11 : 0] s_axi_arsize;
   input bit [7 : 0] s_axi_arburst;
@@ -193,7 +193,7 @@ module interconnect_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,s_axi_awlen,s_a
   output wire [3 : 0] s_axi_rvalid;
   input bit [3 : 0] s_axi_rready;
   output wire [17 : 0] m_axi_awid;
-  output wire [95 : 0] m_axi_awaddr;
+  output wire [191 : 0] m_axi_awaddr;
   output wire [23 : 0] m_axi_awlen;
   output wire [8 : 0] m_axi_awsize;
   output wire [5 : 0] m_axi_awburst;
@@ -214,7 +214,7 @@ module interconnect_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,s_axi_awlen,s_a
   input bit [2 : 0] m_axi_bvalid;
   output wire [2 : 0] m_axi_bready;
   output wire [17 : 0] m_axi_arid;
-  output wire [95 : 0] m_axi_araddr;
+  output wire [191 : 0] m_axi_araddr;
   output wire [23 : 0] m_axi_arlen;
   output wire [8 : 0] m_axi_arsize;
   output wire [5 : 0] m_axi_arburst;

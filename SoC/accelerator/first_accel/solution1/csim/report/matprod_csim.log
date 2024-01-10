@@ -1,6 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-make: 'csim.exe' is up to date.
+   Compiling ../../../tb_matprod.cpp in debug mode
+   Compiling ../../../matprod.cpp in debug mode
+   Generating csim.exe
   -87   -21    86   107 
   -84    41  -125   -95 
    59   111   -33   -33 

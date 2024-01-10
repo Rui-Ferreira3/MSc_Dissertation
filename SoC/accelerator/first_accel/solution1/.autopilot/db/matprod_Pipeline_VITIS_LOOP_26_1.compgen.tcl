@@ -1,14 +1,14 @@
 # This script segment is generated automatically by AutoPilot
 
-set name matprod_dadd_64ns_64ns_64_4_full_dsp_1
+set name matprod_fadd_32ns_32ns_32_4_full_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dadd} IMPL {fulldsp} LATENCY 3 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 3 ALLOW_PRAGMA 1
 }
 
 
-set name matprod_dmul_64ns_64ns_64_4_max_dsp_1
+set name matprod_fmul_32ns_32ns_32_2_max_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fmul} IMPL {maxdsp} LATENCY 1 ALLOW_PRAGMA 1
 }
 
 
@@ -148,7 +148,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename m1_buffer \
     op interface \
-    ports { m1_buffer_address0 { O 10 vector } m1_buffer_ce0 { O 1 bit } m1_buffer_q0 { I 64 vector } } \
+    ports { m1_buffer_address0 { O 10 vector } m1_buffer_ce0 { O 1 bit } m1_buffer_q0 { I 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm1_buffer'"
@@ -167,7 +167,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename m2_buffer \
     op interface \
-    ports { m2_buffer_address0 { O 10 vector } m2_buffer_ce0 { O 1 bit } m2_buffer_q0 { I 64 vector } } \
+    ports { m2_buffer_address0 { O 10 vector } m2_buffer_ce0 { O 1 bit } m2_buffer_q0 { I 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm2_buffer'"
@@ -186,7 +186,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename m3_buffer \
     op interface \
-    ports { m3_buffer_address0 { O 10 vector } m3_buffer_ce0 { O 1 bit } m3_buffer_we0 { O 1 bit } m3_buffer_d0 { O 64 vector } } \
+    ports { m3_buffer_address0 { O 10 vector } m3_buffer_ce0 { O 1 bit } m3_buffer_we0 { O 1 bit } m3_buffer_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm3_buffer'"

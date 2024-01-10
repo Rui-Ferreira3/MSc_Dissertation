@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Jan 10 14:29:58 2024
-# Process ID: 15244
+# Start of session at: Wed Jan 10 14:58:06 2024
+# Process ID: 20328
 # Current directory: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog
 # Command line: vivado.exe -source open_wave.tcl
 # Log file: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/vivado.log
@@ -48,7 +48,7 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 avail
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-current_fileset: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1091.129 ; gain = 295.562
+current_fileset: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1121.598 ; gain = 312.734
 # open_wave_database matprod.wdb
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/AESL_inst_matprod_activity
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_1_fu_153/grp_matprod_Pipeline_1_fu_153_activity
@@ -59,4 +59,4 @@ open_wave_config C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 14:31:07 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 15:15:43 2024...

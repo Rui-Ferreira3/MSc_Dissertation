@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Dec  6 18:51:40 2023
-//Host        : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+//Date        : Wed Jan 10 15:29:14 2024
+//Host        : DESKTOP-8GAVNOH running 64-bit major release  (build 9200)
 //Command     : generate_target accel_wrapper.bd
 //Design      : accel_wrapper
 //Purpose     : IP block netlist
@@ -89,7 +89,7 @@ module accel_wrapper
   output [63:0]accel_mem_araddr;
   output [1:0]accel_mem_arburst;
   output [3:0]accel_mem_arcache;
-  output [3:0]accel_mem_arid;
+  output [0:0]accel_mem_arid;
   output [7:0]accel_mem_arlen;
   output [1:0]accel_mem_arlock;
   output [2:0]accel_mem_arprot;
@@ -101,7 +101,7 @@ module accel_wrapper
   output [63:0]accel_mem_awaddr;
   output [1:0]accel_mem_awburst;
   output [3:0]accel_mem_awcache;
-  output [3:0]accel_mem_awid;
+  output [0:0]accel_mem_awid;
   output [7:0]accel_mem_awlen;
   output [1:0]accel_mem_awlock;
   output [2:0]accel_mem_awprot;
@@ -110,21 +110,21 @@ module accel_wrapper
   output [3:0]accel_mem_awregion;
   output [2:0]accel_mem_awsize;
   output accel_mem_awvalid;
-  input [3:0]accel_mem_bid;
+  input [0:0]accel_mem_bid;
   output accel_mem_bready;
   input [1:0]accel_mem_bresp;
   input accel_mem_bvalid;
-  input [63:0]accel_mem_rdata;
-  input [3:0]accel_mem_rid;
+  input [31:0]accel_mem_rdata;
+  input [0:0]accel_mem_rid;
   input accel_mem_rlast;
   output accel_mem_rready;
   input [1:0]accel_mem_rresp;
   input accel_mem_rvalid;
-  output [63:0]accel_mem_wdata;
-  output [3:0]accel_mem_wid;
+  output [31:0]accel_mem_wdata;
+  output [0:0]accel_mem_wid;
   output accel_mem_wlast;
   input accel_mem_wready;
-  output [7:0]accel_mem_wstrb;
+  output [3:0]accel_mem_wstrb;
   output accel_mem_wvalid;
   input clk;
   input rst;
@@ -149,7 +149,7 @@ module accel_wrapper
   wire [63:0]accel_mem_araddr;
   wire [1:0]accel_mem_arburst;
   wire [3:0]accel_mem_arcache;
-  wire [3:0]accel_mem_arid;
+  wire [0:0]accel_mem_arid;
   wire [7:0]accel_mem_arlen;
   wire [1:0]accel_mem_arlock;
   wire [2:0]accel_mem_arprot;
@@ -161,7 +161,7 @@ module accel_wrapper
   wire [63:0]accel_mem_awaddr;
   wire [1:0]accel_mem_awburst;
   wire [3:0]accel_mem_awcache;
-  wire [3:0]accel_mem_awid;
+  wire [0:0]accel_mem_awid;
   wire [7:0]accel_mem_awlen;
   wire [1:0]accel_mem_awlock;
   wire [2:0]accel_mem_awprot;
@@ -170,21 +170,21 @@ module accel_wrapper
   wire [3:0]accel_mem_awregion;
   wire [2:0]accel_mem_awsize;
   wire accel_mem_awvalid;
-  wire [3:0]accel_mem_bid;
+  wire [0:0]accel_mem_bid;
   wire accel_mem_bready;
   wire [1:0]accel_mem_bresp;
   wire accel_mem_bvalid;
-  wire [63:0]accel_mem_rdata;
-  wire [3:0]accel_mem_rid;
+  wire [31:0]accel_mem_rdata;
+  wire [0:0]accel_mem_rid;
   wire accel_mem_rlast;
   wire accel_mem_rready;
   wire [1:0]accel_mem_rresp;
   wire accel_mem_rvalid;
-  wire [63:0]accel_mem_wdata;
-  wire [3:0]accel_mem_wid;
+  wire [31:0]accel_mem_wdata;
+  wire [0:0]accel_mem_wid;
   wire accel_mem_wlast;
   wire accel_mem_wready;
-  wire [7:0]accel_mem_wstrb;
+  wire [3:0]accel_mem_wstrb;
   wire accel_mem_wvalid;
   wire clk;
   wire rst;

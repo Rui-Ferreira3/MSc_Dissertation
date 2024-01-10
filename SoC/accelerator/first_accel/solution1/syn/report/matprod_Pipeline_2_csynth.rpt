@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'matprod_Pipeline_2'
 ================================================================
-* Date:           Tue Jan  9 20:32:11 2024
+* Date:           Wed Jan 10 14:55:06 2024
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        first_accel
@@ -29,7 +29,7 @@
     |        Latency (cycles)       |    Latency (absolute)   |          Interval         | Pipeline|
     |   min   |         max         |    min    |     max     | min |         max         |   Type  |
     +---------+---------------------+-----------+-------------+-----+---------------------+---------+
-    |        4|  2305843009213693952|  80.000 ns|  4.6e+10 sec|    4|  2305843009213693952|       no|
+    |        4|  4611686018427387904|  80.000 ns|  9.2e+10 sec|    4|  4611686018427387904|       no|
     +---------+---------------------+-----------+-------------+-----+---------------------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |          |        Latency (cycles)       | Iteration|  Initiation Interval  |           Trip          |          |
         | Loop Name|   min   |         max         |  Latency |  achieved |   target  |          Count          | Pipelined|
         +----------+---------+---------------------+----------+-----------+-----------+-------------------------+----------+
-        |- Loop 1  |        2|  2305843009213693952|         2|          1|          1|  1 ~ 2305843009213693951|       yes|
+        |- Loop 1  |        2|  4611686018427387904|         2|          1|          1|  1 ~ 4611686018427387903|       yes|
         +----------+---------+---------------------+----------+-----------+-----------+-------------------------+----------+
 
 
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
 +-----------------+---------+-----+--------+-------+-----+
 |DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|     99|    -|
+|Expression       |        -|    -|       0|    101|    -|
 |FIFO             |        -|    -|       -|      -|    -|
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|     45|    -|
-|Register         |        -|    -|     252|      -|    -|
+|Register         |        -|    -|     223|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     252|    144|    0|
+|Total            |        0|    0|     223|    146|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      270|  240|  126800|  63400|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,12 +85,12 @@
     +---------------------------+----------+----+---+----+------------+------------+
     |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------+----------+----+---+----+------------+------------+
-    |empty_24_fu_108_p2         |         +|   0|  0|  68|          61|           1|
+    |empty_24_fu_108_p2         |         +|   0|  0|  69|          62|           1|
     |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
-    |exitcond14_fu_114_p2       |      icmp|   0|  0|  27|          61|          61|
+    |exitcond14_fu_114_p2       |      icmp|   0|  0|  28|          62|          62|
     |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
     +---------------------------+----------+----+---+----+------------+------------+
-    |Total                      |          |   0|  0|  99|         124|          65|
+    |Total                      |          |   0|  0| 101|         126|          66|
     +---------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -101,9 +101,9 @@
     |ap_enable_reg_pp0_iter1           |   9|          2|    1|          2|
     |ap_loop_exit_ready_pp0_iter2_reg  |   9|          2|    1|          2|
     |gmem_blk_n_R                      |   9|          2|    1|          2|
-    |loop_index3_fu_52                 |   9|          2|   61|        122|
+    |loop_index3_fu_52                 |   9|          2|   62|        124|
     +----------------------------------+----+-----------+-----+-----------+
-    |Total                             |  45|         10|   65|        130|
+    |Total                             |  45|         10|   66|        132|
     +----------------------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -115,12 +115,12 @@
     |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
-    |gmem_addr_read_reg_154            |  64|   0|   64|          0|
-    |loop_index3_fu_52                 |  61|   0|   61|          0|
-    |loop_index3_load_reg_149          |  61|   0|   61|          0|
-    |sext_ln24_cast_reg_139            |  61|   0|   61|          0|
+    |gmem_addr_read_reg_154            |  32|   0|   32|          0|
+    |loop_index3_fu_52                 |  62|   0|   62|          0|
+    |loop_index3_load_reg_149          |  62|   0|   62|          0|
+    |sext_ln24_cast_reg_139            |  62|   0|   62|          0|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             | 252|   0|  252|          0|
+    |Total                             | 223|   0|  223|          0|
     +----------------------------------+----+----+-----+-----------+
 
 
@@ -153,8 +153,8 @@
 |m_axi_gmem_AWUSER    |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WVALID    |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WREADY    |   in|    1|       m_axi|                gmem|       pointer|
-|m_axi_gmem_WDATA     |  out|   64|       m_axi|                gmem|       pointer|
-|m_axi_gmem_WSTRB     |  out|    8|       m_axi|                gmem|       pointer|
+|m_axi_gmem_WDATA     |  out|   32|       m_axi|                gmem|       pointer|
+|m_axi_gmem_WSTRB     |  out|    4|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WLAST     |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WID       |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WUSER     |  out|    1|       m_axi|                gmem|       pointer|
@@ -173,7 +173,7 @@
 |m_axi_gmem_ARUSER    |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RVALID    |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RREADY    |  out|    1|       m_axi|                gmem|       pointer|
-|m_axi_gmem_RDATA     |   in|   64|       m_axi|                gmem|       pointer|
+|m_axi_gmem_RDATA     |   in|   32|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RLAST     |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RID       |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RFIFONUM  |   in|    9|       m_axi|                gmem|       pointer|
@@ -184,11 +184,11 @@
 |m_axi_gmem_BRESP     |   in|    2|       m_axi|                gmem|       pointer|
 |m_axi_gmem_BID       |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_BUSER     |   in|    1|       m_axi|                gmem|       pointer|
-|p_cast1_cast         |   in|   61|     ap_none|        p_cast1_cast|        scalar|
+|p_cast1_cast         |   in|   62|     ap_none|        p_cast1_cast|        scalar|
 |m2_buffer_address0   |  out|   10|   ap_memory|           m2_buffer|         array|
 |m2_buffer_ce0        |  out|    1|   ap_memory|           m2_buffer|         array|
 |m2_buffer_we0        |  out|    1|   ap_memory|           m2_buffer|         array|
-|m2_buffer_d0         |  out|   64|   ap_memory|           m2_buffer|         array|
+|m2_buffer_d0         |  out|   32|   ap_memory|           m2_buffer|         array|
 |sext_ln24            |   in|   32|     ap_none|           sext_ln24|        scalar|
 +---------------------+-----+-----+------------+--------------------+--------------+
 

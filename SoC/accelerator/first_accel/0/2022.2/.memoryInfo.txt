@@ -1,0 +1,47 @@
+
+Host Name:                 DESKTOP-8GAVNOH
+OS Name:                   Microsoft Windows 11 Home
+OS Version:                10.0.22621 N/A Build 22621
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          catiagborlido@gmail.com
+Registered Organization:   N/A
+Product ID:                00325-97279-86806-AAOEM
+Original Install Date:     1/5/2024, 12:00:08 PM
+System Boot Time:          1/10/2024, 12:05:46 AM
+System Manufacturer:       LENOVO
+System Model:              82HS
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 140 Stepping 1 GenuineIntel ~2419 Mhz
+BIOS Version:              LENOVO FXCN45WW, 8/31/2023
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              pt;Portuguese (Portugal)
+Time Zone:                 (UTC+00:00) Dublin, Edinburgh, Lisbon, London
+Total Physical Memory:     15,931 MB
+Available Physical Memory: 7,944 MB
+Virtual Memory: Max Size:  20,027 MB
+Virtual Memory: Available: 10,212 MB
+Virtual Memory: In Use:    9,815 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-8GAVNOH
+Hotfix(s):                 3 Hotfix(s) Installed.
+                           [01]: KB5032007
+                           [02]: KB5033375
+                           [03]: KB5032393
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Intel(R) Wireless-AC 9560
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.1.254
+                                 IP address(es)
+                                 [01]: 192.168.1.76
+                                 [02]: fe80::fbec:2040:43b9:594a
+                                 [03]: 2001:8a0:6cd0:c500:2d24:46b7:6d49:c878
+                                 [04]: 2001:8a0:6cd0:c500:e88e:34b:1ae:9c5a
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.

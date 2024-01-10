@@ -7,12 +7,12 @@
 #define N2 4
 #define N3 4
 
-static double matA[N1*N2];
-static double matB[N2*N3];
-static double matC[N1*N3];
-static double matChw[N1*N3];
+static float matA[N1*N2];
+static float matB[N2*N3];
+static float matC[N1*N3];
+static float matChw[N1*N3];
 
-void matprod(double *m1, double *m2, double *m3, int rowsA, int rowsB, int rowsC);
+void matprod(float *m1, float *m2, float *m3, int rowsA, int rowsB, int rowsC);
 
 void init_vecs()
 {
@@ -28,7 +28,7 @@ void init_vecs()
 	}
 }
 
-void print_mat(double *x, int rows, int cols)
+void print_mat(float *x, int rows, int cols)
 {
 	int i;
 	for (i=0; i<rows; i++) {
@@ -46,7 +46,7 @@ void SW_dot_product()
 	for (i=0; i<N1; i++) {
 		for (j=0; j<N3; j++) {
 			for (k=0; k<N2; k++) {
-				double mul = matA[i*N2+k] * matB[k*N3+j];
+				float mul = matA[i*N2+k] * matB[k*N3+j];
 				if (k==0) matC[i*N3+j] = mul;
 				else matC[i*N3+j] += mul;
 			}

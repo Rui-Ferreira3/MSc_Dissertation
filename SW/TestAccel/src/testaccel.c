@@ -19,12 +19,12 @@ PRE_COMPILED_MSG("no platform was defined")
 #define N2 MAT_SIZE
 #define N3 MAT_SIZE
 
-#define MATA_START_ADDRESS 0x01000000
+#define MATA_START_ADDRESS 0x00000100
 #define MATB_START_ADDRESS (MATA_START_ADDRESS+8*N1*N2)
 #define MATCS_START_ADDRESS (MATB_START_ADDRESS+8*N2*N3)
 #define MATCH_START_ADDRESS (MATCS_START_ADDRESS+8*N1*N3)
 
-void print_mat(double *x, int colsize, int rowsize)
+void print_mat(float *x, int colsize, int rowsize)
 {
     int i, j;
 
@@ -36,13 +36,13 @@ void print_mat(double *x, int colsize, int rowsize)
     }
 }
 
-void SW_mat_prod(double *matA, double *matB, double *matCS)
+void SW_mat_prod(float *matA, float *matB, float *matCS)
 {
     int i, j, k;
 
     for (i=0; i<N1; i++) {
         for (j=0; j<N3; j++) {
-            double val = 0;
+            float val = 0;
             for (k=0; k<N2; k++) {
                 val += matA[i*N2+k]*matB[k*N3+j];
             }
@@ -51,13 +51,13 @@ void SW_mat_prod(double *matA, double *matB, double *matCS)
     }
 }
 
-void HW_mat_prod(double *matA, double *matB, double *matCH)
+void HW_mat_prod(float *matA, float *matB, float *matCH)
 {
 	int i;
 	// Explicitly define the addresses of the IP memory-mapped I/O registers
-	volatile double *a = (double *)(IP_BASEADDR + 0x10);
-	volatile double *b = (double *)(IP_BASEADDR + 0x1c);
-	volatile double *c = (double *)(IP_BASEADDR + 0x28);
+	volatile float *a = (float *)(IP_BASEADDR + 0x10);
+	volatile float *b = (float *)(IP_BASEADDR + 0x1c);
+	volatile float *c = (float *)(IP_BASEADDR + 0x28);
 	volatile int *rowsA = (int *)(IP_BASEADDR + 0x34);
 	volatile int *colsA = (int *)(IP_BASEADDR + 0x3c);
 	volatile int *colsB = (int *)(IP_BASEADDR + 0x44);
@@ -93,21 +93,21 @@ int main()
 {
     uartInit();
 
-    double arrayA[N1*N2] = {
+    float arrayA[N1*N2] = {
         -87,    -21,    86,     107, 
         -84,    41,     -125,   -95, 
         59,     111,    -33,    -33,
         -52,    124,    -112,   108};
-    double arrayB[N2*N3] = {
+    float arrayB[N2*N3] = {
         62,     84,     109,    -47, 
         -122,   -59,    -51,    25, 
         -91,    14,     -47,    -27,
         -45,    -123,   -36,    -77};
 
-    double *matA = (double *)(MATA_START_ADDRESS);   // matA N1xN2
-    double *matB = (double *)(MATB_START_ADDRESS);   // matB N2xN3
-    double *matCS = (double *)(MATCS_START_ADDRESS);   // matC N1xN3
-    double *matCH = (double *)(MATCH_START_ADDRESS);   // matC N1xN3
+    float *matA = (float *)(MATA_START_ADDRESS);   // matA N1xN2
+    float *matB = (float *)(MATB_START_ADDRESS);   // matB N2xN3
+    float *matCS = (float *)(MATCS_START_ADDRESS);   // matC N1xN3
+    float *matCH = (float *)(MATCH_START_ADDRESS);   // matC N1xN3
 
     for(int i=0; i<N1*N2; i++) matA[i] = arrayA[i];
     for(int i=0; i<N2*N3; i++) matB[i] = arrayB[i];

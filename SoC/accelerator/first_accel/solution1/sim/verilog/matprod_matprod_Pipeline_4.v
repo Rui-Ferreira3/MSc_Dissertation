@@ -90,8 +90,8 @@ output  [3:0] m_axi_gmem_AWREGION;
 output  [0:0] m_axi_gmem_AWUSER;
 output   m_axi_gmem_WVALID;
 input   m_axi_gmem_WREADY;
-output  [63:0] m_axi_gmem_WDATA;
-output  [7:0] m_axi_gmem_WSTRB;
+output  [31:0] m_axi_gmem_WDATA;
+output  [3:0] m_axi_gmem_WSTRB;
 output   m_axi_gmem_WLAST;
 output  [0:0] m_axi_gmem_WID;
 output  [0:0] m_axi_gmem_WUSER;
@@ -110,7 +110,7 @@ output  [3:0] m_axi_gmem_ARREGION;
 output  [0:0] m_axi_gmem_ARUSER;
 input   m_axi_gmem_RVALID;
 output   m_axi_gmem_RREADY;
-input  [63:0] m_axi_gmem_RDATA;
+input  [31:0] m_axi_gmem_RDATA;
 input   m_axi_gmem_RLAST;
 input  [0:0] m_axi_gmem_RID;
 input  [8:0] m_axi_gmem_RFIFONUM;
@@ -121,10 +121,10 @@ output   m_axi_gmem_BREADY;
 input  [1:0] m_axi_gmem_BRESP;
 input  [0:0] m_axi_gmem_BID;
 input  [0:0] m_axi_gmem_BUSER;
-input  [60:0] p_cast3_cast;
+input  [61:0] p_cast3_cast;
 output  [9:0] m3_buffer_address0;
 output   m3_buffer_ce0;
-input  [63:0] m3_buffer_q0;
+input  [31:0] m3_buffer_q0;
 input  [31:0] sext_ln40;
 
 reg ap_idle;
@@ -149,14 +149,14 @@ wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 reg    gmem_blk_n_W;
 wire    ap_block_pp0_stage0;
-wire  signed [60:0] sext_ln40_cast_fu_91_p1;
-reg  signed [60:0] sext_ln40_cast_reg_145;
+wire  signed [61:0] sext_ln40_cast_fu_91_p1;
+reg  signed [61:0] sext_ln40_cast_reg_145;
 reg    ap_block_pp0_stage0_11001;
-reg   [63:0] m3_buffer_load_reg_164;
+reg   [31:0] m3_buffer_load_reg_164;
 wire   [63:0] loop_index_cast_fu_107_p1;
 wire    ap_block_pp0_stage0_01001;
-reg   [60:0] loop_index_fu_54;
-wire   [60:0] empty_22_fu_112_p2;
+reg   [61:0] loop_index_fu_54;
+wire   [61:0] empty_22_fu_112_p2;
 wire    ap_loop_init;
 reg    ap_done_reg;
 wire    ap_continue_int;
@@ -255,7 +255,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            loop_index_fu_54 <= 61'd0;
+            loop_index_fu_54 <= 62'd0;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (exitcond_fu_118_p2 == 1'd0))) begin
             loop_index_fu_54 <= empty_22_fu_112_p2;
         end
@@ -378,7 +378,7 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter1_stage0;
 
-assign empty_22_fu_112_p2 = (loop_index_fu_54 + 61'd1);
+assign empty_22_fu_112_p2 = (loop_index_fu_54 + 62'd1);
 
 assign exitcond_fu_118_p2 = ((empty_22_fu_112_p2 == sext_ln40_cast_reg_145) ? 1'b1 : 1'b0);
 
@@ -444,7 +444,7 @@ assign m_axi_gmem_WID = 1'd0;
 
 assign m_axi_gmem_WLAST = 1'b0;
 
-assign m_axi_gmem_WSTRB = 8'd255;
+assign m_axi_gmem_WSTRB = 4'd15;
 
 assign m_axi_gmem_WUSER = 1'd0;
 

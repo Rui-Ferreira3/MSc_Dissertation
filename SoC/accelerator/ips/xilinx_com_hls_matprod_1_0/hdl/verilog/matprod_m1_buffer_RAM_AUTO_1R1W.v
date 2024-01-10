@@ -12,7 +12,7 @@ module matprod_m1_buffer_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 64;
+parameter DataWidth = 32;
 parameter AddressWidth = 10;
 parameter AddressRange = 1024;
  

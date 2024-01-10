@@ -32,8 +32,8 @@ port (
     m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
     m_axi_gmem_WVALID : OUT STD_LOGIC;
     m_axi_gmem_WREADY : IN STD_LOGIC;
-    m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
-    m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
+    m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+    m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
     m_axi_gmem_WLAST : OUT STD_LOGIC;
     m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
     m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -52,7 +52,7 @@ port (
     m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
     m_axi_gmem_RVALID : IN STD_LOGIC;
     m_axi_gmem_RREADY : OUT STD_LOGIC;
-    m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
+    m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
     m_axi_gmem_RLAST : IN STD_LOGIC;
     m_axi_gmem_RID : IN STD_LOGIC_VECTOR (0 downto 0);
     m_axi_gmem_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -63,10 +63,10 @@ port (
     m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
     m_axi_gmem_BID : IN STD_LOGIC_VECTOR (0 downto 0);
     m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    p_cast3_cast : IN STD_LOGIC_VECTOR (60 downto 0);
+    p_cast3_cast : IN STD_LOGIC_VECTOR (61 downto 0);
     m3_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     m3_buffer_ce0 : OUT STD_LOGIC;
-    m3_buffer_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    m3_buffer_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
     sext_ln40 : IN STD_LOGIC_VECTOR (31 downto 0) );
 end;
 
@@ -84,9 +84,9 @@ architecture behav of matprod_matprod_Pipeline_4 is
     constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
-    constant ap_const_lv8_FF : STD_LOGIC_VECTOR (7 downto 0) := "11111111";
-    constant ap_const_lv61_0 : STD_LOGIC_VECTOR (60 downto 0) := "0000000000000000000000000000000000000000000000000000000000000";
-    constant ap_const_lv61_1 : STD_LOGIC_VECTOR (60 downto 0) := "0000000000000000000000000000000000000000000000000000000000001";
+    constant ap_const_lv4_F : STD_LOGIC_VECTOR (3 downto 0) := "1111";
+    constant ap_const_lv62_0 : STD_LOGIC_VECTOR (61 downto 0) := "00000000000000000000000000000000000000000000000000000000000000";
+    constant ap_const_lv62_1 : STD_LOGIC_VECTOR (61 downto 0) := "00000000000000000000000000000000000000000000000000000000000001";
 
 attribute shreg_extract : string;
     signal ap_CS_fsm : STD_LOGIC_VECTOR (0 downto 0) := "1";
@@ -110,14 +110,14 @@ attribute shreg_extract : string;
     signal ap_ready_int : STD_LOGIC;
     signal gmem_blk_n_W : STD_LOGIC;
     signal ap_block_pp0_stage0 : BOOLEAN;
-    signal sext_ln40_cast_fu_91_p1 : STD_LOGIC_VECTOR (60 downto 0);
-    signal sext_ln40_cast_reg_145 : STD_LOGIC_VECTOR (60 downto 0);
+    signal sext_ln40_cast_fu_91_p1 : STD_LOGIC_VECTOR (61 downto 0);
+    signal sext_ln40_cast_reg_145 : STD_LOGIC_VECTOR (61 downto 0);
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
-    signal m3_buffer_load_reg_164 : STD_LOGIC_VECTOR (63 downto 0);
+    signal m3_buffer_load_reg_164 : STD_LOGIC_VECTOR (31 downto 0);
     signal loop_index_cast_fu_107_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
-    signal loop_index_fu_54 : STD_LOGIC_VECTOR (60 downto 0);
-    signal empty_22_fu_112_p2 : STD_LOGIC_VECTOR (60 downto 0);
+    signal loop_index_fu_54 : STD_LOGIC_VECTOR (61 downto 0);
+    signal empty_22_fu_112_p2 : STD_LOGIC_VECTOR (61 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
@@ -255,7 +255,7 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 if ((ap_loop_init = ap_const_logic_1)) then 
-                    loop_index_fu_54 <= ap_const_lv61_0;
+                    loop_index_fu_54 <= ap_const_lv62_0;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (exitcond_fu_118_p2 = ap_const_lv1_0))) then 
                     loop_index_fu_54 <= empty_22_fu_112_p2;
                 end if;
@@ -361,7 +361,7 @@ begin
         end if; 
     end process;
 
-    empty_22_fu_112_p2 <= std_logic_vector(unsigned(loop_index_fu_54) + unsigned(ap_const_lv61_1));
+    empty_22_fu_112_p2 <= std_logic_vector(unsigned(loop_index_fu_54) + unsigned(ap_const_lv62_1));
     exitcond_fu_118_p2 <= "1" when (empty_22_fu_112_p2 = sext_ln40_cast_reg_145) else "0";
 
     gmem_blk_n_W_assign_proc : process(ap_enable_reg_pp0_iter3, m_axi_gmem_WREADY, ap_block_pp0_stage0)
@@ -414,7 +414,7 @@ begin
     m_axi_gmem_WDATA <= m3_buffer_load_reg_164;
     m_axi_gmem_WID <= ap_const_lv1_0;
     m_axi_gmem_WLAST <= ap_const_logic_0;
-    m_axi_gmem_WSTRB <= ap_const_lv8_FF;
+    m_axi_gmem_WSTRB <= ap_const_lv4_F;
     m_axi_gmem_WUSER <= ap_const_lv1_0;
 
     m_axi_gmem_WVALID_assign_proc : process(ap_enable_reg_pp0_iter3, ap_block_pp0_stage0_11001)
@@ -426,6 +426,6 @@ begin
         end if; 
     end process;
 
-        sext_ln40_cast_fu_91_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sext_ln40),61));
+        sext_ln40_cast_fu_91_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sext_ln40),62));
 
 end behav;

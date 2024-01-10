@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Tue Jan 09 20:31:50 +0000 2024
+INFO-FLOW: Workspace C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Wed Jan 10 14:54:48 +0000 2024
 Execute     ap_set_clock -name default -period 20 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
 Execute     set_part xc7a100t-csg324-1 
@@ -7,7 +7,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.2\lib\win
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
-Command       create_platform done; 0.94 sec.
+Command       create_platform done; 0.791 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
@@ -20,15 +20,14 @@ Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/ut
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.176 sec.
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 1.15 sec.
+Command     set_part done; 0.901 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=first_accel 
-INFO: [HLS 200-1464] Running solution command: config_export -display_name=first_accel
-Execute     config_export -display_name=first_accel 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=accel 
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=accel
+Execute     config_export -display_name=accel 
 Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
 INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
 Execute     config_export -format=ip_catalog 
@@ -38,7 +37,7 @@ Execute     config_export -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelera
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.283 sec.
+Command   open_solution done; 0.998 sec.
 Execute   set_part xc7a100t-csg324-1 
 INFO: [HLS 200-1510] Running: set_part xc7a100t-csg324-1 
 Execute     create_platform xc7a100t-csg324-1 -board  
@@ -56,11 +55,11 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.142 sec.
+Command   set_part done; 0.121 sec.
 Execute   create_clock -period 20 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
-Execute   config_export -display_name first_accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
-INFO: [HLS 200-1510] Running: config_export -display_name first_accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
+Execute   config_export -display_name accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -display_name accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
 Execute   source ./first_accel/solution1/directives.tcl 
 INFO: [HLS 200-1510] Running: source ./first_accel/solution1/directives.tcl
 Execute     set_directive_top -name matprod matprod 
@@ -68,7 +67,7 @@ INFO: [HLS 200-1510] Running: set_directive_top -name matprod matprod
 Execute   csynth_design 
 INFO: [HLS 200-1510] Running: csynth_design 
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.089 seconds; current allocated memory: 105.461 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.048 seconds; current allocated memory: 105.250 MB.
 INFO: [HLS 200-10] Analyzing design file 'first_accel/matprod.cpp' ... 
 INFO-FLOW: Compiling one TU...
 INFO-FLOW: Handling first_accel/matprod.cpp as C++
@@ -76,17 +75,16 @@ Execute       ap_part_info -name xc7a100t-csg324-1 -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang first_accel/matprod.cpp -foptimization-record-file=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=artix7_slow -device-resource-info=BRAM_270.000000_DSP_240.000000_FF_126800.000000_LUT_63400.000000_SLICE_15850.000000_URAM_0.000000 -device-name-info=xc7a100tcsg324-1 > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.cpp.clang.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.cpp.clang.err.log 
-Command       ap_eval done; 0.436 sec.
-INFO-FLOW: Done: GCC PP 39 time: 0.4 seconds per iteration
+Command       ap_eval done; 0.207 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
 Execute       set_directive_top matprod -name=matprod 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 INFO-FLOW: Source syntax check for synthesis
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=artix7_slow -device-resource-info=BRAM_270.000000_DSP_240.000000_FF_126800.000000_LUT_63400.000000_SLICE_15850.000000_URAM_0.000000 -device-name-info=xc7a100tcsg324-1 > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/clang.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/clang.err.log 
-Command       ap_eval done; 0.315 sec.
+Command       ap_eval done; 0.192 sec.
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/.systemc_flag -fix-errors C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.132 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/all.directive.json -fix-errors C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
@@ -97,16 +95,13 @@ INFO-FLOW: Calling xilinx-label-all-loops ...
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp std=gnu++14 -target fpga  
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.clang-tidy.loop-label.err.log 
-Command         ap_eval done; 0.111 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Command       clang_tidy done; 0.141 sec.
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
-Command       ap_eval done; 0.236 sec.
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 INFO-FLOW: compiling source code to llvm bc
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.bc {-hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=artix7_slow -device-resource-info=BRAM_270.000000_DSP_240.000000_FF_126800.000000_LUT_63400.000000_SLICE_15850.000000_URAM_0.000000 -device-name-info=xc7a100tcsg324-1 > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.clang.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp.clang.err.log 
-Command       ap_eval done; 0.331 sec.
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.903 seconds; current allocated memory: 106.211 MB.
+Command       ap_eval done; 0.208 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.988 seconds; current allocated memory: 106.062 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.g.bc"  
@@ -114,20 +109,18 @@ Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tool
 INFO-FLOW: 
 Execute       run_link_or_opt -opt -out C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
-Command         ap_eval done; 0.108 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.111 sec.
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsmc++_39.bc 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsmc++_39.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
-Command         ap_eval done; 2.736 sec.
+Command         ap_eval done; 2.117 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 2.739 sec.
+Command       run_link_or_opt done; 2.118 sec.
 Execute       run_link_or_opt -opt -out C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=matprod -reflow-float-conversion 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=matprod -reflow-float-conversion -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
-Command         ap_eval done; 0.989 sec.
+Command         ap_eval done; 0.847 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.991 sec.
+Command       run_link_or_opt done; 0.849 sec.
 Execute       run_link_or_opt -out C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2022.2/win64/lib/libfloatconversion_39.bc 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2022.2/win64/lib/libfloatconversion_39.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
 INFO-FLOW: 
@@ -139,25 +132,24 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=matprod -mllvm -hls-db-dir -mllvm C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-assume-no-address-wrap=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=20 -x ir C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=artix7_slow -device-resource-info=BRAM_270.000000_DSP_240.000000_FF_126800.000000_LUT_63400.000000_SLICE_15850.000000_URAM_0.000000 -device-name-info=xc7a100tcsg324-1 > C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
-Command       ap_eval done; 0.425 sec.
-INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 64 in loop 'anonymous'() has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
-INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 64 in loop 'anonymous'() has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+Command       ap_eval done; 0.285 sec.
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.638 seconds; current allocated memory: 107.125 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 107.125 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.55 seconds; current allocated memory: 107.145 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 107.145 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top matprod -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.0.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 0.133 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.147 seconds; current allocated memory: 113.074 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 113.477 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.1.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 114.430 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 114.719 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.g.1.bc to C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -168,20 +160,18 @@ INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_1' (first_accel/matprod.cpp
 INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'matprod' automatically.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (first_accel/matprod.cpp:27:27) to (first_accel/matprod.cpp:31:7) in function 'matprod'... converting 3 basic blocks.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 136.559 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (first_accel/matprod.cpp:27:26) to (first_accel/matprod.cpp:31:7) in function 'matprod'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 136.441 MB.
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.o.2.bc -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 INFO: [HLS 200-472] Inferring partial write operation for 'm1_buffer' 
 INFO: [HLS 200-472] Inferring partial write operation for 'm2_buffer' 
 INFO: [HLS 200-472] Inferring partial write operation for 'm3_buffer' (first_accel/matprod.cpp:33:22)
-Command         transform done; 0.126 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 164.367 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 164.746 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.472 sec.
-Command     elaborate done; 7.036 sec.
+Command       opt_and_import_c done; 0.257 sec.
+Command     elaborate done; 4.814 sec.
 Execute     ap_eval exec zip -j C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
-Command     ap_eval done; 0.119 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -241,7 +231,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.268 seconds; current allocated memory: 168.539 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 168.656 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_1.sched.adb -f 
@@ -253,7 +243,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 169.750 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 169.844 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_1.bind.adb -f 
@@ -267,7 +257,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 170.156 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 170.211 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_2.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_2.sched.adb -f 
@@ -279,7 +269,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 170.195 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 170.277 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_2.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_2.bind.adb -f 
@@ -296,11 +286,10 @@ INFO: [HLS 200-486] Changing DSP latency (root=mul_ln33) to 3 in order to utiliz
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1'.
 WARNING: [HLS 200-880] The II Violation in module 'matprod_Pipeline_VITIS_LOOP_26_1' (loop 'VITIS_LOOP_26_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('regc_write_ln28', first_accel/matprod.cpp:28) of variable 'select_ln28', first_accel/matprod.cpp:28 on static variable 'regc' and 'load' operation ('regc_load', first_accel/matprod.cpp:29) on static variable 'regc'.
 WARNING: [HLS 200-880] The II Violation in module 'matprod_Pipeline_VITIS_LOOP_26_1' (loop 'VITIS_LOOP_26_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('regc_write_ln28', first_accel/matprod.cpp:28) of variable 'select_ln28', first_accel/matprod.cpp:28 on static variable 'regc' and 'load' operation ('regc_load', first_accel/matprod.cpp:29) on static variable 'regc'.
-WARNING: [HLS 200-880] The II Violation in module 'matprod_Pipeline_VITIS_LOOP_26_1' (loop 'VITIS_LOOP_26_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('regc_write_ln28', first_accel/matprod.cpp:28) of variable 'select_ln28', first_accel/matprod.cpp:28 on static variable 'regc' and 'load' operation ('regc_load', first_accel/matprod.cpp:29) on static variable 'regc'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 16, loop 'VITIS_LOOP_26_1'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 13, loop 'VITIS_LOOP_26_1'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.212 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.263 seconds; current allocated memory: 171.016 MB.
+Command       schedule done; 0.107 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 170.996 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_26_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_26_1.sched.adb -f 
@@ -312,7 +301,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 171.191 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 171.180 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_26_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_26_1.bind.adb -f 
@@ -326,7 +315,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'Loop 1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 171.539 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 171.438 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_4.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_4.sched.adb -f 
@@ -338,7 +327,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 171.582 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 171.438 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_4.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_4.bind.adb -f 
@@ -350,7 +339,7 @@ Execute       set_default_model matprod
 Execute       schedule -model matprod 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.144 seconds; current allocated memory: 172.285 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 172.293 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.sched.adb -f 
@@ -362,8 +351,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.111 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.198 seconds; current allocated memory: 172.520 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 172.414 MB.
 Execute       syn_report -verbosereport -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute       db_write -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.bind.adb -f 
@@ -394,8 +382,8 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gme
 WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_1/m_axi_gmem_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'matprod_Pipeline_1'.
-Command       create_rtl_model done; 0.441 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.591 seconds; current allocated memory: 174.379 MB.
+Command       create_rtl_model done; 0.209 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.314 seconds; current allocated memory: 174.543 MB.
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
 Execute       gen_rtl matprod_Pipeline_1 -style xilinx -f -lang vhdl -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/vhdl/matprod_matprod_Pipeline_1 
 Execute       gen_rtl matprod_Pipeline_1 -style xilinx -f -lang vlog -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/verilog/matprod_matprod_Pipeline_1 
@@ -425,8 +413,8 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gme
 WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_2/m_axi_gmem_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'matprod_Pipeline_2'.
-Command       create_rtl_model done; 0.24 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.446 seconds; current allocated memory: 175.809 MB.
+Command       create_rtl_model done; 0.277 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.437 seconds; current allocated memory: 176.055 MB.
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
 Execute       gen_rtl matprod_Pipeline_2 -style xilinx -f -lang vhdl -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/vhdl/matprod_matprod_Pipeline_2 
 Execute       gen_rtl matprod_Pipeline_2 -style xilinx -f -lang vlog -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/verilog/matprod_matprod_Pipeline_2 
@@ -444,13 +432,13 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model matprod_Pipeline_VITIS_LOOP_26_1 -top_prefix matprod_ -sub_prefix matprod_ -mg_file C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_26_1.compgen.tcl 
 WARNING: [RTGEN 206-101] Register 'regc' is power-on initialization.
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matprod_Pipeline_VITIS_LOOP_26_1' pipeline 'VITIS_LOOP_26_1' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_10s_10s_10ns_10_4_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_10s_10s_10s_10_4_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'matprod_Pipeline_VITIS_LOOP_26_1'.
-Command       create_rtl_model done; 0.126 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.311 seconds; current allocated memory: 177.828 MB.
+Command       create_rtl_model done; 0.129 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.258 seconds; current allocated memory: 177.695 MB.
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
 Execute       gen_rtl matprod_Pipeline_VITIS_LOOP_26_1 -style xilinx -f -lang vhdl -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/vhdl/matprod_matprod_Pipeline_VITIS_LOOP_26_1 
 Execute       gen_rtl matprod_Pipeline_VITIS_LOOP_26_1 -style xilinx -f -lang vlog -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/verilog/matprod_matprod_Pipeline_VITIS_LOOP_26_1 
@@ -481,8 +469,8 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gme
 WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_AWUSER' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'matprod_Pipeline_4/m_axi_gmem_BREADY' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'matprod_Pipeline_4'.
-Command       create_rtl_model done; 0.181 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.445 seconds; current allocated memory: 179.336 MB.
+Command       create_rtl_model done; 0.222 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.456 seconds; current allocated memory: 178.957 MB.
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
 Execute       gen_rtl matprod_Pipeline_4 -style xilinx -f -lang vhdl -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/vhdl/matprod_matprod_Pipeline_4 
 Execute       gen_rtl matprod_Pipeline_4 -style xilinx -f -lang vlog -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/verilog/matprod_matprod_Pipeline_4 
@@ -511,8 +499,8 @@ INFO: [RTGEN 206-100] Bundling port 'm1', 'm2', 'm3', 'N1', 'N2', 'N3' to AXI-Li
 INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'matprod'.
 INFO: [RTMG 210-278] Implementing memory 'matprod_m1_buffer_RAM_AUTO_1R1W' using auto RAMs.
-Command       create_rtl_model done; 0.241 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.397 seconds; current allocated memory: 181.941 MB.
+Command       create_rtl_model done; 0.2 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.338 seconds; current allocated memory: 181.703 MB.
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
 Execute       gen_rtl matprod -istop -style xilinx -f -lang vhdl -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/vhdl/matprod 
 Execute       gen_rtl matprod -istop -style xilinx -f -lang vlog -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/verilog/matprod 
@@ -521,7 +509,7 @@ Execute         AP::get_flow_target_display_name
 Execute       syn_report -rtlxml -model matprod -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/report/matprod_csynth.xml 
 Execute       syn_report -verbosereport -model matprod -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.verbose.rpt 
 Execute         AP::get_flow_target_display_name
-Command       syn_report done; 0.101 sec.
+Command       syn_report done; 0.102 sec.
 Execute       db_write -model matprod -f -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.adb 
 Execute       db_write -model matprod -bindview -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info matprod -p C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db -o C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod 
@@ -544,10 +532,10 @@ INFO-FLOW: Found component matprod_flow_control_loop_pipe_sequential_init.
 INFO-FLOW: Append model matprod_flow_control_loop_pipe_sequential_init
 INFO-FLOW: Handling components in module [matprod_Pipeline_VITIS_LOOP_26_1] ... 
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_26_1.compgen.tcl 
-INFO-FLOW: Found component matprod_dadd_64ns_64ns_64_4_full_dsp_1.
-INFO-FLOW: Append model matprod_dadd_64ns_64ns_64_4_full_dsp_1
-INFO-FLOW: Found component matprod_dmul_64ns_64ns_64_4_max_dsp_1.
-INFO-FLOW: Append model matprod_dmul_64ns_64ns_64_4_max_dsp_1
+INFO-FLOW: Found component matprod_fadd_32ns_32ns_32_4_full_dsp_1.
+INFO-FLOW: Append model matprod_fadd_32ns_32ns_32_4_full_dsp_1
+INFO-FLOW: Found component matprod_fmul_32ns_32ns_32_2_max_dsp_1.
+INFO-FLOW: Append model matprod_fmul_32ns_32ns_32_2_max_dsp_1
 INFO-FLOW: Found component matprod_mac_muladd_10s_10s_10s_10_4_1.
 INFO-FLOW: Append model matprod_mac_muladd_10s_10s_10s_10_4_1
 INFO-FLOW: Found component matprod_mac_muladd_10s_10s_10ns_10_4_1.
@@ -574,12 +562,12 @@ INFO-FLOW: Append model matprod_Pipeline_VITIS_LOOP_26_1
 INFO-FLOW: Append model matprod_Pipeline_4
 INFO-FLOW: Append model matprod
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: matprod_flow_control_loop_pipe_sequential_init matprod_flow_control_loop_pipe_sequential_init matprod_dadd_64ns_64ns_64_4_full_dsp_1 matprod_dmul_64ns_64ns_64_4_max_dsp_1 matprod_mac_muladd_10s_10s_10s_10_4_1 matprod_mac_muladd_10s_10s_10ns_10_4_1 matprod_flow_control_loop_pipe_sequential_init matprod_flow_control_loop_pipe_sequential_init matprod_mul_32s_32s_32_1_1 matprod_m1_buffer_RAM_AUTO_1R1W matprod_gmem_m_axi matprod_BUS1_s_axi matprod_Pipeline_1 matprod_Pipeline_2 matprod_Pipeline_VITIS_LOOP_26_1 matprod_Pipeline_4 matprod
+INFO-FLOW: All models in this session: matprod_flow_control_loop_pipe_sequential_init matprod_flow_control_loop_pipe_sequential_init matprod_fadd_32ns_32ns_32_4_full_dsp_1 matprod_fmul_32ns_32ns_32_2_max_dsp_1 matprod_mac_muladd_10s_10s_10s_10_4_1 matprod_mac_muladd_10s_10s_10ns_10_4_1 matprod_flow_control_loop_pipe_sequential_init matprod_flow_control_loop_pipe_sequential_init matprod_mul_32s_32s_32_1_1 matprod_m1_buffer_RAM_AUTO_1R1W matprod_gmem_m_axi matprod_BUS1_s_axi matprod_Pipeline_1 matprod_Pipeline_2 matprod_Pipeline_VITIS_LOOP_26_1 matprod_Pipeline_4 matprod
 INFO-FLOW: Generating C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/autopilot.rtl.models.txt file...
 INFO-FLOW: To file: write model matprod_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model matprod_flow_control_loop_pipe_sequential_init
-INFO-FLOW: To file: write model matprod_dadd_64ns_64ns_64_4_full_dsp_1
-INFO-FLOW: To file: write model matprod_dmul_64ns_64ns_64_4_max_dsp_1
+INFO-FLOW: To file: write model matprod_fadd_32ns_32ns_32_4_full_dsp_1
+INFO-FLOW: To file: write model matprod_fmul_32ns_32ns_32_2_max_dsp_1
 INFO-FLOW: To file: write model matprod_mac_muladd_10s_10s_10s_10_4_1
 INFO-FLOW: To file: write model matprod_mac_muladd_10s_10s_10ns_10_4_1
 INFO-FLOW: To file: write model matprod_flow_control_loop_pipe_sequential_init
@@ -625,8 +613,8 @@ Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=20.000 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/vhdl' dstVlogDir='C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/vlog' tclDir='C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db' modelList='matprod_flow_control_loop_pipe_sequential_init
 matprod_flow_control_loop_pipe_sequential_init
-matprod_dadd_64ns_64ns_64_4_full_dsp_1
-matprod_dmul_64ns_64ns_64_4_max_dsp_1
+matprod_fadd_32ns_32ns_32_4_full_dsp_1
+matprod_fmul_32ns_32ns_32_2_max_dsp_1
 matprod_mac_muladd_10s_10s_10s_10_4_1
 matprod_mac_muladd_10s_10s_10ns_10_4_1
 matprod_flow_control_loop_pipe_sequential_init
@@ -655,11 +643,11 @@ Execute         ap_part_info -name xc7a100t-csg324-1 -data info
 Execute         ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
 Execute         ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
 Execute         ap_part_info -name xc7a100t-csg324-1 -data info 
-Command       ap_source done; 0.13 sec.
+Command       ap_source done; 0.141 sec.
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_4.compgen.tcl 
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.tcl 
 Execute         source ./BUS1.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.041 seconds; current allocated memory: 186.520 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.88 seconds; current allocated memory: 186.895 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='matprod_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
@@ -672,8 +660,8 @@ INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/syn/report/csynth.xml
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='matprod_flow_control_loop_pipe_sequential_init
 matprod_flow_control_loop_pipe_sequential_init
-matprod_dadd_64ns_64ns_64_4_full_dsp_1
-matprod_dmul_64ns_64ns_64_4_max_dsp_1
+matprod_fadd_32ns_32ns_32_4_full_dsp_1
+matprod_fmul_32ns_32ns_32_2_max_dsp_1
 matprod_mac_muladd_10s_10s_10s_10_4_1
 matprod_mac_muladd_10s_10s_10ns_10_4_1
 matprod_flow_control_loop_pipe_sequential_init
@@ -707,26 +695,26 @@ Execute       ap_part_info -name xc7a100t-csg324-1 -data info -quiet
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
 Execute       sc_get_clocks matprod 
 Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_dadd_64ns_64ns_64_4_full_dsp_1_ip.tcl 
-Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_dmul_64ns_64ns_64_4_max_dsp_1_ip.tcl 
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME BUS1_s_axi_U SOURCE {} VARIABLE {} MODULE matprod LOOP {} BUNDLEDNAME BUS1 DSP 0 BRAM 0 URAM 0} {BINDTYPE adapter DISPLAY {bind_adapter axi_master} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME gmem_m_axi_U SOURCE {} VARIABLE {} MODULE matprod LOOP {} BUNDLEDNAME gmem DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST matprod MODULE2INSTS {matprod matprod matprod_Pipeline_1 grp_matprod_Pipeline_1_fu_153 matprod_Pipeline_2 grp_matprod_Pipeline_2_fu_162 matprod_Pipeline_VITIS_LOOP_26_1 grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 matprod_Pipeline_4 grp_matprod_Pipeline_4_fu_185} INST2MODULE {matprod matprod grp_matprod_Pipeline_1_fu_153 matprod_Pipeline_1 grp_matprod_Pipeline_2_fu_162 matprod_Pipeline_2 grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 matprod_Pipeline_VITIS_LOOP_26_1 grp_matprod_Pipeline_4_fu_185 matprod_Pipeline_4} INSTDATA {matprod {DEPTH 1 CHILDREN {grp_matprod_Pipeline_1_fu_153 grp_matprod_Pipeline_2_fu_162 grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 grp_matprod_Pipeline_4_fu_185}} grp_matprod_Pipeline_1_fu_153 {DEPTH 2 CHILDREN {}} grp_matprod_Pipeline_2_fu_162 {DEPTH 2 CHILDREN {}} grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 {DEPTH 2 CHILDREN {}} grp_matprod_Pipeline_4_fu_185 {DEPTH 2 CHILDREN {}}} MODULEDATA {matprod_Pipeline_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_26_fu_108_p2 SOURCE {} VARIABLE empty_26 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} matprod_Pipeline_2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_24_fu_108_p2 SOURCE {} VARIABLE empty_24 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} matprod_Pipeline_VITIS_LOOP_26_1 {BINDINFO {{BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_10s_10s_10s_10_4_1_U11 SOURCE first_accel/matprod.cpp:27 VARIABLE mul_ln27 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_10s_10s_10s_10_4_1_U11 SOURCE first_accel/matprod.cpp:27 VARIABLE add_ln27 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U12 SOURCE first_accel/matprod.cpp:27 VARIABLE mul_ln27_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U12 SOURCE first_accel/matprod.cpp:27 VARIABLE add_ln27_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE dmul PRAGMA {} RTLNAME dmul_64ns_64ns_64_4_max_dsp_1_U10 SOURCE first_accel/matprod.cpp:27 VARIABLE mul LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 11 BRAM 0 URAM 0 DISPNAME {bind_op dmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE dadd PRAGMA {} RTLNAME dadd_64ns_64ns_64_4_full_dsp_1_U9 SOURCE first_accel/matprod.cpp:29 VARIABLE add LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op dadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME k_1_fu_174_p2 SOURCE first_accel/matprod.cpp:30 VARIABLE k_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U13 SOURCE first_accel/matprod.cpp:33 VARIABLE mul_ln33 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U13 SOURCE first_accel/matprod.cpp:33 VARIABLE add_ln33 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME j_1_fu_190_p2 SOURCE first_accel/matprod.cpp:34 VARIABLE j_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln35_fu_201_p2 SOURCE first_accel/matprod.cpp:35 VARIABLE add_ln35 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 17 BRAM 0 URAM 0}} matprod_Pipeline_4 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_22_fu_112_p2 SOURCE {} VARIABLE empty_22 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} matprod {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m1_buffer_U SOURCE first_accel/matprod.cpp:19 VARIABLE m1_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m2_buffer_U SOURCE first_accel/matprod.cpp:20 VARIABLE m2_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m3_buffer_U SOURCE first_accel/matprod.cpp:21 VARIABLE m3_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_1_1_U30 SOURCE first_accel/matprod.cpp:23 VARIABLE mul_ln23 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_1_1_U31 SOURCE first_accel/matprod.cpp:24 VARIABLE mul_ln24 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_1_1_U32 SOURCE first_accel/matprod.cpp:40 VARIABLE mul_ln40 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}}} AREA {DSP 26 BRAM 12 URAM 0}}}}'
+Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl 
+Execute       source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME BUS1_s_axi_U SOURCE {} VARIABLE {} MODULE matprod LOOP {} BUNDLEDNAME BUS1 DSP 0 BRAM 0 URAM 0} {BINDTYPE adapter DISPLAY {bind_adapter axi_master} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME gmem_m_axi_U SOURCE {} VARIABLE {} MODULE matprod LOOP {} BUNDLEDNAME gmem DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST matprod MODULE2INSTS {matprod matprod matprod_Pipeline_1 grp_matprod_Pipeline_1_fu_153 matprod_Pipeline_2 grp_matprod_Pipeline_2_fu_162 matprod_Pipeline_VITIS_LOOP_26_1 grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 matprod_Pipeline_4 grp_matprod_Pipeline_4_fu_185} INST2MODULE {matprod matprod grp_matprod_Pipeline_1_fu_153 matprod_Pipeline_1 grp_matprod_Pipeline_2_fu_162 matprod_Pipeline_2 grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 matprod_Pipeline_VITIS_LOOP_26_1 grp_matprod_Pipeline_4_fu_185 matprod_Pipeline_4} INSTDATA {matprod {DEPTH 1 CHILDREN {grp_matprod_Pipeline_1_fu_153 grp_matprod_Pipeline_2_fu_162 grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 grp_matprod_Pipeline_4_fu_185}} grp_matprod_Pipeline_1_fu_153 {DEPTH 2 CHILDREN {}} grp_matprod_Pipeline_2_fu_162 {DEPTH 2 CHILDREN {}} grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171 {DEPTH 2 CHILDREN {}} grp_matprod_Pipeline_4_fu_185 {DEPTH 2 CHILDREN {}}} MODULEDATA {matprod_Pipeline_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_26_fu_108_p2 SOURCE {} VARIABLE empty_26 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} matprod_Pipeline_2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_24_fu_108_p2 SOURCE {} VARIABLE empty_24 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} matprod_Pipeline_VITIS_LOOP_26_1 {BINDINFO {{BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_10s_10s_10s_10_4_1_U11 SOURCE first_accel/matprod.cpp:27 VARIABLE mul_ln27 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_10s_10s_10s_10_4_1_U11 SOURCE first_accel/matprod.cpp:27 VARIABLE add_ln27 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U12 SOURCE first_accel/matprod.cpp:27 VARIABLE mul_ln27_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U12 SOURCE first_accel/matprod.cpp:27 VARIABLE add_ln27_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 1 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_2_max_dsp_1_U10 SOURCE first_accel/matprod.cpp:27 VARIABLE mul LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 3 OPTYPE fadd PRAGMA {} RTLNAME fadd_32ns_32ns_32_4_full_dsp_1_U9 SOURCE first_accel/matprod.cpp:29 VARIABLE add LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME k_1_fu_174_p2 SOURCE first_accel/matprod.cpp:30 VARIABLE k_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U13 SOURCE first_accel/matprod.cpp:33 VARIABLE mul_ln33 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_10s_10s_10ns_10_4_1_U13 SOURCE first_accel/matprod.cpp:33 VARIABLE add_ln33 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME j_1_fu_190_p2 SOURCE first_accel/matprod.cpp:34 VARIABLE j_1 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln35_fu_201_p2 SOURCE first_accel/matprod.cpp:35 VARIABLE add_ln35 LOOP VITIS_LOOP_26_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 8 BRAM 0 URAM 0}} matprod_Pipeline_4 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_22_fu_112_p2 SOURCE {} VARIABLE empty_22 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} matprod {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m1_buffer_U SOURCE first_accel/matprod.cpp:19 VARIABLE m1_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m2_buffer_U SOURCE first_accel/matprod.cpp:20 VARIABLE m2_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m3_buffer_U SOURCE first_accel/matprod.cpp:21 VARIABLE m3_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_1_1_U30 SOURCE first_accel/matprod.cpp:23 VARIABLE mul_ln23 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_1_1_U31 SOURCE first_accel/matprod.cpp:24 VARIABLE mul_ln24 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_32s_32_1_1_U32 SOURCE first_accel/matprod.cpp:40 VARIABLE mul_ln40 LOOP {} BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op mul}}} AREA {DSP 17 BRAM 6 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.113 seconds; current allocated memory: 193.273 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.885 seconds; current allocated memory: 193.734 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for matprod.
 INFO: [VLOG 209-307] Generating Verilog RTL for matprod.
 Execute       syn_report -model matprod -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 68.49 MHz
-Command     autosyn done; 6.081 sec.
-Command   csynth_design done; 13.249 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 13.249 seconds; current allocated memory: 88.547 MB.
-Command ap_source done; 24.818 sec.
+Command     autosyn done; 4.678 sec.
+Command   csynth_design done; 9.558 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.558 seconds; current allocated memory: 88.895 MB.
+Command ap_source done; 20.762 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Tue Jan 09 20:32:52 +0000 2024
+INFO-FLOW: Workspace C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Wed Jan 10 14:56:19 +0000 2024
 Execute     ap_set_clock -name default -period 20 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
 Execute     set_part xc7a100t-csg324-1 
@@ -735,7 +723,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.2\lib\win
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
-Command       create_platform done; 6.829 sec.
+Command       create_platform done; 0.979 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
@@ -746,18 +734,16 @@ Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/inter
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.787 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 1.084 sec.
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 8.06 sec.
+Command     set_part done; 1.105 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=first_accel 
-INFO: [HLS 200-1464] Running solution command: config_export -display_name=first_accel
-Execute     config_export -display_name=first_accel 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=accel 
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=accel
+Execute     config_export -display_name=accel 
 Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
 INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
 Execute     config_export -format=ip_catalog 
@@ -767,7 +753,7 @@ Execute     config_export -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelera
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 8.657 sec.
+Command   open_solution done; 1.22 sec.
 Execute   set_part xc7a100t-csg324-1 
 INFO: [HLS 200-1510] Running: set_part xc7a100t-csg324-1 
 Execute     create_platform xc7a100t-csg324-1 -board  
@@ -781,17 +767,17 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interfa
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.206 sec.
+Command       ap_source done; 0.137 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.283 sec.
+Command     ap_source done; 0.189 sec.
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.441 sec.
+Command   set_part done; 0.321 sec.
 Execute   create_clock -period 20 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
-Execute   config_export -display_name first_accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
-INFO: [HLS 200-1510] Running: config_export -display_name first_accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
+Execute   config_export -display_name accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -display_name accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
 Execute   source ./first_accel/solution1/directives.tcl 
 INFO: [HLS 200-1510] Running: source ./first_accel/solution1/directives.tcl
 Execute     set_directive_top -name matprod matprod 
@@ -822,7 +808,6 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.115 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=20.000 (was NA)
 Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
@@ -838,12 +823,11 @@ Execute     ap_part_info -name xc7a100t-csg324-1 -data info
 INFO-FLOW: TB processing: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/./sim/autowrap/testbench/tb_matprod.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/./sim/autowrap/testbench/tb_matprod.cpp_pre.cpp.tb.cpp std=c++14 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/./sim/autowrap/testbench/tb_matprod.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     clang_tidy done; 0.178 sec.
+Command     clang_tidy done; 0.139 sec.
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 INFO-FLOW: TB processing: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/./sim/autowrap/testbench/matprod.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/./sim/autowrap/testbench/matprod.cpp_pre.cpp.tb.cpp std=c++14 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/./sim/autowrap/testbench/matprod.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     clang_tidy done; 0.153 sec.
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
@@ -853,7 +837,7 @@ Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_acc
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     source .run_sim.tcl 
 INFO: [COSIM 212-302] Starting C TB testing ... 
-Command     ap_source done; 0.226 sec.
+Command     ap_source done; 0.223 sec.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 INFO: [COSIM 212-12] Generating RTL test bench ...
 Execute     source ../tv/cdatafile/ref.tcl 
@@ -885,14 +869,14 @@ Execute       source .sim.status.tcl
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
-Command     ap_source done; 149.461 sec.
+Command     ap_source done; 40.034 sec.
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-Command   cosim_design done; 182.694 sec.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 182.694 seconds; current allocated memory: 7.633 MB.
-Command ap_source done; 202.089 sec.
+Command   cosim_design done; 62.957 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 62.957 seconds; current allocated memory: 7.676 MB.
+Command ap_source done; 74.615 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Wed Jan 10 14:31:24 +0000 2024
+INFO-FLOW: Workspace C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Wed Jan 10 15:15:54 +0000 2024
 Execute     ap_set_clock -name default -period 20 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
 Execute     set_part xc7a100t-csg324-1 
@@ -901,7 +885,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.2\lib\win
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
-Command       create_platform done; 0.896 sec.
+Command       create_platform done; 0.79 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
@@ -914,15 +898,14 @@ Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/ut
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.18 sec.
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 1.111 sec.
+Command     set_part done; 0.91 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=first_accel 
-INFO: [HLS 200-1464] Running solution command: config_export -display_name=first_accel
-Execute     config_export -display_name=first_accel 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=accelerator 
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=accelerator
+Execute     config_export -display_name=accelerator 
 Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
 INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
 Execute     config_export -format=ip_catalog 
@@ -932,7 +915,7 @@ Execute     config_export -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelera
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.239 sec.
+Command   open_solution done; 1.008 sec.
 Execute   set_part xc7a100t-csg324-1 
 INFO: [HLS 200-1510] Running: set_part xc7a100t-csg324-1 
 Execute     create_platform xc7a100t-csg324-1 -board  
@@ -950,11 +933,11 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.137 sec.
+Command   set_part done; 0.136 sec.
 Execute   create_clock -period 20 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
-Execute   config_export -display_name first_accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
-INFO: [HLS 200-1510] Running: config_export -display_name first_accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
+Execute   config_export -display_name accelerator -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -display_name accelerator -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
 Execute   source ./first_accel/solution1/directives.tcl 
 INFO: [HLS 200-1510] Running: source ./first_accel/solution1/directives.tcl
 Execute     set_directive_top -name matprod matprod 
@@ -962,7 +945,7 @@ INFO: [HLS 200-1510] Running: set_directive_top -name matprod matprod
 Execute   export_design -rtl verilog -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips 
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips 
 Execute     config_export -format=ip_catalog -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl=verilog 
-INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog -display_name first_accel
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog -display_name accelerator
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
 INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
@@ -994,6 +977,7 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.104 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=20.000 (was NA)
 INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=matprod xml_exists=0
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
@@ -1008,8 +992,8 @@ INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=7
 INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=17 #gSsdmPorts=0
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='matprod_flow_control_loop_pipe_sequential_init
 matprod_flow_control_loop_pipe_sequential_init
-matprod_dadd_64ns_64ns_64_4_full_dsp_1
-matprod_dmul_64ns_64ns_64_4_max_dsp_1
+matprod_fadd_32ns_32ns_32_4_full_dsp_1
+matprod_fmul_32ns_32ns_32_2_max_dsp_1
 matprod_mac_muladd_10s_10s_10s_10_4_1
 matprod_mac_muladd_10s_10s_10ns_10_4_1
 matprod_flow_control_loop_pipe_sequential_init
@@ -1045,8 +1029,8 @@ Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
 Execute     sc_get_clocks matprod 
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_dadd_64ns_64ns_64_4_full_dsp_1_ip.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_dmul_64ns_64ns_64_4_max_dsp_1_ip.tcl 
+Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl 
+Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl 
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
 INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to matprod
@@ -1132,251 +1116,7 @@ INFO-FLOW: Caught error in export_design: can't create directory "C:/Users/Rui":
     (procedure "ap_internal_export_design" line 112)
     invoked from within
 "ap_internal_export_design "
-Command   export_design done; error code: 2; 24.624 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 24.624 seconds; current allocated memory: 8.301 MB.
-Command ap_source done; error code: 1; 36.143 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Wed Jan 10 14:33:51 +0000 2024
-Execute     ap_set_clock -name default -period 20 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
-Execute     set_part xc7a100t-csg324-1 
-Execute       create_platform xc7a100t-csg324-1 -board  
-DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
-Command       create_platform done; 0.874 sec.
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
-Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 1.002 sec.
-Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=accel 
-INFO: [HLS 200-1464] Running solution command: config_export -display_name=accel
-Execute     config_export -display_name=accel 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
-INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
-Execute     config_export -format=ip_catalog 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips 
-INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips
-Execute     config_export -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
-INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
-Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.116 sec.
-Execute   set_part xc7a100t-csg324-1 
-INFO: [HLS 200-1510] Running: set_part xc7a100t-csg324-1 
-Execute     create_platform xc7a100t-csg324-1 -board  
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
-Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.143 sec.
-Execute   create_clock -period 20 -name default 
-INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
-Execute   config_export -display_name accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
-INFO: [HLS 200-1510] Running: config_export -display_name accel -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog 
-Execute   source ./first_accel/solution1/directives.tcl 
-INFO: [HLS 200-1510] Running: source ./first_accel/solution1/directives.tcl
-Execute     set_directive_top -name matprod matprod 
-INFO: [HLS 200-1510] Running: set_directive_top -name matprod matprod 
-Execute   export_design -rtl verilog -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips 
-Execute     config_export -format=ip_catalog -output=C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl=verilog 
-INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog -display_name accel
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
-INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
-INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_family_info -name artix7 -data parts 
-Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=20.000 (was NA)
-INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=matprod xml_exists=1
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to matprod
-INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=7
-INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=17 #gSsdmPorts=0
-INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='matprod_flow_control_loop_pipe_sequential_init
-matprod_flow_control_loop_pipe_sequential_init
-matprod_dadd_64ns_64ns_64_4_full_dsp_1
-matprod_dmul_64ns_64ns_64_4_max_dsp_1
-matprod_mac_muladd_10s_10s_10s_10_4_1
-matprod_mac_muladd_10s_10s_10ns_10_4_1
-matprod_flow_control_loop_pipe_sequential_init
-matprod_flow_control_loop_pipe_sequential_init
-matprod_mul_32s_32s_32_1_1
-matprod_m1_buffer_RAM_AUTO_1R1W
-matprod_gmem_m_axi
-matprod_BUS1_s_axi
-matprod_Pipeline_1
-matprod_Pipeline_2
-matprod_Pipeline_VITIS_LOOP_26_1
-matprod_Pipeline_4
-matprod
-' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/top-io-be.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_1.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_2.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_26_1.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_4.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
-Execute     sc_get_clocks matprod 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_dadd_64ns_64ns_64_4_full_dsp_1_ip.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_dmul_64ns_64ns_64_4_max_dsp_1_ip.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to matprod
-INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/driver
-INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_top_info
-INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=matprod
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
-INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-INFO-FLOW: DBG:PUTS:       generate_syn_sh
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_imp_constraints
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
-Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_family_info -name artix7 -data parts 
-Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
-Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.128 sec.
-INFO-FLOW: DBG:PUTS:     IP package: exec C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/ip/pack.bat
-INFO-FLOW: DBG:PUTS:     IP package: success C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/ip/pack.bat
-INFO-FLOW: Caught error in export_design: can't create directory "C:/Users/Rui": permission denied
-    while executing
-"file mkdir $dir"
-    (procedure "AP::safe_mkdir" line 6)
-    invoked from within
-"AP::safe_mkdir [file dir $output_file]"
-    (procedure "::AP::copy_export_output" line 34)
-    invoked from within
-"::AP::copy_export_output $g_format_orig $::AESL_AUTOIMPL::g_workdir $::AESL_AUTOIMPL::g_export_design_lang $::AESL_AUTOCG::g_top_module"
-    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 149)
-    invoked from within
-"::AESL_AUTOIMPL::export_design_wrap {*}$args"
-    (procedure "ap_internal_export_design" line 112)
-    invoked from within
-"ap_internal_export_design "
-Command   export_design done; error code: 2; 19.085 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.085 seconds; current allocated memory: 8.922 MB.
-Command ap_source done; error code: 1; 30.435 sec.
+Command   export_design done; error code: 2; 17.66 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 17.66 seconds; current allocated memory: 9.016 MB.
+Command ap_source done; error code: 1; 28.893 sec.
 Execute cleanup_all 

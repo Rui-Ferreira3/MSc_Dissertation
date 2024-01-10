@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE02E3346313A2310",
+      "boundary_crc": "0xABEA8DDAB99388C5",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../rvfpga.gen/sources_1/bd/accel",
       "name": "accel",
@@ -39,18 +39,17 @@
             "value_src": "default"
           },
           "DATA_WIDTH": {
-            "value": "64"
+            "value": "32"
           },
           "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
+            "value": "50000000"
           },
           "HAS_BRESP": {
             "value": "1",
             "value_src": "const_prop"
           },
           "HAS_BURST": {
-            "value": "1"
+            "value": "0"
           },
           "HAS_CACHE": {
             "value": "1",
@@ -81,7 +80,7 @@
             "value_src": "const_prop"
           },
           "ID_WIDTH": {
-            "value": "4",
+            "value": "1",
             "value_src": "auto_prop"
           },
           "INSERT_VIP": {
@@ -143,7 +142,7 @@
           "AWID": {
             "physical_name": "accel_mem_awid",
             "direction": "O",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "AWADDR": {
@@ -211,19 +210,19 @@
           "WID": {
             "physical_name": "accel_mem_wid",
             "direction": "O",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "WDATA": {
             "physical_name": "accel_mem_wdata",
             "direction": "O",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "WSTRB": {
             "physical_name": "accel_mem_wstrb",
             "direction": "O",
-            "left": "7",
+            "left": "3",
             "right": "0"
           },
           "WLAST": {
@@ -241,7 +240,7 @@
           "BID": {
             "physical_name": "accel_mem_bid",
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "BRESP": {
@@ -261,7 +260,7 @@
           "ARID": {
             "physical_name": "accel_mem_arid",
             "direction": "O",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "ARADDR": {
@@ -329,13 +328,13 @@
           "RID": {
             "physical_name": "accel_mem_rid",
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "RDATA": {
             "physical_name": "accel_mem_rdata",
             "direction": "I",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "RRESP": {
@@ -364,7 +363,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "16"
+            "value": "7"
           },
           "ARUSER_WIDTH": {
             "value": "0"
@@ -383,8 +382,7 @@
             "value": "32"
           },
           "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
+            "value": "50000000"
           },
           "HAS_BRESP": {
             "value": "1"
@@ -464,8 +462,8 @@
         "address_space_ref": "accel_ctrl",
         "base_address": {
           "minimum": "0x00000000",
-          "maximum": "0x0000FFFF",
-          "width": "16"
+          "maximum": "0x0000007F",
+          "width": "7"
         },
         "port_maps": {
           "AWADDR": {
@@ -570,8 +568,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
+            "value": "50000000"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -605,23 +602,9 @@
     "components": {
       "matprod_0": {
         "vlnv": "xilinx.com:hls:matprod:1.0",
-        "xci_name": "accel_matprod_0_2",
-        "xci_path": "ip\\accel_matprod_0_2\\accel_matprod_0_2.xci",
+        "xci_name": "accel_matprod_0_3",
+        "xci_path": "ip\\accel_matprod_0_3\\accel_matprod_0_3.xci",
         "inst_hier_path": "matprod_0",
-        "parameters": {
-          "C_M_AXI_GMEM_DATA_WIDTH": {
-            "value": "64"
-          },
-          "C_M_AXI_GMEM_ENABLE_ID_PORTS": {
-            "value": "true"
-          },
-          "C_M_AXI_GMEM_ENABLE_USER_PORTS": {
-            "value": "false"
-          },
-          "C_M_AXI_GMEM_ID_WIDTH": {
-            "value": "4"
-          }
-        },
         "interface_ports": {
           "m_axi_gmem": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -645,27 +628,27 @@
       }
     },
     "interface_nets": {
+      "accel_ctrl_1": {
+        "interface_ports": [
+          "accel_ctrl",
+          "matprod_0/s_axi_BUS1"
+        ]
+      },
       "matprod_0_m_axi_gmem": {
         "interface_ports": [
           "accel_mem",
           "matprod_0/m_axi_gmem"
         ]
-      },
-      "s_axi_BUS1_0_1": {
-        "interface_ports": [
-          "accel_ctrl",
-          "matprod_0/s_axi_BUS1"
-        ]
       }
     },
     "nets": {
-      "ap_clk_0_1": {
+      "clk_1": {
         "ports": [
           "clk",
           "matprod_0/ap_clk"
         ]
       },
-      "ap_rst_n_0_1": {
+      "rst_1": {
         "ports": [
           "rst",
           "matprod_0/ap_rst_n"

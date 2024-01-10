@@ -8,17 +8,14 @@
 # Block Designs: bd/accel/accel.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel || ORIG_REF_NAME==accel} -quiet] -quiet
 
-# IP: bd/accel/ip/accel_matprod_0_2/accel_matprod_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel_matprod_0_2 || ORIG_REF_NAME==accel_matprod_0_2} -quiet] -quiet
+# IP: bd/accel/ip/accel_matprod_0_3/accel_matprod_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel_matprod_0_3 || ORIG_REF_NAME==accel_matprod_0_3} -quiet] -quiet
 
 # Block Designs: bd/interconnect/interconnect.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect || ORIG_REF_NAME==interconnect} -quiet] -quiet
 
 # IP: bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_xbar_0 || ORIG_REF_NAME==interconnect_xbar_0} -quiet] -quiet
-
-# IP: bd/interconnect/ip/interconnect_axi_interconnect_0_0/interconnect_axi_interconnect_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_axi_interconnect_0_0 || ORIG_REF_NAME==interconnect_axi_interconnect_0_0} -quiet] -quiet
 
 # IP: bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_s00_data_fifo_0 || ORIG_REF_NAME==interconnect_s00_data_fifo_0} -quiet] -quiet
@@ -29,9 +26,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnec
 # IP: bd/interconnect/ip/interconnect_s02_data_fifo_0/interconnect_s02_data_fifo_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_s02_data_fifo_0 || ORIG_REF_NAME==interconnect_s02_data_fifo_0} -quiet] -quiet
 
-# IP: bd/interconnect/ip/interconnect_s03_data_fifo_0/interconnect_s03_data_fifo_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_s03_data_fifo_0 || ORIG_REF_NAME==interconnect_s03_data_fifo_0} -quiet] -quiet
+# IP: bd/interconnect/ip/interconnect_auto_us_df_0/interconnect_auto_us_df_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_auto_us_df_0 || ORIG_REF_NAME==interconnect_auto_us_df_0} -quiet] -quiet
 
-# XDC: c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/accel_ooc.xdc
+# IP: bd/interconnect/ip/interconnect_auto_ds_0/interconnect_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_auto_ds_0 || ORIG_REF_NAME==interconnect_auto_ds_0} -quiet] -quiet
 
-# XDC: c:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/interconnect_ooc.xdc
+# IP: bd/interconnect/ip/interconnect_auto_pc_0/interconnect_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_auto_pc_0 || ORIG_REF_NAME==interconnect_auto_pc_0} -quiet] -quiet
+
+# IP: bd/interconnect/ip/interconnect_axi_interconnect_0_0/interconnect_axi_interconnect_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_axi_interconnect_0_0 || ORIG_REF_NAME==interconnect_axi_interconnect_0_0} -quiet] -quiet
+
+# XDC: c:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/accel_ooc.xdc
+
+# XDC: c:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/interconnect_ooc.xdc

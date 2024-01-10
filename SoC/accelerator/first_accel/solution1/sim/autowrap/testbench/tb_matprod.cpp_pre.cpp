@@ -1796,19 +1796,19 @@ using std::wctomb;
 
 
 # 4 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h"
-void matprod(double *m1, double *m2, double *m3, int N1, int N2, int N3);
+void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3);
 # 5 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
 
 
 
 
 
-static double matA[4*4];
-static double matB[4*4];
-static double matC[4*4];
-static double matChw[4*4];
+static float matA[4*4];
+static float matB[4*4];
+static float matC[4*4];
+static float matChw[4*4];
 
-void matprod(double *m1, double *m2, double *m3, int rowsA, int rowsB, int rowsC);
+void matprod(float *m1, float *m2, float *m3, int rowsA, int rowsB, int rowsC);
 
 void init_vecs()
 {
@@ -1824,7 +1824,7 @@ void init_vecs()
  }
 }
 
-void print_mat(double *x, int rows, int cols)
+void print_mat(float *x, int rows, int cols)
 {
  int i;
  for (i=0; i<rows; i++) {
@@ -1842,7 +1842,7 @@ void SW_dot_product()
  for (i=0; i<4; i++) {
   for (j=0; j<4; j++) {
    for (k=0; k<4; k++) {
-    double mul = matA[i*4 +k] * matB[k*4 +j];
+    float mul = matA[i*4 +k] * matB[k*4 +j];
     if (k==0) matC[i*4 +j] = mul;
     else matC[i*4 +j] += mul;
    }

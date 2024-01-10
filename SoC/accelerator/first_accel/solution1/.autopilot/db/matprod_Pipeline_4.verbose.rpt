@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'matprod_Pipeline_4'
 ================================================================
-* Date:           Tue Jan  9 20:32:12 2024
+* Date:           Wed Jan 10 14:55:06 2024
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        first_accel
@@ -29,7 +29,7 @@
     |        Latency (cycles)       |   Latency (absolute)   |          Interval         | Pipeline|
     |   min   |         max         |    min   |     max     | min |         max         |   Type  |
     +---------+---------------------+----------+-------------+-----+---------------------+---------+
-    |        5|  2305843009213693952|  0.100 us|  4.6e+10 sec|    5|  2305843009213693952|       no|
+    |        5|  4611686018427387904|  0.100 us|  9.2e+10 sec|    5|  4611686018427387904|       no|
     +---------+---------------------+----------+-------------+-----+---------------------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |          |        Latency (cycles)       | Iteration|  Initiation Interval  |           Trip          |          |
         | Loop Name|   min   |         max         |  Latency |  achieved |   target  |          Count          | Pipelined|
         +----------+---------+---------------------+----------+-----------+-----------+-------------------------+----------+
-        |- Loop 1  |        3|  2305843009213693952|         3|          1|          1|  1 ~ 2305843009213693951|       yes|
+        |- Loop 1  |        3|  4611686018427387904|         3|          1|          1|  1 ~ 4611686018427387903|       yes|
         +----------+---------+---------------------+----------+-----------+-----------+-------------------------+----------+
 
 
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
 +-----------------+---------+-----+--------+-------+-----+
 |DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|     99|    -|
+|Expression       |        -|    -|       0|    101|    -|
 |FIFO             |        -|    -|       -|      -|    -|
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|     45|    -|
-|Register         |        -|    -|     193|      -|    -|
+|Register         |        -|    -|     163|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     193|    144|    0|
+|Total            |        0|    0|     163|    146|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      270|  240|  126800|  63400|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,12 +85,12 @@
     +---------------------------+----------+----+---+----+------------+------------+
     |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------+----------+----+---+----+------------+------------+
-    |empty_22_fu_112_p2         |         +|   0|  0|  68|          61|           1|
+    |empty_22_fu_112_p2         |         +|   0|  0|  69|          62|           1|
     |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
-    |exitcond_fu_118_p2         |      icmp|   0|  0|  27|          61|          61|
+    |exitcond_fu_118_p2         |      icmp|   0|  0|  28|          62|          62|
     |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
     +---------------------------+----------+----+---+----+------------+------------+
-    |Total                      |          |   0|  0|  99|         124|          65|
+    |Total                      |          |   0|  0| 101|         126|          66|
     +---------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -101,9 +101,9 @@
     |ap_enable_reg_pp0_iter1           |   9|          2|    1|          2|
     |ap_loop_exit_ready_pp0_iter3_reg  |   9|          2|    1|          2|
     |gmem_blk_n_W                      |   9|          2|    1|          2|
-    |loop_index_fu_54                  |   9|          2|   61|        122|
+    |loop_index_fu_54                  |   9|          2|   62|        124|
     +----------------------------------+----+-----------+-----+-----------+
-    |Total                             |  45|         10|   65|        130|
+    |Total                             |  45|         10|   66|        132|
     +----------------------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -117,11 +117,11 @@
     |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
-    |loop_index_fu_54                  |  61|   0|   61|          0|
-    |m3_buffer_load_reg_164            |  64|   0|   64|          0|
-    |sext_ln40_cast_reg_145            |  61|   0|   61|          0|
+    |loop_index_fu_54                  |  62|   0|   62|          0|
+    |m3_buffer_load_reg_164            |  32|   0|   32|          0|
+    |sext_ln40_cast_reg_145            |  62|   0|   62|          0|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             | 193|   0|  193|          0|
+    |Total                             | 163|   0|  163|          0|
     +----------------------------------+----+----+-----+-----------+
 
 
@@ -154,8 +154,8 @@
 |m_axi_gmem_AWUSER    |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WVALID    |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WREADY    |   in|    1|       m_axi|                gmem|       pointer|
-|m_axi_gmem_WDATA     |  out|   64|       m_axi|                gmem|       pointer|
-|m_axi_gmem_WSTRB     |  out|    8|       m_axi|                gmem|       pointer|
+|m_axi_gmem_WDATA     |  out|   32|       m_axi|                gmem|       pointer|
+|m_axi_gmem_WSTRB     |  out|    4|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WLAST     |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WID       |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_WUSER     |  out|    1|       m_axi|                gmem|       pointer|
@@ -174,7 +174,7 @@
 |m_axi_gmem_ARUSER    |  out|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RVALID    |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RREADY    |  out|    1|       m_axi|                gmem|       pointer|
-|m_axi_gmem_RDATA     |   in|   64|       m_axi|                gmem|       pointer|
+|m_axi_gmem_RDATA     |   in|   32|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RLAST     |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RID       |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_RFIFONUM  |   in|    9|       m_axi|                gmem|       pointer|
@@ -185,10 +185,10 @@
 |m_axi_gmem_BRESP     |   in|    2|       m_axi|                gmem|       pointer|
 |m_axi_gmem_BID       |   in|    1|       m_axi|                gmem|       pointer|
 |m_axi_gmem_BUSER     |   in|    1|       m_axi|                gmem|       pointer|
-|p_cast3_cast         |   in|   61|     ap_none|        p_cast3_cast|        scalar|
+|p_cast3_cast         |   in|   62|     ap_none|        p_cast3_cast|        scalar|
 |m3_buffer_address0   |  out|   10|   ap_memory|           m3_buffer|         array|
 |m3_buffer_ce0        |  out|    1|   ap_memory|           m3_buffer|         array|
-|m3_buffer_q0         |   in|   64|   ap_memory|           m3_buffer|         array|
+|m3_buffer_q0         |   in|   32|   ap_memory|           m3_buffer|         array|
 |sext_ln40            |   in|   32|     ap_none|           sext_ln40|        scalar|
 +---------------------+-----+-----+------------+--------------------+--------------+
 
@@ -237,34 +237,34 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 1.61>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%loop_index = alloca i32 1"   --->   Operation 6 'alloca' 'loop_index' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln40_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %sext_ln40"   --->   Operation 7 'read' 'sext_ln40_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_cast3_cast_read = read i61 @_ssdm_op_Read.ap_auto.i61, i61 %p_cast3_cast"   --->   Operation 8 'read' 'p_cast3_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_cast3_cast_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %p_cast3_cast"   --->   Operation 8 'read' 'p_cast3_cast_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sext_ln40_cast = sext i32 %sext_ln40_read"   --->   Operation 9 'sext' 'sext_ln40_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_cast3_cast_cast = sext i61 %p_cast3_cast_read"   --->   Operation 10 'sext' 'p_cast3_cast_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 32, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (1.61ns)   --->   "%store_ln0 = store i61 0, i61 %loop_index"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_cast3_cast_cast = sext i62 %p_cast3_cast_read"   --->   Operation 10 'sext' 'p_cast3_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 32, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.61ns)   --->   "%store_ln0 = store i62 0, i62 %loop_index"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %loop-memcpy-expansion"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
-State 2 <SV = 1> <Delay = 7.91>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%loop_index_load = load i61 %loop_index"   --->   Operation 14 'load' 'loop_index_load' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%loop_index_cast = zext i61 %loop_index_load"   --->   Operation 15 'zext' 'loop_index_cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%m3_buffer_addr = getelementptr i64 %m3_buffer, i64 0, i64 %loop_index_cast"   --->   Operation 16 'getelementptr' 'm3_buffer_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [2/2] (3.25ns)   --->   "%m3_buffer_load = load i10 %m3_buffer_addr"   --->   Operation 17 'load' 'm3_buffer_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 1024> <RAM>
-ST_2 : Operation 18 [1/1] (3.48ns)   --->   "%empty_22 = add i61 %loop_index_load, i61 1"   --->   Operation 18 'add' 'empty_22' <Predicate = true> <Delay = 3.48> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 19 [1/1] (2.82ns)   --->   "%exitcond = icmp_eq  i61 %empty_22, i61 %sext_ln40_cast"   --->   Operation 19 'icmp' 'exitcond' <Predicate = true> <Delay = 2.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+State 2 <SV = 1> <Delay = 7.94>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%loop_index_load = load i62 %loop_index"   --->   Operation 14 'load' 'loop_index_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%loop_index_cast = zext i62 %loop_index_load"   --->   Operation 15 'zext' 'loop_index_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%m3_buffer_addr = getelementptr i32 %m3_buffer, i64 0, i64 %loop_index_cast"   --->   Operation 16 'getelementptr' 'm3_buffer_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (3.25ns)   --->   "%m3_buffer_load = load i10 %m3_buffer_addr"   --->   Operation 17 'load' 'm3_buffer_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 18 [1/1] (3.50ns)   --->   "%empty_22 = add i62 %loop_index_load, i62 1"   --->   Operation 18 'add' 'empty_22' <Predicate = true> <Delay = 3.50> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.50> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (2.82ns)   --->   "%exitcond = icmp_eq  i62 %empty_22, i62 %sext_ln40_cast"   --->   Operation 19 'icmp' 'exitcond' <Predicate = true> <Delay = 2.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond, void %loop-memcpy-expansion.loop-memcpy-expansion_crit_edge, void %post-loop-memcpy-expansion.loopexit.exitStub"   --->   Operation 20 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (1.61ns)   --->   "%store_ln0 = store i61 %empty_22, i61 %loop_index"   --->   Operation 21 'store' 'store_ln0' <Predicate = (!exitcond)> <Delay = 1.61>
+ST_2 : Operation 21 [1/1] (1.61ns)   --->   "%store_ln0 = store i62 %empty_22, i62 %loop_index"   --->   Operation 21 'store' 'store_ln0' <Predicate = (!exitcond)> <Delay = 1.61>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln0 = br void %loop-memcpy-expansion"   --->   Operation 22 'br' 'br_ln0' <Predicate = (!exitcond)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 23 [1/2] (3.25ns)   --->   "%m3_buffer_load = load i10 %m3_buffer_addr"   --->   Operation 23 'load' 'm3_buffer_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 1024> <RAM>
+ST_3 : Operation 23 [1/2] (3.25ns)   --->   "%m3_buffer_load = load i10 %m3_buffer_addr"   --->   Operation 23 'load' 'm3_buffer_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
 
 State 4 <SV = 3> <Delay = 14.6>
-ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %gmem"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i64 %gmem, i64 %p_cast3_cast_cast"   --->   Operation 25 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i32 %gmem, i64 %p_cast3_cast_cast"   --->   Operation 25 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 26 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%empty = bitcast i64 %m3_buffer_load"   --->   Operation 27 'bitcast' 'empty' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 28 [1/1] (14.6ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.m_axi.p1i64, i64 %gmem_addr, i64 %empty, i8 255"   --->   Operation 28 'write' 'write_ln0' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%empty_23 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 2305843009213693951, i64 0"   --->   Operation 29 'speclooptripcount' 'empty_23' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%empty = bitcast i32 %m3_buffer_load"   --->   Operation 27 'bitcast' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (14.6ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.m_axi.p1i32, i64 %gmem_addr, i32 %empty, i4 15"   --->   Operation 28 'write' 'write_ln0' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%empty_23 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 4611686018427387903, i64 0"   --->   Operation 29 'speclooptripcount' 'empty_23' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 30 'ret' 'ret_ln0' <Predicate = (exitcond)> <Delay = 0.00>
 
 
@@ -378,7 +378,7 @@ ret_ln0           (ret              ) [ 00000]
 <pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i61"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i62"/></StgValue>
 </bind>
 </comp>
 
@@ -522,7 +522,7 @@ ret_ln0           (ret              ) [ 00000]
 <pin id="45" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Write.m_axi.p1i64"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Write.m_axi.p1i32"/></StgValue>
 </bind>
 </comp>
 
@@ -565,7 +565,7 @@ ret_ln0           (ret              ) [ 00000]
 <comp id="54" class="1004" name="loop_index_fu_54">
 <pin_list>
 <pin id="55" dir="0" index="0" bw="1" slack="0"/>
-<pin id="56" dir="1" index="1" bw="61" slack="0"/>
+<pin id="56" dir="1" index="1" bw="62" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -587,9 +587,9 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="64" class="1004" name="p_cast3_cast_read_read_fu_64">
 <pin_list>
-<pin id="65" dir="0" index="0" bw="61" slack="0"/>
-<pin id="66" dir="0" index="1" bw="61" slack="0"/>
-<pin id="67" dir="1" index="2" bw="61" slack="0"/>
+<pin id="65" dir="0" index="0" bw="62" slack="0"/>
+<pin id="66" dir="0" index="1" bw="62" slack="0"/>
+<pin id="67" dir="1" index="2" bw="62" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -600,8 +600,8 @@ ret_ln0           (ret              ) [ 00000]
 <comp id="70" class="1004" name="write_ln0_write_fu_70">
 <pin_list>
 <pin id="71" dir="0" index="0" bw="0" slack="0"/>
-<pin id="72" dir="0" index="1" bw="64" slack="0"/>
-<pin id="73" dir="0" index="2" bw="64" slack="0"/>
+<pin id="72" dir="0" index="1" bw="32" slack="0"/>
+<pin id="73" dir="0" index="2" bw="32" slack="0"/>
 <pin id="74" dir="0" index="3" bw="1" slack="0"/>
 <pin id="75" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
@@ -613,9 +613,9 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="78" class="1004" name="m3_buffer_addr_gep_fu_78">
 <pin_list>
-<pin id="79" dir="0" index="0" bw="64" slack="0"/>
+<pin id="79" dir="0" index="0" bw="32" slack="0"/>
 <pin id="80" dir="0" index="1" bw="1" slack="0"/>
-<pin id="81" dir="0" index="2" bw="61" slack="0"/>
+<pin id="81" dir="0" index="2" bw="62" slack="0"/>
 <pin id="82" dir="1" index="3" bw="10" slack="0"/>
 </pin_list>
 <bind>
@@ -627,9 +627,9 @@ ret_ln0           (ret              ) [ 00000]
 <comp id="85" class="1004" name="grp_access_fu_85">
 <pin_list>
 <pin id="86" dir="0" index="0" bw="10" slack="0"/>
-<pin id="87" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="87" dir="0" index="1" bw="32" slack="2147483647"/>
 <pin id="88" dir="0" index="2" bw="0" slack="2147483647"/>
-<pin id="89" dir="1" index="3" bw="64" slack="1"/>
+<pin id="89" dir="1" index="3" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -640,7 +640,7 @@ ret_ln0           (ret              ) [ 00000]
 <comp id="91" class="1004" name="sext_ln40_cast_fu_91">
 <pin_list>
 <pin id="92" dir="0" index="0" bw="32" slack="0"/>
-<pin id="93" dir="1" index="1" bw="61" slack="1"/>
+<pin id="93" dir="1" index="1" bw="62" slack="1"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
@@ -650,7 +650,7 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="95" class="1004" name="p_cast3_cast_cast_fu_95">
 <pin_list>
-<pin id="96" dir="0" index="0" bw="61" slack="0"/>
+<pin id="96" dir="0" index="0" bw="62" slack="0"/>
 <pin id="97" dir="1" index="1" bw="64" slack="3"/>
 </pin_list>
 <bind>
@@ -662,7 +662,7 @@ ret_ln0           (ret              ) [ 00000]
 <comp id="99" class="1004" name="store_ln0_store_fu_99">
 <pin_list>
 <pin id="100" dir="0" index="0" bw="1" slack="0"/>
-<pin id="101" dir="0" index="1" bw="61" slack="0"/>
+<pin id="101" dir="0" index="1" bw="62" slack="0"/>
 <pin id="102" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -673,8 +673,8 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="104" class="1004" name="loop_index_load_load_fu_104">
 <pin_list>
-<pin id="105" dir="0" index="0" bw="61" slack="1"/>
-<pin id="106" dir="1" index="1" bw="61" slack="0"/>
+<pin id="105" dir="0" index="0" bw="62" slack="1"/>
+<pin id="106" dir="1" index="1" bw="62" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -684,7 +684,7 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="107" class="1004" name="loop_index_cast_fu_107">
 <pin_list>
-<pin id="108" dir="0" index="0" bw="61" slack="0"/>
+<pin id="108" dir="0" index="0" bw="62" slack="0"/>
 <pin id="109" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
@@ -695,9 +695,9 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="112" class="1004" name="empty_22_fu_112">
 <pin_list>
-<pin id="113" dir="0" index="0" bw="61" slack="0"/>
+<pin id="113" dir="0" index="0" bw="62" slack="0"/>
 <pin id="114" dir="0" index="1" bw="1" slack="0"/>
-<pin id="115" dir="1" index="2" bw="61" slack="0"/>
+<pin id="115" dir="1" index="2" bw="62" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -707,8 +707,8 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="118" class="1004" name="exitcond_fu_118">
 <pin_list>
-<pin id="119" dir="0" index="0" bw="61" slack="0"/>
-<pin id="120" dir="0" index="1" bw="61" slack="1"/>
+<pin id="119" dir="0" index="0" bw="62" slack="0"/>
+<pin id="120" dir="0" index="1" bw="62" slack="1"/>
 <pin id="121" dir="1" index="2" bw="1" slack="2"/>
 </pin_list>
 <bind>
@@ -719,8 +719,8 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="123" class="1004" name="store_ln0_store_fu_123">
 <pin_list>
-<pin id="124" dir="0" index="0" bw="61" slack="0"/>
-<pin id="125" dir="0" index="1" bw="61" slack="1"/>
+<pin id="124" dir="0" index="0" bw="62" slack="0"/>
+<pin id="125" dir="0" index="1" bw="62" slack="1"/>
 <pin id="126" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -743,8 +743,8 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="134" class="1004" name="empty_fu_134">
 <pin_list>
-<pin id="135" dir="0" index="0" bw="64" slack="1"/>
-<pin id="136" dir="1" index="1" bw="64" slack="0"/>
+<pin id="135" dir="0" index="0" bw="32" slack="1"/>
+<pin id="136" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="bitcast(44) " fcode="bitcast"/>
@@ -754,8 +754,8 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="138" class="1005" name="loop_index_reg_138">
 <pin_list>
-<pin id="139" dir="0" index="0" bw="61" slack="0"/>
-<pin id="140" dir="1" index="1" bw="61" slack="0"/>
+<pin id="139" dir="0" index="0" bw="62" slack="0"/>
+<pin id="140" dir="1" index="1" bw="62" slack="0"/>
 </pin_list>
 <bind>
 <opset="loop_index "/>
@@ -764,8 +764,8 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="145" class="1005" name="sext_ln40_cast_reg_145">
 <pin_list>
-<pin id="146" dir="0" index="0" bw="61" slack="1"/>
-<pin id="147" dir="1" index="1" bw="61" slack="1"/>
+<pin id="146" dir="0" index="0" bw="62" slack="1"/>
+<pin id="147" dir="1" index="1" bw="62" slack="1"/>
 </pin_list>
 <bind>
 <opset="sext_ln40_cast "/>
@@ -804,8 +804,8 @@ ret_ln0           (ret              ) [ 00000]
 
 <comp id="164" class="1005" name="m3_buffer_load_reg_164">
 <pin_list>
-<pin id="165" dir="0" index="0" bw="64" slack="1"/>
-<pin id="166" dir="1" index="1" bw="64" slack="1"/>
+<pin id="165" dir="0" index="0" bw="32" slack="1"/>
+<pin id="166" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="m3_buffer_load "/>
@@ -922,9 +922,9 @@ ret_ln0           (ret              ) [ 00000]
 |----------|------------------------------|---------|---------|
 | Operation|        Functional Unit       |    FF   |   LUT   |
 |----------|------------------------------|---------|---------|
-|    add   |        empty_22_fu_112       |    0    |    68   |
+|    add   |        empty_22_fu_112       |    0    |    69   |
 |----------|------------------------------|---------|---------|
-|   icmp   |        exitcond_fu_118       |    0    |    27   |
+|   icmp   |        exitcond_fu_118       |    0    |    28   |
 |----------|------------------------------|---------|---------|
 |   read   |   sext_ln40_read_read_fu_58  |    0    |    0    |
 |          | p_cast3_cast_read_read_fu_64 |    0    |    0    |
@@ -936,7 +936,7 @@ ret_ln0           (ret              ) [ 00000]
 |----------|------------------------------|---------|---------|
 |   zext   |    loop_index_cast_fu_107    |    0    |    0    |
 |----------|------------------------------|---------|---------|
-|   Total  |                              |    0    |    95   |
+|   Total  |                              |    0    |    97   |
 |----------|------------------------------|---------|---------|
 
 Memories:
@@ -947,13 +947,13 @@ N/A
 |                         |   FF   |
 +-------------------------+--------+
 |     exitcond_reg_160    |    1   |
-|    loop_index_reg_138   |   61   |
+|    loop_index_reg_138   |   62   |
 |  m3_buffer_addr_reg_155 |   10   |
-|  m3_buffer_load_reg_164 |   64   |
+|  m3_buffer_load_reg_164 |   32   |
 |p_cast3_cast_cast_reg_150|   64   |
-|  sext_ln40_cast_reg_145 |   61   |
+|  sext_ln40_cast_reg_145 |   62   |
 +-------------------------+--------+
-|          Total          |   261  |
+|          Total          |   231  |
 +-------------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -971,10 +971,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    -   |    0   |   95   |
+|  Function |    -   |    0   |   97   |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    1   |    -   |    9   |
-|  Register |    -   |   261  |    -   |
+|  Register |    -   |   231  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    1   |   261  |   104  |
+|   Total   |    1   |   231  |   106  |
 +-----------+--------+--------+--------+

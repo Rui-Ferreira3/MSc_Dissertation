@@ -6,7 +6,7 @@
 <Project Version="7" Minor="61" Path="C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/ip/tmp.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="a50457589276466f97d5238f0eddcf1d"/>
+    <Option Name="Id" Val="f8b88db7a62848b0ab45b645a3e41823"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -88,14 +88,14 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/ip/matprod_dadd_64ns_64ns_64_4_full_dsp_1_ip/matprod_dadd_64ns_64ns_64_4_full_dsp_1_ip.xci">
+      <File Path="$PSRCDIR/sources_1/ip/matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip/matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/matprod_dmul_64ns_64ns_64_4_max_dsp_1_ip/matprod_dmul_64ns_64ns_64_4_max_dsp_1_ip.xci">
+      <File Path="$PSRCDIR/sources_1/ip/matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip/matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

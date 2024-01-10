@@ -31,10 +31,10 @@
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <BRAM_18K>12</BRAM_18K>
-            <DSP>26</DSP>
-            <FF>3821</FF>
-            <LUT>4507</LUT>
+            <BRAM_18K>6</BRAM_18K>
+            <DSP>17</DSP>
+            <FF>3126</FF>
+            <LUT>3716</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -454,7 +454,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>64</Bits>
+            <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -466,7 +466,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>8</Bits>
+            <Bits>4</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -694,7 +694,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>64</Bits>
+            <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -830,7 +830,7 @@
                     <ModuleName>matprod_Pipeline_VITIS_LOOP_26_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>171</ID>
-                    <BindInstances>mac_muladd_10s_10s_10s_10_4_1_U11 mac_muladd_10s_10s_10s_10_4_1_U11 mac_muladd_10s_10s_10ns_10_4_1_U12 mac_muladd_10s_10s_10ns_10_4_1_U12 dmul_64ns_64ns_64_4_max_dsp_1_U10 dadd_64ns_64ns_64_4_full_dsp_1_U9 k_1_fu_174_p2 mac_muladd_10s_10s_10ns_10_4_1_U13 mac_muladd_10s_10s_10ns_10_4_1_U13 j_1_fu_190_p2 add_ln35_fu_201_p2</BindInstances>
+                    <BindInstances>mac_muladd_10s_10s_10s_10_4_1_U11 mac_muladd_10s_10s_10s_10_4_1_U11 mac_muladd_10s_10s_10ns_10_4_1_U12 mac_muladd_10s_10s_10ns_10_4_1_U12 fmul_32ns_32ns_32_2_max_dsp_1_U10 fadd_32ns_32ns_32_4_full_dsp_1_U9 k_1_fu_174_p2 mac_muladd_10s_10s_10ns_10_4_1_U13 mac_muladd_10s_10s_10ns_10_4_1_U13 j_1_fu_190_p2 add_ln35_fu_201_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_matprod_Pipeline_4_fu_185</InstName>
@@ -858,11 +858,11 @@
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>4</Best-caseLatency>
                     <Average-caseLatency>undef</Average-caseLatency>
-                    <Worst-caseLatency>2305843009213693952</Worst-caseLatency>
+                    <Worst-caseLatency>4611686018427387904</Worst-caseLatency>
                     <Best-caseRealTimeLatency>80.000 ns</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>4.6e+10 sec</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>4 ~ 2305843009213693954</PipelineInitiationInterval>
+                    <Worst-caseRealTimeLatency>9.2e+10 sec</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4 ~ 4611686018427387906</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
@@ -872,11 +872,11 @@
                         <TripCount>
                             <range>
                                 <min>1</min>
-                                <max>2305843009213693952</max>
+                                <max>4611686018427387904</max>
                             </range>
                         </TripCount>
-                        <Latency>2 ~ 2305843009213693952</Latency>
-                        <AbsoluteTimeLatency>40.000 ns ~ 4.6e+10 sec</AbsoluteTimeLatency>
+                        <Latency>2 ~ 4611686018427387904</Latency>
+                        <AbsoluteTimeLatency>40.000 ns ~ 9.2e+10 sec</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -886,10 +886,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>252</FF>
+                    <FF>223</FF>
                     <AVAIL_FF>126800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>144</LUT>
+                    <LUT>146</LUT>
                     <AVAIL_LUT>63400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -921,11 +921,11 @@
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>4</Best-caseLatency>
                     <Average-caseLatency>undef</Average-caseLatency>
-                    <Worst-caseLatency>2305843009213693952</Worst-caseLatency>
+                    <Worst-caseLatency>4611686018427387904</Worst-caseLatency>
                     <Best-caseRealTimeLatency>80.000 ns</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>4.6e+10 sec</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>4 ~ 2305843009213693954</PipelineInitiationInterval>
+                    <Worst-caseRealTimeLatency>9.2e+10 sec</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4 ~ 4611686018427387906</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
@@ -935,11 +935,11 @@
                         <TripCount>
                             <range>
                                 <min>1</min>
-                                <max>2305843009213693952</max>
+                                <max>4611686018427387904</max>
                             </range>
                         </TripCount>
-                        <Latency>2 ~ 2305843009213693952</Latency>
-                        <AbsoluteTimeLatency>40.000 ns ~ 4.6e+10 sec</AbsoluteTimeLatency>
+                        <Latency>2 ~ 4611686018427387904</Latency>
+                        <AbsoluteTimeLatency>40.000 ns ~ 9.2e+10 sec</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -949,10 +949,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>252</FF>
+                    <FF>223</FF>
                     <AVAIL_FF>126800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>144</LUT>
+                    <LUT>146</LUT>
                     <AVAIL_LUT>63400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -979,7 +979,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>20.00</TargetClockPeriod>
                     <ClockUncertainty>5.40</ClockUncertainty>
-                    <EstimatedClockPeriod>14.414</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>14.422</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>undef</Best-caseLatency>
@@ -998,8 +998,8 @@
                         <TripCount>undef</TripCount>
                         <Latency>undef</Latency>
                         <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
-                        <PipelineII>4</PipelineII>
-                        <PipelineDepth>15</PipelineDepth>
+                        <PipelineII>3</PipelineII>
+                        <PipelineDepth>12</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
                     </VITIS_LOOP_26_1>
@@ -1007,15 +1007,15 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <DSP>17</DSP>
+                    <DSP>8</DSP>
                     <AVAIL_DSP>240</AVAIL_DSP>
-                    <UTIL_DSP>7</UTIL_DSP>
-                    <FF>1434</FF>
+                    <UTIL_DSP>3</UTIL_DSP>
+                    <FF>878</FF>
                     <AVAIL_FF>126800</AVAIL_FF>
-                    <UTIL_FF>1</UTIL_FF>
-                    <LUT>1464</LUT>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>853</LUT>
                     <AVAIL_LUT>63400</AVAIL_LUT>
-                    <UTIL_LUT>2</UTIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>270</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
@@ -1029,8 +1029,8 @@
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_10s_10s_10s_10_4_1_U11" SOURCE="first_accel/matprod.cpp:27" URAM="0" VARIABLE="add_ln27"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_10s_10s_10ns_10_4_1_U12" SOURCE="first_accel/matprod.cpp:27" URAM="0" VARIABLE="mul_ln27_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_10s_10s_10ns_10_4_1_U12" SOURCE="first_accel/matprod.cpp:27" URAM="0" VARIABLE="add_ln27_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_4_max_dsp_1_U10" SOURCE="first_accel/matprod.cpp:27" URAM="0" VARIABLE="mul"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_4_full_dsp_1_U9" SOURCE="first_accel/matprod.cpp:29" URAM="0" VARIABLE="add"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="VITIS_LOOP_26_1" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U10" SOURCE="first_accel/matprod.cpp:27" URAM="0" VARIABLE="mul"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_4_full_dsp_1_U9" SOURCE="first_accel/matprod.cpp:29" URAM="0" VARIABLE="add"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_26_1" OPTYPE="add" PRAGMA="" RTLNAME="k_1_fu_174_p2" SOURCE="first_accel/matprod.cpp:30" URAM="0" VARIABLE="k_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_10s_10s_10ns_10_4_1_U13" SOURCE="first_accel/matprod.cpp:33" URAM="0" VARIABLE="mul_ln33"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_26_1" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_10s_10s_10ns_10_4_1_U13" SOURCE="first_accel/matprod.cpp:33" URAM="0" VARIABLE="add_ln33"/>
@@ -1052,11 +1052,11 @@
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>5</Best-caseLatency>
                     <Average-caseLatency>undef</Average-caseLatency>
-                    <Worst-caseLatency>2305843009213693952</Worst-caseLatency>
+                    <Worst-caseLatency>4611686018427387904</Worst-caseLatency>
                     <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>4.6e+10 sec</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>5 ~ 2305843009213693955</PipelineInitiationInterval>
+                    <Worst-caseRealTimeLatency>9.2e+10 sec</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>5 ~ 4611686018427387907</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
@@ -1066,11 +1066,11 @@
                         <TripCount>
                             <range>
                                 <min>1</min>
-                                <max>2305843009213693952</max>
+                                <max>4611686018427387904</max>
                             </range>
                         </TripCount>
-                        <Latency>3 ~ 2305843009213693953</Latency>
-                        <AbsoluteTimeLatency>60.000 ns ~ 4.6e+10 sec</AbsoluteTimeLatency>
+                        <Latency>3 ~ 4611686018427387905</Latency>
+                        <AbsoluteTimeLatency>60.000 ns ~ 9.2e+10 sec</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -1080,10 +1080,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>193</FF>
+                    <FF>163</FF>
                     <AVAIL_FF>126800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>144</LUT>
+                    <LUT>146</LUT>
                     <AVAIL_LUT>63400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1122,27 +1122,27 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <BRAM_18K>12</BRAM_18K>
+                    <BRAM_18K>6</BRAM_18K>
                     <AVAIL_BRAM>270</AVAIL_BRAM>
-                    <UTIL_BRAM>4</UTIL_BRAM>
-                    <DSP>26</DSP>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <DSP>17</DSP>
                     <AVAIL_DSP>240</AVAIL_DSP>
-                    <UTIL_DSP>10</UTIL_DSP>
-                    <FF>3821</FF>
+                    <UTIL_DSP>7</UTIL_DSP>
+                    <FF>3126</FF>
                     <AVAIL_FF>126800</AVAIL_FF>
-                    <UTIL_FF>3</UTIL_FF>
-                    <LUT>4507</LUT>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>3716</LUT>
                     <AVAIL_LUT>63400</AVAIL_LUT>
-                    <UTIL_LUT>7</UTIL_LUT>
+                    <UTIL_LUT>5</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>0</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m1_buffer_U" SOURCE="first_accel/matprod.cpp:19" URAM="0" VARIABLE="m1_buffer"/>
-                <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m2_buffer_U" SOURCE="first_accel/matprod.cpp:20" URAM="0" VARIABLE="m2_buffer"/>
-                <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m3_buffer_U" SOURCE="first_accel/matprod.cpp:21" URAM="0" VARIABLE="m3_buffer"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m1_buffer_U" SOURCE="first_accel/matprod.cpp:19" URAM="0" VARIABLE="m1_buffer"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m2_buffer_U" SOURCE="first_accel/matprod.cpp:20" URAM="0" VARIABLE="m2_buffer"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m3_buffer_U" SOURCE="first_accel/matprod.cpp:21" URAM="0" VARIABLE="m3_buffer"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_1_1_U30" SOURCE="first_accel/matprod.cpp:23" URAM="0" VARIABLE="mul_ln23"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_1_1_U31" SOURCE="first_accel/matprod.cpp:24" URAM="0" VARIABLE="mul_ln24"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_1_1_U32" SOURCE="first_accel/matprod.cpp:40" URAM="0" VARIABLE="mul_ln40"/>
@@ -1151,24 +1151,24 @@
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands>
-        <config_export display_name="first_accel" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips"/>
+        <config_export display_name="accel" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips"/>
     </UserConfigCommands>
     <Args>
-        <Arg ArgName="m1" index="0" direction="inout" srcType="double*" srcSize="64">
+        <Arg ArgName="m1" index="0" direction="inout" srcType="float*" srcSize="32">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="inout"/>
                 <hwRef type="register" interface="s_axi_BUS1" name="m1_1" usage="address" direction="in"/>
                 <hwRef type="register" interface="s_axi_BUS1" name="m1_2" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="m2" index="1" direction="inout" srcType="double*" srcSize="64">
+        <Arg ArgName="m2" index="1" direction="inout" srcType="float*" srcSize="32">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="inout"/>
                 <hwRef type="register" interface="s_axi_BUS1" name="m2_1" usage="address" direction="in"/>
                 <hwRef type="register" interface="s_axi_BUS1" name="m2_2" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="m3" index="2" direction="inout" srcType="double*" srcSize="64">
+        <Arg ArgName="m3" index="2" direction="inout" srcType="float*" srcSize="32">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="inout"/>
                 <hwRef type="register" interface="s_axi_BUS1" name="m3_1" usage="address" direction="in"/>
@@ -1335,7 +1335,7 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="64" addrWidth="64" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" preferredUsageValue="MEMORY">
+        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="64" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" preferredUsageValue="MEMORY">
             <busParams>
                 <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
                 <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
@@ -1396,11 +1396,11 @@
             </ports>
             <constraints>
                 <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="0" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="0" argName="m1"/>
-                <constraint constraint_type="bitwidth" orig_bitwidth="64" final_bitwidth="64" argName="m1"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="32" final_bitwidth="32" argName="m1"/>
                 <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="0" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="0" argName="m2"/>
-                <constraint constraint_type="bitwidth" orig_bitwidth="64" final_bitwidth="64" argName="m2"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="32" final_bitwidth="32" argName="m2"/>
                 <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="0" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="0" argName="m3"/>
-                <constraint constraint_type="bitwidth" orig_bitwidth="64" final_bitwidth="64" argName="m3"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="32" final_bitwidth="32" argName="m3"/>
             </constraints>
         </Interface>
     </Interfaces>
@@ -1409,7 +1409,7 @@
             <item name="M_AXI">
                 <table isCollapsed="0">
                     <keys size="11">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding</keys>
-                    <column name="m_axi_gmem">64 -&gt; 64, 64, 0, slave, 0, 0, 16, 16, 16, 16, , , , </column>
+                    <column name="m_axi_gmem">32 -&gt; 32, 64, 0, slave, 0, 0, 16, 16, 16, 16, , , , </column>
                 </table>
             </item>
             <item name="S_AXILITE Interfaces">
@@ -1452,9 +1452,9 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="m1">inout, double*</column>
-                    <column name="m2">inout, double*</column>
-                    <column name="m3">inout, double*</column>
+                    <column name="m1">inout, float*</column>
+                    <column name="m2">inout, float*</column>
+                    <column name="m3">inout, float*</column>
                     <column name="N1">in, int</column>
                     <column name="N2">in, int</column>
                     <column name="N3">in, int</column>

@@ -14,7 +14,7 @@ generic (
     C_M_AXI_GMEM_ADDR_WIDTH : INTEGER := 64;
     C_M_AXI_GMEM_ID_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM_AWUSER_WIDTH : INTEGER := 1;
-    C_M_AXI_GMEM_DATA_WIDTH : INTEGER := 64;
+    C_M_AXI_GMEM_DATA_WIDTH : INTEGER := 32;
     C_M_AXI_GMEM_WUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM_ARUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM_RUSER_WIDTH : INTEGER := 1;
@@ -96,7 +96,7 @@ end;
 architecture behav of matprod is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "matprod_matprod,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100t-csg324-1,HLS_INPUT_CLOCK=20.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=14.600000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=12,HLS_SYN_DSP=0,HLS_SYN_FF=3821,HLS_SYN_LUT=4507,HLS_VERSION=2022_2}";
+    "matprod_matprod,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100t-csg324-1,HLS_INPUT_CLOCK=20.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=14.600000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=6,HLS_SYN_DSP=0,HLS_SYN_FF=3126,HLS_SYN_LUT=3716,HLS_VERSION=2022_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (27 downto 0) := "0000000000000000000000000001";
@@ -146,11 +146,10 @@ architecture behav of matprod is
     constant ap_const_lv32_15 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010101";
     constant ap_const_lv32_16 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010110";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
+    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_3F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000111111";
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv64_0 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
     constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
 
     signal ap_rst_n_inv : STD_LOGIC;
@@ -194,33 +193,33 @@ architecture behav of matprod is
     signal mul_ln23_reg_332 : STD_LOGIC_VECTOR (31 downto 0);
     signal icmp_ln23_fu_208_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln23_reg_338 : STD_LOGIC_VECTOR (0 downto 0);
-    signal p_cast_reg_342 : STD_LOGIC_VECTOR (60 downto 0);
+    signal p_cast_reg_342 : STD_LOGIC_VECTOR (61 downto 0);
     signal mul_ln24_fu_234_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln24_reg_353 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state10 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
     signal icmp_ln24_fu_238_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln24_reg_359 : STD_LOGIC_VECTOR (0 downto 0);
-    signal p_cast1_reg_363 : STD_LOGIC_VECTOR (60 downto 0);
+    signal p_cast1_reg_363 : STD_LOGIC_VECTOR (61 downto 0);
     signal mul_ln40_fu_263_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln40_reg_374 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state20 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state20 : signal is "none";
     signal icmp_ln40_fu_267_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal p_cast3_fu_273_p4 : STD_LOGIC_VECTOR (60 downto 0);
-    signal p_cast3_reg_384 : STD_LOGIC_VECTOR (60 downto 0);
+    signal p_cast3_fu_273_p4 : STD_LOGIC_VECTOR (61 downto 0);
+    signal p_cast3_reg_384 : STD_LOGIC_VECTOR (61 downto 0);
     signal m1_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal m1_buffer_ce0 : STD_LOGIC;
     signal m1_buffer_we0 : STD_LOGIC;
-    signal m1_buffer_q0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal m1_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
     signal m2_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal m2_buffer_ce0 : STD_LOGIC;
     signal m2_buffer_we0 : STD_LOGIC;
-    signal m2_buffer_q0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal m2_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
     signal m3_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal m3_buffer_ce0 : STD_LOGIC;
     signal m3_buffer_we0 : STD_LOGIC;
-    signal m3_buffer_q0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal m3_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_ap_idle : STD_LOGIC;
@@ -238,8 +237,8 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WVALID : STD_LOGIC;
-    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WLAST : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WID : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m_axi_gmem_WUSER : STD_LOGIC_VECTOR (0 downto 0);
@@ -260,7 +259,7 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_1_fu_153_m1_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal grp_matprod_Pipeline_1_fu_153_m1_buffer_ce0 : STD_LOGIC;
     signal grp_matprod_Pipeline_1_fu_153_m1_buffer_we0 : STD_LOGIC;
-    signal grp_matprod_Pipeline_1_fu_153_m1_buffer_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_matprod_Pipeline_1_fu_153_m1_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_ap_idle : STD_LOGIC;
@@ -278,8 +277,8 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WVALID : STD_LOGIC;
-    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WLAST : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WID : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m_axi_gmem_WUSER : STD_LOGIC_VECTOR (0 downto 0);
@@ -300,7 +299,7 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_2_fu_162_m2_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal grp_matprod_Pipeline_2_fu_162_m2_buffer_ce0 : STD_LOGIC;
     signal grp_matprod_Pipeline_2_fu_162_m2_buffer_we0 : STD_LOGIC;
-    signal grp_matprod_Pipeline_2_fu_162_m2_buffer_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_matprod_Pipeline_2_fu_162_m2_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_ap_idle : STD_LOGIC;
@@ -312,7 +311,7 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_ce0 : STD_LOGIC;
     signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_we0 : STD_LOGIC;
-    signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_m3_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_ap_start : STD_LOGIC;
     signal grp_matprod_Pipeline_4_fu_185_ap_done : STD_LOGIC;
     signal grp_matprod_Pipeline_4_fu_185_ap_idle : STD_LOGIC;
@@ -330,8 +329,8 @@ architecture behav of matprod is
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WVALID : STD_LOGIC;
-    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WLAST : STD_LOGIC;
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WID : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_matprod_Pipeline_4_fu_185_m_axi_gmem_WUSER : STD_LOGIC_VECTOR (0 downto 0);
@@ -363,7 +362,7 @@ architecture behav of matprod is
     signal gmem_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
     signal gmem_RVALID : STD_LOGIC;
     signal gmem_RREADY : STD_LOGIC;
-    signal gmem_RDATA : STD_LOGIC_VECTOR (63 downto 0);
+    signal gmem_RDATA : STD_LOGIC_VECTOR (31 downto 0);
     signal gmem_RFIFONUM : STD_LOGIC_VECTOR (8 downto 0);
     signal gmem_BVALID : STD_LOGIC;
     signal gmem_BREADY : STD_LOGIC;
@@ -452,8 +451,8 @@ architecture behav of matprod is
         m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WVALID : OUT STD_LOGIC;
         m_axi_gmem_WREADY : IN STD_LOGIC;
-        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
-        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
         m_axi_gmem_WLAST : OUT STD_LOGIC;
         m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -472,7 +471,7 @@ architecture behav of matprod is
         m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RVALID : IN STD_LOGIC;
         m_axi_gmem_RREADY : OUT STD_LOGIC;
-        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
         m_axi_gmem_RLAST : IN STD_LOGIC;
         m_axi_gmem_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -483,11 +482,11 @@ architecture behav of matprod is
         m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        p_cast_cast : IN STD_LOGIC_VECTOR (60 downto 0);
+        p_cast_cast : IN STD_LOGIC_VECTOR (61 downto 0);
         m1_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m1_buffer_ce0 : OUT STD_LOGIC;
         m1_buffer_we0 : OUT STD_LOGIC;
-        m1_buffer_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m1_buffer_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
         sext_ln23 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
@@ -515,8 +514,8 @@ architecture behav of matprod is
         m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WVALID : OUT STD_LOGIC;
         m_axi_gmem_WREADY : IN STD_LOGIC;
-        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
-        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
         m_axi_gmem_WLAST : OUT STD_LOGIC;
         m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -535,7 +534,7 @@ architecture behav of matprod is
         m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RVALID : IN STD_LOGIC;
         m_axi_gmem_RREADY : OUT STD_LOGIC;
-        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
         m_axi_gmem_RLAST : IN STD_LOGIC;
         m_axi_gmem_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -546,11 +545,11 @@ architecture behav of matprod is
         m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        p_cast1_cast : IN STD_LOGIC_VECTOR (60 downto 0);
+        p_cast1_cast : IN STD_LOGIC_VECTOR (61 downto 0);
         m2_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m2_buffer_ce0 : OUT STD_LOGIC;
         m2_buffer_we0 : OUT STD_LOGIC;
-        m2_buffer_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m2_buffer_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
         sext_ln24 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
@@ -567,16 +566,16 @@ architecture behav of matprod is
         trunc_ln6_1 : IN STD_LOGIC_VECTOR (9 downto 0);
         m1_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m1_buffer_ce0 : OUT STD_LOGIC;
-        m1_buffer_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        m1_buffer_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
         trunc_ln6 : IN STD_LOGIC_VECTOR (9 downto 0);
         m2_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m2_buffer_ce0 : OUT STD_LOGIC;
-        m2_buffer_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        m2_buffer_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
         N2 : IN STD_LOGIC_VECTOR (31 downto 0);
         m3_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m3_buffer_ce0 : OUT STD_LOGIC;
         m3_buffer_we0 : OUT STD_LOGIC;
-        m3_buffer_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m3_buffer_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
         N3 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
@@ -604,8 +603,8 @@ architecture behav of matprod is
         m_axi_gmem_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WVALID : OUT STD_LOGIC;
         m_axi_gmem_WREADY : IN STD_LOGIC;
-        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
-        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
         m_axi_gmem_WLAST : OUT STD_LOGIC;
         m_axi_gmem_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -624,7 +623,7 @@ architecture behav of matprod is
         m_axi_gmem_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RVALID : IN STD_LOGIC;
         m_axi_gmem_RREADY : OUT STD_LOGIC;
-        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
         m_axi_gmem_RLAST : IN STD_LOGIC;
         m_axi_gmem_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -635,10 +634,10 @@ architecture behav of matprod is
         m_axi_gmem_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        p_cast3_cast : IN STD_LOGIC_VECTOR (60 downto 0);
+        p_cast3_cast : IN STD_LOGIC_VECTOR (61 downto 0);
         m3_buffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         m3_buffer_ce0 : OUT STD_LOGIC;
-        m3_buffer_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        m3_buffer_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
         sext_ln40 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
@@ -668,8 +667,8 @@ architecture behav of matprod is
         address0 : IN STD_LOGIC_VECTOR (9 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (63 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (63 downto 0) );
+        d0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        q0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
@@ -789,7 +788,7 @@ architecture behav of matprod is
         I_ARLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_RVALID : OUT STD_LOGIC;
         I_RREADY : IN STD_LOGIC;
-        I_RDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
+        I_RDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
         I_RFIFONUM : OUT STD_LOGIC_VECTOR (8 downto 0);
         I_AWVALID : IN STD_LOGIC;
         I_AWREADY : OUT STD_LOGIC;
@@ -797,8 +796,8 @@ architecture behav of matprod is
         I_AWLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_WVALID : IN STD_LOGIC;
         I_WREADY : OUT STD_LOGIC;
-        I_WDATA : IN STD_LOGIC_VECTOR (63 downto 0);
-        I_WSTRB : IN STD_LOGIC_VECTOR (7 downto 0);
+        I_WDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        I_WSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
         I_BVALID : OUT STD_LOGIC;
         I_BREADY : IN STD_LOGIC );
     end component;
@@ -808,7 +807,7 @@ architecture behav of matprod is
 begin
     m1_buffer_U : component matprod_m1_buffer_RAM_AUTO_1R1W
     generic map (
-        DataWidth => 64,
+        DataWidth => 32,
         AddressRange => 1024,
         AddressWidth => 10)
     port map (
@@ -822,7 +821,7 @@ begin
 
     m2_buffer_U : component matprod_m1_buffer_RAM_AUTO_1R1W
     generic map (
-        DataWidth => 64,
+        DataWidth => 32,
         AddressRange => 1024,
         AddressWidth => 10)
     port map (
@@ -836,7 +835,7 @@ begin
 
     m3_buffer_U : component matprod_m1_buffer_RAM_AUTO_1R1W
     generic map (
-        DataWidth => 64,
+        DataWidth => 32,
         AddressRange => 1024,
         AddressWidth => 10)
     port map (
@@ -1037,7 +1036,7 @@ begin
         m_axi_gmem_ARUSER => grp_matprod_Pipeline_4_fu_185_m_axi_gmem_ARUSER,
         m_axi_gmem_RVALID => ap_const_logic_0,
         m_axi_gmem_RREADY => grp_matprod_Pipeline_4_fu_185_m_axi_gmem_RREADY,
-        m_axi_gmem_RDATA => ap_const_lv64_0,
+        m_axi_gmem_RDATA => ap_const_lv32_0,
         m_axi_gmem_RLAST => ap_const_logic_0,
         m_axi_gmem_RID => ap_const_lv1_0,
         m_axi_gmem_RFIFONUM => ap_const_lv9_0,
@@ -1109,7 +1108,7 @@ begin
         C_PROT_VALUE => C_M_AXI_GMEM_PROT_VALUE,
         C_CACHE_VALUE => C_M_AXI_GMEM_CACHE_VALUE,
         USER_RFIFONUM_WIDTH => 9,
-        USER_DW => 64,
+        USER_DW => 32,
         USER_AW => 64,
         NUM_READ_OUTSTANDING => 16,
         NUM_WRITE_OUTSTANDING => 16)
@@ -1334,7 +1333,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state10) and (icmp_ln24_fu_238_p2 = ap_const_lv1_0))) then
-                p_cast1_reg_363 <= m2_read_reg_317(63 downto 3);
+                p_cast1_reg_363 <= m2_read_reg_317(63 downto 2);
             end if;
         end if;
     end process;
@@ -1342,7 +1341,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state21) and (icmp_ln40_reg_380 = ap_const_lv1_0))) then
-                p_cast3_reg_384 <= m3_read_reg_312(63 downto 3);
+                p_cast3_reg_384 <= m3_read_reg_312(63 downto 2);
             end if;
         end if;
     end process;
@@ -1350,7 +1349,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (icmp_ln23_fu_208_p2 = ap_const_lv1_0))) then
-                p_cast_reg_342 <= m1(63 downto 3);
+                p_cast_reg_342 <= m1(63 downto 2);
             end if;
         end if;
     end process;
@@ -1893,7 +1892,7 @@ begin
 
         p_cast3_cast_fu_282_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(p_cast3_fu_273_p4),64));
 
-    p_cast3_fu_273_p4 <= m3_read_reg_312(63 downto 3);
+    p_cast3_fu_273_p4 <= m3_read_reg_312(63 downto 2);
         p_cast_cast_fu_224_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(p_cast_reg_342),64));
 
     trunc_ln6_1_fu_198_p0 <= N2;

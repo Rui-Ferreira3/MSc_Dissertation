@@ -253,8 +253,8 @@
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/AESL_inst_matprod/m_axi_gmem_RDATA" type="array">
-                  <obj_property name="ElementShortName">m_axi_gmem_RDATA[63:0]</obj_property>
-                  <obj_property name="ObjectShortName">m_axi_gmem_RDATA[63:0]</obj_property>
+                  <obj_property name="ElementShortName">m_axi_gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RDATA[31:0]</obj_property>
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/AESL_inst_matprod/m_axi_gmem_ARUSER" type="array">
@@ -342,13 +342,13 @@
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/AESL_inst_matprod/m_axi_gmem_WSTRB" type="array">
-                  <obj_property name="ElementShortName">m_axi_gmem_WSTRB[7:0]</obj_property>
-                  <obj_property name="ObjectShortName">m_axi_gmem_WSTRB[7:0]</obj_property>
+                  <obj_property name="ElementShortName">m_axi_gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WSTRB[3:0]</obj_property>
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/AESL_inst_matprod/m_axi_gmem_WDATA" type="array">
-                  <obj_property name="ElementShortName">m_axi_gmem_WDATA[63:0]</obj_property>
-                  <obj_property name="ObjectShortName">m_axi_gmem_WDATA[63:0]</obj_property>
+                  <obj_property name="ElementShortName">m_axi_gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WDATA[31:0]</obj_property>
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/AESL_inst_matprod/m_axi_gmem_AWUSER" type="array">
@@ -717,8 +717,8 @@
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/gmem_RDATA" type="array">
-                  <obj_property name="ElementShortName">gmem_RDATA[63:0]</obj_property>
-                  <obj_property name="ObjectShortName">gmem_RDATA[63:0]</obj_property>
+                  <obj_property name="ElementShortName">gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RDATA[31:0]</obj_property>
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/gmem_ARUSER" type="array">
@@ -806,13 +806,13 @@
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/gmem_WSTRB" type="array">
-                  <obj_property name="ElementShortName">gmem_WSTRB[7:0]</obj_property>
-                  <obj_property name="ObjectShortName">gmem_WSTRB[7:0]</obj_property>
+                  <obj_property name="ElementShortName">gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WSTRB[3:0]</obj_property>
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/gmem_WDATA" type="array">
-                  <obj_property name="ElementShortName">gmem_WDATA[63:0]</obj_property>
-                  <obj_property name="ObjectShortName">gmem_WDATA[63:0]</obj_property>
+                  <obj_property name="ElementShortName">gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WDATA[31:0]</obj_property>
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
                <wvobject fp_name="/apatb_matprod_top/gmem_AWUSER" type="array">

@@ -1,7 +1,7 @@
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -23,14 +23,14 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -52,14 +52,14 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Sequential '
   - Direction:       write
@@ -81,7 +81,7 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
@@ -89,7 +89,7 @@ Args:
 Pass:            reflow-burst-inference
 Name:            CouldNotAnalyzeBoundsPattern
 DebugLoc:        { File: first_accel/matprod.cpp, Line: 26, Column: 19 }
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          Could not analyze the loop bounds
   - String:          ' _XLX_SEP_ '
@@ -97,17 +97,17 @@ Args:
   - String:          ' '
   - LoopLoc:         'first_accel/matprod.cpp:26:19'
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Could not widen since type '
-  - Type:            double
+  - Type:            float
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
@@ -121,17 +121,17 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Could not widen since type '
-  - Type:            double
+  - Type:            float
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
@@ -145,17 +145,17 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Could not widen since type '
-  - Type:            double
+  - Type:            float
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
@@ -169,21 +169,21 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '64'
+  - Width:           '32'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -197,21 +197,21 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '64'
+  - Width:           '32'
   - String:          ' in loop '''
   - LoopName:        anonymous
   - String:          '''('
@@ -225,14 +225,14 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '64'
+  - Width:           '32'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -246,21 +246,21 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '64'
+  - Width:           '32'
   - String:          ' in loop '''
   - LoopName:        anonymous
   - String:          '''('
@@ -274,14 +274,14 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '64'
+  - Width:           '32'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -295,21 +295,21 @@ Args:
   - String:          ' '
   - LoopLoc:         ''
   - String:          ' '
-  - Function:        'matprod(double*, double*, double*, int, int, int)'
+  - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-Function:        _Z7matprodPdS_S_iii
+Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '64'
+  - Width:           '32'
   - String:          ' in loop '''
   - LoopName:        anonymous
   - String:          '''('

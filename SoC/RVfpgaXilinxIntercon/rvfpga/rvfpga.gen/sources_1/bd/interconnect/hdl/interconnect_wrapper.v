@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Dec  6 17:04:08 2023
-//Host        : DESKTOP-8UFOBMP running 64-bit major release  (build 9200)
+//Date        : Wed Jan 10 15:50:08 2024
+//Host        : DESKTOP-8GAVNOH running 64-bit major release  (build 9200)
 //Command     : generate_target interconnect_wrapper.bd
 //Design      : interconnect_wrapper
 //Purpose     : IP block netlist
@@ -11,41 +11,21 @@
 
 module interconnect_wrapper
    (accel_ctrl_araddr,
-    accel_ctrl_arburst,
-    accel_ctrl_arcache,
-    accel_ctrl_arid,
-    accel_ctrl_arlen,
-    accel_ctrl_arlock,
     accel_ctrl_arprot,
-    accel_ctrl_arqos,
     accel_ctrl_arready,
-    accel_ctrl_arregion,
-    accel_ctrl_arsize,
     accel_ctrl_arvalid,
     accel_ctrl_awaddr,
-    accel_ctrl_awburst,
-    accel_ctrl_awcache,
-    accel_ctrl_awid,
-    accel_ctrl_awlen,
-    accel_ctrl_awlock,
     accel_ctrl_awprot,
-    accel_ctrl_awqos,
     accel_ctrl_awready,
-    accel_ctrl_awregion,
-    accel_ctrl_awsize,
     accel_ctrl_awvalid,
-    accel_ctrl_bid,
     accel_ctrl_bready,
     accel_ctrl_bresp,
     accel_ctrl_bvalid,
     accel_ctrl_rdata,
-    accel_ctrl_rid,
-    accel_ctrl_rlast,
     accel_ctrl_rready,
     accel_ctrl_rresp,
     accel_ctrl_rvalid,
     accel_ctrl_wdata,
-    accel_ctrl_wlast,
     accel_ctrl_wready,
     accel_ctrl_wstrb,
     accel_ctrl_wvalid,
@@ -265,48 +245,28 @@ module interconnect_wrapper
     sb_wstrb,
     sb_wvalid);
   output [31:0]accel_ctrl_araddr;
-  output [1:0]accel_ctrl_arburst;
-  output [3:0]accel_ctrl_arcache;
-  output [5:0]accel_ctrl_arid;
-  output [7:0]accel_ctrl_arlen;
-  output [0:0]accel_ctrl_arlock;
   output [2:0]accel_ctrl_arprot;
-  output [3:0]accel_ctrl_arqos;
   input [0:0]accel_ctrl_arready;
-  output [3:0]accel_ctrl_arregion;
-  output [2:0]accel_ctrl_arsize;
   output [0:0]accel_ctrl_arvalid;
   output [31:0]accel_ctrl_awaddr;
-  output [1:0]accel_ctrl_awburst;
-  output [3:0]accel_ctrl_awcache;
-  output [5:0]accel_ctrl_awid;
-  output [7:0]accel_ctrl_awlen;
-  output [0:0]accel_ctrl_awlock;
   output [2:0]accel_ctrl_awprot;
-  output [3:0]accel_ctrl_awqos;
   input [0:0]accel_ctrl_awready;
-  output [3:0]accel_ctrl_awregion;
-  output [2:0]accel_ctrl_awsize;
   output [0:0]accel_ctrl_awvalid;
-  input [5:0]accel_ctrl_bid;
   output [0:0]accel_ctrl_bready;
   input [1:0]accel_ctrl_bresp;
   input [0:0]accel_ctrl_bvalid;
-  input [63:0]accel_ctrl_rdata;
-  input [5:0]accel_ctrl_rid;
-  input [0:0]accel_ctrl_rlast;
+  input [31:0]accel_ctrl_rdata;
   output [0:0]accel_ctrl_rready;
   input [1:0]accel_ctrl_rresp;
   input [0:0]accel_ctrl_rvalid;
-  output [63:0]accel_ctrl_wdata;
-  output [0:0]accel_ctrl_wlast;
+  output [31:0]accel_ctrl_wdata;
   input [0:0]accel_ctrl_wready;
-  output [7:0]accel_ctrl_wstrb;
+  output [3:0]accel_ctrl_wstrb;
   output [0:0]accel_ctrl_wvalid;
-  input [31:0]accel_mem_araddr;
+  input [63:0]accel_mem_araddr;
   input [1:0]accel_mem_arburst;
   input [3:0]accel_mem_arcache;
-  input [3:0]accel_mem_arid;
+  input [0:0]accel_mem_arid;
   input [7:0]accel_mem_arlen;
   input [0:0]accel_mem_arlock;
   input [2:0]accel_mem_arprot;
@@ -315,10 +275,10 @@ module interconnect_wrapper
   input [3:0]accel_mem_arregion;
   input [2:0]accel_mem_arsize;
   input accel_mem_arvalid;
-  input [31:0]accel_mem_awaddr;
+  input [63:0]accel_mem_awaddr;
   input [1:0]accel_mem_awburst;
   input [3:0]accel_mem_awcache;
-  input [3:0]accel_mem_awid;
+  input [0:0]accel_mem_awid;
   input [7:0]accel_mem_awlen;
   input [0:0]accel_mem_awlock;
   input [2:0]accel_mem_awprot;
@@ -327,20 +287,20 @@ module interconnect_wrapper
   input [3:0]accel_mem_awregion;
   input [2:0]accel_mem_awsize;
   input accel_mem_awvalid;
-  output [3:0]accel_mem_bid;
+  output [0:0]accel_mem_bid;
   input accel_mem_bready;
   output [1:0]accel_mem_bresp;
   output accel_mem_bvalid;
-  output [63:0]accel_mem_rdata;
-  output [3:0]accel_mem_rid;
+  output [31:0]accel_mem_rdata;
+  output [0:0]accel_mem_rid;
   output accel_mem_rlast;
   input accel_mem_rready;
   output [1:0]accel_mem_rresp;
   output accel_mem_rvalid;
-  input [63:0]accel_mem_wdata;
+  input [31:0]accel_mem_wdata;
   input accel_mem_wlast;
   output accel_mem_wready;
-  input [7:0]accel_mem_wstrb;
+  input [3:0]accel_mem_wstrb;
   input accel_mem_wvalid;
   input clk;
   input [31:0]ifu_araddr;
@@ -361,7 +321,7 @@ module interconnect_wrapper
   input ifu_rready;
   output [1:0]ifu_rresp;
   output ifu_rvalid;
-  output [31:0]io_araddr;
+  output [63:0]io_araddr;
   output [1:0]io_arburst;
   output [3:0]io_arcache;
   output [5:0]io_arid;
@@ -373,7 +333,7 @@ module interconnect_wrapper
   output [3:0]io_arregion;
   output [2:0]io_arsize;
   output [0:0]io_arvalid;
-  output [31:0]io_awaddr;
+  output [63:0]io_awaddr;
   output [1:0]io_awburst;
   output [3:0]io_awcache;
   output [5:0]io_awid;
@@ -439,7 +399,7 @@ module interconnect_wrapper
   output lsu_wready;
   input [7:0]lsu_wstrb;
   input lsu_wvalid;
-  output [31:0]ram_araddr;
+  output [63:0]ram_araddr;
   output [1:0]ram_arburst;
   output [3:0]ram_arcache;
   output [5:0]ram_arid;
@@ -451,7 +411,7 @@ module interconnect_wrapper
   output [3:0]ram_arregion;
   output [2:0]ram_arsize;
   output [0:0]ram_arvalid;
-  output [31:0]ram_awaddr;
+  output [63:0]ram_awaddr;
   output [1:0]ram_awburst;
   output [3:0]ram_awcache;
   output [5:0]ram_awid;
@@ -520,48 +480,28 @@ module interconnect_wrapper
   input sb_wvalid;
 
   wire [31:0]accel_ctrl_araddr;
-  wire [1:0]accel_ctrl_arburst;
-  wire [3:0]accel_ctrl_arcache;
-  wire [5:0]accel_ctrl_arid;
-  wire [7:0]accel_ctrl_arlen;
-  wire [0:0]accel_ctrl_arlock;
   wire [2:0]accel_ctrl_arprot;
-  wire [3:0]accel_ctrl_arqos;
   wire [0:0]accel_ctrl_arready;
-  wire [3:0]accel_ctrl_arregion;
-  wire [2:0]accel_ctrl_arsize;
   wire [0:0]accel_ctrl_arvalid;
   wire [31:0]accel_ctrl_awaddr;
-  wire [1:0]accel_ctrl_awburst;
-  wire [3:0]accel_ctrl_awcache;
-  wire [5:0]accel_ctrl_awid;
-  wire [7:0]accel_ctrl_awlen;
-  wire [0:0]accel_ctrl_awlock;
   wire [2:0]accel_ctrl_awprot;
-  wire [3:0]accel_ctrl_awqos;
   wire [0:0]accel_ctrl_awready;
-  wire [3:0]accel_ctrl_awregion;
-  wire [2:0]accel_ctrl_awsize;
   wire [0:0]accel_ctrl_awvalid;
-  wire [5:0]accel_ctrl_bid;
   wire [0:0]accel_ctrl_bready;
   wire [1:0]accel_ctrl_bresp;
   wire [0:0]accel_ctrl_bvalid;
-  wire [63:0]accel_ctrl_rdata;
-  wire [5:0]accel_ctrl_rid;
-  wire [0:0]accel_ctrl_rlast;
+  wire [31:0]accel_ctrl_rdata;
   wire [0:0]accel_ctrl_rready;
   wire [1:0]accel_ctrl_rresp;
   wire [0:0]accel_ctrl_rvalid;
-  wire [63:0]accel_ctrl_wdata;
-  wire [0:0]accel_ctrl_wlast;
+  wire [31:0]accel_ctrl_wdata;
   wire [0:0]accel_ctrl_wready;
-  wire [7:0]accel_ctrl_wstrb;
+  wire [3:0]accel_ctrl_wstrb;
   wire [0:0]accel_ctrl_wvalid;
-  wire [31:0]accel_mem_araddr;
+  wire [63:0]accel_mem_araddr;
   wire [1:0]accel_mem_arburst;
   wire [3:0]accel_mem_arcache;
-  wire [3:0]accel_mem_arid;
+  wire [0:0]accel_mem_arid;
   wire [7:0]accel_mem_arlen;
   wire [0:0]accel_mem_arlock;
   wire [2:0]accel_mem_arprot;
@@ -570,10 +510,10 @@ module interconnect_wrapper
   wire [3:0]accel_mem_arregion;
   wire [2:0]accel_mem_arsize;
   wire accel_mem_arvalid;
-  wire [31:0]accel_mem_awaddr;
+  wire [63:0]accel_mem_awaddr;
   wire [1:0]accel_mem_awburst;
   wire [3:0]accel_mem_awcache;
-  wire [3:0]accel_mem_awid;
+  wire [0:0]accel_mem_awid;
   wire [7:0]accel_mem_awlen;
   wire [0:0]accel_mem_awlock;
   wire [2:0]accel_mem_awprot;
@@ -582,20 +522,20 @@ module interconnect_wrapper
   wire [3:0]accel_mem_awregion;
   wire [2:0]accel_mem_awsize;
   wire accel_mem_awvalid;
-  wire [3:0]accel_mem_bid;
+  wire [0:0]accel_mem_bid;
   wire accel_mem_bready;
   wire [1:0]accel_mem_bresp;
   wire accel_mem_bvalid;
-  wire [63:0]accel_mem_rdata;
-  wire [3:0]accel_mem_rid;
+  wire [31:0]accel_mem_rdata;
+  wire [0:0]accel_mem_rid;
   wire accel_mem_rlast;
   wire accel_mem_rready;
   wire [1:0]accel_mem_rresp;
   wire accel_mem_rvalid;
-  wire [63:0]accel_mem_wdata;
+  wire [31:0]accel_mem_wdata;
   wire accel_mem_wlast;
   wire accel_mem_wready;
-  wire [7:0]accel_mem_wstrb;
+  wire [3:0]accel_mem_wstrb;
   wire accel_mem_wvalid;
   wire clk;
   wire [31:0]ifu_araddr;
@@ -616,7 +556,7 @@ module interconnect_wrapper
   wire ifu_rready;
   wire [1:0]ifu_rresp;
   wire ifu_rvalid;
-  wire [31:0]io_araddr;
+  wire [63:0]io_araddr;
   wire [1:0]io_arburst;
   wire [3:0]io_arcache;
   wire [5:0]io_arid;
@@ -628,7 +568,7 @@ module interconnect_wrapper
   wire [3:0]io_arregion;
   wire [2:0]io_arsize;
   wire [0:0]io_arvalid;
-  wire [31:0]io_awaddr;
+  wire [63:0]io_awaddr;
   wire [1:0]io_awburst;
   wire [3:0]io_awcache;
   wire [5:0]io_awid;
@@ -694,7 +634,7 @@ module interconnect_wrapper
   wire lsu_wready;
   wire [7:0]lsu_wstrb;
   wire lsu_wvalid;
-  wire [31:0]ram_araddr;
+  wire [63:0]ram_araddr;
   wire [1:0]ram_arburst;
   wire [3:0]ram_arcache;
   wire [5:0]ram_arid;
@@ -706,7 +646,7 @@ module interconnect_wrapper
   wire [3:0]ram_arregion;
   wire [2:0]ram_arsize;
   wire [0:0]ram_arvalid;
-  wire [31:0]ram_awaddr;
+  wire [63:0]ram_awaddr;
   wire [1:0]ram_awburst;
   wire [3:0]ram_awcache;
   wire [5:0]ram_awid;
@@ -776,41 +716,21 @@ module interconnect_wrapper
 
   interconnect interconnect_i
        (.accel_ctrl_araddr(accel_ctrl_araddr),
-        .accel_ctrl_arburst(accel_ctrl_arburst),
-        .accel_ctrl_arcache(accel_ctrl_arcache),
-        .accel_ctrl_arid(accel_ctrl_arid),
-        .accel_ctrl_arlen(accel_ctrl_arlen),
-        .accel_ctrl_arlock(accel_ctrl_arlock),
         .accel_ctrl_arprot(accel_ctrl_arprot),
-        .accel_ctrl_arqos(accel_ctrl_arqos),
         .accel_ctrl_arready(accel_ctrl_arready),
-        .accel_ctrl_arregion(accel_ctrl_arregion),
-        .accel_ctrl_arsize(accel_ctrl_arsize),
         .accel_ctrl_arvalid(accel_ctrl_arvalid),
         .accel_ctrl_awaddr(accel_ctrl_awaddr),
-        .accel_ctrl_awburst(accel_ctrl_awburst),
-        .accel_ctrl_awcache(accel_ctrl_awcache),
-        .accel_ctrl_awid(accel_ctrl_awid),
-        .accel_ctrl_awlen(accel_ctrl_awlen),
-        .accel_ctrl_awlock(accel_ctrl_awlock),
         .accel_ctrl_awprot(accel_ctrl_awprot),
-        .accel_ctrl_awqos(accel_ctrl_awqos),
         .accel_ctrl_awready(accel_ctrl_awready),
-        .accel_ctrl_awregion(accel_ctrl_awregion),
-        .accel_ctrl_awsize(accel_ctrl_awsize),
         .accel_ctrl_awvalid(accel_ctrl_awvalid),
-        .accel_ctrl_bid(accel_ctrl_bid),
         .accel_ctrl_bready(accel_ctrl_bready),
         .accel_ctrl_bresp(accel_ctrl_bresp),
         .accel_ctrl_bvalid(accel_ctrl_bvalid),
         .accel_ctrl_rdata(accel_ctrl_rdata),
-        .accel_ctrl_rid(accel_ctrl_rid),
-        .accel_ctrl_rlast(accel_ctrl_rlast),
         .accel_ctrl_rready(accel_ctrl_rready),
         .accel_ctrl_rresp(accel_ctrl_rresp),
         .accel_ctrl_rvalid(accel_ctrl_rvalid),
         .accel_ctrl_wdata(accel_ctrl_wdata),
-        .accel_ctrl_wlast(accel_ctrl_wlast),
         .accel_ctrl_wready(accel_ctrl_wready),
         .accel_ctrl_wstrb(accel_ctrl_wstrb),
         .accel_ctrl_wvalid(accel_ctrl_wvalid),

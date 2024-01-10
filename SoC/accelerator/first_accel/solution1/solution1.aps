@@ -7,7 +7,7 @@
     </downStreamTool>
     <synthesis askAgain="true"/>
     <config>
-        <config_export display_name="accel" format="ip_catalog" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog"/>
+        <config_export display_name="accelerator" format="ip_catalog" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf boardInfo="Nexys A7-100T (xc7a100tcsg324-1) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
@@ -41,7 +41,7 @@
         </UIAutoSimConf>
     </UIConfigurations>
     <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog" rtlButton="true" rtlCombo="verilog">
-        <Format display_name="accel" formatName="ip_catalog" description="" vendor="" library="" ipname="matprod" version="" taxonomy=""/>
+        <Format display_name="accelerator" formatName="ip_catalog" description="" vendor="" library="" ipname="matprod" version="" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>

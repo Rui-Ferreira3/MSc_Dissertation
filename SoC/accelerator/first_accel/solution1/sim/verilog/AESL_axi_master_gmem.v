@@ -63,7 +63,7 @@ module AESL_axi_master_gmem (
 `define TV_OUT_gmem "../tv/rtldatafile/rtl.matprod.autotvout_gmem.dat"
  parameter gmem_ADDR_BITWIDTH = 32'd 64;
  parameter gmem_AWUSER_BITWIDTH = 32'd 1;
- parameter gmem_DATA_BITWIDTH = 32'd 64;
+ parameter gmem_DATA_BITWIDTH = 32'd 32;
  parameter gmem_WUSER_BITWIDTH = 32'd 1;
  parameter gmem_ID_BITWIDTH = 32'd 1;
  parameter gmem_RUSER_BITWIDTH = 32'd 1;
@@ -71,7 +71,7 @@ module AESL_axi_master_gmem (
  parameter   FIFO_DEPTH            =   1 + 1;
  parameter   mem_page_num            =   32'd 4;
  parameter   FIFO_DEPTH_ADDR_WIDTH   =    32'd 32;
-parameter gmem_C_DATA_BITWIDTH = 32'd 64;
+parameter gmem_C_DATA_BITWIDTH = 32'd 32;
 parameter gmem_mem_depth = 32'd 96;
 parameter ReadReqLatency = 32'd 1;
 parameter WriteReqLatency = 32'd 1;
@@ -768,7 +768,7 @@ end
      end
  endfunction
 
-    function [151:0] read_token(input integer fp);
+    function [127:0] read_token(input integer fp);
         integer ret;
         begin
             read_token = "";
@@ -777,8 +777,8 @@ end
         end
     endfunction
 
- function [151:0] rm_0x(input [151:0] token);
-     reg [151:0] token_tmp;
+ function [127:0] rm_0x(input [127:0] token);
+     reg [127:0] token_tmp;
      integer i;
      begin
          token_tmp = "";
@@ -881,7 +881,7 @@ initial begin : read_file_process
   integer transaction_num; 
   integer mem_page; 
   integer gmem_bitwidth; 
-  reg [64 - 1 : 0] token_tmp; 
+  reg [32 - 1 : 0] token_tmp; 
   reg [gmem_DATA_BITWIDTH - 1 : 0] mem_tmp; 
   integer i; 
   transaction_num = 0;
@@ -1064,7 +1064,7 @@ initial begin : write_file_proc
                   default: $display("The page_num of write file is not valid!");
               endcase
           bin_data = mem_tmp;
-          write_binary(fp,bin_data,64);
+          write_binary(fp,bin_data,32);
           end
       end 
       if (factor == 4) begin

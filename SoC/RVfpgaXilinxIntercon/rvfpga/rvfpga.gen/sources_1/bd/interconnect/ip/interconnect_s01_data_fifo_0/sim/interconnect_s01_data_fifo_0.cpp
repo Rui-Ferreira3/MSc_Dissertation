@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -91,7 +91,7 @@ void interconnect_s01_data_fifo_0::before_end_of_elaboration()
   // 'S_AXI' transactor parameters
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -193,7 +193,7 @@ void interconnect_s01_data_fifo_0::before_end_of_elaboration()
   // 'M_AXI' transactor parameters
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -324,7 +324,7 @@ void interconnect_s01_data_fifo_0::before_end_of_elaboration()
   // 'S_AXI' transactor parameters
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -426,7 +426,7 @@ void interconnect_s01_data_fifo_0::before_end_of_elaboration()
   // 'M_AXI' transactor parameters
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -557,7 +557,7 @@ void interconnect_s01_data_fifo_0::before_end_of_elaboration()
   // 'S_AXI' transactor parameters
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -659,7 +659,7 @@ void interconnect_s01_data_fifo_0::before_end_of_elaboration()
   // 'M_AXI' transactor parameters
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -779,7 +779,7 @@ interconnect_s01_data_fifo_0::interconnect_s01_data_fifo_0(const sc_core::sc_mod
   // configure S_AXI_transactor
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -862,7 +862,7 @@ interconnect_s01_data_fifo_0::interconnect_s01_data_fifo_0(const sc_core::sc_mod
   // configure M_AXI_transactor
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1012,7 +1012,7 @@ interconnect_s01_data_fifo_0::interconnect_s01_data_fifo_0(const sc_core::sc_mod
   // configure S_AXI_transactor
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1095,7 +1095,7 @@ interconnect_s01_data_fifo_0::interconnect_s01_data_fifo_0(const sc_core::sc_mod
   // configure M_AXI_transactor
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "64");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "10000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "4");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "32");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");

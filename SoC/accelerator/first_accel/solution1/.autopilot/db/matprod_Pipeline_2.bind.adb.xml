@@ -29,7 +29,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="61" op_0_bw="32">
+<Node id="5" bw="62" op_0_bw="32">
 <![CDATA[
 newFuncRoot:0 %loop_index3 = alloca i32 1
 
@@ -59,9 +59,9 @@ newFuncRoot:1 %sext_ln24_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %sext_l
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="61" op_0_bw="61" op_1_bw="61">
+<Node id="7" bw="62" op_0_bw="62" op_1_bw="62">
 <![CDATA[
-newFuncRoot:2 %p_cast1_cast_read = read i61 @_ssdm_op_Read.ap_auto.i61, i61 %p_cast1_cast
+newFuncRoot:2 %p_cast1_cast_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %p_cast1_cast
 
 ]]></Node>
 <StgValue><ssdm name="p_cast1_cast_read"/></StgValue>
@@ -74,7 +74,7 @@ newFuncRoot:2 %p_cast1_cast_read = read i61 @_ssdm_op_Read.ap_auto.i61, i61 %p_c
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="61" op_0_bw="32">
+<Node id="8" bw="62" op_0_bw="32">
 <![CDATA[
 newFuncRoot:3 %sext_ln24_cast = sext i32 %sext_ln24_read
 
@@ -89,9 +89,9 @@ newFuncRoot:3 %sext_ln24_cast = sext i32 %sext_ln24_read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="64" op_0_bw="61">
+<Node id="9" bw="64" op_0_bw="62">
 <![CDATA[
-newFuncRoot:4 %p_cast1_cast_cast = sext i61 %p_cast1_cast_read
+newFuncRoot:4 %p_cast1_cast_cast = sext i62 %p_cast1_cast_read
 
 ]]></Node>
 <StgValue><ssdm name="p_cast1_cast_cast"/></StgValue>
@@ -104,9 +104,9 @@ newFuncRoot:4 %p_cast1_cast_cast = sext i61 %p_cast1_cast_read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-newFuncRoot:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 32, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0
+newFuncRoot:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 32, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -119,9 +119,9 @@ newFuncRoot:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="0" op_0_bw="61" op_1_bw="61">
+<Node id="11" bw="0" op_0_bw="62" op_1_bw="62">
 <![CDATA[
-newFuncRoot:6 %store_ln0 = store i61 0, i61 %loop_index3
+newFuncRoot:6 %store_ln0 = store i62 0, i62 %loop_index3
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -152,9 +152,9 @@ newFuncRoot:7 %br_ln0 = br void %loop-memcpy-expansion2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="61" op_0_bw="61" op_1_bw="0">
+<Node id="14" bw="62" op_0_bw="62" op_1_bw="0">
 <![CDATA[
-loop-memcpy-expansion2:0 %loop_index3_load = load i61 %loop_index3
+loop-memcpy-expansion2:0 %loop_index3_load = load i62 %loop_index3
 
 ]]></Node>
 <StgValue><ssdm name="loop_index3_load"/></StgValue>
@@ -167,9 +167,9 @@ loop-memcpy-expansion2:0 %loop_index3_load = load i61 %loop_index3
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="16" bw="32" op_0_bw="32" op_1_bw="64">
 <![CDATA[
-loop-memcpy-expansion2:2 %gmem_addr = getelementptr i64 %gmem, i64 %p_cast1_cast_cast
+loop-memcpy-expansion2:2 %gmem_addr = getelementptr i32 %gmem, i64 %p_cast1_cast_cast
 
 ]]></Node>
 <StgValue><ssdm name="gmem_addr"/></StgValue>
@@ -182,9 +182,9 @@ loop-memcpy-expansion2:2 %gmem_addr = getelementptr i64 %gmem, i64 %p_cast1_cast
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="19" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-loop-memcpy-expansion2:5 %gmem_addr_read = read i64 @_ssdm_op_Read.m_axi.p1i64, i64 %gmem_addr
+loop-memcpy-expansion2:5 %gmem_addr_read = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr
 
 ]]></Node>
 <StgValue><ssdm name="gmem_addr_read"/></StgValue>
@@ -197,9 +197,9 @@ loop-memcpy-expansion2:5 %gmem_addr_read = read i64 @_ssdm_op_Read.m_axi.p1i64, 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="61" op_0_bw="61" op_1_bw="61">
+<Node id="23" bw="62" op_0_bw="62" op_1_bw="62">
 <![CDATA[
-loop-memcpy-expansion2:9 %empty_24 = add i61 %loop_index3_load, i61 1
+loop-memcpy-expansion2:9 %empty_24 = add i62 %loop_index3_load, i62 1
 
 ]]></Node>
 <StgValue><ssdm name="empty_24"/></StgValue>
@@ -212,9 +212,9 @@ loop-memcpy-expansion2:9 %empty_24 = add i61 %loop_index3_load, i61 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="1" op_0_bw="61" op_1_bw="61">
+<Node id="24" bw="1" op_0_bw="62" op_1_bw="62">
 <![CDATA[
-loop-memcpy-expansion2:10 %exitcond14 = icmp_eq  i61 %empty_24, i61 %sext_ln24_cast
+loop-memcpy-expansion2:10 %exitcond14 = icmp_eq  i62 %empty_24, i62 %sext_ln24_cast
 
 ]]></Node>
 <StgValue><ssdm name="exitcond14"/></StgValue>
@@ -243,9 +243,9 @@ loop-memcpy-expansion2:12 %br_ln0 = br i1 %exitcond14, void %loop-memcpy-expansi
 </and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="0" op_0_bw="61" op_1_bw="61" op_2_bw="0" op_3_bw="0">
+<Node id="28" bw="0" op_0_bw="62" op_1_bw="62" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-loop-memcpy-expansion2.loop-memcpy-expansion2_crit_edge:0 %store_ln0 = store i61 %empty_24, i61 %loop_index3
+loop-memcpy-expansion2.loop-memcpy-expansion2_crit_edge:0 %store_ln0 = store i62 %empty_24, i62 %loop_index3
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -277,9 +277,9 @@ loop-memcpy-expansion2.loop-memcpy-expansion2_crit_edge:1 %br_ln0 = br void %loo
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="64">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-loop-memcpy-expansion2:1 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %gmem
+loop-memcpy-expansion2:1 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -292,9 +292,9 @@ loop-memcpy-expansion2:1 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsM
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="64" op_0_bw="61">
+<Node id="17" bw="64" op_0_bw="62">
 <![CDATA[
-loop-memcpy-expansion2:3 %loop_index3_cast = zext i61 %loop_index3_load
+loop-memcpy-expansion2:3 %loop_index3_cast = zext i62 %loop_index3_load
 
 ]]></Node>
 <StgValue><ssdm name="loop_index3_cast"/></StgValue>
@@ -322,9 +322,9 @@ loop-memcpy-expansion2:4 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPip
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="64" op_0_bw="64">
+<Node id="20" bw="32" op_0_bw="32">
 <![CDATA[
-loop-memcpy-expansion2:6 %empty = bitcast i64 %gmem_addr_read
+loop-memcpy-expansion2:6 %empty = bitcast i32 %gmem_addr_read
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -337,9 +337,9 @@ loop-memcpy-expansion2:6 %empty = bitcast i64 %gmem_addr_read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="10" op_0_bw="64" op_1_bw="64" op_2_bw="64">
+<Node id="21" bw="10" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-loop-memcpy-expansion2:7 %m2_buffer_addr = getelementptr i64 %m2_buffer, i64 0, i64 %loop_index3_cast
+loop-memcpy-expansion2:7 %m2_buffer_addr = getelementptr i32 %m2_buffer, i64 0, i64 %loop_index3_cast
 
 ]]></Node>
 <StgValue><ssdm name="m2_buffer_addr"/></StgValue>
@@ -352,9 +352,9 @@ loop-memcpy-expansion2:7 %m2_buffer_addr = getelementptr i64 %m2_buffer, i64 0, 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="64" op_1_bw="10">
+<Node id="22" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-loop-memcpy-expansion2:8 %store_ln0 = store i64 %empty, i10 %m2_buffer_addr
+loop-memcpy-expansion2:8 %store_ln0 = store i32 %empty, i10 %m2_buffer_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -369,7 +369,7 @@ loop-memcpy-expansion2:8 %store_ln0 = store i64 %empty, i10 %m2_buffer_addr
 
 <Node id="25" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-loop-memcpy-expansion2:11 %empty_25 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 2305843009213693951, i64 0
+loop-memcpy-expansion2:11 %empty_25 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 4611686018427387903, i64 0
 
 ]]></Node>
 <StgValue><ssdm name="empty_25"/></StgValue>
@@ -418,7 +418,7 @@ VITIS_LOOP_26_1.loopexit.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="46" from="sext_ln24" to="sext_ln24_read" fromId="41" toId="6">
 </dataflow>
-<dataflow id="48" from="_ssdm_op_Read.ap_auto.i61" to="p_cast1_cast_read" fromId="47" toId="7">
+<dataflow id="48" from="_ssdm_op_Read.ap_auto.i62" to="p_cast1_cast_read" fromId="47" toId="7">
 </dataflow>
 <dataflow id="49" from="p_cast1_cast" to="p_cast1_cast_read" fromId="39" toId="7">
 </dataflow>
@@ -474,7 +474,7 @@ VITIS_LOOP_26_1.loopexit.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="85" from="p_cast1_cast_cast" to="gmem_addr" fromId="9" toId="14">
 </dataflow>
-<dataflow id="87" from="_ssdm_op_Read.m_axi.p1i64" to="gmem_addr_read" fromId="86" toId="15">
+<dataflow id="87" from="_ssdm_op_Read.m_axi.p1i32" to="gmem_addr_read" fromId="86" toId="15">
 </dataflow>
 <dataflow id="88" from="gmem_addr" to="gmem_addr_read" fromId="14" toId="15">
 </dataflow>
