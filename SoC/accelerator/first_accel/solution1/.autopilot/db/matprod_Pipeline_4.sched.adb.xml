@@ -255,26 +255,8 @@ loop-memcpy-expansion:12 %br_ln0 = br i1 %exitcond, void %loop-memcpy-expansion.
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
 </operation>
-</state>
 
-<state id="3" st_id="3">
-
-<operation id="21" st_id="3" stage="1" lat="2">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="20" bw="64" op_0_bw="10">
-<![CDATA[
-loop-memcpy-expansion:6 %m3_buffer_load = load i10 %m3_buffer_addr
-
-]]></Node>
-<StgValue><ssdm name="m3_buffer_load"/></StgValue>
-</operation>
-
-<operation id="22" st_id="3" stage="1" lat="1">
+<operation id="21" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -290,7 +272,7 @@ loop-memcpy-expansion.loop-memcpy-expansion_crit_edge:0 %store_ln0 = store i61 %
 <StgValue><ssdm name="store_ln0"/></StgValue>
 </operation>
 
-<operation id="23" st_id="3" stage="1" lat="1">
+<operation id="22" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -304,6 +286,24 @@ loop-memcpy-expansion.loop-memcpy-expansion_crit_edge:1 %br_ln0 = br void %loop-
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="23" st_id="3" stage="1" lat="2">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="64" op_0_bw="10">
+<![CDATA[
+loop-memcpy-expansion:6 %m3_buffer_load = load i10 %m3_buffer_addr
+
+]]></Node>
+<StgValue><ssdm name="m3_buffer_load"/></StgValue>
 </operation>
 </state>
 

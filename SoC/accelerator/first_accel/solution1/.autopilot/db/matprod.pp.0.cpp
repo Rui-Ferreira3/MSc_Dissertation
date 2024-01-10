@@ -1100,11 +1100,11 @@ extern "C" {
 # 5 "first_accel/matprod.cpp" 2
 
 __attribute__((sdx_kernel("matprod", 0))) void matprod(double *m1, double *m2, double *m3, int N1, int N2, int N3) {
-#line 16 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl"
+#line 16 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=matprod
 # 6 "first_accel/matprod.cpp"
 
-#line 6 "C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl"
+#line 6 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=matprod
 # 6 "first_accel/matprod.cpp"
 

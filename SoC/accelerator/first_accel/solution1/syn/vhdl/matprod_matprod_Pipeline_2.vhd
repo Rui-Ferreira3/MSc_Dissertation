@@ -109,17 +109,14 @@ attribute shreg_extract : string;
     signal ap_ready_int : STD_LOGIC;
     signal gmem_blk_n_R : STD_LOGIC;
     signal ap_block_pp0_stage0 : BOOLEAN;
-    signal ap_block_pp0_stage0_11001 : BOOLEAN;
     signal sext_ln24_cast_fu_86_p1 : STD_LOGIC_VECTOR (60 downto 0);
-    signal sext_ln24_cast_reg_138 : STD_LOGIC_VECTOR (60 downto 0);
-    signal loop_index3_load_reg_148 : STD_LOGIC_VECTOR (60 downto 0);
-    signal gmem_addr_read_reg_153 : STD_LOGIC_VECTOR (63 downto 0);
-    signal empty_24_fu_108_p2 : STD_LOGIC_VECTOR (60 downto 0);
-    signal empty_24_reg_158 : STD_LOGIC_VECTOR (60 downto 0);
-    signal exitcond14_reg_163 : STD_LOGIC_VECTOR (0 downto 0);
-    signal loop_index3_cast_fu_119_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal sext_ln24_cast_reg_139 : STD_LOGIC_VECTOR (60 downto 0);
+    signal ap_block_pp0_stage0_11001 : BOOLEAN;
+    signal loop_index3_load_reg_149 : STD_LOGIC_VECTOR (60 downto 0);
+    signal gmem_addr_read_reg_154 : STD_LOGIC_VECTOR (63 downto 0);
+    signal loop_index3_cast_fu_124_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal loop_index3_fu_52 : STD_LOGIC_VECTOR (60 downto 0);
-    signal ap_sig_allocacmp_loop_index3_load : STD_LOGIC_VECTOR (60 downto 0);
+    signal empty_24_fu_108_p2 : STD_LOGIC_VECTOR (60 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
@@ -240,11 +237,11 @@ begin
     loop_index3_fu_52_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_boolean_0 = ap_block_pp0_stage0_11001)) then
-                if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
+            if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
+                if ((ap_loop_init = ap_const_logic_1)) then 
                     loop_index3_fu_52 <= ap_const_lv61_0;
-                elsif (((ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (exitcond14_reg_163 = ap_const_lv1_0))) then 
-                    loop_index3_fu_52 <= empty_24_reg_158;
+                elsif (((exitcond14_fu_114_p2 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1))) then 
+                    loop_index3_fu_52 <= empty_24_fu_108_p2;
                 end if;
             end if; 
         end if;
@@ -253,11 +250,9 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
-                empty_24_reg_158 <= empty_24_fu_108_p2;
-                exitcond14_reg_163 <= exitcond14_fu_114_p2;
-                gmem_addr_read_reg_153 <= m_axi_gmem_RDATA;
-                loop_index3_load_reg_148 <= ap_sig_allocacmp_loop_index3_load;
-                sext_ln24_cast_reg_138 <= sext_ln24_cast_fu_86_p1;
+                gmem_addr_read_reg_154 <= m_axi_gmem_RDATA;
+                loop_index3_load_reg_149 <= loop_index3_fu_52;
+                sext_ln24_cast_reg_139 <= sext_ln24_cast_fu_86_p1;
             end if;
         end if;
     end process;
@@ -346,18 +341,8 @@ begin
         end if; 
     end process;
 
-
-    ap_sig_allocacmp_loop_index3_load_assign_proc : process(ap_enable_reg_pp0_iter2, ap_block_pp0_stage0, empty_24_reg_158, exitcond14_reg_163, loop_index3_fu_52)
-    begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (exitcond14_reg_163 = ap_const_lv1_0))) then 
-            ap_sig_allocacmp_loop_index3_load <= empty_24_reg_158;
-        else 
-            ap_sig_allocacmp_loop_index3_load <= loop_index3_fu_52;
-        end if; 
-    end process;
-
-    empty_24_fu_108_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_loop_index3_load) + unsigned(ap_const_lv61_1));
-    exitcond14_fu_114_p2 <= "1" when (empty_24_fu_108_p2 = sext_ln24_cast_reg_138) else "0";
+    empty_24_fu_108_p2 <= std_logic_vector(unsigned(loop_index3_fu_52) + unsigned(ap_const_lv61_1));
+    exitcond14_fu_114_p2 <= "1" when (empty_24_fu_108_p2 = sext_ln24_cast_reg_139) else "0";
 
     gmem_blk_n_R_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, m_axi_gmem_RVALID, ap_block_pp0_stage0)
     begin
@@ -368,8 +353,8 @@ begin
         end if; 
     end process;
 
-    loop_index3_cast_fu_119_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(loop_index3_load_reg_148),64));
-    m2_buffer_address0 <= loop_index3_cast_fu_119_p1(10 - 1 downto 0);
+    loop_index3_cast_fu_124_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(loop_index3_load_reg_149),64));
+    m2_buffer_address0 <= loop_index3_cast_fu_124_p1(10 - 1 downto 0);
 
     m2_buffer_ce0_assign_proc : process(ap_enable_reg_pp0_iter2, ap_block_pp0_stage0_11001)
     begin
@@ -380,7 +365,7 @@ begin
         end if; 
     end process;
 
-    m2_buffer_d0 <= gmem_addr_read_reg_153;
+    m2_buffer_d0 <= gmem_addr_read_reg_154;
 
     m2_buffer_we0_assign_proc : process(ap_enable_reg_pp0_iter2, ap_block_pp0_stage0_11001)
     begin

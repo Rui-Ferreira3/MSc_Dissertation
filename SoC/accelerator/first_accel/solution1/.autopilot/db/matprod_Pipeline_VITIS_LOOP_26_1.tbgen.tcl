@@ -106,9 +106,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "regc", "Type" : "OVld", "Direction" : "IO"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_26_1", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "7", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dadd_64ns_64ns_64_8_full_dsp_1_U9", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dmul_64ns_64ns_64_7_max_dsp_1_U10", "Parent" : "0"},
+				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage1", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage1_subdone", "LastState" : "ap_ST_fsm_pp0_stage3", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage3_subdone", "QuitState" : "ap_ST_fsm_pp0_stage3", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage3_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dadd_64ns_64ns_64_4_full_dsp_1_U9", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dmul_64ns_64ns_64_4_max_dsp_1_U10", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10s_10s_10s_10_4_1_U11", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10s_10s_10ns_10_4_1_U12", "Parent" : "0"},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10s_10s_10ns_10_4_1_U13", "Parent" : "0"},
@@ -119,11 +119,11 @@ set ArgLastReadFirstWriteLatency {
 	matprod_Pipeline_VITIS_LOOP_26_1 {
 		N1 {Type I LastRead 0 FirstWrite -1}
 		trunc_ln6_1 {Type I LastRead 0 FirstWrite -1}
-		m1_buffer {Type I LastRead 3 FirstWrite -1}
+		m1_buffer {Type I LastRead 4 FirstWrite -1}
 		trunc_ln6 {Type I LastRead 0 FirstWrite -1}
-		m2_buffer {Type I LastRead 4 FirstWrite -1}
+		m2_buffer {Type I LastRead 5 FirstWrite -1}
 		N2 {Type I LastRead 0 FirstWrite -1}
-		m3_buffer {Type O LastRead -1 FirstWrite 21}
+		m3_buffer {Type O LastRead -1 FirstWrite 15}
 		N3 {Type I LastRead 0 FirstWrite -1}
 		regc {Type IO LastRead -1 FirstWrite -1}}}
 

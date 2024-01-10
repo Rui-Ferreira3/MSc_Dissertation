@@ -149,17 +149,14 @@ wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 reg    gmem_blk_n_W;
 wire    ap_block_pp0_stage0;
-reg    ap_block_pp0_stage0_11001;
 wire  signed [60:0] sext_ln40_cast_fu_91_p1;
-reg  signed [60:0] sext_ln40_cast_reg_144;
-wire   [60:0] empty_22_fu_112_p2;
-reg   [60:0] empty_22_reg_159;
-reg   [0:0] exitcond_reg_164;
-reg   [63:0] m3_buffer_load_reg_168;
+reg  signed [60:0] sext_ln40_cast_reg_145;
+reg    ap_block_pp0_stage0_11001;
+reg   [63:0] m3_buffer_load_reg_164;
 wire   [63:0] loop_index_cast_fu_107_p1;
 wire    ap_block_pp0_stage0_01001;
 reg   [60:0] loop_index_fu_54;
-reg   [60:0] ap_sig_allocacmp_loop_index_load;
+wire   [60:0] empty_22_fu_112_p2;
 wire    ap_loop_init;
 reg    ap_done_reg;
 wire    ap_continue_int;
@@ -256,11 +253,11 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-        if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        if ((ap_loop_init == 1'b1)) begin
             loop_index_fu_54 <= 61'd0;
-        end else if (((ap_enable_reg_pp0_iter2 == 1'b1) & (exitcond_reg_164 == 1'd0))) begin
-            loop_index_fu_54 <= empty_22_reg_159;
+        end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (exitcond_fu_118_p2 == 1'd0))) begin
+            loop_index_fu_54 <= empty_22_fu_112_p2;
         end
     end
 end
@@ -268,15 +265,13 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_loop_exit_ready_pp0_iter2_reg <= ap_loop_exit_ready;
-        empty_22_reg_159 <= empty_22_fu_112_p2;
-        exitcond_reg_164 <= exitcond_fu_118_p2;
-        sext_ln40_cast_reg_144 <= sext_ln40_cast_fu_91_p1;
+        sext_ln40_cast_reg_145 <= sext_ln40_cast_fu_91_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-        m3_buffer_load_reg_168 <= m3_buffer_q0;
+        m3_buffer_load_reg_164 <= m3_buffer_q0;
     end
 end
 
@@ -317,14 +312,6 @@ always @ (*) begin
         ap_ready_int = 1'b1;
     end else begin
         ap_ready_int = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1) & (exitcond_reg_164 == 1'd0))) begin
-        ap_sig_allocacmp_loop_index_load = empty_22_reg_159;
-    end else begin
-        ap_sig_allocacmp_loop_index_load = loop_index_fu_54;
     end
 end
 
@@ -391,11 +378,11 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter1_stage0;
 
-assign empty_22_fu_112_p2 = (ap_sig_allocacmp_loop_index_load + 61'd1);
+assign empty_22_fu_112_p2 = (loop_index_fu_54 + 61'd1);
 
-assign exitcond_fu_118_p2 = ((empty_22_fu_112_p2 == sext_ln40_cast_reg_144) ? 1'b1 : 1'b0);
+assign exitcond_fu_118_p2 = ((empty_22_fu_112_p2 == sext_ln40_cast_reg_145) ? 1'b1 : 1'b0);
 
-assign loop_index_cast_fu_107_p1 = ap_sig_allocacmp_loop_index_load;
+assign loop_index_cast_fu_107_p1 = loop_index_fu_54;
 
 assign m3_buffer_address0 = loop_index_cast_fu_107_p1;
 
@@ -451,7 +438,7 @@ assign m_axi_gmem_BREADY = 1'b0;
 
 assign m_axi_gmem_RREADY = 1'b0;
 
-assign m_axi_gmem_WDATA = m3_buffer_load_reg_168;
+assign m_axi_gmem_WDATA = m3_buffer_load_reg_164;
 
 assign m_axi_gmem_WID = 1'd0;
 

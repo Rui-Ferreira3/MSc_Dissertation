@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394531</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394531</coreId>
+						<coreId>2029042680</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1969317477</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869182069</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1969317477</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6107185</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394531</coreId>
+						<coreId>7955712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -274,7 +274,7 @@
 						<id>9</id>
 						<name>N3_read</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -282,7 +282,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -304,7 +304,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>154</coreId>
+						<coreId>1684367214</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -331,7 +331,7 @@
 						<id>10</id>
 						<name>N2_read</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -339,7 +339,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -361,7 +361,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2</coreId>
+						<coreId>236</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -388,7 +388,7 @@
 						<id>11</id>
 						<name>N1_read</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -396,7 +396,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -418,7 +418,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1986360064</coreId>
+						<coreId>236</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -445,7 +445,7 @@
 						<id>12</id>
 						<name>m3_read</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -453,7 +453,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -475,7 +475,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1431323424</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -502,7 +502,7 @@
 						<id>13</id>
 						<name>m2_read</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -510,7 +510,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -532,7 +532,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701601889</coreId>
+						<coreId>44</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -559,7 +559,7 @@
 						<id>14</id>
 						<name>m1_read</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -567,7 +567,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -589,7 +589,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701519394</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -616,7 +616,7 @@
 						<id>15</id>
 						<name>trunc_ln6</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -624,7 +624,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -646,7 +646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>644116338</coreId>
+						<coreId>11</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -672,7 +672,7 @@
 						<id>16</id>
 						<name>trunc_ln6_1</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -680,7 +680,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -702,7 +702,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952541999</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -728,7 +728,7 @@
 						<id>36</id>
 						<name>m1_buffer</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>19</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -736,7 +736,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -758,7 +758,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1413567571</coreId>
+						<coreId>2</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -784,7 +784,7 @@
 						<id>37</id>
 						<name>m2_buffer</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -792,7 +792,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -814,7 +814,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1766203965</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -840,7 +840,7 @@
 						<id>38</id>
 						<name>m3_buffer</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -848,7 +848,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -870,7 +870,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1931502951</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -896,7 +896,7 @@
 						<id>39</id>
 						<name>mul_ln23</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -904,7 +904,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -926,7 +926,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542462019</coreId>
+						<coreId>2</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -942,7 +942,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>6.86</m_delay>
+				<m_delay>8.47</m_delay>
 				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -953,7 +953,7 @@
 						<id>40</id>
 						<name>icmp_ln23</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -961,7 +961,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -983,7 +983,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>779709548</coreId>
+						<coreId>2031025408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1010,7 +1010,7 @@
 						<id>41</id>
 						<name>br_ln23</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1018,7 +1018,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1040,7 +1040,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>757935405</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1068,7 +1068,7 @@
 						<id>43</id>
 						<name>p_cast</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1076,7 +1076,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1098,7 +1098,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936018748</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>61</bitwidth>
@@ -1127,7 +1127,7 @@
 						<id>44</id>
 						<name>p_cast_cast</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1135,7 +1135,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1157,7 +1157,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1128351314</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1183,7 +1183,7 @@
 						<id>45</id>
 						<name>gmem_addr</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1191,7 +1191,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1213,7 +1213,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>774905914</coreId>
+						<coreId>128</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1240,7 +1240,7 @@
 						<id>46</id>
 						<name>empty</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1248,7 +1248,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1270,7 +1270,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539111470</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1287,7 +1287,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>14.6</m_delay>
 				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1298,7 +1298,7 @@
 						<id>47</id>
 						<name>_ln6</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1306,7 +1306,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1328,7 +1328,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1768715620</coreId>
+						<coreId>268</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1375,7 +1375,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1699560457</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1401,7 +1401,7 @@
 						<id>50</id>
 						<name>mul_ln24</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>24</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1409,7 +1409,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1431,7 +1431,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1718968927</coreId>
+						<coreId>2031025408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1447,7 +1447,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>6.86</m_delay>
+				<m_delay>8.47</m_delay>
 				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1458,7 +1458,7 @@
 						<id>51</id>
 						<name>icmp_ln24</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>24</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1466,7 +1466,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1488,7 +1488,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701602414</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1515,7 +1515,7 @@
 						<id>52</id>
 						<name>br_ln24</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>24</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1523,7 +1523,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1545,7 +1545,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1629892959</coreId>
+						<coreId>36</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1573,7 +1573,7 @@
 						<id>54</id>
 						<name>p_cast1</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1581,7 +1581,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1603,7 +1603,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>543716455</coreId>
+						<coreId>316</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>61</bitwidth>
@@ -1632,7 +1632,7 @@
 						<id>55</id>
 						<name>p_cast1_cast</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1640,7 +1640,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1662,7 +1662,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953067621</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1688,7 +1688,7 @@
 						<id>56</id>
 						<name>gmem_addr_1</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1696,7 +1696,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1718,7 +1718,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>943271480</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1745,7 +1745,7 @@
 						<id>57</id>
 						<name>empty_28</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1753,7 +1753,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1775,7 +1775,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1768711536</coreId>
+						<coreId>81</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1794,7 +1794,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>14.6</m_delay>
 				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1805,7 +1805,7 @@
 						<id>58</id>
 						<name>_ln6</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1813,7 +1813,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1835,7 +1835,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1179535650</coreId>
+						<coreId>2031025408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1885,7 +1885,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>775648111</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1911,7 +1911,7 @@
 						<id>61</id>
 						<name>_ln6</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1919,7 +1919,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1941,7 +1941,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1801676136</coreId>
+						<coreId>2031023248</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1969,8 +1969,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.43</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_38">
@@ -1980,7 +1980,7 @@
 						<id>62</id>
 						<name>mul_ln40</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>40</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -1988,7 +1988,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2010,7 +2010,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2037672306</coreId>
+						<coreId>2029768064</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2026,8 +2026,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>6.86</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_delay>8.47</m_delay>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_39">
@@ -2037,7 +2037,7 @@
 						<id>63</id>
 						<name>icmp_ln40</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>40</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2045,7 +2045,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2067,7 +2067,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852793632</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2094,7 +2094,7 @@
 						<id>64</id>
 						<name>br_ln40</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>40</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2102,7 +2102,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2124,7 +2124,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1634956133</coreId>
+						<coreId>2031025408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2152,7 +2152,7 @@
 						<id>66</id>
 						<name>p_cast3</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2160,7 +2160,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2182,7 +2182,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>640163950</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>61</bitwidth>
@@ -2211,7 +2211,7 @@
 						<id>67</id>
 						<name>p_cast3_cast</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2219,7 +2219,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2241,7 +2241,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1769104758</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -2267,7 +2267,7 @@
 						<id>68</id>
 						<name>gmem_addr_2</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2275,7 +2275,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2297,7 +2297,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953460082</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -2324,7 +2324,7 @@
 						<id>69</id>
 						<name>empty_29</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2332,7 +2332,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2354,7 +2354,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>673201011</coreId>
+						<coreId>2029602192</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2373,7 +2373,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>14.6</m_delay>
 				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2384,7 +2384,7 @@
 						<id>70</id>
 						<name>_ln6</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2392,7 +2392,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2414,7 +2414,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1969365102</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2451,7 +2451,7 @@
 						<id>71</id>
 						<name>empty_30</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2459,7 +2459,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2481,7 +2481,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>926167341</coreId>
+						<coreId>56</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2500,7 +2500,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>14.6</m_delay>
 				<m_topoIndex>39</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2511,7 +2511,7 @@
 						<id>72</id>
 						<name>br_ln41</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2519,7 +2519,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2541,7 +2541,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1030185332</coreId>
+						<coreId>2031025408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2567,7 +2567,7 @@
 						<id>74</id>
 						<name>_ln41</name>
 						<fileName>first_accel/matprod.cpp</fileName>
-						<fileDirectory>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
+						<fileDirectory>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>matprod</contextFuncName>
 						<contextNormFuncName>matprod</contextNormFuncName>
@@ -2575,7 +2575,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator</first>
+								<first>C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2597,7 +2597,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858861106</coreId>
+						<coreId>757935405</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2673,7 +2673,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>744957216</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2704,7 +2704,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1414750020</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2735,7 +2735,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>695430688</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2766,7 +2766,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>16843009</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2797,7 +2797,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394531</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2828,7 +2828,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852793632</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2859,7 +2859,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1685025392</coreId>
+						<coreId>1948254263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2893,7 +2893,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1627914922</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2973,7 +2973,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>168</coreId>
+					<coreId>165</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3006,7 +3006,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>16843009</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3042,7 +3042,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>100</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3113,7 +3113,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2</coreId>
+					<coreId>4294967295</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -4065,210 +4065,210 @@
 		<item>
 			<first>39</first>
 			<second>
-				<first>1</first>
-				<second>1</second>
+				<first>0</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>40</first>
 			<second>
-				<first>3</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>3</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>3</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>4</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>4</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>4</first>
+				<first>1</first>
 				<second>6</second>
 			</second>
 		</item>
 		<item>
 			<first>47</first>
 			<second>
-				<first>11</first>
+				<first>8</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>12</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>12</first>
-				<second>1</second>
+				<first>9</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>14</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>14</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
 			<second>
-				<first>14</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>15</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>56</first>
 			<second>
-				<first>15</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>15</first>
+				<first>10</first>
 				<second>6</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>22</first>
+				<first>17</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>23</first>
+				<first>18</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>24</first>
+				<first>19</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>23</first>
-				<second>1</second>
+				<first>19</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>25</first>
+				<first>19</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>64</first>
 			<second>
-				<first>25</first>
+				<first>20</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>25</first>
+				<first>20</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>67</first>
 			<second>
-				<first>26</first>
+				<first>20</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>26</first>
+				<first>20</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>69</first>
 			<second>
-				<first>26</first>
+				<first>20</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>70</first>
 			<second>
-				<first>27</first>
+				<first>21</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>71</first>
 			<second>
-				<first>29</first>
+				<first>23</first>
 				<second>4</second>
 			</second>
 		</item>
 		<item>
 			<first>72</first>
 			<second>
-				<first>33</first>
+				<first>27</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>74</first>
 			<second>
-				<first>33</first>
+				<first>27</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4280,49 +4280,49 @@
 			<first>42</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>3</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>49</first>
 			<second>
-				<first>3</first>
-				<second>12</second>
+				<first>0</first>
+				<second>9</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>12</first>
-				<second>14</second>
+				<first>9</first>
+				<second>9</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>14</first>
-				<second>23</second>
+				<first>9</first>
+				<second>18</second>
 			</second>
 		</item>
 		<item>
 			<first>65</first>
 			<second>
-				<first>23</first>
-				<second>25</second>
+				<first>18</first>
+				<second>20</second>
 			</second>
 		</item>
 		<item>
 			<first>73</first>
 			<second>
-				<first>25</first>
-				<second>33</second>
+				<first>20</first>
+				<second>27</second>
 			</second>
 		</item>
 		<item>
 			<first>75</first>
 			<second>
-				<first>33</first>
-				<second>33</second>
+				<first>27</first>
+				<second>27</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

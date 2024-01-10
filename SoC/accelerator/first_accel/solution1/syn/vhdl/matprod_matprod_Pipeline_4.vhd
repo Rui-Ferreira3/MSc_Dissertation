@@ -110,17 +110,14 @@ attribute shreg_extract : string;
     signal ap_ready_int : STD_LOGIC;
     signal gmem_blk_n_W : STD_LOGIC;
     signal ap_block_pp0_stage0 : BOOLEAN;
-    signal ap_block_pp0_stage0_11001 : BOOLEAN;
     signal sext_ln40_cast_fu_91_p1 : STD_LOGIC_VECTOR (60 downto 0);
-    signal sext_ln40_cast_reg_144 : STD_LOGIC_VECTOR (60 downto 0);
-    signal empty_22_fu_112_p2 : STD_LOGIC_VECTOR (60 downto 0);
-    signal empty_22_reg_159 : STD_LOGIC_VECTOR (60 downto 0);
-    signal exitcond_reg_164 : STD_LOGIC_VECTOR (0 downto 0);
-    signal m3_buffer_load_reg_168 : STD_LOGIC_VECTOR (63 downto 0);
+    signal sext_ln40_cast_reg_145 : STD_LOGIC_VECTOR (60 downto 0);
+    signal ap_block_pp0_stage0_11001 : BOOLEAN;
+    signal m3_buffer_load_reg_164 : STD_LOGIC_VECTOR (63 downto 0);
     signal loop_index_cast_fu_107_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
     signal loop_index_fu_54 : STD_LOGIC_VECTOR (60 downto 0);
-    signal ap_sig_allocacmp_loop_index_load : STD_LOGIC_VECTOR (60 downto 0);
+    signal empty_22_fu_112_p2 : STD_LOGIC_VECTOR (60 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
@@ -256,11 +253,11 @@ begin
     loop_index_fu_54_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_boolean_0 = ap_block_pp0_stage0_11001)) then
-                if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
+            if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
+                if ((ap_loop_init = ap_const_logic_1)) then 
                     loop_index_fu_54 <= ap_const_lv61_0;
-                elsif (((ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (exitcond_reg_164 = ap_const_lv1_0))) then 
-                    loop_index_fu_54 <= empty_22_reg_159;
+                elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (exitcond_fu_118_p2 = ap_const_lv1_0))) then 
+                    loop_index_fu_54 <= empty_22_fu_112_p2;
                 end if;
             end if; 
         end if;
@@ -270,9 +267,7 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 ap_loop_exit_ready_pp0_iter2_reg <= ap_loop_exit_ready;
-                empty_22_reg_159 <= empty_22_fu_112_p2;
-                exitcond_reg_164 <= exitcond_fu_118_p2;
-                sext_ln40_cast_reg_144 <= sext_ln40_cast_fu_91_p1;
+                sext_ln40_cast_reg_145 <= sext_ln40_cast_fu_91_p1;
             end if;
         end if;
     end process;
@@ -280,7 +275,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_boolean_0 = ap_block_pp0_stage0_11001)) then
-                m3_buffer_load_reg_168 <= m3_buffer_q0;
+                m3_buffer_load_reg_164 <= m3_buffer_q0;
             end if;
         end if;
     end process;
@@ -366,18 +361,8 @@ begin
         end if; 
     end process;
 
-
-    ap_sig_allocacmp_loop_index_load_assign_proc : process(ap_enable_reg_pp0_iter2, ap_block_pp0_stage0, empty_22_reg_159, exitcond_reg_164, loop_index_fu_54)
-    begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (exitcond_reg_164 = ap_const_lv1_0))) then 
-            ap_sig_allocacmp_loop_index_load <= empty_22_reg_159;
-        else 
-            ap_sig_allocacmp_loop_index_load <= loop_index_fu_54;
-        end if; 
-    end process;
-
-    empty_22_fu_112_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_loop_index_load) + unsigned(ap_const_lv61_1));
-    exitcond_fu_118_p2 <= "1" when (empty_22_fu_112_p2 = sext_ln40_cast_reg_144) else "0";
+    empty_22_fu_112_p2 <= std_logic_vector(unsigned(loop_index_fu_54) + unsigned(ap_const_lv61_1));
+    exitcond_fu_118_p2 <= "1" when (empty_22_fu_112_p2 = sext_ln40_cast_reg_145) else "0";
 
     gmem_blk_n_W_assign_proc : process(ap_enable_reg_pp0_iter3, m_axi_gmem_WREADY, ap_block_pp0_stage0)
     begin
@@ -388,7 +373,7 @@ begin
         end if; 
     end process;
 
-    loop_index_cast_fu_107_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_loop_index_load),64));
+    loop_index_cast_fu_107_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(loop_index_fu_54),64));
     m3_buffer_address0 <= loop_index_cast_fu_107_p1(10 - 1 downto 0);
 
     m3_buffer_ce0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001)
@@ -426,7 +411,7 @@ begin
     m_axi_gmem_AWVALID <= ap_const_logic_0;
     m_axi_gmem_BREADY <= ap_const_logic_0;
     m_axi_gmem_RREADY <= ap_const_logic_0;
-    m_axi_gmem_WDATA <= m3_buffer_load_reg_168;
+    m_axi_gmem_WDATA <= m3_buffer_load_reg_164;
     m_axi_gmem_WID <= ap_const_lv1_0;
     m_axi_gmem_WLAST <= ap_const_logic_0;
     m_axi_gmem_WSTRB <= ap_const_lv8_FF;

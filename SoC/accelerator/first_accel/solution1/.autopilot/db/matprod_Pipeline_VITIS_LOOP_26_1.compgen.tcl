@@ -1,14 +1,14 @@
 # This script segment is generated automatically by AutoPilot
 
-set name matprod_dadd_64ns_64ns_64_8_full_dsp_1
+set name matprod_dadd_64ns_64ns_64_4_full_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dadd} IMPL {fulldsp} LATENCY 7 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dadd} IMPL {fulldsp} LATENCY 3 ALLOW_PRAGMA 1
 }
 
 
-set name matprod_dmul_64ns_64ns_64_7_max_dsp_1
+set name matprod_dmul_64ns_64ns_64_4_max_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dmul} IMPL {maxdsp} LATENCY 6 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
 }
 
 

@@ -9,8 +9,8 @@
 <ProductFamily>artix7</ProductFamily>
 <Part>xc7a100t-csg324-1</Part>
 <TopModelName>matprod</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>20.00</TargetClockPeriod>
+<ClockUncertainty>5.40</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,7 +18,7 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+<EstimatedClockPeriod>14.600</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -37,8 +37,8 @@
 <Resources>
 <BRAM_18K>12</BRAM_18K>
 <DSP>26</DSP>
-<FF>4960</FF>
-<LUT>4650</LUT>
+<FF>3821</FF>
+<LUT>4507</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

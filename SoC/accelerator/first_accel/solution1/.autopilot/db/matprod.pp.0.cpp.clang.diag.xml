@@ -1,13 +1,13 @@
 <dict>
   <key>main-file</key>
-  <string>C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp</string>
+  <string>C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl</string>
+      <string>C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl</string>
       <key>line</key>
       <integer>16</integer>
       <key>column</key>
@@ -23,7 +23,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl</string>
+      <string>C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl</string>
       <key>line</key>
       <integer>6</integer>
       <key>column</key>

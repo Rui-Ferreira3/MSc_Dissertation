@@ -1,0 +1,132 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/RVfpga_test/RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../RVfpga_test.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/new" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_BUS1_s_axi.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_dadd_64ns_64ns_64_8_full_dsp_1.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_dmul_64ns_64ns_64_7_max_dsp_1.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_flow_control_loop_pipe_sequential_init.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_gmem_m_axi.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_m1_buffer_RAM_AUTO_1R1W.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_mac_muladd_10s_10s_10ns_10_4_1.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_mac_muladd_10s_10s_10s_10_4_1.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_matprod_Pipeline_1.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_matprod_Pipeline_2.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_matprod_Pipeline_4.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_matprod_Pipeline_VITIS_LOOP_26_1.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod_mul_32s_32s_32_2_1.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/verilog/matprod.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/ip/matprod_dadd_64ns_64ns_64_8_full_dsp_1_ip.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/ipshared/e30c/hdl/ip/matprod_dmul_64ns_64ns_64_7_max_dsp_1_ip.v" \
+"../../../../RVfpga_test.ip_user_files/bd/accel/ip/accel_matprod_0_2/sim/accel_matprod_0_2.v" \
+"../../../../RVfpga_test.ip_user_files/bd/accel/sim/accel.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_xbar_0/sim/interconnect_xbar_0.v" \
+
+sv xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/RVfpga_test/RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../RVfpga_test.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/new" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_axi_vip_0_0/sim/interconnect_axi_vip_0_0_pkg.sv" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_axi_vip_0_0/sim/interconnect_axi_vip_0_0.sv" \
+
+verilog xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/RVfpga_test/RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../RVfpga_test.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/new" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/sim/interconnect.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_s00_data_fifo_0/sim/interconnect_s00_data_fifo_0.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_s01_data_fifo_0/sim/interconnect_s01_data_fifo_0.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_s02_data_fifo_0/sim/interconnect_s02_data_fifo_0.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_s03_data_fifo_0/sim/interconnect_s03_data_fifo_0.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_s04_data_fifo_0/sim/interconnect_s04_data_fifo_0.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_auto_ds_0/sim/interconnect_auto_ds_0.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_auto_pc_0/sim/interconnect_auto_pc_0.v" \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_axi_bram_ctrl_0_bram_0/sim/interconnect_axi_bram_ctrl_0_bram_0.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/accel/hdl/accel_wrapper.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/clk_gen_nexys.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/dpram64.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/spi/fifo4.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v" \
+"../../../../RVfpga_test.gen/sources_1/bd/interconnect/hdl/interconnect_wrapper.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/litedram_core.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/litedram_top.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/raminfr.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_state.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_top.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_regs.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_top.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_wb.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/wb_mem_wrapper.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v" \
+
+sv xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/RVfpga_test/RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../RVfpga_test.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../RVfpga_test.srcs/sources_1/new" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_pkg.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cdc.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_intf.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/binary_to_gray.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/bscan_tap.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_fifo_gray.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/swerv_types.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_decode_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_gpr_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_ib_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_tlu_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_trigger.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dma/dma_ctrl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_alu_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_div_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/gray_to_binary.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_aln_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_bp_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_compress_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ic_mem.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ifc_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_mem_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_addrcheck.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_buffer.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_intf.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_clkdomain.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_mem.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_ecc.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_lsc_ctl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_stbuf.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_trigger.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/mem.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/mem_lib.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/pic/pic_ctrl.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/rvfpganexys.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper_dmi.sv" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v" \
+"../../../../RVfpga_test.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sync.sv" \
+"../../../../RVfpga_test.srcs/sim_1/new/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

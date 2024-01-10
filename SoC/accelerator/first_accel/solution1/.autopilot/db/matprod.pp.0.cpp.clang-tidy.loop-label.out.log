@@ -1,5 +1,5 @@
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
  for (i=0, j=0, k=0; i<N1; ) {
  ^~~
  VITIS_LOOP_26_1: 
-C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: note: FIX-IT applied suggested code changes
+C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: note: FIX-IT applied suggested code changes

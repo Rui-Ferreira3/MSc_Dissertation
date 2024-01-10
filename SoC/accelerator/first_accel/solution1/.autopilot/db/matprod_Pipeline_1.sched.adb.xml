@@ -234,116 +234,8 @@ loop-memcpy-expansion8:12 %br_ln0 = br i1 %exitcond15, void %loop-memcpy-expansi
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
 </operation>
-</state>
 
-<state id="3" st_id="3">
-
-<operation id="19" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="64">
-<![CDATA[
-loop-memcpy-expansion8:1 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %gmem
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="20" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="17" bw="64" op_0_bw="61">
-<![CDATA[
-loop-memcpy-expansion8:3 %loop_index9_cast = zext i61 %loop_index9_load
-
-]]></Node>
-<StgValue><ssdm name="loop_index9_cast"/></StgValue>
-</operation>
-
-<operation id="21" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
-<![CDATA[
-loop-memcpy-expansion8:4 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
-
-]]></Node>
-<StgValue><ssdm name="specpipeline_ln0"/></StgValue>
-</operation>
-
-<operation id="22" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="20" bw="64" op_0_bw="64">
-<![CDATA[
-loop-memcpy-expansion8:6 %empty = bitcast i64 %gmem_addr_read
-
-]]></Node>
-<StgValue><ssdm name="empty"/></StgValue>
-</operation>
-
-<operation id="23" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="21" bw="10" op_0_bw="64" op_1_bw="64" op_2_bw="64">
-<![CDATA[
-loop-memcpy-expansion8:7 %m1_buffer_addr = getelementptr i64 %m1_buffer, i64 0, i64 %loop_index9_cast
-
-]]></Node>
-<StgValue><ssdm name="m1_buffer_addr"/></StgValue>
-</operation>
-
-<operation id="24" st_id="3" stage="1" lat="1">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="22" bw="0" op_0_bw="64" op_1_bw="10">
-<![CDATA[
-loop-memcpy-expansion8:8 %store_ln0 = store i64 %empty, i10 %m1_buffer_addr
-
-]]></Node>
-<StgValue><ssdm name="store_ln0"/></StgValue>
-</operation>
-
-<operation id="25" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="25" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
-<![CDATA[
-loop-memcpy-expansion8:11 %empty_27 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 2305843009213693951, i64 0
-
-]]></Node>
-<StgValue><ssdm name="empty_27"/></StgValue>
-</operation>
-
-<operation id="26" st_id="3" stage="1" lat="1">
+<operation id="19" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -359,7 +251,7 @@ loop-memcpy-expansion8.loop-memcpy-expansion8_crit_edge:0 %store_ln0 = store i61
 <StgValue><ssdm name="store_ln0"/></StgValue>
 </operation>
 
-<operation id="27" st_id="3" stage="1" lat="1">
+<operation id="20" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -373,6 +265,114 @@ loop-memcpy-expansion8.loop-memcpy-expansion8_crit_edge:1 %br_ln0 = br void %loo
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="21" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="64">
+<![CDATA[
+loop-memcpy-expansion8:1 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %gmem
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="22" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="64" op_0_bw="61">
+<![CDATA[
+loop-memcpy-expansion8:3 %loop_index9_cast = zext i61 %loop_index9_load
+
+]]></Node>
+<StgValue><ssdm name="loop_index9_cast"/></StgValue>
+</operation>
+
+<operation id="23" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<![CDATA[
+loop-memcpy-expansion8:4 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
+
+]]></Node>
+<StgValue><ssdm name="specpipeline_ln0"/></StgValue>
+</operation>
+
+<operation id="24" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="64" op_0_bw="64">
+<![CDATA[
+loop-memcpy-expansion8:6 %empty = bitcast i64 %gmem_addr_read
+
+]]></Node>
+<StgValue><ssdm name="empty"/></StgValue>
+</operation>
+
+<operation id="25" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="10" op_0_bw="64" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+loop-memcpy-expansion8:7 %m1_buffer_addr = getelementptr i64 %m1_buffer, i64 0, i64 %loop_index9_cast
+
+]]></Node>
+<StgValue><ssdm name="m1_buffer_addr"/></StgValue>
+</operation>
+
+<operation id="26" st_id="3" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="0" op_0_bw="64" op_1_bw="10">
+<![CDATA[
+loop-memcpy-expansion8:8 %store_ln0 = store i64 %empty, i10 %m1_buffer_addr
+
+]]></Node>
+<StgValue><ssdm name="store_ln0"/></StgValue>
+</operation>
+
+<operation id="27" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+loop-memcpy-expansion8:11 %empty_27 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 2305843009213693951, i64 0
+
+]]></Node>
+<StgValue><ssdm name="empty_27"/></StgValue>
 </operation>
 
 <operation id="28" st_id="3" stage="1" lat="1">

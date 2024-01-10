@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/RVfpga_test/RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_axi_bram_ctrl_0_0/sim/interconnect_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'interconnect_axi_bram_ctrl_0_0'

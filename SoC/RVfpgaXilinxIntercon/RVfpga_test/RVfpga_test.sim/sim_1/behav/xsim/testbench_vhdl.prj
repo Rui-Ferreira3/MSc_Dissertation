@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RVfpga_test.ip_user_files/bd/interconnect/ip/interconnect_axi_bram_ctrl_0_0/sim/interconnect_axi_bram_ctrl_0_0.vhd" \
+
+# Do not sort compile order
+nosort

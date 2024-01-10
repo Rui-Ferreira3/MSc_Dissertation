@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="matprod.h" path="C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.h"/>
-    <originFiles name="matprod.cpp" path="C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp"/>
+    <originFiles name="matprod.h" path="C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.h"/>
+    <originFiles name="matprod.cpp" path="C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp"/>
   </source>
   <testbench>
-    <originFiles name="tb_matprod.cpp" path="C:\Users\Rui\Rui\MSc_Dissertation\SoC\accelerator\first_accel\tb_matprod.cpp"/>
+    <originFiles name="tb_matprod.cpp" path="C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator\first_accel\tb_matprod.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

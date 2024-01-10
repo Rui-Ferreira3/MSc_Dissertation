@@ -255,26 +255,8 @@ loop-memcpy-expansion:12 %br_ln0 = br i1 %exitcond, void %loop-memcpy-expansion.
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
 </operation>
-</state>
 
-<state id="3" st_id="3">
-
-<operation id="21" st_id="3" stage="1" lat="2">
-<core>RAM</core>
-<MemPortIdVec>0 </MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="20" bw="64" op_0_bw="10">
-<![CDATA[
-loop-memcpy-expansion:6 %m3_buffer_load = load i10 %m3_buffer_addr
-
-]]></Node>
-<StgValue><ssdm name="m3_buffer_load"/></StgValue>
-</operation>
-
-<operation id="22" st_id="3" stage="1" lat="1">
+<operation id="21" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -290,7 +272,7 @@ loop-memcpy-expansion.loop-memcpy-expansion_crit_edge:0 %store_ln0 = store i61 %
 <StgValue><ssdm name="store_ln0"/></StgValue>
 </operation>
 
-<operation id="23" st_id="3" stage="1" lat="1">
+<operation id="22" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -304,6 +286,24 @@ loop-memcpy-expansion.loop-memcpy-expansion_crit_edge:1 %br_ln0 = br void %loop-
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="23" st_id="3" stage="1" lat="2">
+<core>RAM</core>
+<MemPortIdVec>0 </MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="64" op_0_bw="10">
+<![CDATA[
+loop-memcpy-expansion:6 %m3_buffer_load = load i10 %m3_buffer_addr
+
+]]></Node>
+<StgValue><ssdm name="m3_buffer_load"/></StgValue>
 </operation>
 </state>
 
@@ -514,11 +514,11 @@ post-loop-memcpy-expansion.loopexit.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="99" from="exitcond" to="br_ln0" fromId="19" toId="20">
 </dataflow>
-<dataflow id="100" from="m3_buffer_addr" to="m3_buffer_load" fromId="16" toId="21">
+<dataflow id="100" from="empty_22" to="store_ln0" fromId="18" toId="21">
 </dataflow>
-<dataflow id="101" from="empty_22" to="store_ln0" fromId="18" toId="22">
+<dataflow id="101" from="loop_index" to="store_ln0" fromId="6" toId="21">
 </dataflow>
-<dataflow id="102" from="loop_index" to="store_ln0" fromId="6" toId="22">
+<dataflow id="102" from="m3_buffer_addr" to="m3_buffer_load" fromId="16" toId="23">
 </dataflow>
 <dataflow id="104" from="_ssdm_op_SpecBitsMap" to="specbitsmap_ln0" fromId="103" toId="24">
 </dataflow>
@@ -540,7 +540,7 @@ post-loop-memcpy-expansion.loopexit.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="115" from="p_str" to="specpipeline_ln0" fromId="114" toId="26">
 </dataflow>
-<dataflow id="116" from="m3_buffer_load" to="empty" fromId="21" toId="27">
+<dataflow id="116" from="m3_buffer_load" to="empty" fromId="23" toId="27">
 </dataflow>
 <dataflow id="118" from="_ssdm_op_Write.m_axi.p1i64" to="write_ln0" fromId="117" toId="28">
 </dataflow>
@@ -558,7 +558,7 @@ post-loop-memcpy-expansion.loopexit.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="129" from="StgValue_90" to="empty_23" fromId="90" toId="29">
 </dataflow>
-<dataflow id="130" from="exitcond" to="StgValue_3" fromId="19" toId="3">
+<dataflow id="130" from="exitcond" to="StgValue_2" fromId="19" toId="2">
 </dataflow>
 <dataflow id="131" from="exitcond" to="StgValue_4" fromId="19" toId="4">
 </dataflow>

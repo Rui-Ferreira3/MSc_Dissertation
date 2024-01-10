@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1701880728512">
-  <ports id="1" name="gmem" type="PortType" coreId="1380138016" bitwidth="64" direction="DirOut" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1704832332327">
+  <ports id="1" name="gmem" type="PortType" coreId="1953394531" bitwidth="64" direction="DirOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
   <ports id="2" name="p_cast3_cast" type="PortType" coreId="1953394531" bitwidth="61">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="m3_buffer" type="PortType" coreName="RAM" coreId="1329340478" bitwidth="64" iftype="IfTypeRegister" arraysize="1024">
+  <ports id="3" name="m3_buffer" type="PortType" coreName="RAM" coreId="1953394531" bitwidth="64" iftype="IfTypeRegister" arraysize="1024">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="4" name="sext_ln40" type="PortType" coreId="48" bitwidth="32">
+  <ports id="4" name="sext_ln40" type="PortType" coreId="1953394531" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="37" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -46,17 +46,17 @@
   <edges id="126" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
   <blocks id="13" name="newFuncRoot" type="BlockType">
     <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="loop_index" coreId="0" bitwidth="61" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="loop_index" coreId="574454132" bitwidth="61" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="sext_ln40_read" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="sext_ln40_read" coreId="540703090" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataInputObjs>sext_ln40</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="p_cast3_cast_read" coreId="0" bitwidth="61" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="p_cast3_cast_read" coreId="892351008" bitwidth="61" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>p_cast3_cast</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
     </node_objs>
@@ -64,15 +64,15 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="p_cast3_cast_cast" coreId="0" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="p_cast3_cast_cast" coreId="4294967295" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="loop_index_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="loop_index_write_ln0" coreId="2029176016" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln0" coreId="0" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln0" coreId="2029190752" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
     </node_objs>
   </blocks>
@@ -89,21 +89,21 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>post-loop-memcpy-expansion.loopexit.exitStub</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion.loop-memcpy-expansion_crit_edge</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="loop_index_load" coreId="0" bitwidth="61" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="loop_index_load" coreId="536882754" bitwidth="61" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="gmem_addr" coreId="0" bitwidth="64" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="gmem_addr" coreId="4294967295" bitwidth="64" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>gmem</dataOutputObjs>
         <dataOutputObjs>write</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="loop_index_cast" rtlName="loop_index_cast_fu_107_p1" coreId="0" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="loop_index_cast" rtlName="loop_index_cast_fu_107_p1" coreId="3" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="m3_buffer_addr" coreId="0" bitwidth="10" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="m3_buffer_addr" coreId="1685025392" bitwidth="10" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <dataInputObjs>m3_buffer</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -117,7 +117,7 @@
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="gmem_addr_write_ln0" coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" opcode="write" nodeLabel="3.0" m_display="0" m_delay="7.3" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="gmem_addr_write_ln0" coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" opcode="write" nodeLabel="3.0" m_display="0" m_delay="14.6" m_topoIndex="19" m_clusterGroupNumber="-1">
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataInputObjs>bitcast</dataInputObjs>
         <constName>empty</constName>
@@ -133,7 +133,7 @@
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln0" coreId="1680154734" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion.loop-memcpy-expansion_crit_edge</controlInputObjs>
         <controlInputObjs>post-loop-memcpy-expansion.loopexit.exitStub</controlInputObjs>
@@ -143,11 +143,11 @@
       <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="loop_index_write_ln0" coreId="0" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.61" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="loop_index_write_ln0" coreId="0" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.61" m_topoIndex="15" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln0" coreId="0" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
         <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
       </node_objs>
     </basic_blocks>
@@ -156,44 +156,41 @@
   <ScheduleInfo time="1"/>
   <ScheduleInfo time="2"/>
   <ScheduleInfo time="3"/>
-  <regnodes realName="m3_buffer_load_reg_168">
+  <regnodes realName="m3_buffer_load_reg_164">
     <nodeIds>20</nodeIds>
   </regnodes>
-  <regnodes realName="p_cast3_cast_cast_reg_149">
+  <regnodes realName="p_cast3_cast_cast_reg_150">
     <nodeIds>9</nodeIds>
   </regnodes>
-  <regnodes realName="sext_ln40_cast_reg_144">
-    <nodeIds>8</nodeIds>
-  </regnodes>
-  <regnodes realName="loop_index_reg_137">
+  <regnodes realName="loop_index_reg_138">
     <nodeIds>5</nodeIds>
   </regnodes>
-  <regnodes realName="m3_buffer_addr_reg_154">
+  <regnodes realName="sext_ln40_cast_reg_145">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="m3_buffer_addr_reg_155">
     <nodeIds>19</nodeIds>
   </regnodes>
-  <regnodes realName="empty_22_reg_159">
-    <nodeIds>23</nodeIds>
-  </regnodes>
-  <regnodes realName="exitcond_reg_164">
+  <regnodes realName="exitcond_reg_160">
     <nodeIds>24</nodeIds>
   </regnodes>
-  <expressionNodes realName="empty_fu_133">
-    <nodeIds>21</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="empty_22_fu_112">
     <nodeIds>23</nodeIds>
   </expressionNodes>
   <expressionNodes realName="exitcond_fu_118">
     <nodeIds>24</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="gmem_addr_fu_128">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="loop_index_cast_fu_107">
     <nodeIds>17</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="gmem_addr_fu_127">
-    <nodeIds>16</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="m3_buffer_addr_gep_fu_78">
     <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_fu_134">
+    <nodeIds>21</nodeIds>
   </expressionNodes>
   <expressionNodes realName="loop_index_fu_54">
     <nodeIds>5</nodeIds>
@@ -264,11 +261,11 @@
       <operations id="23" stage="1" latency="1"/>
       <operations id="24" stage="1" latency="1"/>
       <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
     </states>
     <states id="3">
       <operations id="20" stage="1" latency="2"/>
-      <operations id="28" stage="1" latency="1"/>
-      <operations id="29" stage="1" latency="1"/>
     </states>
     <states id="4">
       <operations id="15" stage="1" latency="1"/>
