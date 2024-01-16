@@ -1,3 +1,0 @@
-Breakpoint File Version 1.0
-145,true,"C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/RVfpga_test/RVfpga_test.srcs/sim_1/new/testbench.sv"
-191,true,"C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/RVfpga_test/RVfpga_test.srcs/sim_1/new/testbench.sv"

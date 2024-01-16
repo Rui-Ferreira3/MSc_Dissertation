@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/interconnect/ip/interconnect_axi_bram_ctrl_0_0/sim/interconnect_axi_bram_ctrl_0_0.vhd" \
-
-nosort
