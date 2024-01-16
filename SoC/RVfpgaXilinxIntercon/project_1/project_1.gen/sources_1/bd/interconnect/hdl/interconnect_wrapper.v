@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Jan 10 15:50:08 2024
+//Date        : Tue Jan 16 10:13:37 2024
 //Host        : DESKTOP-8GAVNOH running 64-bit major release  (build 9200)
 //Command     : generate_target interconnect_wrapper.bd
 //Design      : interconnect_wrapper
@@ -324,7 +324,7 @@ module interconnect_wrapper
   output [63:0]io_araddr;
   output [1:0]io_arburst;
   output [3:0]io_arcache;
-  output [5:0]io_arid;
+  output [6:0]io_arid;
   output [7:0]io_arlen;
   output [0:0]io_arlock;
   output [2:0]io_arprot;
@@ -336,7 +336,7 @@ module interconnect_wrapper
   output [63:0]io_awaddr;
   output [1:0]io_awburst;
   output [3:0]io_awcache;
-  output [5:0]io_awid;
+  output [6:0]io_awid;
   output [7:0]io_awlen;
   output [0:0]io_awlock;
   output [2:0]io_awprot;
@@ -345,12 +345,12 @@ module interconnect_wrapper
   output [3:0]io_awregion;
   output [2:0]io_awsize;
   output [0:0]io_awvalid;
-  input [5:0]io_bid;
+  input [6:0]io_bid;
   output [0:0]io_bready;
   input [1:0]io_bresp;
   input [0:0]io_bvalid;
   input [63:0]io_rdata;
-  input [5:0]io_rid;
+  input [6:0]io_rid;
   input [0:0]io_rlast;
   output [0:0]io_rready;
   input [1:0]io_rresp;
@@ -402,7 +402,7 @@ module interconnect_wrapper
   output [63:0]ram_araddr;
   output [1:0]ram_arburst;
   output [3:0]ram_arcache;
-  output [5:0]ram_arid;
+  output [6:0]ram_arid;
   output [7:0]ram_arlen;
   output [0:0]ram_arlock;
   output [2:0]ram_arprot;
@@ -414,7 +414,7 @@ module interconnect_wrapper
   output [63:0]ram_awaddr;
   output [1:0]ram_awburst;
   output [3:0]ram_awcache;
-  output [5:0]ram_awid;
+  output [6:0]ram_awid;
   output [7:0]ram_awlen;
   output [0:0]ram_awlock;
   output [2:0]ram_awprot;
@@ -423,12 +423,12 @@ module interconnect_wrapper
   output [3:0]ram_awregion;
   output [2:0]ram_awsize;
   output [0:0]ram_awvalid;
-  input [5:0]ram_bid;
+  input [6:0]ram_bid;
   output [0:0]ram_bready;
   input [1:0]ram_bresp;
   input [0:0]ram_bvalid;
   input [63:0]ram_rdata;
-  input [5:0]ram_rid;
+  input [6:0]ram_rid;
   input [0:0]ram_rlast;
   output [0:0]ram_rready;
   input [1:0]ram_rresp;
@@ -559,7 +559,7 @@ module interconnect_wrapper
   wire [63:0]io_araddr;
   wire [1:0]io_arburst;
   wire [3:0]io_arcache;
-  wire [5:0]io_arid;
+  wire [6:0]io_arid;
   wire [7:0]io_arlen;
   wire [0:0]io_arlock;
   wire [2:0]io_arprot;
@@ -571,7 +571,7 @@ module interconnect_wrapper
   wire [63:0]io_awaddr;
   wire [1:0]io_awburst;
   wire [3:0]io_awcache;
-  wire [5:0]io_awid;
+  wire [6:0]io_awid;
   wire [7:0]io_awlen;
   wire [0:0]io_awlock;
   wire [2:0]io_awprot;
@@ -580,12 +580,12 @@ module interconnect_wrapper
   wire [3:0]io_awregion;
   wire [2:0]io_awsize;
   wire [0:0]io_awvalid;
-  wire [5:0]io_bid;
+  wire [6:0]io_bid;
   wire [0:0]io_bready;
   wire [1:0]io_bresp;
   wire [0:0]io_bvalid;
   wire [63:0]io_rdata;
-  wire [5:0]io_rid;
+  wire [6:0]io_rid;
   wire [0:0]io_rlast;
   wire [0:0]io_rready;
   wire [1:0]io_rresp;
@@ -637,7 +637,7 @@ module interconnect_wrapper
   wire [63:0]ram_araddr;
   wire [1:0]ram_arburst;
   wire [3:0]ram_arcache;
-  wire [5:0]ram_arid;
+  wire [6:0]ram_arid;
   wire [7:0]ram_arlen;
   wire [0:0]ram_arlock;
   wire [2:0]ram_arprot;
@@ -649,7 +649,7 @@ module interconnect_wrapper
   wire [63:0]ram_awaddr;
   wire [1:0]ram_awburst;
   wire [3:0]ram_awcache;
-  wire [5:0]ram_awid;
+  wire [6:0]ram_awid;
   wire [7:0]ram_awlen;
   wire [0:0]ram_awlock;
   wire [2:0]ram_awprot;
@@ -658,12 +658,12 @@ module interconnect_wrapper
   wire [3:0]ram_awregion;
   wire [2:0]ram_awsize;
   wire [0:0]ram_awvalid;
-  wire [5:0]ram_bid;
+  wire [6:0]ram_bid;
   wire [0:0]ram_bready;
   wire [1:0]ram_bresp;
   wire [0:0]ram_bvalid;
   wire [63:0]ram_rdata;
-  wire [5:0]ram_rid;
+  wire [6:0]ram_rid;
   wire [0:0]ram_rlast;
   wire [0:0]ram_rready;
   wire [1:0]ram_rresp;

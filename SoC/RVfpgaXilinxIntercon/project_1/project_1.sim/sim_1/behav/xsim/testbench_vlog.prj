@@ -1,0 +1,131 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/project_1/project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../project_1.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../project_1.srcs/sources_1/new" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_BUS1_s_axi.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_fadd_32ns_32ns_32_4_full_dsp_1.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_flow_control_loop_pipe_sequential_init.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_fmul_32ns_32ns_32_2_max_dsp_1.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_gmem_m_axi.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_m1_buffer_RAM_AUTO_1R1W.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_mac_muladd_10s_10s_10ns_10_4_1.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_mac_muladd_10s_10s_10s_10_4_1.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_matprod_Pipeline_1.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_matprod_Pipeline_2.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_matprod_Pipeline_4.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_matprod_Pipeline_VITIS_LOOP_26_1.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod_mul_32s_32s_32_1_1.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/verilog/matprod.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/ip/matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip.v" \
+"../../../../project_1.gen/sources_1/bd/accel/ipshared/5754/hdl/ip/matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip.v" \
+"../../../../project_1.ip_user_files/bd/accel/ip/accel_matprod_0_3/sim/accel_matprod_0_3.v" \
+"../../../../project_1.ip_user_files/bd/accel/sim/accel.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_xbar_0/sim/interconnect_xbar_0.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/sim/interconnect.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_s00_data_fifo_0/sim/interconnect_s00_data_fifo_0.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_s01_data_fifo_0/sim/interconnect_s01_data_fifo_0.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_s02_data_fifo_0/sim/interconnect_s02_data_fifo_0.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_auto_us_df_0/sim/interconnect_auto_us_df_0.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_s04_data_fifo_0/sim/interconnect_s04_data_fifo_0.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_auto_ds_0/sim/interconnect_auto_ds_0.v" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_auto_pc_0/sim/interconnect_auto_pc_0.v" \
+
+sv xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/project_1/project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../project_1.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../project_1.srcs/sources_1/new" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_axi_vip_0_0/sim/interconnect_axi_vip_0_0_pkg.sv" \
+"../../../../project_1.ip_user_files/bd/interconnect/ip/interconnect_axi_vip_0_0/sim/interconnect_axi_vip_0_0.sv" \
+
+verilog xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/project_1/project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../project_1.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../project_1.srcs/sources_1/new" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../project_1.srcs/sources_1/imports/accel_wrapper.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/clk_gen_nexys.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/dpram64.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/spi/fifo4.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v" \
+"../../../../project_1.srcs/sources_1/imports/interconnect_wrapper.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/litedram_core.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/litedram_top.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/raminfr.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_state.v" \
+"../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl/serv_top.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_regs.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_top.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart/uart_wb.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/wb_mem_wrapper.v" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v" \
+
+sv xil_defaultlib "C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/project_1/project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../../rvfpga/rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../project_1.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../project_1.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../project_1.srcs/sources_1/new" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../project_1.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_pkg.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cdc.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_intf.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/binary_to_gray.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/bscan_tap.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_fifo_gray.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/swerv_types.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_decode_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_gpr_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_ib_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_tlu_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_trigger.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/dma/dma_ctrl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_alu_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_div_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/gray_to_binary.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_aln_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_bp_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_compress_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ic_mem.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ifc_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_mem_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_addrcheck.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_buffer.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_intf.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_clkdomain.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_mem.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_ecc.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_lsc_ctl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_stbuf.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_trigger.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/mem.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/mem_lib.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/pic/pic_ctrl.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/rvfpganexys.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper_dmi.sv" \
+"../../../../project_1.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v" \
+"../../../../project_1.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sync.sv" \
+"../../../../project_1.srcs/sim_1/new/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

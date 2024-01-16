@@ -53,7 +53,7 @@
     <spirit:parameter>
       <spirit:name>NUM_SI</spirit:name>
       <spirit:displayName>Number of Slave Interfaces</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_SI" spirit:order="2" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">4</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_SI" spirit:order="2" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">5</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>NUM_MI</spirit:name>
@@ -843,7 +843,7 @@
     <spirit:parameter>
       <spirit:name>S04_HAS_DATA_FIFO</spirit:name>
       <spirit:displayName>Enable Data FIFO on interface S04_AXI</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S04_HAS_DATA_FIFO" spirit:choiceRef="choice_pairs_76d086ea" spirit:order="1635432">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S04_HAS_DATA_FIFO" spirit:choiceRef="choice_pairs_76d086ea" spirit:order="1635432">2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>S05_HAS_DATA_FIFO</spirit:name>
@@ -1637,6 +1637,7 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S01_HAS_DATA_FIFO" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S02_HAS_DATA_FIFO" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S03_HAS_DATA_FIFO" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S04_HAS_DATA_FIFO" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.STRATEGY" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SYNCHRONIZATION_STAGES" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.XBAR_DATA_WIDTH" xilinx:valueSource="user" xilinx:valuePermission="bd_and_user"/>

@@ -16,9 +16,10 @@ PRE_COMPILED_MSG("no platform was defined")
 #define N2 MAT_SIZE
 #define N3 MAT_SIZE
 
-#define MATA_START_ADDRESS 0x04000000
-#define MATB_START_ADDRESS 0x04000100
-#define MATC_START_ADDRESS 0x04000200
+#define MATA_START_ADDRESS 0x01000100
+#define MATB_START_ADDRESS 0x01000200
+#define MATC_START_ADDRESS 0x01000300
+#define MATCS_START_ADDRESS 0x01000400
 
 void print_mat(float *x, int colsize, int rowsize)
 {
@@ -87,20 +88,20 @@ void HW_mat_prod(float *matA, float *matB, float *matCH)
 
 int main()
 {
-    volatile int *do_matp_mem = (int *)(IP_BASEADDR + 0x00);
-    volatile float *a = (float *)(IP_BASEADDR + 0x10);
-	volatile float *b = (float *)(IP_BASEADDR + 0x1c);
-	volatile float *c = (float *)(IP_BASEADDR + 0x28);
-	volatile int *rowsA = (int *)(IP_BASEADDR + 0x34);
-	volatile int *colsA = (int *)(IP_BASEADDR + 0x3c);
-	volatile int *colsB = (int *)(IP_BASEADDR + 0x44);
+    volatile int *do_matp_mem = (int *)0x10000000;
+    volatile int *a = (int *)0x10000010;
+	volatile int *b = (int *)0x1000001c;
+	volatile int *c = (int *)0x10000028;
+	volatile int *rowsA = (int *)0x10000034;
+	volatile int *colsA = (int *)0x1000003c;
+	volatile int *colsB = (int *)0x10000044;
 
     float *matA = (float *)MATA_START_ADDRESS;
     float *matB = (float *)MATB_START_ADDRESS;
     float *matC = (float *)MATC_START_ADDRESS;
+    float *matCS = (float *)MATCS_START_ADDRESS;
 
     uartInit();
-    // printfNexys("Starting...\n");
 
     *do_matp_mem = 0;
 
@@ -115,19 +116,43 @@ int main()
         -91,    14,     -47,    -27,
         -45,    -123,   -36,    -77};
 
-    // printfNexys("\nWriting values in specified adressess...\n");
-    // for(int i=0; i<N1*N2; i++) matA[i] = arrayA[i];
-    // for(int i=0; i<N2*N3; i++) matB[i] = arrayB[i];
+    for(int i=0; i<N1*N2; i++) matA[i] = arrayA[i];
+    printfNexys("Matrix A:\n");
+    print_mat(matA, N1, N2);
+    for(int i=0; i<N2*N3; i++) matB[i] = arrayB[i];
+    printfNexys("Matrix B:\n");
+    print_mat(matB, N2, N3);
 
-    // printfNexys("\nWriting values in accelerator...\n");
+    printfNexys("Matrix C before accel:\n");
+    print_mat(matC, N1, N3);
+
+    *a = MATA_START_ADDRESS;
+    *b = MATB_START_ADDRESS;
+    *c = MATC_START_ADDRESS;
     *rowsA = N1;
     *colsA = N2;
     *colsB = N3;
 
-    // printfNexys("\nStarting accelerator...\n");
     *do_matp_mem = 1;
 
     while ((*do_matp_mem & 2) == 0);
+
+    printfNexys("Matrix C after accel:\n");
+    print_mat(matC, N1, N3);
+
+    int i, j, k;
+    printfNexys("Matrix C software:\n");
+    for (i=0; i<N1; i++) {
+        for (j=0; j<N3; j++) {
+            float val = 0;
+            for (k=0; k<N2; k++) {
+                val += matA[i*N2+k]*matB[k*N3+j];
+            }
+            matCS[i*N3+j] = val;
+            printfNexys("%d", (int)val);
+        }
+        printfNexys("\n");
+    }
 
     printfNexys("Done!\n");
 

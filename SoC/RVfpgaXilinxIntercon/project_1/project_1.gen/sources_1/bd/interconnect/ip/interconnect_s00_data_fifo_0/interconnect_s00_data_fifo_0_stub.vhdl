@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Wed Jan 10 15:39:54 2024
+-- Date        : Tue Jan 16 10:18:04 2024
 -- Host        : DESKTOP-8GAVNOH running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top interconnect_s00_data_fifo_0 -prefix
---               interconnect_s00_data_fifo_0_ interconnect_s00_data_fifo_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/project_1/project_1.gen/sources_1/bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0_stub.vhdl
 -- Design      : interconnect_s00_data_fifo_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

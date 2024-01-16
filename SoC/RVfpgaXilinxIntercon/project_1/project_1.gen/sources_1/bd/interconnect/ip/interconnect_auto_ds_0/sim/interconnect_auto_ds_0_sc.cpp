@@ -62,7 +62,7 @@ interconnect_auto_ds_0_sc::interconnect_auto_ds_0_sc(const sc_core::sc_module_na
   // initialize module
     xsc::common_cpp::properties model_param_props;
     model_param_props.addLong("C_AXI_PROTOCOL", "0");
-    model_param_props.addLong("C_S_AXI_ID_WIDTH", "6");
+    model_param_props.addLong("C_S_AXI_ID_WIDTH", "7");
     model_param_props.addLong("C_SUPPORTS_ID", "1");
     model_param_props.addLong("C_AXI_ADDR_WIDTH", "32");
     model_param_props.addLong("C_S_AXI_DATA_WIDTH", "64");
