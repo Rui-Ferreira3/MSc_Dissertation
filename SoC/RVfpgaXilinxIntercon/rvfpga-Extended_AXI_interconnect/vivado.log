@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Dec  2 15:00:53 2023
+# Process ID: 21452
+# Current directory: C:/Users/Rui/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28560
+# Log file: C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Rui/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On: DESKTOP-8UFOBMP, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 16869 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1864.266 ; gain = 296.316
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -force -file C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvpfgaXilinxInterconExtended.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvpfgaXilinxInterconExtended.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvpfgaXilinxInterconExtended.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.2/data/embeddedsw) loading 1 seconds
+archive_project C:/Users/Rui/Rui/MSc_Dissertation/SoC/XilinxIntercon/InterconnectAXIExtended.xpr.zip -temp_dir C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21452-DESKTOP-8UFOBMP -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21452-DESKTOP-8UFOBMP' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Project 1-1161] Replacing file C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21452-DESKTOP-8UFOBMP/PrjAr/_X_/rvfpga.srcs/utils_1/imports/synth_1/rvfpganexys.dcp with file C:/Users/Rui/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21452-DESKTOP-8UFOBMP/PrjAr/_X_/rvfpga.runs/synth_1/rvfpganexys.dcp
+WARNING: [Coretcl 2-105] Run 'interconnect_xbar_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'interconnect_xbar_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'interconnect_s03_data_fifo_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s03_data_fifo_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'interconnect_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'interconnect_s03_data_fifo_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'interconnect_s03_data_fifo_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'interconnect_s03_data_fifo_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'interconnect_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'interconnect_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'utils_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'

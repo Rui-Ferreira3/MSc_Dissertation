@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="C:/Users/catia/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.xpr">
+<Project Version="7" Minor="61" Path="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4e27b9f18b14488aaedbc67d1fa3afd9"/>
@@ -116,14 +116,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_xbar_0/interconnect_xbar_0.xci">
-          <Proxy FileSetName="interconnect_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_auto_us_df_0/interconnect_auto_us_df_0.xci">
+          <Proxy FileSetName="interconnect_auto_us_df_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_auto_ds_0/interconnect_auto_ds_0.xci">
           <Proxy FileSetName="interconnect_auto_ds_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_auto_us_df_0/interconnect_auto_us_df_0.xci">
-          <Proxy FileSetName="interconnect_auto_us_df_0"/>
+        <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_xbar_0/interconnect_xbar_0.xci">
+          <Proxy FileSetName="interconnect_xbar_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="interconnect.bd" FileRelPathName="ip/interconnect_auto_pc_0/interconnect_auto_pc_0.xci">
           <Proxy FileSetName="interconnect_auto_pc_0"/>
@@ -528,18 +528,18 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh">
+      <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh"/>
           <Attr Name="ImportTime" Val="1643770828"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh">
+      <File Path="$PSRCDIR/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh"/>
           <Attr Name="ImportTime" Val="1643770828"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
