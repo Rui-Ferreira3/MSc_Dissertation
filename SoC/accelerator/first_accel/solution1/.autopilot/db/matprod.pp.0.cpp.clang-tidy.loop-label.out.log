@@ -1,5 +1,30 @@
-C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
- for (i=0, j=0, k=0; i<N1; ) {
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1127:2: warning: Added loop label VITIS_LOOP_23_1:   [xilinx-label-all-loops]
+ for(int i=0; i<N1*N2; i++) m1_buffer[i] = m1[i];
  ^~~
- VITIS_LOOP_26_1: 
-C:\Users\catia\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: note: FIX-IT applied suggested code changes
+ VITIS_LOOP_23_1: 
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1127:2: note: FIX-IT applied suggested code changes
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1128:2: warning: Added loop label VITIS_LOOP_24_2:   [xilinx-label-all-loops]
+ for(int i=0; i<N2*N3; i++) m2_buffer[i] = m2[i];
+ ^~~
+ VITIS_LOOP_24_2: 
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1128:2: note: FIX-IT applied suggested code changes
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: warning: Added loop label VITIS_LOOP_26_3:   [xilinx-label-all-loops]
+ for (int i =0; i <N1; i ++) {
+ ^~~
+ VITIS_LOOP_26_3: 
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1130:2: note: FIX-IT applied suggested code changes
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1131:3: warning: Added loop label VITIS_LOOP_27_4:   [xilinx-label-all-loops]
+  for (int j=0; j<N3; j++) {
+  ^~~
+  VITIS_LOOP_27_4: 
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1131:3: note: FIX-IT applied suggested code changes
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1132:4: warning: Added loop label VITIS_LOOP_28_5:   [xilinx-label-all-loops]
+   for (int k=0; k<N2; k++) {
+   ^~~
+   VITIS_LOOP_28_5: 
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1132:4: note: FIX-IT applied suggested code changes
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1141:2: warning: Added loop label VITIS_LOOP_37_6:   [xilinx-label-all-loops]
+ for(int i=0; i<N1*N3; i++) m3[i] = m3_buffer[i];
+ ^~~
+ VITIS_LOOP_37_6: 
+C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp:1141:2: note: FIX-IT applied suggested code changes

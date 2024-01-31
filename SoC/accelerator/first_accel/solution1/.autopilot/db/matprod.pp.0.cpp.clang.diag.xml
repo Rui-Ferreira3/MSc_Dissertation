@@ -1,15 +1,15 @@
 <dict>
   <key>main-file</key>
-  <string>C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp</string>
+  <string>C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl</string>
+      <string>C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl</string>
       <key>line</key>
-      <integer>16</integer>
+      <integer>17</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -23,7 +23,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl</string>
+      <string>C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl</string>
       <key>line</key>
       <integer>6</integer>
       <key>column</key>
@@ -109,7 +109,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matprod_XLX_SEP_ PragmaOptions=m_axi port = m1 depth=1024/32_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matprod_XLX_SEP_ PragmaOptions=m_axi port = m1 depth=64_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -125,7 +125,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matprod_XLX_SEP_ PragmaOptions=m_axi port = m2 depth=1024/32_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matprod_XLX_SEP_ PragmaOptions=m_axi port = m2 depth=64_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -141,7 +141,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matprod_XLX_SEP_ PragmaOptions=m_axi port = m3 depth=1024/32_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matprod_XLX_SEP_ PragmaOptions=m_axi port = m3 depth=64_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

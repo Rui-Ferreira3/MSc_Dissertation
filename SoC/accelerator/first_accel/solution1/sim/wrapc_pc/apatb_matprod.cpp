@@ -1063,11 +1063,11 @@ void apatb_matprod_hw(void* __xlx_apatb_param_m1, void* __xlx_apatb_param_m2, vo
 #endif
   };
   __xlx_offset_byte_param_m1 = 0*4;
-  __xlx_offset_byte_param_m2 = 32*4;
-  __xlx_offset_byte_param_m3 = 64*4;
+  __xlx_offset_byte_param_m2 = 64*4;
+  __xlx_offset_byte_param_m3 = 128*4;
   port6.param = { __xlx_apatb_param_m1, __xlx_apatb_param_m2, __xlx_apatb_param_m3 };
-  port6.depth = { 32, 32, 32 };
-  port6.offset = { 0, 32, 64 };
+  port6.depth = { 64, 64, 64 };
+  port6.offset = { 0, 64, 128 };
   port6.hasWrite = { true, true, true };
 
   refine_signal_handler();

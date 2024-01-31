@@ -1,8 +1,8 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matprod" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matprod" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="first_accel/matprod.cpp:7:9" msg_body="HLS pragma dump">
@@ -18,13 +18,13 @@
         <args ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=N3 bundle=BUS1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="first_accel/matprod.cpp:12:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m1 depth=1024/32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m1 depth=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="first_accel/matprod.cpp:13:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m2 depth=1024/32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m2 depth=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="first_accel/matprod.cpp:14:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m3 depth=1024/32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="matprod" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m3 depth=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

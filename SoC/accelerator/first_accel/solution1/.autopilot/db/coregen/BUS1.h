@@ -19,28 +19,22 @@
 //        others - reserved
 // 0x10 : Data signal of m1
 //        bit 31~0 - m1[31:0] (Read/Write)
-// 0x14 : Data signal of m1
-//        bit 31~0 - m1[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of m2
+// 0x14 : reserved
+// 0x18 : Data signal of m2
 //        bit 31~0 - m2[31:0] (Read/Write)
-// 0x20 : Data signal of m2
-//        bit 31~0 - m2[63:32] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of m3
+// 0x1c : reserved
+// 0x20 : Data signal of m3
 //        bit 31~0 - m3[31:0] (Read/Write)
-// 0x2c : Data signal of m3
-//        bit 31~0 - m3[63:32] (Read/Write)
-// 0x30 : reserved
-// 0x34 : Data signal of N1
+// 0x24 : reserved
+// 0x28 : Data signal of N1
 //        bit 31~0 - N1[31:0] (Read/Write)
-// 0x38 : reserved
-// 0x3c : Data signal of N2
+// 0x2c : reserved
+// 0x30 : Data signal of N2
 //        bit 31~0 - N2[31:0] (Read/Write)
-// 0x40 : reserved
-// 0x44 : Data signal of N3
+// 0x34 : reserved
+// 0x38 : Data signal of N3
 //        bit 31~0 - N3[31:0] (Read/Write)
-// 0x48 : reserved
+// 0x3c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define BUS1_ADDR_AP_CTRL 0x00
@@ -48,14 +42,14 @@
 #define BUS1_ADDR_IER     0x08
 #define BUS1_ADDR_ISR     0x0c
 #define BUS1_ADDR_M1_DATA 0x10
-#define BUS1_BITS_M1_DATA 64
-#define BUS1_ADDR_M2_DATA 0x1c
-#define BUS1_BITS_M2_DATA 64
-#define BUS1_ADDR_M3_DATA 0x28
-#define BUS1_BITS_M3_DATA 64
-#define BUS1_ADDR_N1_DATA 0x34
+#define BUS1_BITS_M1_DATA 32
+#define BUS1_ADDR_M2_DATA 0x18
+#define BUS1_BITS_M2_DATA 32
+#define BUS1_ADDR_M3_DATA 0x20
+#define BUS1_BITS_M3_DATA 32
+#define BUS1_ADDR_N1_DATA 0x28
 #define BUS1_BITS_N1_DATA 32
-#define BUS1_ADDR_N2_DATA 0x3c
+#define BUS1_ADDR_N2_DATA 0x30
 #define BUS1_BITS_N2_DATA 32
-#define BUS1_ADDR_N3_DATA 0x44
+#define BUS1_ADDR_N3_DATA 0x38
 #define BUS1_BITS_N3_DATA 32

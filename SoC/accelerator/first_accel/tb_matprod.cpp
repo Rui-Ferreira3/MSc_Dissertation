@@ -50,7 +50,6 @@ void SW_dot_product()
 				if (k==0) matC[i*N3+j] = mul;
 				else matC[i*N3+j] += mul;
 			}
-			matChw[i*N3+j] = 0;
 		}
 	}
 	printf("   sw dot product: %d\n", matC[7]);

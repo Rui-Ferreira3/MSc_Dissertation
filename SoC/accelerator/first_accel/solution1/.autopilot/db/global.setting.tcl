@@ -2,7 +2,7 @@
 set TopModule "matprod"
 set ClockPeriod 20
 set ClockList ap_clk
-set HasVivadoClockPeriod 0
+set HasVivadoClockPeriod 1
 set CombLogicFlag 0
 set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
@@ -44,7 +44,7 @@ set SCTraceOption all
 set TargetInfo xc7a100t:-csg324:-1
 set SourceFiles {sc {} c ../matprod.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/solution1.directive
+set DirectiveFile C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/solution1.directive
 set TBFiles {verilog ../tb_matprod.cpp bc ../tb_matprod.cpp vhdl ../tb_matprod.cpp sc ../tb_matprod.cpp cas ../tb_matprod.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

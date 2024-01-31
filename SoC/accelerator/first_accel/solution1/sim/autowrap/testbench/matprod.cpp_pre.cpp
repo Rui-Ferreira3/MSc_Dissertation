@@ -1,13 +1,13 @@
-# 1 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
+# 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
-# 1 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h" 1
+# 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
+# 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h" 1
 
 
 
 void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3);
-# 2 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
+# 2 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
 
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
 # 10 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
@@ -940,7 +940,7 @@ extern "C" {
 
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h" 1 3
 # 1038 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
-# 4 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
+# 4 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 1 3
 # 22 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 3
 extern "C" {
@@ -1156,19 +1156,19 @@ extern "C" {
 
 }
 # 192 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 2 3
-# 5 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
+# 5 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
 
 
-# 6 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
+# 6 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
 void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3) {
 #pragma HLS INTERFACE s_axilite port=return bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N1 bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N2 bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N3 bundle=BUS1
 
-#pragma HLS INTERFACE m_axi port = m1 depth=MAX_MAT_SIZE
-#pragma HLS INTERFACE m_axi port = m2 depth=MAX_MAT_SIZE
-#pragma HLS INTERFACE m_axi port = m3 depth=MAX_MAT_SIZE
+#pragma HLS INTERFACE m_axi port = m1 depth=MAX_DEPTH_SIZE
+#pragma HLS INTERFACE m_axi port = m2 depth=MAX_DEPTH_SIZE
+#pragma HLS INTERFACE m_axi port = m3 depth=MAX_DEPTH_SIZE
 
  static float regc=0;
  int i, j, k;
@@ -1177,22 +1177,19 @@ void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3) {
  float m2_buffer[1024];
  float m3_buffer[1024];
 
- memcpy(m1_buffer, (const float*)m1, N1*N2 * sizeof(float));
- memcpy(m2_buffer, (const float*)m2, N2*N3 * sizeof(float));
+ for(int i=0; i<N1*N2; i++) m1_buffer[i] = m1[i];
+ for(int i=0; i<N2*N3; i++) m2_buffer[i] = m2[i];
 
- for (i=0, j=0, k=0; i<N1; ) {
-  float mul = m1_buffer[i*N2+k] * m2_buffer[k*N3+j];
-  if (k == 0) regc = mul;
-  else regc += mul;
-  k++;
-  if (k == N2) {
-   k = 0;
-   m3_buffer[i*N3+j] = regc;
-   j++;
-   if (j == N3) { j = 0; i++; }
+ for (int i =0; i <N1; i ++) {
+  for (int j=0; j<N3; j++) {
+   for (int k=0; k<N2; k++) {
+    float mul = m1_buffer[i*N2+k] * m2_buffer[k*N3+j];
+    if (k==0) regc = mul;
+    else regc += mul;
+   }
+   m3_buffer[i *N3+j] = regc;
   }
  }
 
-
- memcpy((float*)m3, m3_buffer, N1*N3 * sizeof(float));
+ for(int i=0; i<N1*N3; i++) m3[i] = m3_buffer[i];
 }

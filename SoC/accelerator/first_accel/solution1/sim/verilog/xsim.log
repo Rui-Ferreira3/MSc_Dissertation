@@ -2,22 +2,22 @@
 # xsim v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Jan 10 14:57:30 2024
-# Process ID: 20368
-# Current directory: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog
+# Start of session at: Wed Jan 31 01:07:22 2024
+# Process ID: 8936
+# Current directory: C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/matprod/xsim_script.tcl}
-# Log file: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/xsim.log
-# Journal file: C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog\xsim.jou
-# Running On: DESKTOP-8GAVNOH, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16705 MB
+# Log file: C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog\xsim.jou
+# Running On: DESKTOP-3C6QEMK, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 16869 MB
 #-----------------------------------------------------------
 source xsim.dir/matprod/xsim_script.tcl
 # xsim {matprod} -view {{matprod_dataflow_ana.wcfg}} -tclbatch {matprod.tcl} -protoinst {matprod.protoinst}
 INFO: [Wavedata 42-565] Reading protoinst file matprod.protoinst
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod//AESL_inst_matprod_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_1_fu_153/grp_matprod_Pipeline_1_fu_153_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_2_fu_162/grp_matprod_Pipeline_2_fu_162_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_4_fu_185/grp_matprod_Pipeline_4_fu_185_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171/grp_matprod_Pipeline_VITIS_LOOP_26_1_fu_171_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_VITIS_LOOP_23_1_fu_189/grp_matprod_Pipeline_VITIS_LOOP_23_1_fu_189_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_VITIS_LOOP_24_2_fu_198/grp_matprod_Pipeline_VITIS_LOOP_24_2_fu_198_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_VITIS_LOOP_28_5_fu_207/grp_matprod_Pipeline_VITIS_LOOP_28_5_fu_207_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matprod_top/AESL_inst_matprod/grp_matprod_Pipeline_VITIS_LOOP_37_6_fu_219/grp_matprod_Pipeline_VITIS_LOOP_37_6_fu_219_activity
 Time resolution is 1 ps
 open_wave_config matprod_dataflow_ana.wcfg
 source matprod.tcl
@@ -194,8 +194,8 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [n/a] @ "150000"
-// RTL Simulation : 1 / 1 [n/a] @ "7950000"
+// RTL Simulation : 1 / 1 [n/a] @ "10350000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 8070 ns : File "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod.autotb.v" Line 448
+$finish called at time : 10470 ns : File "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod.autotb.v" Line 448
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jan 10 14:57:33 2024...
+INFO: [Common 17-206] Exiting xsim at Wed Jan 31 01:07:26 2024...

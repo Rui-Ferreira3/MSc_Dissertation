@@ -5,7 +5,7 @@
 // ==============================================================
 #ifndef __matprod_mac_muladd_10s_10s_10ns_10_4_1__HH__
 #define __matprod_mac_muladd_10s_10s_10ns_10_4_1__HH__
-#include "matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1.h"
+#include "matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0.h"
 
 template<
     int ID,
@@ -25,16 +25,16 @@ SC_MODULE(matprod_mac_muladd_10s_10s_10ns_10_4_1) {
 
 
 
-    matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1 matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U;
+    matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0 matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U;
 
-    SC_CTOR(matprod_mac_muladd_10s_10s_10ns_10_4_1):  matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U ("matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U") {
-        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U.clk(clk);
-        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U.rst(reset);
-        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U.ce(ce);
-        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U.in0(din0);
-        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U.in1(din1);
-        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U.in2(din2);
-        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U.dout(dout);
+    SC_CTOR(matprod_mac_muladd_10s_10s_10ns_10_4_1):  matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U ("matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U") {
+        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U.clk(clk);
+        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U.rst(reset);
+        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U.ce(ce);
+        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U.in0(din0);
+        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U.in1(din1);
+        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U.in2(din2);
+        matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U.dout(dout);
 
     }
 

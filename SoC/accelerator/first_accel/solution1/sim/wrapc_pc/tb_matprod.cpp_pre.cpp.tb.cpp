@@ -3,10 +3,10 @@
 // Tool Version Limit: 2019.12
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
 # 10 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 1 3
@@ -938,7 +938,7 @@ extern "C" {
 
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h" 1 3
 # 1038 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
-# 2 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
+# 2 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/stdlib.h" 1 3
 # 37 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/stdlib.h" 3
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cstdlib" 1 3
@@ -1793,16 +1793,16 @@ using std::system;
 
 using std::wcstombs;
 using std::wctomb;
-# 3 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
+# 3 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
 
-# 1 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h" 1
-
-
+# 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h" 1
 
 
-# 4 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h"
+
+
+# 4 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h"
 void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3);
-# 5 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
+# 5 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
 
 
 
@@ -1820,7 +1820,7 @@ extern "C"
 #endif
 void apatb_matprod_sw(float *, float *, float *, int, int, int);
 #endif
-# 15 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 15 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 void matprod(float *m1, float *m2, float *m3, int rowsA, int rowsB, int rowsC);
 
 void init_vecs()
@@ -1859,7 +1859,6 @@ void SW_dot_product()
     if (k==0) matC[i*4 +j] = mul;
     else matC[i*4 +j] += mul;
    }
-   matChw[i*4 +j] = 0;
   }
  }
  printf("   sw dot product: %d\n", matC[7]);
@@ -1873,10 +1872,10 @@ void simul_HW_SW_dot_product()
 #ifndef HLS_FASTSIM
 #define matprod apatb_matprod_sw
 #endif
-# 63 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 62 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 matprod(matA, matB, matChw, 4, 4, 4);
 #undef matprod
-# 63 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 62 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 
  printf("sw/hw dot product: %f\n", matChw[7]);
 }
@@ -1892,7 +1891,7 @@ int check_matC()
 }
 
 #ifndef HLS_FASTSIM
-# 76 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 75 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 int main()
 {
  init_vecs();
@@ -1909,5 +1908,5 @@ int main()
  return (check_matC());
 }
 #endif
-# 90 "C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
+# 89 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 

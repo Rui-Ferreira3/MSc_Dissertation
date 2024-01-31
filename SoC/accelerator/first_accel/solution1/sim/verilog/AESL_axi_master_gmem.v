@@ -61,7 +61,7 @@ module AESL_axi_master_gmem (
 //------------------------Parameter----------------------
 `define TV_IN_gmem "../tv/cdatafile/c.matprod.autotvin_gmem.dat"
 `define TV_OUT_gmem "../tv/rtldatafile/rtl.matprod.autotvout_gmem.dat"
- parameter gmem_ADDR_BITWIDTH = 32'd 64;
+ parameter gmem_ADDR_BITWIDTH = 32'd 32;
  parameter gmem_AWUSER_BITWIDTH = 32'd 1;
  parameter gmem_DATA_BITWIDTH = 32'd 32;
  parameter gmem_WUSER_BITWIDTH = 32'd 1;
@@ -72,7 +72,7 @@ module AESL_axi_master_gmem (
  parameter   mem_page_num            =   32'd 4;
  parameter   FIFO_DEPTH_ADDR_WIDTH   =    32'd 32;
 parameter gmem_C_DATA_BITWIDTH = 32'd 32;
-parameter gmem_mem_depth = 32'd 96;
+parameter gmem_mem_depth = 32'd 192;
 parameter ReadReqLatency = 32'd 1;
 parameter WriteReqLatency = 32'd 1;
 // Input and Output
@@ -501,7 +501,7 @@ initial begin : AW_request_proc
             end
             
             if (FIFO_AW_req_ADDR_tmp/data_byte_size > gmem_mem_depth) begin
-                $display ("C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/AESL_axi_master_gmem.v: Write request address %d exceed AXI master gmem array depth: %d",FIFO_AW_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
+                $display ("C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/AESL_axi_master_gmem.v: Write request address %d exceed AXI master gmem array depth: %d",FIFO_AW_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
                 $finish;
             end
             
@@ -688,7 +688,7 @@ initial begin : AR_request_proc
             end
 
             if (FIFO_AR_req_ADDR_tmp/data_byte_size > gmem_mem_depth) begin
-                $display ("C:/Users/catia/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/AESL_axi_master_gmem.v: Read request address %d exceed AXI master gmem array depth: %d",FIFO_AR_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
+                $display ("C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/AESL_axi_master_gmem.v: Read request address %d exceed AXI master gmem array depth: %d",FIFO_AR_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
                 $finish;
             end
 

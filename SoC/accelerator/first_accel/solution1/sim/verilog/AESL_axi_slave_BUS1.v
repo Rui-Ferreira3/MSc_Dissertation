@@ -45,17 +45,17 @@ module AESL_axi_slave_BUS1 (
 `define TV_IN_N1 "../tv/cdatafile/c.matprod.autotvin_N1.dat"
 `define TV_IN_N2 "../tv/cdatafile/c.matprod.autotvin_N2.dat"
 `define TV_IN_N3 "../tv/cdatafile/c.matprod.autotvin_N3.dat"
-parameter ADDR_WIDTH = 7;
+parameter ADDR_WIDTH = 6;
 parameter DATA_WIDTH = 32;
 parameter m1_DEPTH = 1;
 reg [31 : 0] m1_OPERATE_DEPTH = 0;
-parameter m1_c_bitwidth = 64;
+parameter m1_c_bitwidth = 32;
 parameter m2_DEPTH = 1;
 reg [31 : 0] m2_OPERATE_DEPTH = 0;
-parameter m2_c_bitwidth = 64;
+parameter m2_c_bitwidth = 32;
 parameter m3_DEPTH = 1;
 reg [31 : 0] m3_OPERATE_DEPTH = 0;
-parameter m3_c_bitwidth = 64;
+parameter m3_c_bitwidth = 32;
 parameter N1_DEPTH = 1;
 reg [31 : 0] N1_OPERATE_DEPTH = 0;
 parameter N1_c_bitwidth = 32;
@@ -69,11 +69,11 @@ parameter START_ADDR = 0;
 parameter matprod_continue_addr = 0;
 parameter matprod_auto_start_addr = 0;
 parameter m1_data_in_addr = 16;
-parameter m2_data_in_addr = 28;
-parameter m3_data_in_addr = 40;
-parameter N1_data_in_addr = 52;
-parameter N2_data_in_addr = 60;
-parameter N3_data_in_addr = 68;
+parameter m2_data_in_addr = 24;
+parameter m3_data_in_addr = 32;
+parameter N1_data_in_addr = 40;
+parameter N2_data_in_addr = 48;
+parameter N3_data_in_addr = 56;
 parameter STATUS_ADDR = 0;
 
 output [ADDR_WIDTH - 1 : 0] TRAN_s_axi_BUS1_AWADDR;
@@ -116,13 +116,13 @@ reg  ARVALID_reg = 0;
 reg  RREADY_reg = 0;
 reg [DATA_WIDTH - 1 : 0] RDATA_reg = 0;
 reg  BREADY_reg = 0;
-reg [m1_c_bitwidth - 1 : 0] mem_m1 [m1_DEPTH - 1 : 0] = '{default : 'h0};
+reg [DATA_WIDTH - 1 : 0] mem_m1 [m1_DEPTH - 1 : 0] = '{default : 'h0};
 reg [DATA_WIDTH-1 : 0] image_mem_m1 [ (m1_c_bitwidth+DATA_WIDTH-1)/DATA_WIDTH * m1_DEPTH -1 : 0] = '{default : 'hz};
 reg m1_write_data_finish;
-reg [m2_c_bitwidth - 1 : 0] mem_m2 [m2_DEPTH - 1 : 0] = '{default : 'h0};
+reg [DATA_WIDTH - 1 : 0] mem_m2 [m2_DEPTH - 1 : 0] = '{default : 'h0};
 reg [DATA_WIDTH-1 : 0] image_mem_m2 [ (m2_c_bitwidth+DATA_WIDTH-1)/DATA_WIDTH * m2_DEPTH -1 : 0] = '{default : 'hz};
 reg m2_write_data_finish;
-reg [m3_c_bitwidth - 1 : 0] mem_m3 [m3_DEPTH - 1 : 0] = '{default : 'h0};
+reg [DATA_WIDTH - 1 : 0] mem_m3 [m3_DEPTH - 1 : 0] = '{default : 'h0};
 reg [DATA_WIDTH-1 : 0] image_mem_m3 [ (m3_c_bitwidth+DATA_WIDTH-1)/DATA_WIDTH * m3_DEPTH -1 : 0] = '{default : 'hz};
 reg m3_write_data_finish;
 reg [DATA_WIDTH - 1 : 0] mem_N1 [N1_DEPTH - 1 : 0] = '{default : 'h0};
@@ -900,7 +900,7 @@ end
 //------------------------Task and function-------------- 
 task read_token; 
     input integer fp; 
-    output reg [151 : 0] token;
+    output reg [127 : 0] token;
     integer ret;
     begin
         token = "";
@@ -916,8 +916,8 @@ initial begin : read_m1_file_process
   integer fp; 
   integer ret; 
   integer factor; 
-  reg [151 : 0] token; 
-  reg [151 : 0] token_tmp; 
+  reg [127 : 0] token; 
+  reg [127 : 0] token_tmp; 
   //reg [m1_c_bitwidth - 1 : 0] token_tmp; 
   reg [DATA_WIDTH - 1 : 0] tmp_cache_mem; 
   reg [ 8*5 : 1] str;
@@ -1049,8 +1049,8 @@ initial begin : read_m2_file_process
   integer fp; 
   integer ret; 
   integer factor; 
-  reg [151 : 0] token; 
-  reg [151 : 0] token_tmp; 
+  reg [127 : 0] token; 
+  reg [127 : 0] token_tmp; 
   //reg [m2_c_bitwidth - 1 : 0] token_tmp; 
   reg [DATA_WIDTH - 1 : 0] tmp_cache_mem; 
   reg [ 8*5 : 1] str;
@@ -1182,8 +1182,8 @@ initial begin : read_m3_file_process
   integer fp; 
   integer ret; 
   integer factor; 
-  reg [151 : 0] token; 
-  reg [151 : 0] token_tmp; 
+  reg [127 : 0] token; 
+  reg [127 : 0] token_tmp; 
   //reg [m3_c_bitwidth - 1 : 0] token_tmp; 
   reg [DATA_WIDTH - 1 : 0] tmp_cache_mem; 
   reg [ 8*5 : 1] str;

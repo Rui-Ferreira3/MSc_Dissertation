@@ -74,60 +74,54 @@ void XMatprod_DisableAutoRestart(XMatprod *InstancePtr) {
     XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_AP_CTRL, 0);
 }
 
-void XMatprod_Set_m1(XMatprod *InstancePtr, u64 Data) {
+void XMatprod_Set_m1(XMatprod *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M1_DATA, (u32)(Data));
-    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M1_DATA + 4, (u32)(Data >> 32));
+    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M1_DATA, Data);
 }
 
-u64 XMatprod_Get_m1(XMatprod *InstancePtr) {
-    u64 Data;
+u32 XMatprod_Get_m1(XMatprod *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XMatprod_ReadReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M1_DATA);
-    Data += (u64)XMatprod_ReadReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M1_DATA + 4) << 32;
     return Data;
 }
 
-void XMatprod_Set_m2(XMatprod *InstancePtr, u64 Data) {
+void XMatprod_Set_m2(XMatprod *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M2_DATA, (u32)(Data));
-    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M2_DATA + 4, (u32)(Data >> 32));
+    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M2_DATA, Data);
 }
 
-u64 XMatprod_Get_m2(XMatprod *InstancePtr) {
-    u64 Data;
+u32 XMatprod_Get_m2(XMatprod *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XMatprod_ReadReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M2_DATA);
-    Data += (u64)XMatprod_ReadReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M2_DATA + 4) << 32;
     return Data;
 }
 
-void XMatprod_Set_m3(XMatprod *InstancePtr, u64 Data) {
+void XMatprod_Set_m3(XMatprod *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M3_DATA, (u32)(Data));
-    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M3_DATA + 4, (u32)(Data >> 32));
+    XMatprod_WriteReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M3_DATA, Data);
 }
 
-u64 XMatprod_Get_m3(XMatprod *InstancePtr) {
-    u64 Data;
+u32 XMatprod_Get_m3(XMatprod *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XMatprod_ReadReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M3_DATA);
-    Data += (u64)XMatprod_ReadReg(InstancePtr->Bus1_BaseAddress, XMATPROD_BUS1_ADDR_M3_DATA + 4) << 32;
     return Data;
 }
 

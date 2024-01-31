@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'matprod'
 ================================================================
 + General Information: 
-    * Date:           Wed Jan 10 14:55:07 2024
+    * Date:           Wed Jan 31 01:06:21 2024
     * Version:        2022.2 (Build 3670227 on Oct 13 2022)
     * Project:        first_accel
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -15,20 +15,21 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +-------------------------------------+------+-------+---------------------+-----------+----------+---------------------+---------------------+----------+--------+---------+-----------+-----------+-----+
-    |               Modules               | Issue|       |       Latency       |  Latency  | Iteration|                     |         Trip        |          |        |         |           |           |     |
-    |               & Loops               | Type | Slack |       (cycles)      |    (ns)   |  Latency |       Interval      |        Count        | Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
-    +-------------------------------------+------+-------+---------------------+-----------+----------+---------------------+---------------------+----------+--------+---------+-----------+-----------+-----+
-    |+ matprod                            |     -|   0.00|                    -|          -|         -|                    -|                    -|        no|  6 (2%)|  17 (7%)|  3126 (2%)|  3716 (5%)|    -|
-    | + matprod_Pipeline_1                |     -|   0.00|  4611686018427387904|  9.223e+19|         -|  4611686018427387904|                    -|        no|       -|        -|  223 (~0%)|  146 (~0%)|    -|
-    |  o Loop 1                           |     -|  14.60|  4611686018427387904|  9.223e+19|         2|                    1|  4611686018427387903|       yes|       -|        -|          -|          -|    -|
-    | + matprod_Pipeline_2                |     -|   0.00|  4611686018427387904|  9.223e+19|         -|  4611686018427387904|                    -|        no|       -|        -|  223 (~0%)|  146 (~0%)|    -|
-    |  o Loop 1                           |     -|  14.60|  4611686018427387904|  9.223e+19|         2|                    1|  4611686018427387903|       yes|       -|        -|          -|          -|    -|
-    | + matprod_Pipeline_VITIS_LOOP_26_1  |     -|   0.18|                    -|          -|         -|                    -|                    -|        no|       -|   8 (3%)|  878 (~0%)|   853 (1%)|    -|
-    |  o VITIS_LOOP_26_1                  |    II|  14.60|                    -|          -|        12|                    3|                    -|       yes|       -|        -|          -|          -|    -|
-    | + matprod_Pipeline_4                |     -|   0.00|  4611686018427387904|  9.223e+19|         -|  4611686018427387904|                    -|        no|       -|        -|  163 (~0%)|  146 (~0%)|    -|
-    |  o Loop 1                           |     -|  14.60|  4611686018427387904|  9.223e+19|         3|                    1|  4611686018427387903|       yes|       -|        -|          -|          -|    -|
-    +-------------------------------------+------+-------+---------------------+-----------+----------+---------------------+---------------------+----------+--------+---------+-----------+-----------+-----+
+    +--------------------------------------+------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |                Modules               | Issue|       | Latency | Latency| Iteration|         | Trip |          |        |         |           |           |     |
+    |                & Loops               | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
+    +--------------------------------------+------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |+ matprod                             |     -|   0.00|        -|       -|         -|        -|     -|        no|  6 (2%)|  18 (7%)|  2531 (1%)|  3630 (5%)|    -|
+    | + matprod_Pipeline_VITIS_LOOP_23_1   |     -|   0.00|        -|       -|         -|        -|     -|        no|       -|        -|   89 (~0%)|  107 (~0%)|    -|
+    |  o VITIS_LOOP_23_1                   |     -|  14.60|        -|       -|         3|        1|     -|       yes|       -|        -|          -|          -|    -|
+    | + matprod_Pipeline_VITIS_LOOP_24_2   |     -|   0.00|        -|       -|         -|        -|     -|        no|       -|        -|   89 (~0%)|  107 (~0%)|    -|
+    |  o VITIS_LOOP_24_2                   |     -|  14.60|        -|       -|         3|        1|     -|       yes|       -|        -|          -|          -|    -|
+    | + matprod_Pipeline_VITIS_LOOP_37_6   |     -|   0.00|        -|       -|         -|        -|     -|        no|       -|        -|   69 (~0%)|  105 (~0%)|    -|
+    |  o VITIS_LOOP_37_6                   |     -|  14.60|        -|       -|         3|        1|     -|       yes|       -|        -|          -|          -|    -|
+    | o VITIS_LOOP_26_3_VITIS_LOOP_27_4    |     -|  14.60|        -|       -|         -|        -|     -|        no|       -|        -|          -|          -|    -|
+    |  + matprod_Pipeline_VITIS_LOOP_28_5  |     -|   2.02|        -|       -|         -|        -|     -|        no|       -|   5 (2%)|  598 (~0%)|  624 (~0%)|    -|
+    |   o VITIS_LOOP_28_5                  |    II|  14.60|        -|       -|         8|        3|     -|       yes|       -|        -|          -|          -|    -|
+    +--------------------------------------+------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
 
 
 ================================================================
@@ -39,14 +40,14 @@
 | Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
 |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
 +------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
-| m_axi_gmem | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
+| m_axi_gmem | 32 -> 32   | 32            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
 +------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
 
 * S_AXILITE Interfaces
 +------------+------------+---------------+--------+----------+
 | Interface  | Data Width | Address Width | Offset | Register |
 +------------+------------+---------------+--------+----------+
-| s_axi_BUS1 | 32         | 7             | 16     | 0        |
+| s_axi_BUS1 | 32         | 6             | 16     | 0        |
 +------------+------------+---------------+--------+----------+
 
 * S_AXILITE Registers
@@ -57,15 +58,12 @@
 | s_axi_BUS1 | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
 | s_axi_BUS1 | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
 | s_axi_BUS1 | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
-| s_axi_BUS1 | m1_1     | 0x10   | 32    | W      | Data signal of m1                |                                                                      |
-| s_axi_BUS1 | m1_2     | 0x14   | 32    | W      | Data signal of m1                |                                                                      |
-| s_axi_BUS1 | m2_1     | 0x1c   | 32    | W      | Data signal of m2                |                                                                      |
-| s_axi_BUS1 | m2_2     | 0x20   | 32    | W      | Data signal of m2                |                                                                      |
-| s_axi_BUS1 | m3_1     | 0x28   | 32    | W      | Data signal of m3                |                                                                      |
-| s_axi_BUS1 | m3_2     | 0x2c   | 32    | W      | Data signal of m3                |                                                                      |
-| s_axi_BUS1 | N1       | 0x34   | 32    | W      | Data signal of N1                |                                                                      |
-| s_axi_BUS1 | N2       | 0x3c   | 32    | W      | Data signal of N2                |                                                                      |
-| s_axi_BUS1 | N3       | 0x44   | 32    | W      | Data signal of N3                |                                                                      |
+| s_axi_BUS1 | m1       | 0x10   | 32    | W      | Data signal of m1                |                                                                      |
+| s_axi_BUS1 | m2       | 0x18   | 32    | W      | Data signal of m2                |                                                                      |
+| s_axi_BUS1 | m3       | 0x20   | 32    | W      | Data signal of m3                |                                                                      |
+| s_axi_BUS1 | N1       | 0x28   | 32    | W      | Data signal of N1                |                                                                      |
+| s_axi_BUS1 | N2       | 0x30   | 32    | W      | Data signal of N2                |                                                                      |
+| s_axi_BUS1 | N3       | 0x38   | 32    | W      | Data signal of N3                |                                                                      |
 +------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
 
 * TOP LEVEL CONTROL
@@ -95,22 +93,19 @@
 +----------+-----------+----------+
 
 * SW-to-HW Mapping
-+----------+--------------+-----------+----------+--------------------------------+
-| Argument | HW Interface | HW Type   | HW Usage | HW Info                        |
-+----------+--------------+-----------+----------+--------------------------------+
-| m1       | m_axi_gmem   | interface |          |                                |
-| m1       | s_axi_BUS1   | register  | offset   | name=m1_1 offset=0x10 range=32 |
-| m1       | s_axi_BUS1   | register  | offset   | name=m1_2 offset=0x14 range=32 |
-| m2       | m_axi_gmem   | interface |          |                                |
-| m2       | s_axi_BUS1   | register  | offset   | name=m2_1 offset=0x1c range=32 |
-| m2       | s_axi_BUS1   | register  | offset   | name=m2_2 offset=0x20 range=32 |
-| m3       | m_axi_gmem   | interface |          |                                |
-| m3       | s_axi_BUS1   | register  | offset   | name=m3_1 offset=0x28 range=32 |
-| m3       | s_axi_BUS1   | register  | offset   | name=m3_2 offset=0x2c range=32 |
-| N1       | s_axi_BUS1   | register  |          | name=N1 offset=0x34 range=32   |
-| N2       | s_axi_BUS1   | register  |          | name=N2 offset=0x3c range=32   |
-| N3       | s_axi_BUS1   | register  |          | name=N3 offset=0x44 range=32   |
-+----------+--------------+-----------+----------+--------------------------------+
++----------+--------------+-----------+----------+------------------------------+
+| Argument | HW Interface | HW Type   | HW Usage | HW Info                      |
++----------+--------------+-----------+----------+------------------------------+
+| m1       | m_axi_gmem   | interface |          |                              |
+| m1       | s_axi_BUS1   | register  | offset   | name=m1 offset=0x10 range=32 |
+| m2       | m_axi_gmem   | interface |          |                              |
+| m2       | s_axi_BUS1   | register  | offset   | name=m2 offset=0x18 range=32 |
+| m3       | m_axi_gmem   | interface |          |                              |
+| m3       | s_axi_BUS1   | register  | offset   | name=m3 offset=0x20 range=32 |
+| N1       | s_axi_BUS1   | register  |          | name=N1 offset=0x28 range=32 |
+| N2       | s_axi_BUS1   | register  |          | name=N2 offset=0x30 range=32 |
+| N3       | s_axi_BUS1   | register  |          | name=N3 offset=0x38 range=32 |
++----------+--------------+-----------+----------+------------------------------+
 
 
 ================================================================
@@ -118,37 +113,57 @@
 ================================================================
  Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
 
-  No burst in design
+* Inferred Burst Summary
++--------------+-----------------+-----------+----------+-------+-------------------------------+
+| HW Interface | Loop            | Direction | Length   | Width | Location                      |
++--------------+-----------------+-----------+----------+-------+-------------------------------+
+| m_axi_gmem   | VITIS_LOOP_23_1 | read      | variable | 32    | first_accel/matprod.cpp:23:19 |
+| m_axi_gmem   | VITIS_LOOP_24_2 | read      | variable | 32    | first_accel/matprod.cpp:24:19 |
+| m_axi_gmem   | VITIS_LOOP_37_6 | write     | variable | 32    | first_accel/matprod.cpp:37:19 |
++--------------+-----------------+-----------+----------+-------+-------------------------------+
+
+* Inferred Bursts and Widening Missed
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------+
+| HW Interface | Variable | Loop            | Problem                                                                                                 | Resolution | Location                      |
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------+
+| m_axi_gmem   | m3       | VITIS_LOOP_37_6 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | first_accel/matprod.cpp:37:19 |
+| m_axi_gmem   | m2       | VITIS_LOOP_24_2 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | first_accel/matprod.cpp:24:19 |
+| m_axi_gmem   | m1       | VITIS_LOOP_23_1 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | first_accel/matprod.cpp:23:19 |
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+---------------------------------------+-----+--------+------------+------+---------+---------+
-| Name                                  | DSP | Pragma | Variable   | Op   | Impl    | Latency |
-+---------------------------------------+-----+--------+------------+------+---------+---------+
-| + matprod                             | 17  |        |            |      |         |         |
-|   mul_32s_32s_32_1_1_U30              | 3   |        | mul_ln23   | mul  | auto    | 0       |
-|   mul_32s_32s_32_1_1_U31              | 3   |        | mul_ln24   | mul  | auto    | 0       |
-|   mul_32s_32s_32_1_1_U32              | 3   |        | mul_ln40   | mul  | auto    | 0       |
-|  + matprod_Pipeline_1                 | 0   |        |            |      |         |         |
-|    empty_26_fu_108_p2                 | -   |        | empty_26   | add  | fabric  | 0       |
-|  + matprod_Pipeline_2                 | 0   |        |            |      |         |         |
-|    empty_24_fu_108_p2                 | -   |        | empty_24   | add  | fabric  | 0       |
-|  + matprod_Pipeline_VITIS_LOOP_26_1   | 8   |        |            |      |         |         |
-|    mac_muladd_10s_10s_10s_10_4_1_U11  | 1   |        | mul_ln27   | mul  | dsp48   | 3       |
-|    mac_muladd_10s_10s_10s_10_4_1_U11  | 1   |        | add_ln27   | add  | dsp48   | 3       |
-|    mac_muladd_10s_10s_10ns_10_4_1_U12 | 1   |        | mul_ln27_1 | mul  | dsp48   | 3       |
-|    mac_muladd_10s_10s_10ns_10_4_1_U12 | 1   |        | add_ln27_1 | add  | dsp48   | 3       |
-|    fmul_32ns_32ns_32_2_max_dsp_1_U10  | 3   |        | mul        | fmul | maxdsp  | 1       |
-|    fadd_32ns_32ns_32_4_full_dsp_1_U9  | 2   |        | add        | fadd | fulldsp | 3       |
-|    k_1_fu_174_p2                      | -   |        | k_1        | add  | fabric  | 0       |
-|    mac_muladd_10s_10s_10ns_10_4_1_U13 | 1   |        | mul_ln33   | mul  | dsp48   | 3       |
-|    mac_muladd_10s_10s_10ns_10_4_1_U13 | 1   |        | add_ln33   | add  | dsp48   | 3       |
-|    j_1_fu_190_p2                      | -   |        | j_1        | add  | fabric  | 0       |
-|    add_ln35_fu_201_p2                 | -   |        | add_ln35   | add  | fabric  | 0       |
-|  + matprod_Pipeline_4                 | 0   |        |            |      |         |         |
-|    empty_22_fu_112_p2                 | -   |        | empty_22   | add  | fabric  | 0       |
-+---------------------------------------+-----+--------+------------+------+---------+---------+
++--------------------------------------+-----+--------+------------+------+---------+---------+
+| Name                                 | DSP | Pragma | Variable   | Op   | Impl    | Latency |
++--------------------------------------+-----+--------+------------+------+---------+---------+
+| + matprod                            | 18  |        |            |      |         |         |
+|   mul_32s_32s_32_1_1_U24             | 3   |        | mul        | mul  | auto    | 0       |
+|   mul_32s_32s_32_1_1_U25             | 3   |        | mul6       | mul  | auto    | 0       |
+|   mul_32ns_32ns_64_1_1_U26           | 3   |        | mul_ln26   | mul  | auto    | 0       |
+|   add_ln26_fu_377_p2                 | -   |        | add_ln26   | add  | fabric  | 0       |
+|   add_ln26_1_fu_394_p2               | -   |        | add_ln26_1 | add  | fabric  | 0       |
+|   mul_10s_10s_10_1_1_U27             | -   |        | mul_ln26_1 | mul  | auto    | 0       |
+|   mac_muladd_10s_10s_10ns_10_4_1_U29 | 1   |        | mul_ln26_2 | mul  | dsp48   | 3       |
+|   mac_muladd_10s_10s_10ns_10_4_1_U29 | 1   |        | add_ln33   | add  | dsp48   | 3       |
+|   add_ln27_fu_423_p2                 | -   |        | add_ln27   | add  | fabric  | 0       |
+|   mul_32s_32s_32_1_1_U28             | 3   |        | mul58      | mul  | auto    | 0       |
+|  + matprod_Pipeline_VITIS_LOOP_23_1  | 0   |        |            |      |         |         |
+|    add_ln23_fu_104_p2                | -   |        | add_ln23   | add  | fabric  | 0       |
+|  + matprod_Pipeline_VITIS_LOOP_24_2  | 0   |        |            |      |         |         |
+|    add_ln24_fu_104_p2                | -   |        | add_ln24   | add  | fabric  | 0       |
+|  + matprod_Pipeline_VITIS_LOOP_28_5  | 5   |        |            |      |         |         |
+|    add_ln28_fu_126_p2                | -   |        | add_ln28   | add  | fabric  | 0       |
+|    add_ln29_fu_139_p2                | -   |        | add_ln29   | add  | fabric  | 0       |
+|    add_ln29_2_fu_149_p2              | -   |        | add_ln29_2 | add  | fabric  | 0       |
+|    add_ln29_1_fu_154_p2              | -   |        | add_ln29_1 | add  | fabric  | 0       |
+|    fmul_32ns_32ns_32_2_max_dsp_1_U10 | 3   |        | mul        | fmul | maxdsp  | 1       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U9 | 2   |        | add        | fadd | fulldsp | 3       |
+|  + matprod_Pipeline_VITIS_LOOP_37_6  | 0   |        |            |      |         |         |
+|    add_ln37_fu_109_p2                | -   |        | add_ln37   | add  | fabric  | 0       |
++--------------------------------------+-----+--------+------------+------+---------+---------+
 
 
 ================================================================
@@ -175,9 +190,9 @@
 | interface | s_axilite port=N1 bundle=BUS1     | first_accel/matprod.cpp:8 in matprod, N1     |
 | interface | s_axilite port=N2 bundle=BUS1     | first_accel/matprod.cpp:9 in matprod, N2     |
 | interface | s_axilite port=N3 bundle=BUS1     | first_accel/matprod.cpp:10 in matprod, N3    |
-| interface | m_axi port = m1 depth=1024/32     | first_accel/matprod.cpp:12 in matprod        |
-| interface | m_axi port = m2 depth=1024/32     | first_accel/matprod.cpp:13 in matprod        |
-| interface | m_axi port = m3 depth=1024/32     | first_accel/matprod.cpp:14 in matprod        |
+| interface | m_axi port = m1 depth=64          | first_accel/matprod.cpp:12 in matprod        |
+| interface | m_axi port = m2 depth=64          | first_accel/matprod.cpp:13 in matprod        |
+| interface | m_axi port = m3 depth=64          | first_accel/matprod.cpp:14 in matprod        |
 +-----------+-----------------------------------+----------------------------------------------+
 
 

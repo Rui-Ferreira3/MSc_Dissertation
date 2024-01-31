@@ -39,12 +39,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u64 Bus1_BaseAddress;
+    u32 Bus1_BaseAddress;
 } XMatprod_Config;
 #endif
 
 typedef struct {
-    u64 Bus1_BaseAddress;
+    u32 Bus1_BaseAddress;
     u32 IsReady;
 } XMatprod;
 
@@ -88,12 +88,12 @@ u32 XMatprod_IsReady(XMatprod *InstancePtr);
 void XMatprod_EnableAutoRestart(XMatprod *InstancePtr);
 void XMatprod_DisableAutoRestart(XMatprod *InstancePtr);
 
-void XMatprod_Set_m1(XMatprod *InstancePtr, u64 Data);
-u64 XMatprod_Get_m1(XMatprod *InstancePtr);
-void XMatprod_Set_m2(XMatprod *InstancePtr, u64 Data);
-u64 XMatprod_Get_m2(XMatprod *InstancePtr);
-void XMatprod_Set_m3(XMatprod *InstancePtr, u64 Data);
-u64 XMatprod_Get_m3(XMatprod *InstancePtr);
+void XMatprod_Set_m1(XMatprod *InstancePtr, u32 Data);
+u32 XMatprod_Get_m1(XMatprod *InstancePtr);
+void XMatprod_Set_m2(XMatprod *InstancePtr, u32 Data);
+u32 XMatprod_Get_m2(XMatprod *InstancePtr);
+void XMatprod_Set_m3(XMatprod *InstancePtr, u32 Data);
+u32 XMatprod_Get_m3(XMatprod *InstancePtr);
 void XMatprod_Set_N1(XMatprod *InstancePtr, u32 Data);
 u32 XMatprod_Get_N1(XMatprod *InstancePtr);
 void XMatprod_Set_N2(XMatprod *InstancePtr, u32 Data);

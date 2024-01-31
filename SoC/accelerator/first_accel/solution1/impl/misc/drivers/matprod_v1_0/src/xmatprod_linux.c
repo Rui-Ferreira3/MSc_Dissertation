@@ -16,7 +16,7 @@
 
 /**************************** Type Definitions ******************************/
 typedef struct {
-    u64 addr;
+    u32 addr;
     u32 size;
 } XMatprod_uio_map;
 
@@ -124,7 +124,7 @@ int XMatprod_Initialize(XMatprod *InstancePtr, const char* InstanceName) {
     }
 
     // NOTE: slave interface 'Bus1' should be mapped to uioX/map0
-    InstancePtr->Bus1_BaseAddress = (u64)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
+    InstancePtr->Bus1_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
     assert(InstancePtr->Bus1_BaseAddress);
 
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
