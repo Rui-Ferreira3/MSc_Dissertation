@@ -898,3 +898,243 @@ Command   cosim_design done; 36.631 sec.
 INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 36.631 seconds; current allocated memory: 7.492 MB.
 Command ap_source done; 47.532 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1 opened at Wed Jan 31 15:59:37 +0000 2024
+Execute     ap_set_clock -name default -period 20 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+Execute     set_part xc7a100t-csg324-1 
+Execute       create_platform xc7a100t-csg324-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+Command       create_platform done; 0.621 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.171 sec.
+Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.837 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=accelerator 
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=accelerator
+Execute     config_export -display_name=accelerator 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips
+Execute     config_export -output=C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vivado_clock=20 
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=20
+Execute     config_export -vivado_clock=20 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+Execute     config_interface -m_axi_addr64=0 
+Command   open_solution done; 1.003 sec.
+Execute   set_part xc7a100t-csg324-1 
+INFO: [HLS 200-1510] Running: set_part xc7a100t-csg324-1 
+Execute     create_platform xc7a100t-csg324-1 -board  
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.143 sec.
+Execute   create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+Execute   config_export -display_name accelerator -format ip_catalog -output C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog -vivado_clock 20 
+INFO: [HLS 200-1510] Running: config_export -display_name accelerator -format ip_catalog -output C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl verilog -vivado_clock 20 
+Execute   config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+Execute   source ./first_accel/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./first_accel/solution1/directives.tcl
+Execute     set_directive_top -name matprod matprod 
+INFO: [HLS 200-1510] Running: set_directive_top -name matprod matprod 
+Execute   export_design -rtl verilog -format ip_catalog -output C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips 
+Execute     config_export -format=ip_catalog -output=C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog -display_name accelerator
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=20 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=matprod xml_exists=0
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to matprod
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=7
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=18 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='matprod_flow_control_loop_pipe_sequential_init
+matprod_flow_control_loop_pipe_sequential_init
+matprod_fadd_32ns_32ns_32_4_full_dsp_1
+matprod_fmul_32ns_32ns_32_2_max_dsp_1
+matprod_flow_control_loop_pipe_sequential_init
+matprod_flow_control_loop_pipe_sequential_init
+matprod_mul_32s_32s_32_1_1
+matprod_mul_32ns_32ns_64_1_1
+matprod_mul_10s_10s_10_1_1
+matprod_mac_muladd_10s_10s_10ns_10_4_1
+matprod_m1_buffer_RAM_AUTO_1R1W
+matprod_gmem_m_axi
+matprod_BUS1_s_axi
+matprod_Pipeline_VITIS_LOOP_23_1
+matprod_Pipeline_VITIS_LOOP_24_2
+matprod_Pipeline_VITIS_LOOP_28_5
+matprod_Pipeline_VITIS_LOOP_37_6
+matprod
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_23_1.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_24_2.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_28_5.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod_Pipeline_VITIS_LOOP_37_6.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
+Execute     sc_get_clocks matprod 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/misc/matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to matprod
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.compgen.dataonly.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=matprod
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.constraint.tcl 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7a100t-csg324-1 -data names -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/impl/ip/pack.bat
+Execute     send_msg_by_id INFO @200-802@%s ips/export.zip 
+INFO: [HLS 200-802] Generated output file ips/export.zip
+Command   export_design done; 19.705 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.705 seconds; current allocated memory: 9.426 MB.
+Command ap_source done; 31.16 sec.
+Execute cleanup_all 

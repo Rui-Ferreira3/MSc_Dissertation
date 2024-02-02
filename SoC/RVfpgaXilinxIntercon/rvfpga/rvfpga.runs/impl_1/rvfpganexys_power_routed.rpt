@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Wed Jan 10 16:44:55 2024
-| Host             : DESKTOP-8GAVNOH running 64-bit major release  (build 9200)
+| Date             : Wed Jan 31 16:45:39 2024
+| Host             : DESKTOP-3C6QEMK running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpganexys_power_routed.rpt -pb rvfpganexys_power_summary_routed.pb -rpx rvfpganexys_power_routed.rpx
 | Design           : rvfpganexys
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.958        |
+| Total On-Chip Power (W)  | 0.951        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.847        |
+| Dynamic (W)              | 0.840        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 80.6         |
-| Junction Temperature (C) | 29.4         |
+| Max Ambient (C)          | 80.7         |
+| Junction Temperature (C) | 29.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.053 |       13 |       --- |             --- |
-| Slice Logic              |     0.019 |    74741 |       --- |             --- |
-|   LUT as Logic           |     0.017 |    37559 |     63400 |           59.24 |
-|   CARRY4                 |    <0.001 |     1214 |     15850 |            7.66 |
-|   Register               |    <0.001 |    26005 |    126800 |           20.51 |
-|   LUT as Distributed RAM |    <0.001 |      624 |     19000 |            3.28 |
-|   LUT as Shift Register  |    <0.001 |      217 |     19000 |            1.14 |
-|   F7/F8 Muxes            |    <0.001 |      509 |     63400 |            0.80 |
+| Clocks                   |     0.050 |       13 |       --- |             --- |
+| Slice Logic              |     0.019 |    73011 |       --- |             --- |
+|   LUT as Logic           |     0.017 |    37349 |     63400 |           58.91 |
+|   CARRY4                 |    <0.001 |     1111 |     15850 |            7.01 |
+|   Register               |    <0.001 |    24894 |    126800 |           19.63 |
+|   LUT as Distributed RAM |    <0.001 |      582 |     19000 |            3.06 |
+|   LUT as Shift Register  |    <0.001 |      168 |     19000 |            0.88 |
+|   F7/F8 Muxes            |    <0.001 |      539 |     63400 |            0.85 |
 |   Others                 |     0.000 |     1807 |       --- |             --- |
-| Signals                  |     0.029 |    61598 |       --- |             --- |
-| Block RAM                |     0.075 |       56 |       135 |           41.48 |
+| Signals                  |     0.029 |    60007 |       --- |             --- |
+| Block RAM                |     0.073 |       56 |       135 |           41.48 |
 | PLL                      |     0.278 |        2 |         6 |           33.33 |
-| DSPs                     |     0.004 |       21 |       240 |            8.75 |
+| DSPs                     |     0.004 |       24 |       240 |           10.00 |
 | I/O                      |     0.388 |      104 |       210 |           49.52 |
 | Static Power             |     0.110 |          |           |                 |
-| Total                    |     0.958 |          |           |                 |
+| Total                    |     0.951 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,8 +77,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.225 |       0.206 |      0.019 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.196 |       0.177 |      0.018 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.219 |       0.200 |      0.019 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.195 |       0.177 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.177 |       0.173 |      0.004 |       NA    | Unspecified | NA         |
@@ -156,13 +156,13 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| rvfpganexys             |     0.847 |
+| rvfpganexys             |     0.840 |
 |   cdc                   |     0.005 |
 |     i_axi_cdc           |     0.005 |
 |       i_cdc_fifo_gray_r |     0.003 |
 |   clk_gen               |     0.146 |
-|   ddr2                  |     0.396 |
-|     ldc                 |     0.396 |
+|   ddr2                  |     0.395 |
+|     ldc                 |     0.395 |
 |       IOBUF             |     0.008 |
 |       IOBUFDS           |     0.007 |
 |       IOBUFDS_1         |     0.007 |
@@ -183,18 +183,18 @@ Table of Contents
 |       IOBUF_9           |     0.008 |
 |       OBUFDS            |     0.008 |
 |       serv_rf_top       |     0.004 |
-|   swervolf              |     0.117 |
-|     accelerator         |     0.018 |
-|       accel_i           |     0.018 |
+|   swervolf              |     0.112 |
+|     accelerator         |     0.014 |
+|       accel_i           |     0.014 |
 |     bootrom             |     0.002 |
 |       ram               |     0.002 |
-|     intercon            |     0.015 |
-|       interconnect_i    |     0.015 |
-|     swerv_eh1           |     0.076 |
+|     intercon            |     0.016 |
+|       interconnect_i    |     0.016 |
+|     swerv_eh1           |     0.075 |
 |       mem               |     0.044 |
-|       swerv             |     0.032 |
+|       swerv             |     0.031 |
 |     syscon              |     0.001 |
-|     timer_ptc           |     0.001 |
+|     timer_ptc           |     0.002 |
 +-------------------------+-----------+
 
 

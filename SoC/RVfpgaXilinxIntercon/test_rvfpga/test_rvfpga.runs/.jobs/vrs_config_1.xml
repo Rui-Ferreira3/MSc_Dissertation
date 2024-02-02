@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="interconnect_xbar_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="accel_matprod_0_4_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/accel_matprod_0_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_s00_data_fifo_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_s00_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_s01_data_fifo_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_s01_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_s02_data_fifo_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_s02_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_auto_pc_1_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_auto_us_df_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_auto_us_df_1_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_auto_ds_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_ds_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_auto_pc_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interconnect_axi_vip_0_0_synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_axi_vip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="interconnect_xbar_0_synth_1"/>
+		<Parent Id="accel_matprod_0_4_synth_1"/>
+		<Parent Id="interconnect_s00_data_fifo_0_synth_1"/>
+		<Parent Id="interconnect_s01_data_fifo_0_synth_1"/>
+		<Parent Id="interconnect_s02_data_fifo_0_synth_1"/>
+		<Parent Id="interconnect_auto_pc_1_synth_1"/>
+		<Parent Id="interconnect_auto_us_df_0_synth_1"/>
+		<Parent Id="interconnect_auto_us_df_1_synth_1"/>
+		<Parent Id="interconnect_auto_ds_0_synth_1"/>
+		<Parent Id="interconnect_auto_pc_0_synth_1"/>
+		<Parent Id="interconnect_axi_vip_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

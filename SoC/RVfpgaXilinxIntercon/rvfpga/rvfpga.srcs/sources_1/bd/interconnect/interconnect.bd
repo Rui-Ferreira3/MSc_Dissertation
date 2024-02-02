@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x9B8B15043D93CB13",
+      "boundary_crc": "0x7FAE37008CB2FAAC",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../rvfpga.gen/sources_1/bd/interconnect",
       "name": "interconnect",
@@ -163,7 +163,7 @@
           "AWADDR": {
             "physical_name": "ram_awaddr",
             "direction": "O",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "AWLEN": {
@@ -277,7 +277,7 @@
           "ARADDR": {
             "physical_name": "ram_araddr",
             "direction": "O",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "ARLEN": {
@@ -525,7 +525,7 @@
           "AWADDR": {
             "physical_name": "io_awaddr",
             "direction": "O",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "AWLEN": {
@@ -639,7 +639,7 @@
           "ARADDR": {
             "physical_name": "io_araddr",
             "direction": "O",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "ARLEN": {
@@ -1615,7 +1615,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "64"
+            "value": "32"
           },
           "ARUSER_WIDTH": {
             "value": "0"
@@ -1714,14 +1714,14 @@
         "address_space_ref": "accel_mem",
         "base_address": {
           "minimum": "0x00000000",
-          "maximum": "0xFFFFFFFFFFFFFFFF",
-          "width": "64"
+          "maximum": "0xFFFFFFFF",
+          "width": "32"
         },
         "port_maps": {
           "AWADDR": {
             "physical_name": "accel_mem_awaddr",
             "direction": "I",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "AWLEN": {
@@ -1821,7 +1821,7 @@
           "ARADDR": {
             "physical_name": "accel_mem_araddr",
             "direction": "I",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "ARLEN": {
@@ -3393,22 +3393,22 @@
             }
           },
           "accel_mem": {
-            "range": "16E",
-            "width": "64",
+            "range": "4G",
+            "width": "32",
             "segments": {
               "SEG_accel_ctrl_Reg": {
                 "address_block": "/accel_ctrl/Reg",
-                "offset": "0x0000000010000000",
+                "offset": "0x10000000",
                 "range": "16K"
               },
               "SEG_io_Reg": {
                 "address_block": "/io/Reg",
-                "offset": "0x0000000080000000",
+                "offset": "0x80000000",
                 "range": "16K"
               },
               "SEG_ram_Reg": {
                 "address_block": "/ram/Reg",
-                "offset": "0x0000000000000000",
+                "offset": "0x00000000",
                 "range": "128M"
               }
             }

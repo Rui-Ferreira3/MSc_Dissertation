@@ -48,53 +48,15 @@ void SW_mat_prod(float *matA, float *matB, float *matCS)
     }
 }
 
-void HW_mat_prod(float *matA, float *matB, float *matCH)
-{
-	int i;
-	// Explicitly define the addresses of the IP memory-mapped I/O registers
-	volatile float *a = (float *)(IP_BASEADDR + 0x10);
-	volatile float *b = (float *)(IP_BASEADDR + 0x1c);
-	volatile float *c = (float *)(IP_BASEADDR + 0x28);
-	volatile int *rowsA = (int *)(IP_BASEADDR + 0x34);
-	volatile int *colsA = (int *)(IP_BASEADDR + 0x3c);
-	volatile int *colsB = (int *)(IP_BASEADDR + 0x44);
-	volatile int *do_matp_mem = (int *)(IP_BASEADDR + 0x00);
-
-	*rowsA = N1;
-	*colsA = N2;
-	*colsB = N3;
-    printfNexys("Sent sizes!");
-
-	// for (i=0; i<(N1*N2); i++) {
-	// 	a[i] = matA[i];
-	// }
-    a = matA;
-    printfNexys("Sent matrix A!");
-
-	// for (i=0; i<(N2*N3); i++) {
-	// 	b[i] = matB[i];
-	// }
-    b = matB;
-    printfNexys("Sent matrix B!");
-    c = matCH;
-    printfNexys("Sent matrix B!");
-	*do_matp_mem = 1;
-	while ((*do_matp_mem & 2) == 0);
-
-	// for (i=0; i<(N1*N3); i++) {
-	// 	matCH[i] = c[i];
-	// }
-}
-
 int main()
 {
     volatile int *do_matp_mem = (int *)0x10000000;
     volatile int *a = (int *)0x10000010;
-	volatile int *b = (int *)0x1000001c;
-	volatile int *c = (int *)0x10000028;
-	volatile int *rowsA = (int *)0x10000034;
-	volatile int *colsA = (int *)0x1000003c;
-	volatile int *colsB = (int *)0x10000044;
+	volatile int *b = (int *)0x10000018;
+	volatile int *c = (int *)0x10000020;
+	volatile int *rowsA = (int *)0x10000028;
+	volatile int *colsA = (int *)0x10000030;
+	volatile int *colsB = (int *)0x10000038;
 
     float *matA = (float *)MATA_START_ADDRESS;
     float *matB = (float *)MATB_START_ADDRESS;

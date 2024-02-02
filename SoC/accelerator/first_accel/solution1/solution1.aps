@@ -7,7 +7,7 @@
     </downStreamTool>
     <synthesis askAgain="true"/>
     <config>
-        <config_export display_name="accelerator" format="ip_catalog" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog" vivado_clock="20"/>
+        <config_export display_name="accelerator" format="ip_catalog" output="C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog" vivado_clock="20"/>
         <config_interface m_axi_addr64="0"/>
     </config>
     <UIConfigurations>
@@ -41,16 +41,16 @@
             </RTLs>
         </UIAutoSimConf>
     </UIConfigurations>
-    <ExportDesign askAgain="true" evaluate="false" flow="true" flowChoice="syn" formatName="ip_catalog" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog" rtlButton="true" rtlCombo="verilog">
-        <Format display_name="accelerator" formatName="ip_catalog"/>
+    <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog" rtlButton="true" rtlCombo="verilog">
+        <Format display_name="accelerator" formatName="ip_catalog" description="" vendor="" library="" ipname="matprod" version="" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
         <Format formatName="xo"/>
     </ExportDesign>
-    <Simulation argv="">
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="auto" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
+    <Simulation>
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>

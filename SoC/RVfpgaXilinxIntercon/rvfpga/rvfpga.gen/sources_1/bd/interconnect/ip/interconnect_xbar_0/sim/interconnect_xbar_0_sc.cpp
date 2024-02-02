@@ -64,7 +64,7 @@ interconnect_xbar_0_sc::interconnect_xbar_0_sc(const sc_core::sc_module_name& nm
     model_param_props.addLong("C_NUM_SLAVE_SLOTS", "4");
     model_param_props.addLong("C_NUM_MASTER_SLOTS", "3");
     model_param_props.addLong("C_AXI_ID_WIDTH", "6");
-    model_param_props.addLong("C_AXI_ADDR_WIDTH", "64");
+    model_param_props.addLong("C_AXI_ADDR_WIDTH", "32");
     model_param_props.addLong("C_AXI_DATA_WIDTH", "64");
     model_param_props.addLong("C_AXI_PROTOCOL", "0");
     model_param_props.addLong("C_NUM_ADDR_RANGES", "1");

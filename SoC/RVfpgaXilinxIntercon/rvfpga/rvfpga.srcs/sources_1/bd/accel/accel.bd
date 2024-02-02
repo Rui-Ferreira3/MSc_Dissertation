@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xABEA8DDAB99388C5",
+      "boundary_crc": "0xFC0DF6A4B2BDA03D",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../rvfpga.gen/sources_1/bd/accel",
       "name": "accel",
@@ -20,7 +20,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "64"
+            "value": "32"
           },
           "ARUSER_WIDTH": {
             "value": "0",
@@ -148,7 +148,7 @@
           "AWADDR": {
             "physical_name": "accel_mem_awaddr",
             "direction": "O",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "AWLEN": {
@@ -266,7 +266,7 @@
           "ARADDR": {
             "physical_name": "accel_mem_araddr",
             "direction": "O",
-            "left": "63",
+            "left": "31",
             "right": "0"
           },
           "ARLEN": {
@@ -363,7 +363,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "7"
+            "value": "16"
           },
           "ARUSER_WIDTH": {
             "value": "0"
@@ -462,14 +462,14 @@
         "address_space_ref": "accel_ctrl",
         "base_address": {
           "minimum": "0x00000000",
-          "maximum": "0x0000007F",
-          "width": "7"
+          "maximum": "0x0000FFFF",
+          "width": "16"
         },
         "port_maps": {
           "AWADDR": {
             "physical_name": "accel_ctrl_awaddr",
             "direction": "I",
-            "left": "6",
+            "left": "5",
             "right": "0"
           },
           "AWVALID": {
@@ -517,7 +517,7 @@
           "ARADDR": {
             "physical_name": "accel_ctrl_araddr",
             "direction": "I",
-            "left": "6",
+            "left": "5",
             "right": "0"
           },
           "ARVALID": {
@@ -602,8 +602,8 @@
     "components": {
       "matprod_0": {
         "vlnv": "xilinx.com:hls:matprod:1.0",
-        "xci_name": "accel_matprod_0_3",
-        "xci_path": "ip\\accel_matprod_0_3\\accel_matprod_0_3.xci",
+        "xci_name": "accel_matprod_0_4",
+        "xci_path": "ip\\accel_matprod_0_4\\accel_matprod_0_4.xci",
         "inst_hier_path": "matprod_0",
         "interface_ports": {
           "m_axi_gmem": {
@@ -612,16 +612,16 @@
             "address_space_ref": "Data_m_axi_gmem",
             "base_address": {
               "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFFFFFFFFFF",
-              "width": "64"
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
             }
           }
         },
         "addressing": {
           "address_spaces": {
             "Data_m_axi_gmem": {
-              "range": "16E",
-              "width": "64"
+              "range": "4G",
+              "width": "32"
             }
           }
         }
@@ -665,7 +665,7 @@
               "SEG_matprod_0_Reg": {
                 "address_block": "/matprod_0/s_axi_BUS1/Reg",
                 "offset": "0x0000",
-                "range": "128",
+                "range": "16K",
                 "offset_base_param": "C_S_AXI_BUS1_BASEADDR",
                 "offset_high_param": "C_S_AXI_BUS1_HIGHADDR"
               }
@@ -691,7 +691,7 @@
             "segments": {
               "SEG_accel_mem_Reg": {
                 "address_block": "/accel_mem/Reg",
-                "offset": "0x0000000000000000",
+                "offset": "0x00000000",
                 "range": "128M"
               }
             }

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="interconnect_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1704901816">
+<GenRun Id="interconnect_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1706718705">
   <File Type="PA-TCL" Name="interconnect_xbar_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="interconnect_xbar_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="interconnect_xbar_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="interconnect_xbar_0.vds"/>
   <File Type="RDS-UTIL" Name="interconnect_xbar_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="interconnect_xbar_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="interconnect_xbar_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="interconnect_xbar_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="interconnect_xbar_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/interconnect_xbar_0">
     <File Path="$PSRCDIR/sources_1/bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0.xci">
       <FileInfo>

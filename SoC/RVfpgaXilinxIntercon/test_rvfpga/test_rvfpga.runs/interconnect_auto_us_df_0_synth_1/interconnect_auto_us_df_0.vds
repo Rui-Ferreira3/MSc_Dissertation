@@ -1,0 +1,565 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Feb  2 18:30:57 2024
+# Process ID: 23156
+# Current directory: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1
+# Command line: vivado.exe -log interconnect_auto_us_df_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source interconnect_auto_us_df_0.tcl
+# Log file: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1/interconnect_auto_us_df_0.vds
+# Journal file: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1\vivado.jou
+# Running On: DESKTOP-3C6QEMK, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 16869 MB
+#-----------------------------------------------------------
+source interconnect_auto_us_df_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 395.504 ; gain = 75.199
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:matprod:1.0'. The one found in IP location 'c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/accelerator' will take precedence over the same IP in locations: 
+   c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/first_accel_ip
+   c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/xilinx_com_hls_matprod_1_0
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.cache/ip 
+Command: synth_design -top interconnect_auto_us_df_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18644
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1230.582 ; gain = 407.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'interconnect_auto_us_df_0' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_auto_us_df_0/synth/interconnect_auto_us_df_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_27_top' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14461]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_27_axi_upsizer' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7037]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_27_w_upsizer_pktfifo' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:8666]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:9030]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:9067]
+INFO: [Synth 8-226] default block is never used [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:9865]
+WARNING: [Synth 8-7071] port 'deepsleep' of module 'blk_mem_gen_v8_4_5' is unconnected for instance 'w_buffer' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:10152]
+WARNING: [Synth 8-7071] port 'shutdown' of module 'blk_mem_gen_v8_4_5' is unconnected for instance 'w_buffer' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:10152]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'blk_mem_gen_v8_4_5' is unconnected for instance 'w_buffer' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:10152]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'blk_mem_gen_v8_4_5' is unconnected for instance 'w_buffer' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:10152]
+WARNING: [Synth 8-7023] instance 'w_buffer' of module 'blk_mem_gen_v8_4_5' has 63 connections declared, but only 59 given [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:10152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 's_aw_reg' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:10660]
+WARNING: [Synth 8-7023] instance 's_aw_reg' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:10660]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_27_w_upsizer_pktfifo' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:8666]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_27_a_upsizer' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3602]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:654]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:654]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_27_a_upsizer' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3602]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_27_r_upsizer_pktfifo' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:11247]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:128498]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:128498]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:11741]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:11901]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:12099]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:12196]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:12242]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:11948]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:12145]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_27_r_upsizer_pktfifo' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:11247]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_27_a_upsizer__parameterized0' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3602]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_27_a_upsizer__parameterized0' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3602]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized7' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized7' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'si_register_slice_inst' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7379]
+WARNING: [Synth 8-7023] instance 'si_register_slice_inst' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7379]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_27_axi_upsizer' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7037]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_27_top' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14461]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_auto_us_df_0' (0#1) [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_auto_us_df_0/synth/interconnect_auto_us_df_0.v:53]
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_27_axi_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cmd_id_ready in module axi_dwidth_converter_v2_1_27_a_upsizer__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VALID_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OVERFLOW_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UNDERFLOW_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[9] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[8] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[7] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[6] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[5] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[4] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[3] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[2] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[1] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[0] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[9] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[8] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[7] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[6] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[5] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[4] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[3] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[2] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[1] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[0] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[9] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[8] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[7] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[6] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[5] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[4] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[3] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[2] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[1] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[0] in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module output_blk__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_FULL_FF in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_WR_RST in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[8] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[7] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[6] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[5] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[4] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[3] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[2] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[1] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[0] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[8] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[7] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[6] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[5] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[4] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[3] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[2] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[1] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[0] in module wr_status_flags_ss__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST in module wr_bin_cntr__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_EN_INTO_LOGIC in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_INTO_LOGIC in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_BUSY in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EMPTY in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[8] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[7] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[6] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[5] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[4] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[3] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[2] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[1] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[0] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[8] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[7] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[6] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[5] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[4] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[3] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[2] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[1] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[0] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[8] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[7] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[6] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[5] in module wr_logic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[4] in module wr_logic__parameterized2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1588.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_auto_us_df_0/interconnect_auto_us_df_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_auto_us_df_0/interconnect_auto_us_df_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1588.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 1588.379 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst /\USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst /dw_fifogen_aw/inst_fifo_gen/\gaxi_full_lite.gwrite_ch.gwach2.axi_wach /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst /\USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst /dw_fifogen_ar/inst_fifo_gen/\gaxi_full_lite.gread_ch.grach2.axi_rach /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gpregsm2.curr_fwft_state_reg' in module 'rd_fwft'
+INFO: [Synth 8-3936] Found unconnected internal register 'si_size_reg' and it is trimmed from '3' to '2' bits. [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.gen/sources_1/bd/interconnect/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:9832]
+INFO: [Synth 8-802] inferred FSM for state register 'si_state_reg' in module 'axi_dwidth_converter_v2_1_27_w_upsizer_pktfifo'
+INFO: [Synth 8-802] inferred FSM for state register 'mi_state_reg' in module 'axi_dwidth_converter_v2_1_27_w_upsizer_pktfifo'
+INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft__parameterized0'
+INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm2.curr_fwft_state_reg' in module 'rd_fwft', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 invalid |                               00 |                               00
+            stage1_valid |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  M_IDLE |                              000 |                              000
+                M_ISSUE1 |                              001 |                              001
+              M_WRITING1 |                              010 |                              011
+              M_AW_DONE1 |                              011 |                              110
+                M_ISSUE2 |                              100 |                              111
+              M_WRITING2 |                              101 |                              101
+              M_AW_DONE2 |                              110 |                              100
+              M_AW_STALL |                              111 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mi_state_reg' using encoding 'sequential' in module 'axi_dwidth_converter_v2_1_27_w_upsizer_pktfifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+               S_WRITING |                               01 |                               01
+                S_AWFULL |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'si_state_reg' using encoding 'sequential' in module 'axi_dwidth_converter_v2_1_27_w_upsizer_pktfifo'
+INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft__parameterized0', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               10 |                               10
+       both_stages_valid |                               11 |                               11
+            stage2_valid |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 11    
+	   2 Input    4 Bit       Adders := 7     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 116   
++---Registers : 
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               62 Bit    Registers := 2     
+	               61 Bit    Registers := 1     
+	               37 Bit    Registers := 2     
+	               36 Bit    Registers := 2     
+	               28 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 3     
+	                5 Bit    Registers := 19    
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 25    
+	                1 Bit    Registers := 113   
++---Muxes : 
+	   2 Input   37 Bit        Muxes := 2     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   10 Bit        Muxes := 9     
+	   2 Input    8 Bit        Muxes := 16    
+	   4 Input    8 Bit        Muxes := 5     
+	   8 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 6     
+	   4 Input    7 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 27    
+	   4 Input    4 Bit        Muxes := 5     
+	   8 Input    3 Bit        Muxes := 7     
+	   2 Input    3 Bit        Muxes := 24    
+	   4 Input    3 Bit        Muxes := 7     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 49    
+	   5 Input    2 Bit        Muxes := 5     
+	   4 Input    2 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 21    
+	   2 Input    1 Bit        Muxes := 153   
+	   8 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:55 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                                 | RTL Object                                                                                                | Inference      | Size (Depth x Width) | Primitives   | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw   | inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 64              | RAM32M x 11  | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar     | inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg  | User Attribute | 32 x 61              | RAM32M x 11  | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg                             | User Attribute | 32 x 28              | RAM32M x 5   | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg                             | User Attribute | 32 x 20              | RAM32M x 4   | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_rresp  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg                             | User Attribute | 512 x 4              | RAM64M x 16  | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/inverted_reset_inferred/i_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw/inst_fifo_gen/inverted_reset_inferred/i_0/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:01:01 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:01:03 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                                 | RTL Object                                                                                                | Inference      | Size (Depth x Width) | Primitives   | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw   | inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 64              | RAM32M x 11  | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar     | inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg  | User Attribute | 32 x 61              | RAM32M x 11  | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg                             | User Attribute | 32 x 28              | RAM32M x 5   | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg                             | User Attribute | 32 x 20              | RAM32M x 4   | 
+|inst/\gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_rresp  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg                             | User Attribute | 512 x 4              | RAM64M x 16  | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:01:04 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | USE_RTL_FIFO.data_srl_reg[31] | 1      | 1          | 0      | 1       | 0      | 0      | 0      | 
++------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     6|
+|2     |LUT1     |    63|
+|3     |LUT2     |    74|
+|4     |LUT3     |    97|
+|5     |LUT4     |   126|
+|6     |LUT5     |   170|
+|7     |LUT6     |   265|
+|8     |MUXCY    |    20|
+|9     |MUXF7    |    15|
+|10    |RAM32M   |    29|
+|11    |RAM32X1D |     3|
+|12    |RAM64M   |     8|
+|13    |RAMB18E1 |     2|
+|14    |RAMB36E1 |     1|
+|15    |SRLC32E  |     1|
+|16    |FDCE     |    42|
+|17    |FDPE     |    36|
+|18    |FDRE     |   746|
+|19    |FDSE     |    35|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2773 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:01:04 . Memory (MB): peak = 1588.379 ; gain = 765.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1588.379 ; gain = 765.117
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1588.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1588.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 29 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 8 instances
+
+Synth Design complete, checksum: 4a8a1d5f
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:01:14 . Memory (MB): peak = 1588.379 ; gain = 1159.086
+INFO: [Coretcl 2-1174] Renamed 94 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_auto_us_df_0_synth_1/interconnect_auto_us_df_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file interconnect_auto_us_df_0_utilization_synth.rpt -pb interconnect_auto_us_df_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Feb  2 18:32:22 2024...

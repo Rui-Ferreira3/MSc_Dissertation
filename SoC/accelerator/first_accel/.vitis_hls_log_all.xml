@@ -61,7 +61,10 @@
         <logs message="WARNING: [IP_Flow 19-4832] The IP name 'matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="first_accel" solutionName="solution1" date="2024-01-31T01:07:10.131+0000" type="Warning"/>
       </simLog>
       <mgLog/>
-      <packageLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="first_accel" solutionName="solution1" date="2024-01-31T16:00:07.602+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="first_accel" solutionName="solution1" date="2024-01-31T16:00:03.583+0000" type="Warning"/>
+      </packageLog>
       <csimLog/>
     </logs>
   </warningLogs>

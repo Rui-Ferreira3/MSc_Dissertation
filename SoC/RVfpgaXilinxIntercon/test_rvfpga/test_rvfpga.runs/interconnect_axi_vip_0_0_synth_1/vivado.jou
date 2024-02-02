@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Feb  2 18:30:57 2024
+# Process ID: 21864
+# Current directory: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_axi_vip_0_0_synth_1
+# Command line: vivado.exe -log interconnect_axi_vip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source interconnect_axi_vip_0_0.tcl
+# Log file: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_axi_vip_0_0_synth_1/interconnect_axi_vip_0_0.vds
+# Journal file: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.runs/interconnect_axi_vip_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-3C6QEMK, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 16869 MB
+#-----------------------------------------------------------
+source interconnect_axi_vip_0_0.tcl -notrace
