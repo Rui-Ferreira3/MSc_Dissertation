@@ -33,21 +33,6 @@ void print_mat(float *x, int colsize, int rowsize)
     }
 }
 
-void SW_mat_prod(float *matA, float *matB, float *matCS)
-{
-    int i, j, k;
-
-    for (i=0; i<N1; i++) {
-        for (j=0; j<N3; j++) {
-            float val = 0;
-            for (k=0; k<N2; k++) {
-                val += matA[i*N2+k]*matB[k*N3+j];
-            }
-            matCS[i*N3+j] = val;
-        }
-    }
-}
-
 int main()
 {
     volatile int *do_matp_mem = (int *)0x10000000;
