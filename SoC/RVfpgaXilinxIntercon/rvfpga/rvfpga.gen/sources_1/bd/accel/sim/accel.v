@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Jan 31 16:30:21 2024
+//Date        : Tue Apr  2 21:16:00 2024
 //Host        : DESKTOP-3C6QEMK running 64-bit major release  (build 9200)
 //Command     : generate_target accel.bd
 //Design      : accel
@@ -28,6 +28,7 @@ module accel
     accel_ctrl_wready,
     accel_ctrl_wstrb,
     accel_ctrl_wvalid,
+    accel_irq,
     accel_mem_araddr,
     accel_mem_arburst,
     accel_mem_arcache,
@@ -87,6 +88,7 @@ module accel
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 accel_ctrl WREADY" *) output accel_ctrl_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 accel_ctrl WSTRB" *) input [3:0]accel_ctrl_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 accel_ctrl WVALID" *) input accel_ctrl_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 INTR.ACCEL_IRQ INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME INTR.ACCEL_IRQ, PortWidth 1, SENSITIVITY LEVEL_HIGH" *) output [0:0]accel_irq;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 accel_mem ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME accel_mem, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN accel_ap_clk_0, DATA_WIDTH 32, FREQ_HZ 50000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 1, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 1, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 16, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [31:0]accel_mem_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 accel_mem ARBURST" *) output [1:0]accel_mem_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 accel_mem ARCACHE" *) output [3:0]accel_mem_arcache;
@@ -148,6 +150,7 @@ module accel
   wire [3:0]accel_ctrl_1_WSTRB;
   wire accel_ctrl_1_WVALID;
   wire clk_1;
+  wire matprod_0_interrupt;
   wire [31:0]matprod_0_m_axi_gmem_ARADDR;
   wire [1:0]matprod_0_m_axi_gmem_ARBURST;
   wire [3:0]matprod_0_m_axi_gmem_ARCACHE;
@@ -207,6 +210,7 @@ module accel
   assign accel_ctrl_rresp[1:0] = accel_ctrl_1_RRESP;
   assign accel_ctrl_rvalid = accel_ctrl_1_RVALID;
   assign accel_ctrl_wready = accel_ctrl_1_WREADY;
+  assign accel_irq[0] = matprod_0_interrupt;
   assign accel_mem_araddr[31:0] = matprod_0_m_axi_gmem_ARADDR;
   assign accel_mem_arburst[1:0] = matprod_0_m_axi_gmem_ARBURST;
   assign accel_mem_arcache[3:0] = matprod_0_m_axi_gmem_ARCACHE;
@@ -249,9 +253,10 @@ module accel
   assign matprod_0_m_axi_gmem_RVALID = accel_mem_rvalid;
   assign matprod_0_m_axi_gmem_WREADY = accel_mem_wready;
   assign rst_1 = rst;
-  accel_matprod_0_4 matprod_0
+  accel_matprod_0_8 matprod_0
        (.ap_clk(clk_1),
         .ap_rst_n(rst_1),
+        .interrupt(matprod_0_interrupt),
         .m_axi_gmem_ARADDR(matprod_0_m_axi_gmem_ARADDR),
         .m_axi_gmem_ARBURST(matprod_0_m_axi_gmem_ARBURST),
         .m_axi_gmem_ARCACHE(matprod_0_m_axi_gmem_ARCACHE),

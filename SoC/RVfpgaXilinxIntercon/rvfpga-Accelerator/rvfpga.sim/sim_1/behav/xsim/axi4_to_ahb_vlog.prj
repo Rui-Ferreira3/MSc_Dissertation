@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib "C:/Users/Rui/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include/common_defines.vh" -i "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" -i "../../../../rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/include" --include "../../../../rvfpga.gen/sources_1/bd/interconnect/ipshared/ec67/hdl" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/gpio" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/ptc" --include "../../../../rvfpga.srcs/sources_1/imports/src/LiteDRAM/serv_1.0.2/rtl" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect" --include "../../../../rvfpga.srcs/sources_1/new" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/uart" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi" --include "../../../../rvfpga.srcs/sources_1/imports/src/OtherSources/pulp-platform.org__common_cells_1.20.0/include/common_cells" --include "../../../../rvfpga.srcs/sources_1/imports/src/OtherSources/jtag_vpi_0-r5" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3" --include "../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/BootROM/sw" \
+"../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv" \
+"../../../../rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/axi4_to_ahb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

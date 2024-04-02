@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-416,-168",
+   "Default View_TopLeft":"-410,-168",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -9,13 +9,15 @@ preplace port accel_mem -pg 1 -lvl 2 -x 380 -y 70 -defaultsOSRD
 preplace port accel_ctrl -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
 preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
 preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus accel_irq -pg 1 -lvl 2 -x 380 -y 90 -defaultsOSRD
 preplace inst matprod_0 -pg 1 -lvl 1 -x 190 -y 80 -defaultsOSRD
-preplace netloc clk_1 1 0 1 N 80
-preplace netloc rst_1 1 0 1 N 100
-preplace netloc accel_ctrl_1 1 0 1 N 60
-preplace netloc matprod_0_m_axi_gmem 1 1 1 N 70
+preplace netloc clk_1 1 0 1 NJ 80
+preplace netloc rst_1 1 0 1 NJ 100
+preplace netloc matprod_0_interrupt 1 1 1 NJ 90
+preplace netloc accel_ctrl_1 1 0 1 NJ 60
+preplace netloc matprod_0_m_axi_gmem 1 1 1 NJ 70
 levelinfo -pg 1 0 190 380
-pagesize -pg 1 -db -bbox -sgen -110 -200 510 160
+pagesize -pg 1 -db -bbox -sgen -110 0 520 160
 "
 }
 {

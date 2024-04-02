@@ -45,9 +45,9 @@
       <data key="BP">C_BASEADDR</data>
       <data key="HA">0x07FFFFFF</data>
       <data key="HP">C_HIGHADDR</data>
-      <data key="MA">sb</data>
+      <data key="MA">ifu</data>
       <data key="MX">/</data>
-      <data key="MI">sb</data>
+      <data key="MI">ifu</data>
       <data key="MS">SEG_ram_Reg</data>
       <data key="MV">:::</data>
       <data key="TM">both</data>
@@ -59,18 +59,18 @@
       <data key="VT">AC</data>
     </node>
     <node id="n2">
-      <data key="BA">0x0000000010000000</data>
+      <data key="BA">0x80000000</data>
       <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x0000000010003FFF</data>
+      <data key="HA">0x80003FFF</data>
       <data key="HP">C_HIGHADDR</data>
-      <data key="MA">accel_mem</data>
+      <data key="MA">ifu</data>
       <data key="MX">/</data>
-      <data key="MI">accel_mem</data>
-      <data key="MS">SEG_accel_ctrl_Reg</data>
+      <data key="MI">ifu</data>
+      <data key="MS">SEG_io_Reg</data>
       <data key="MV">:::</data>
       <data key="TM">both</data>
       <data key="SX">/</data>
-      <data key="SI">accel_ctrl</data>
+      <data key="SI">io</data>
       <data key="SS">Reg</data>
       <data key="SV">::interconnect_imp:</data>
       <data key="TU">register</data>
@@ -81,9 +81,9 @@
       <data key="BP">C_BASEADDR</data>
       <data key="HA">0x07FFFFFF</data>
       <data key="HP">C_HIGHADDR</data>
-      <data key="MA">ifu</data>
+      <data key="MA">sb</data>
       <data key="MX">/</data>
-      <data key="MI">ifu</data>
+      <data key="MI">sb</data>
       <data key="MS">SEG_ram_Reg</data>
       <data key="MV">:::</data>
       <data key="TM">both</data>
@@ -95,113 +95,36 @@
       <data key="VT">AC</data>
     </node>
     <node id="n4">
-      <data key="VM">interconnect</data>
-      <data key="VT">BC</data>
-    </node>
-    <node id="n5">
-      <data key="BA">0x80000000</data>
+      <data key="BA">0x00000000</data>
       <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x80003FFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">accel_mem</data>
-      <data key="MX">/</data>
-      <data key="MI">accel_mem</data>
-      <data key="MS">SEG_io_Reg</data>
-      <data key="MV">:::</data>
-      <data key="TM">both</data>
-      <data key="SX">/</data>
-      <data key="SI">io</data>
-      <data key="SS">Reg</data>
-      <data key="SV">::interconnect_imp:</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n6">
-      <data key="BA">0x80000000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x80003FFF</data>
+      <data key="HA">0x07FFFFFF</data>
       <data key="HP">C_HIGHADDR</data>
       <data key="MA">lsu</data>
       <data key="MX">/</data>
       <data key="MI">lsu</data>
-      <data key="MS">SEG_io_Reg</data>
+      <data key="MS">SEG_ram_Reg</data>
       <data key="MV">:::</data>
       <data key="TM">both</data>
       <data key="SX">/</data>
-      <data key="SI">io</data>
+      <data key="SI">ram</data>
       <data key="SS">Reg</data>
       <data key="SV">::interconnect_imp:</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n7">
-      <data key="VH">2</data>
+    <node id="n5">
       <data key="VM">interconnect</data>
-      <data key="VT">VR</data>
+      <data key="VT">BC</data>
     </node>
-    <node id="n8">
+    <node id="n6">
       <data key="TU">active</data>
       <data key="VH">2</data>
       <data key="VT">PM</data>
     </node>
-    <node id="n9">
-      <data key="BA">0x00000000</data>
+    <node id="n7">
+      <data key="BA">0x90000000</data>
       <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x07FFFFFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">lsu</data>
-      <data key="MX">/</data>
-      <data key="MI">lsu</data>
-      <data key="MS">SEG_ram_Reg</data>
-      <data key="MV">:::</data>
-      <data key="TM">both</data>
-      <data key="SX">/</data>
-      <data key="SI">ram</data>
-      <data key="SS">Reg</data>
-      <data key="SV">::interconnect_imp:</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n10">
-      <data key="BA">0x00000000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x07FFFFFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">accel_mem</data>
-      <data key="MX">/</data>
-      <data key="MI">accel_mem</data>
-      <data key="MS">SEG_ram_Reg</data>
-      <data key="MV">:::</data>
-      <data key="TM">both</data>
-      <data key="SX">/</data>
-      <data key="SI">ram</data>
-      <data key="SS">Reg</data>
-      <data key="SV">::interconnect_imp:</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n11">
-      <data key="BA">0x80000000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x80003FFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">ifu</data>
-      <data key="MX">/</data>
-      <data key="MI">ifu</data>
-      <data key="MS">SEG_io_Reg</data>
-      <data key="MV">:::</data>
-      <data key="TM">both</data>
-      <data key="SX">/</data>
-      <data key="SI">io</data>
-      <data key="SS">Reg</data>
-      <data key="SV">::interconnect_imp:</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n12">
-      <data key="BA">0x10000000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x10003FFF</data>
+      <data key="HA">0x90003FFF</data>
       <data key="HP">C_HIGHADDR</data>
       <data key="MA">lsu</data>
       <data key="MX">/</data>
@@ -216,10 +139,51 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n13">
-      <data key="BA">0x10000000</data>
+    <node id="n8">
+      <data key="VH">2</data>
+      <data key="VM">interconnect</data>
+      <data key="VT">VR</data>
+    </node>
+    <node id="n9">
+      <data key="BA">0x90000000</data>
       <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x10003FFF</data>
+      <data key="HA">0x90003FFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">accel_mem</data>
+      <data key="MX">/</data>
+      <data key="MI">accel_mem</data>
+      <data key="MS">SEG_accel_ctrl_Reg</data>
+      <data key="MV">:::</data>
+      <data key="TM">both</data>
+      <data key="SX">/</data>
+      <data key="SI">accel_ctrl</data>
+      <data key="SS">Reg</data>
+      <data key="SV">::interconnect_imp:</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n10">
+      <data key="BA">0x80000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x80003FFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">accel_mem</data>
+      <data key="MX">/</data>
+      <data key="MI">accel_mem</data>
+      <data key="MS">SEG_io_Reg</data>
+      <data key="MV">:::</data>
+      <data key="TM">both</data>
+      <data key="SX">/</data>
+      <data key="SI">io</data>
+      <data key="SS">Reg</data>
+      <data key="SV">::interconnect_imp:</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n11">
+      <data key="BA">0x90000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x90003FFF</data>
       <data key="HP">C_HIGHADDR</data>
       <data key="MA">sb</data>
       <data key="MX">/</data>
@@ -234,10 +198,10 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n14">
-      <data key="BA">0x10000000</data>
+    <node id="n12">
+      <data key="BA">0x90000000</data>
       <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x10003FFF</data>
+      <data key="HA">0x90003FFF</data>
       <data key="HP">C_HIGHADDR</data>
       <data key="MA">ifu</data>
       <data key="MX">/</data>
@@ -252,42 +216,78 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <edge id="e0" source="n4" target="n7"/>
-    <edge id="e1" source="n7" target="n8"/>
-    <edge id="e2" source="n6" target="n8">
+    <node id="n13">
+      <data key="BA">0x00000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x07FFFFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">accel_mem</data>
+      <data key="MX">/</data>
+      <data key="MI">accel_mem</data>
+      <data key="MS">SEG_ram_Reg</data>
+      <data key="MV">:::</data>
+      <data key="TM">both</data>
+      <data key="SX">/</data>
+      <data key="SI">ram</data>
+      <data key="SS">Reg</data>
+      <data key="SV">::interconnect_imp:</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n14">
+      <data key="BA">0x80000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x80003FFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">lsu</data>
+      <data key="MX">/</data>
+      <data key="MI">lsu</data>
+      <data key="MS">SEG_io_Reg</data>
+      <data key="MV">:::</data>
+      <data key="TM">both</data>
+      <data key="SX">/</data>
+      <data key="SI">io</data>
+      <data key="SS">Reg</data>
+      <data key="SV">::interconnect_imp:</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <edge id="e0" source="n5" target="n8"/>
+    <edge id="e1" source="n8" target="n6"/>
+    <edge id="e2" source="n14" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n9" target="n8">
+    <edge id="e3" source="n4" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e4" source="n11" target="n8">
+    <edge id="e4" source="n2" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e5" source="n3" target="n8">
+    <edge id="e5" source="n1" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e6" source="n0" target="n8">
+    <edge id="e6" source="n0" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e7" source="n1" target="n8">
+    <edge id="e7" source="n3" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e8" source="n5" target="n8">
+    <edge id="e8" source="n10" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e9" source="n10" target="n8">
+    <edge id="e9" source="n13" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e10" source="n12" target="n8">
+    <edge id="e10" source="n7" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e11" source="n14" target="n8">
+    <edge id="e11" source="n12" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e12" source="n13" target="n8">
+    <edge id="e12" source="n11" target="n6">
       <data key="EH">2</data>
     </edge>
-    <edge id="e13" source="n2" target="n8">
+    <edge id="e13" source="n9" target="n6">
       <data key="EH">2</data>
     </edge>
   </graph>

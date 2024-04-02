@@ -187,8 +187,8 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"},
 					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "12", "SubInstance" : "grp_matprod_Pipeline_VITIS_LOOP_37_6_fu_219", "Port" : "gmem", "Inst_start_state" : "25", "Inst_end_state" : "26"},
 					{"ID" : "6", "SubInstance" : "grp_matprod_Pipeline_VITIS_LOOP_24_2_fu_198", "Port" : "gmem", "Inst_start_state" : "18", "Inst_end_state" : "19"},
+					{"ID" : "12", "SubInstance" : "grp_matprod_Pipeline_VITIS_LOOP_37_6_fu_219", "Port" : "gmem", "Inst_start_state" : "25", "Inst_end_state" : "26"},
 					{"ID" : "4", "SubInstance" : "grp_matprod_Pipeline_VITIS_LOOP_23_1_fu_189", "Port" : "gmem", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "m1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "m2", "Type" : "None", "Direction" : "I"},

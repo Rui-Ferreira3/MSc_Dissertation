@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 5
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -211,7 +212,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v
 }
 add_files C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/bd/accel/accel.bd
-set_property used_in_implementation false [get_files -all c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/ip/accel_matprod_0_4/constraints/matprod_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/ip/accel_matprod_0_8/constraints/matprod_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/accel_ooc.xdc]
 
 add_files C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.srcs/sources_1/bd/interconnect/interconnect.bd

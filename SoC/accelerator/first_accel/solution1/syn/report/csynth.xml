@@ -1166,7 +1166,7 @@
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands>
-        <config_export display_name="accelerator" output="C:/Users/Rui/Rui/MSc_Dissertation/SoC/accelerator/ips" vivado_clock="20"/>
+        <config_export display_name="accelerator" output="C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips" vivado_clock="20"/>
         <config_interface m_axi_addr64="0"/>
     </UserConfigCommands>
     <Args>

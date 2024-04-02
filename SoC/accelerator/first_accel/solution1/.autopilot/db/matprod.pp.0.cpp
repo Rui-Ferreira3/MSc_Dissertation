@@ -157,10 +157,6 @@ extern "C" {
 # 2 "<built-in>" 2
 # 1 "first_accel/matprod.cpp" 2
 # 1 "first_accel/matprod.h" 1
-
-
-
-__attribute__((sdx_kernel("matprod", 0))) void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3);
 # 2 "first_accel/matprod.cpp" 2
 
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 1 3
@@ -1101,10 +1097,6 @@ extern "C" {
 
 __attribute__((sdx_kernel("matprod", 0))) void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3) {
 #line 17 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/csynth.tcl"
-#pragma HLSDIRECTIVE TOP name=matprod
-# 6 "first_accel/matprod.cpp"
-
-#line 6 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=matprod
 # 6 "first_accel/matprod.cpp"
 

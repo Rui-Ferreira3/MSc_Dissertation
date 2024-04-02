@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="interconnect_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1706718705">
+<GenRun Id="interconnect_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1712076776">
   <File Type="PA-TCL" Name="interconnect_xbar_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="interconnect_xbar_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="interconnect_xbar_0_reports.tcl"/>

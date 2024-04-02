@@ -3335,7 +3335,7 @@
             "segments": {
               "SEG_accel_ctrl_Reg": {
                 "address_block": "/accel_ctrl/Reg",
-                "offset": "0x10000000",
+                "offset": "0x90000000",
                 "range": "16K"
               },
               "SEG_io_Reg": {
@@ -3356,7 +3356,7 @@
             "segments": {
               "SEG_accel_ctrl_Reg": {
                 "address_block": "/accel_ctrl/Reg",
-                "offset": "0x10000000",
+                "offset": "0x90000000",
                 "range": "16K"
               },
               "SEG_io_Reg": {
@@ -3377,7 +3377,7 @@
             "segments": {
               "SEG_accel_ctrl_Reg": {
                 "address_block": "/accel_ctrl/Reg",
-                "offset": "0x10000000",
+                "offset": "0x90000000",
                 "range": "16K"
               },
               "SEG_io_Reg": {
@@ -3398,7 +3398,7 @@
             "segments": {
               "SEG_accel_ctrl_Reg": {
                 "address_block": "/accel_ctrl/Reg",
-                "offset": "0x10000000",
+                "offset": "0x90000000",
                 "range": "16K"
               },
               "SEG_io_Reg": {

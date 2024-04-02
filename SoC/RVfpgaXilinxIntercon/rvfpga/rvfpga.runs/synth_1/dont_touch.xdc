@@ -8,8 +8,8 @@
 # Block Designs: bd/accel/accel.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel || ORIG_REF_NAME==accel} -quiet] -quiet
 
-# IP: bd/accel/ip/accel_matprod_0_4/accel_matprod_0_4.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel_matprod_0_4 || ORIG_REF_NAME==accel_matprod_0_4} -quiet] -quiet
+# IP: bd/accel/ip/accel_matprod_0_8/accel_matprod_0_8.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel_matprod_0_8 || ORIG_REF_NAME==accel_matprod_0_8} -quiet] -quiet
 
 # Block Designs: bd/interconnect/interconnect.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect || ORIG_REF_NAME==interconnect} -quiet] -quiet

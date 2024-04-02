@@ -139,6 +139,8 @@ module swervolf_core
    assign ram_rvalid     = i_ram_rvalid;
    assign o_ram_rready   = ram_rready;
    
+   wire               accel_irq;
+   
    `include "accel.vh"
 
    wire 		      wb_clk = clk;
@@ -599,7 +601,7 @@ module swervolf_core
       .dma_bus_clk_en (1'b1),
 
       .timer_int (timer_irq),
-      .extintsrc_req ({4'd0, sw_irq4, sw_irq3, spi0_irq, uart_irq}),
+      .extintsrc_req ({4'd0, accel_irq, sw_irq3, spi0_irq, uart_irq}),
 
       .dec_tlu_perfcnt0 (),
       .dec_tlu_perfcnt1 (),

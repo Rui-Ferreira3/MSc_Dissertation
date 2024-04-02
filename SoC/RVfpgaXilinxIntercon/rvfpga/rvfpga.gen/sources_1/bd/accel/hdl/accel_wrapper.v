@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Jan 31 16:30:21 2024
+//Date        : Tue Apr  2 21:16:00 2024
 //Host        : DESKTOP-3C6QEMK running 64-bit major release  (build 9200)
 //Command     : generate_target accel_wrapper.bd
 //Design      : accel_wrapper
@@ -27,6 +27,7 @@ module accel_wrapper
     accel_ctrl_wready,
     accel_ctrl_wstrb,
     accel_ctrl_wvalid,
+    accel_irq,
     accel_mem_araddr,
     accel_mem_arburst,
     accel_mem_arcache,
@@ -86,6 +87,7 @@ module accel_wrapper
   output accel_ctrl_wready;
   input [3:0]accel_ctrl_wstrb;
   input accel_ctrl_wvalid;
+  output [0:0]accel_irq;
   output [31:0]accel_mem_araddr;
   output [1:0]accel_mem_arburst;
   output [3:0]accel_mem_arcache;
@@ -146,6 +148,7 @@ module accel_wrapper
   wire accel_ctrl_wready;
   wire [3:0]accel_ctrl_wstrb;
   wire accel_ctrl_wvalid;
+  wire [0:0]accel_irq;
   wire [31:0]accel_mem_araddr;
   wire [1:0]accel_mem_arburst;
   wire [3:0]accel_mem_arcache;
@@ -207,6 +210,7 @@ module accel_wrapper
         .accel_ctrl_wready(accel_ctrl_wready),
         .accel_ctrl_wstrb(accel_ctrl_wstrb),
         .accel_ctrl_wvalid(accel_ctrl_wvalid),
+        .accel_irq(accel_irq),
         .accel_mem_araddr(accel_mem_araddr),
         .accel_mem_arburst(accel_mem_arburst),
         .accel_mem_arcache(accel_mem_arcache),

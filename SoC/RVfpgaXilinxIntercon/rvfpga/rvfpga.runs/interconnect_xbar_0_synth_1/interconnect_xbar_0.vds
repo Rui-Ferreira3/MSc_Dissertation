@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Jan 31 16:31:52 2024
-# Process ID: 17600
+# Start of session at: Tue Apr  2 17:53:05 2024
+# Process ID: 19760
 # Current directory: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/interconnect_xbar_0_synth_1
 # Command line: vivado.exe -log interconnect_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source interconnect_xbar_0.tcl
 # Log file: C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/interconnect_xbar_0_synth_1/interconnect_xbar_0.vds
@@ -14,9 +14,7 @@ source interconnect_xbar_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:matprod:1.0'. The one found in IP location 'c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/accelerator' will take precedence over the same IP in locations: 
-   c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/first_accel_ip
-   c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/xilinx_com_hls_matprod_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:matprod:1.0'. The one found in IP location 'c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/export' will take precedence over the same IP in location c:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips/accelerator
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: interconnect_xbar_0
@@ -27,10 +25,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 420
+INFO: [Synth 8-7075] Helper process launched with PID 19320
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1240.812 ; gain = 407.664
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1239.848 ; gain = 407.145
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'interconnect_xbar_0' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ip/interconnect_xbar_0/synth/interconnect_xbar_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_axi_crossbar' [c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/interconnect/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
@@ -276,18 +274,18 @@ WARNING: [Synth 8-7129] Port S_AXI_AWQOS[3] in module axi_crossbar_v2_1_28_cross
 WARNING: [Synth 8-7129] Port S_AXI_AWQOS[2] in module axi_crossbar_v2_1_28_crossbar is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.387 ; gain = 663.238
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.387 ; gain = 663.238
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.387 ; gain = 663.238
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 1496.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1495.418 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -298,29 +296,29 @@ Parsing XDC File [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvf
 Finished Parsing XDC File [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/interconnect_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1602.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1495.418 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1602.215 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1495.418 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/interconnect_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_26_axic_reg_srl_fifo'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_26_axic_reg_srl_fifo__parameterized0'
@@ -372,7 +370,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_28_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -432,25 +430,25 @@ INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and 
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_26_axic_reg_srl_fifo__parameterized1.
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_26_axic_reg_srl_fifo__parameterized2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:27 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:35 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -468,37 +466,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:38 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:38 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -526,29 +524,29 @@ Report Cell Usage:
 |10    |FDSE    |    36|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1495.418 ; gain = 662.715
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 432 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:36 . Memory (MB): peak = 1602.215 ; gain = 663.238
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1602.215 ; gain = 769.066
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:35 . Memory (MB): peak = 1495.418 ; gain = 662.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1495.418 ; gain = 662.715
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1602.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1495.418 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1602.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1495.418 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: af7967b9
+Synth Design complete, checksum: 4bb75d74
 INFO: [Common 17-83] Releasing license: Synthesis
 138 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1602.215 ; gain = 1161.645
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:42 . Memory (MB): peak = 1495.418 ; gain = 1057.160
 INFO: [Common 17-1381] The checkpoint 'C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/interconnect_xbar_0_synth_1/interconnect_xbar_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP interconnect_xbar_0, cache-ID = 3975a9cb00a3b68f
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP interconnect_xbar_0, cache-ID = 775ae1fe53612761
 INFO: [Coretcl 2-1174] Renamed 69 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.runs/interconnect_xbar_0_synth_1/interconnect_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file interconnect_xbar_0_utilization_synth.rpt -pb interconnect_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 31 16:32:45 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 17:53:55 2024...

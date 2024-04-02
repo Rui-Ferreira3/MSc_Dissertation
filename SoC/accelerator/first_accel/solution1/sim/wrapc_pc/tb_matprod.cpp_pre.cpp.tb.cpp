@@ -1796,18 +1796,14 @@ using std::wctomb;
 # 3 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
 
 # 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h" 1
-
-
-
-
-# 4 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h"
-void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3);
 # 5 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp" 2
 
 
 
 
 
+
+# 10 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/tb_matprod.cpp"
 static float matA[4*4];
 static float matB[4*4];
 static float matC[4*4];

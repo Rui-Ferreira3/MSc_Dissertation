@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Wed Jan 31 16:45:39 2024
+| Date             : Tue Apr  2 21:28:49 2024
 | Host             : DESKTOP-3C6QEMK running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpganexys_power_routed.rpt -pb rvfpganexys_power_summary_routed.pb -rpx rvfpganexys_power_routed.rpx
 | Design           : rvfpganexys
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.951        |
+| Total On-Chip Power (W)  | 0.950        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.840        |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.050 |       13 |       --- |             --- |
+| Clocks                   |     0.052 |       13 |       --- |             --- |
 | Slice Logic              |     0.019 |    73011 |       --- |             --- |
-|   LUT as Logic           |     0.017 |    37349 |     63400 |           58.91 |
+|   LUT as Logic           |     0.017 |    37261 |     63400 |           58.77 |
 |   CARRY4                 |    <0.001 |     1111 |     15850 |            7.01 |
 |   Register               |    <0.001 |    24894 |    126800 |           19.63 |
 |   LUT as Distributed RAM |    <0.001 |      582 |     19000 |            3.06 |
 |   LUT as Shift Register  |    <0.001 |      168 |     19000 |            0.88 |
 |   F7/F8 Muxes            |    <0.001 |      539 |     63400 |            0.85 |
 |   Others                 |     0.000 |     1807 |       --- |             --- |
-| Signals                  |     0.029 |    60007 |       --- |             --- |
+| Signals                  |     0.028 |    60014 |       --- |             --- |
 | Block RAM                |     0.073 |       56 |       135 |           41.48 |
 | PLL                      |     0.278 |        2 |         6 |           33.33 |
-| DSPs                     |     0.004 |       24 |       240 |           10.00 |
-| I/O                      |     0.388 |      104 |       210 |           49.52 |
+| DSPs                     |     0.003 |       24 |       240 |           10.00 |
+| I/O                      |     0.386 |      104 |       210 |           49.52 |
 | Static Power             |     0.110 |          |           |                 |
-| Total                    |     0.951 |          |           |                 |
+| Total                    |     0.950 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,9 +77,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.219 |       0.200 |      0.019 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.220 |       0.200 |      0.019 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.195 |       0.177 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.177 |       0.173 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -161,8 +161,8 @@ Table of Contents
 |     i_axi_cdc           |     0.005 |
 |       i_cdc_fifo_gray_r |     0.003 |
 |   clk_gen               |     0.146 |
-|   ddr2                  |     0.395 |
-|     ldc                 |     0.395 |
+|   ddr2                  |     0.396 |
+|     ldc                 |     0.396 |
 |       IOBUF             |     0.008 |
 |       IOBUFDS           |     0.007 |
 |       IOBUFDS_1         |     0.007 |

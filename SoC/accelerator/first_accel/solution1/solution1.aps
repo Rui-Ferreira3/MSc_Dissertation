@@ -42,7 +42,7 @@
         </UIAutoSimConf>
     </UIConfigurations>
     <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/ips" rtl="verilog" rtlButton="true" rtlCombo="verilog">
-        <Format display_name="accelerator" formatName="ip_catalog" description="" vendor="" library="" ipname="matprod" version="" taxonomy=""/>
+        <Format display_name="accelerator" formatName="ip_catalog"/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>

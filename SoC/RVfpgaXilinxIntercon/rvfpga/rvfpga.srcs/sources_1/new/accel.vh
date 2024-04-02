@@ -20,6 +20,7 @@ accel_wrapper accelerator
     .accel_ctrl_wready(accel_ctrl_wready),
     .accel_ctrl_wstrb(accel_ctrl_wstrb),
     .accel_ctrl_wvalid(accel_ctrl_wvalid),
+    .accel_irq(accel_irq),
     .accel_mem_araddr(accel_mem_araddr),
     .accel_mem_arburst(accel_mem_arburst),
     .accel_mem_arcache(accel_mem_arcache),

@@ -56,7 +56,7 @@
   "../../../../rvfpga.gen/sources_1/bd/accel/ipshared/b87e/hdl/verilog/matprod.v" \
   "../../../../rvfpga.gen/sources_1/bd/accel/ipshared/b87e/hdl/ip/matprod_fadd_32ns_32ns_32_4_full_dsp_1_ip.v" \
   "../../../../rvfpga.gen/sources_1/bd/accel/ipshared/b87e/hdl/ip/matprod_fmul_32ns_32ns_32_2_max_dsp_1_ip.v" \
-  "../../../bd/accel/ip/accel_matprod_0_4/sim/accel_matprod_0_4.v" \
+  "../../../bd/accel/ip/accel_matprod_0_8/sim/accel_matprod_0_8.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

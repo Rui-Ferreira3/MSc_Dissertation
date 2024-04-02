@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1706663181377">
-  <ports id="1" name="gmem" type="PortType" coreId="1953394531" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1712085863178">
+  <ports id="1" name="gmem" type="PortType" coreId="4294967287" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>call</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
@@ -14,22 +14,22 @@
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="m1" type="PortType" originalName="m1" coreId="1953394531" bitwidth="32">
+  <ports id="2" name="m1" type="PortType" originalName="m1" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="m2" type="PortType" originalName="m2" coreId="1953394531" bitwidth="32">
+  <ports id="3" name="m2" type="PortType" originalName="m2" coreId="4294967287" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="m3" type="PortType" originalName="m3" coreId="4294967287" bitwidth="32">
+  <ports id="4" name="m3" type="PortType" originalName="m3" coreId="1953394531" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="N1" type="PortType" originalName="N1" coreId="4294967287" bitwidth="32">
+  <ports id="5" name="N1" type="PortType" originalName="N1" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="6" name="N2" type="PortType" originalName="N2" coreId="4294967287" bitwidth="32">
+  <ports id="6" name="N2" type="PortType" originalName="N2" coreId="3621216858" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="7" name="N3" type="PortType" originalName="N3" coreId="0" bitwidth="32">
+  <ports id="7" name="N3" type="PortType" originalName="N3" coreId="828863805" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="119" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.3"/>
@@ -191,13 +191,13 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i_2" originalName="i" coreId="279" bitwidth="31" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i_2" originalName="i" coreId="4294967295" bitwidth="31" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="indvar_flatten" coreId="543520367" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="indvar_flatten" coreId="0" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
@@ -261,7 +261,7 @@
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="trunc_ln23" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln23_fu_234_p1" coreId="29" contextFuncName="matprod" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="trunc_ln23" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln23_fu_234_p1" coreId="0" contextFuncName="matprod" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="23" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
@@ -272,19 +272,19 @@
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="trunc_ln23_1" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln23_1_reg_556" coreId="4294967295" contextFuncName="matprod" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="trunc_ln23_1" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln23_1_reg_556" coreId="0" contextFuncName="matprod" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="23" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sext_ln23" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="sext_ln23_fu_295_p1" coreId="1580821218" contextFuncName="matprod" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sext_ln23" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="sext_ln23_fu_295_p1" coreId="0" contextFuncName="matprod" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="23" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="gmem_addr" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="69" contextFuncName="matprod" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="gmem_addr" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="0" contextFuncName="matprod" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="23" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -298,7 +298,7 @@
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln23" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln23_fu_305_p1" coreId="3794188400" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln23" lineNumber="23" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln23_fu_305_p1" coreId="0" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="23" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>readreq</dataOutputObjs>
@@ -324,7 +324,7 @@
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="trunc_ln24" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln24_fu_313_p1" coreId="4294967295" contextFuncName="matprod" bitwidth="31" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="trunc_ln24" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln24_fu_313_p1" coreId="1932001376" contextFuncName="matprod" bitwidth="31" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="24" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
@@ -335,19 +335,19 @@
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="trunc_ln24_1" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln24_1_reg_567" coreId="3794188400" contextFuncName="matprod" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="trunc_ln24_1" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln24_1_reg_567" coreId="4294967295" contextFuncName="matprod" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="24" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="sext_ln24" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="sext_ln24_fu_331_p1" coreId="4294967295" contextFuncName="matprod" bitwidth="32" opcode="sext" nodeLabel="10.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="sext_ln24" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="sext_ln24_fu_331_p1" coreId="1932000176" contextFuncName="matprod" bitwidth="32" opcode="sext" nodeLabel="10.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="24" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="gmem_addr_1" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="matprod" bitwidth="32" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="gmem_addr_1" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="0" contextFuncName="matprod" bitwidth="32" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="24" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -361,7 +361,7 @@
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="zext_ln24" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln24_fu_341_p1" coreId="0" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="zext_ln24" lineNumber="24" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln24_fu_341_p1" coreId="4294967295" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="24" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>readreq</dataOutputObjs>
@@ -380,7 +380,7 @@
       <dataOutputObjs>gmem</dataOutputObjs>
       <constName>matprod_Pipeline_VITIS_LOOP_24_2</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="trunc_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln26_fu_272_p1" coreId="0" contextFuncName="matprod" bitwidth="10" opcode="trunc" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="trunc_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln26_fu_272_p1" coreId="1932023296" contextFuncName="matprod" bitwidth="10" opcode="trunc" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
@@ -391,12 +391,12 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="zext_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="mul_ln26_fu_351_p00" coreId="3794188400" contextFuncName="matprod" bitwidth="64" opcode="zext" nodeLabel="18.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="zext_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="mul_ln26_fu_351_p00" coreId="1931995136" contextFuncName="matprod" bitwidth="64" opcode="zext" nodeLabel="18.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="zext_ln26_1" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="mul_ln26_fu_351_p10" coreId="3794215840" contextFuncName="matprod" bitwidth="64" opcode="zext" nodeLabel="18.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="zext_ln26_1" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="mul_ln26_fu_351_p10" coreId="1931998256" contextFuncName="matprod" bitwidth="64" opcode="zext" nodeLabel="18.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
@@ -407,22 +407,22 @@
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="indvar_flatten_write_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="6645601" contextFuncName="matprod" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="21" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="indvar_flatten_write_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="matprod" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="21" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="i_2_write_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1953391986" contextFuncName="matprod" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="i_2_write_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="matprod" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="22" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="j_write_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1179535650" contextFuncName="matprod" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="23" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="j_write_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="matprod" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="23" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1347374924" contextFuncName="matprod" opcode="br" nodeLabel="18.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="matprod" opcode="br" nodeLabel="18.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <controlInputObjs>VITIS_LOOP_28_5</controlInputObjs>
     </node_objs>
@@ -442,19 +442,19 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>VITIS_LOOP_37_6.loopexit</controlOutputObjs>
     <controlOutputObjs>for.inc53.loopexit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="j_1" lineNumber="27" originalName="j" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="7630437" contextFuncName="matprod" bitwidth="31" opcode="load" nodeLabel="19.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="j_1" lineNumber="27" originalName="j" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1931963776" contextFuncName="matprod" bitwidth="31" opcode="load" nodeLabel="19.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="27" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <dataOutputObjs>select</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="indvar_flatten_load" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="774778400" contextFuncName="matprod" bitwidth="64" opcode="load" nodeLabel="19.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="indvar_flatten_load" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="matprod" bitwidth="64" opcode="load" nodeLabel="19.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="zext_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln27_fu_363_p1" coreId="875650866" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="19.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="zext_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln27_fu_363_p1" coreId="4294967295" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="19.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="27" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
@@ -478,7 +478,7 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="171847424" contextFuncName="matprod" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="matprod" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>for.inc53.loopexit</controlInputObjs>
@@ -493,7 +493,7 @@
     <controlInputObjs>VITIS_LOOP_28_5</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>VITIS_LOOP_28_5</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="i_2_load" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1767993972" contextFuncName="matprod" bitwidth="31" opcode="load" nodeLabel="19.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="i_2_load" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1932006656" contextFuncName="matprod" bitwidth="31" opcode="load" nodeLabel="19.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -521,7 +521,7 @@
       <dataOutputObjs>trunc</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="trunc_ln26_2" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln26_2_fu_408_p1" coreId="536883508" contextFuncName="matprod" bitwidth="10" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="trunc_ln26_2" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln26_2_fu_408_p1" coreId="0" contextFuncName="matprod" bitwidth="10" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
@@ -539,13 +539,13 @@
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="trunc_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln27_fu_418_p1" coreId="1668571500" contextFuncName="matprod" bitwidth="10" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="trunc_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln27_fu_418_p1" coreId="0" contextFuncName="matprod" bitwidth="10" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="27" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="grp_matprod_Pipeline_VITIS_LOOP_28_5_fu_207" coreId="1835363687" contextFuncName="matprod" opcode="call" nodeLabel="19.0" nodeLatency="1" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="_ln26" lineNumber="26" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="grp_matprod_Pipeline_VITIS_LOOP_28_5_fu_207" coreId="1599293780" contextFuncName="matprod" opcode="call" nodeLabel="19.0" nodeLatency="1" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="26" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>read</dataInputObjs>
       <dataInputObjs>mul</dataInputObjs>
@@ -555,7 +555,7 @@
       <dataInputObjs>alloca</dataInputObjs>
       <constName>matprod_Pipeline_VITIS_LOOP_28_5</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="regc_load" lineNumber="33" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1830839397" contextFuncName="matprod" bitwidth="32" opcode="load" nodeLabel="22.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="regc_load" lineNumber="33" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="0" contextFuncName="matprod" bitwidth="32" opcode="load" nodeLabel="22.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="33" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
@@ -565,12 +565,12 @@
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="zext_ln33" lineNumber="33" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln33_fu_480_p1" coreId="1685025392" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="zext_ln33" lineNumber="33" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln33_fu_480_p1" coreId="909192752" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="33" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="m3_buffer_addr" lineNumber="33" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1702129263" contextFuncName="matprod" bitwidth="10" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="m3_buffer_addr" lineNumber="33" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="29" contextFuncName="matprod" bitwidth="10" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="33" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
@@ -588,22 +588,22 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="indvar_flatten_write_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1226965113" contextFuncName="matprod" opcode="store" nodeLabel="19.0" m_display="0" m_delay="1.61" m_topoIndex="59" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="indvar_flatten_write_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="0" contextFuncName="matprod" opcode="store" nodeLabel="19.0" m_display="0" m_delay="1.61" m_topoIndex="59" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="27" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="i_2_write_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1230382880" contextFuncName="matprod" opcode="store" nodeLabel="19.0" m_display="0" m_delay="1.61" m_topoIndex="60" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="i_2_write_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="0" contextFuncName="matprod" opcode="store" nodeLabel="19.0" m_display="0" m_delay="1.61" m_topoIndex="60" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="27" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>select</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="j_write_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1679848308" contextFuncName="matprod" opcode="store" nodeLabel="19.0" m_display="0" m_delay="1.61" m_topoIndex="61" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="j_write_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="0" contextFuncName="matprod" opcode="store" nodeLabel="19.0" m_display="0" m_delay="1.61" m_topoIndex="61" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="27" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="br_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1936028192" contextFuncName="matprod" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="br_ln27" lineNumber="27" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1885414944" contextFuncName="matprod" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="27" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <controlInputObjs>VITIS_LOOP_28_5</controlInputObjs>
     </node_objs>
@@ -623,7 +623,7 @@
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="trunc_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln37_fu_448_p1" coreId="773864307" contextFuncName="matprod" bitwidth="31" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="trunc_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln37_fu_448_p1" coreId="0" contextFuncName="matprod" bitwidth="31" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="37" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
@@ -634,19 +634,19 @@
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="trunc_ln37_1" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln37_1_reg_643" coreId="1769104758" contextFuncName="matprod" bitwidth="30" opcode="partselect" nodeLabel="19.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="trunc_ln37_1" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="trunc_ln37_1_reg_643" coreId="1629502323" contextFuncName="matprod" bitwidth="30" opcode="partselect" nodeLabel="19.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="37" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="sext_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="sext_ln37_fu_484_p1" coreId="1931503732" contextFuncName="matprod" bitwidth="32" opcode="sext" nodeLabel="23.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="sext_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="sext_ln37_fu_484_p1" coreId="0" contextFuncName="matprod" bitwidth="32" opcode="sext" nodeLabel="23.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="37" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="gmem_addr_2" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="875716432" contextFuncName="matprod" bitwidth="32" opcode="getelementptr" nodeLabel="23.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="gmem_addr_2" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1797268061" contextFuncName="matprod" bitwidth="32" opcode="getelementptr" nodeLabel="23.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="37" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -661,7 +661,7 @@
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="zext_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln37_fu_494_p1" coreId="997420912" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="23.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="zext_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="zext_ln37_fu_494_p1" coreId="0" contextFuncName="matprod" bitwidth="32" opcode="zext" nodeLabel="23.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="37" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>writereq</dataOutputObjs>
@@ -671,7 +671,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="grp_matprod_Pipeline_VITIS_LOOP_37_6_fu_219" coreId="644703597" contextFuncName="matprod" opcode="call" nodeLabel="24.0" nodeLatency="1" m_display="0" m_delay="4.04" m_topoIndex="77" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="_ln37" lineNumber="37" fileName="first_accel/matprod.cpp" fileDirectory=".." rtlName="grp_matprod_Pipeline_VITIS_LOOP_37_6_fu_219" coreId="1830839397" contextFuncName="matprod" opcode="call" nodeLabel="24.0" nodeLatency="1" m_display="0" m_delay="4.04" m_topoIndex="77" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="37" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>partselect</dataInputObjs>
@@ -684,7 +684,7 @@
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="38" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="_ln38" lineNumber="38" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1701998624" contextFuncName="matprod" opcode="ret" nodeLabel="30.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="_ln38" lineNumber="38" fileName="first_accel/matprod.cpp" fileDirectory=".." coreId="1031369833" contextFuncName="matprod" opcode="ret" nodeLabel="30.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="first_accel/matprod.cpp" linenumber="38" fileDirectory="C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator" functionName="matprod"/>
     </node_objs>
     <fileValidLineNumbers fileName="first_accel/matprod.cpp">

@@ -3,10 +3,6 @@
 # 1 "<command-line>"
 # 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp"
 # 1 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.h" 1
-
-
-
-void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3);
 # 2 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/matprod.cpp" 2
 
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
@@ -1173,9 +1169,9 @@ void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3) {
  static float regc=0;
  int i, j, k;
 
- float m1_buffer[1024];
- float m2_buffer[1024];
- float m3_buffer[1024];
+ float m1_buffer[64*64*4];
+ float m2_buffer[64*64*4];
+ float m3_buffer[64*64*4];
 
  for(int i=0; i<N1*N2; i++) m1_buffer[i] = m1[i];
  for(int i=0; i<N2*N3; i++) m2_buffer[i] = m2[i];

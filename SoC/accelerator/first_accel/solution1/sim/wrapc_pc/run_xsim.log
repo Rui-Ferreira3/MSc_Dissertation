@@ -20,6 +20,166 @@ sw/hw dot product: 15663.000000
 -5396  2004  3509  3434 
 -13020 -26536 -10616   252 
 
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = ENTER_WRAPC.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+  -87   -21    86   107 
+  -84    41  -125   -95 
+   59   111   -33   -33 
+  -52   124  -112   108 
+
+   62    84   109   -47 
+ -122   -59   -51    25 
+  -91    14   -47   -27 
+  -45  -123   -36   -77 
+
+   sw dot product: 0
+sw/hw dot product: 15663.000000
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = ENTER_WRAPC.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+  -87   -21    86   107 
+  -84    41  -125   -95 
+   59   111   -33   -33 
+  -52   124  -112   108 
+
+   62    84   109   -47 
+ -122   -59   -51    25 
+  -91    14   -47   -27 
+  -45  -123   -36   -77 
+
+   sw dot product: 0
+sw/hw dot product: 15663.000000
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = ENTER_WRAPC.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+  -87   -21    86   107 
+  -84    41  -125   -95 
+   59   111   -33   -33 
+  -52   124  -112   108 
+
+   62    84   109   -47 
+ -122   -59   -51    25 
+  -91    14   -47   -27 
+  -45  -123   -36   -77 
+
+   sw dot product: 0
+sw/hw dot product: 15663.000000
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = ENTER_WRAPC.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+  -87   -21    86   107 
+  -84    41  -125   -95 
+   59   111   -33   -33 
+  -52   124  -112   108 
+
+   62    84   109   -47 
+ -122   -59   -51    25 
+  -91    14   -47   -27 
+  -45  -123   -36   -77 
+
+   sw dot product: 0
+sw/hw dot product: 15663.000000
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+ERROR: System received a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be:
+  1) Missing depth information for one or more pointers to arrays in the interface;
+  2) Insufficient depth setting for array argument(s);
+  3) Excessive depth setting for array argument(s), that exceeds the maximum virtual memory size for the process;
+  4) Null pointer etc.
+Current execution stopped during CodeState = ENTER_WRAPC.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
+  -87   -21    86   107 
+  -84    41  -125   -95 
+   59   111   -33   -33 
+  -52   124  -112   108 
+
+   62    84   109   -47 
+ -122   -59   -51    25 
+  -91    14   -47   -27 
+  -45  -123   -36   -77 
+
+   sw dot product: 0
+sw/hw dot product: 15663.000000
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
+-15473 -18026 -16306 -6997 
+ 5440   460 -1952 15663 
+-5396  2004  3509  3434 
+-13020 -26536 -10616   252 
+
 
 C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\sim\verilog>set PATH= 
 
@@ -63,9 +223,9 @@ INFO: [VRFC 10-311] analyzing module matprod_gmem_m_axi_srl
 INFO: [VRFC 10-311] analyzing module matprod_gmem_m_axi_mem
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_m1_buffer_RAM_AUTO_1R1W.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module matprod_m1_buffer_RAM_AUTO_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_mac_muladd_10s_10s_10ns_10_4_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module matprod_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0
-INFO: [VRFC 10-311] analyzing module matprod_mac_muladd_10s_10s_10ns_10_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_mac_muladd_14s_14s_14ns_14_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matprod_mac_muladd_14s_14s_14ns_14_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module matprod_mac_muladd_14s_14s_14ns_14_4_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_matprod_Pipeline_VITIS_LOOP_23_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module matprod_matprod_Pipeline_VITIS_LOOP_23_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_matprod_Pipeline_VITIS_LOOP_24_2.v" into library xil_defaultlib
@@ -74,12 +234,13 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Disserta
 INFO: [VRFC 10-311] analyzing module matprod_matprod_Pipeline_VITIS_LOOP_28_5
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_matprod_Pipeline_VITIS_LOOP_37_6.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module matprod_matprod_Pipeline_VITIS_LOOP_37_6
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_mul_10s_10s_10_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module matprod_mul_10s_10s_10_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_mul_32ns_32ns_64_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module matprod_mul_32ns_32ns_64_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_mul_32s_32s_32_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module matprod_mul_32s_32s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod_mul_mul_14s_14s_14_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matprod_mul_mul_14s_14s_14_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module matprod_mul_mul_14s_14s_14_4_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 Starting static elaboration
@@ -274,14 +435,15 @@ Compiling module xil_defaultlib.matprod_gmem_m_axi_read(C_USER_V...
 Compiling module xil_defaultlib.matprod_gmem_m_axi(CONSERVATIVE=...
 Compiling module xil_defaultlib.matprod_mul_32s_32s_32_1_1(NUM_S...
 Compiling module xil_defaultlib.matprod_mul_32ns_32ns_64_1_1(NUM...
-Compiling module xil_defaultlib.matprod_mul_10s_10s_10_1_1(NUM_S...
-Compiling module xil_defaultlib.matprod_mac_muladd_10s_10s_10ns_...
-Compiling module xil_defaultlib.matprod_mac_muladd_10s_10s_10ns_...
+Compiling module xil_defaultlib.matprod_mul_mul_14s_14s_14_4_1_D...
+Compiling module xil_defaultlib.matprod_mul_mul_14s_14s_14_4_1(I...
+Compiling module xil_defaultlib.matprod_mac_muladd_14s_14s_14ns_...
+Compiling module xil_defaultlib.matprod_mac_muladd_14s_14s_14ns_...
 Compiling module xil_defaultlib.matprod
 Compiling module xil_defaultlib.AESL_axi_master_gmem
 Compiling module xil_defaultlib.AESL_axi_slave_BUS1
 Compiling module xil_defaultlib.nodf_module_intf
-Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=31)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=33)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=3)
 Compiling module xil_defaultlib.dataflow_monitor_1
@@ -478,11 +640,11 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [n/a] @ "150000"
-// RTL Simulation : 1 / 1 [n/a] @ "10350000"
+// RTL Simulation : 1 / 1 [n/a] @ "11070000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 10470 ns : File "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod.autotb.v" Line 448
+$finish called at time : 11190 ns : File "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/sim/verilog/matprod.autotb.v" Line 448
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jan 31 01:07:26 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Apr  2 16:12:43 2024...
   -87   -21    86   107 
   -84    41  -125   -95 
    59   111   -33   -33 

@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62909
+        Offset:          62627
         Length:          0
         ReplacementText: 'VITIS_LOOP_23_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -16,7 +16,7 @@ Diagnostics:
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62959
+        Offset:          62677
         Length:          0
         ReplacementText: 'VITIS_LOOP_24_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -25,7 +25,7 @@ Diagnostics:
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          63010
+        Offset:          62728
         Length:          0
         ReplacementText: 'VITIS_LOOP_26_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -34,7 +34,7 @@ Diagnostics:
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          63042
+        Offset:          62760
         Length:          0
         ReplacementText: 'VITIS_LOOP_27_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -43,7 +43,7 @@ Diagnostics:
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          63072
+        Offset:          62790
         Length:          0
         ReplacementText: 'VITIS_LOOP_28_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -52,7 +52,7 @@ Diagnostics:
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          63246
+        Offset:          62964
         Length:          0
         ReplacementText: 'VITIS_LOOP_37_6: '
 ...

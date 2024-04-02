@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xFC0DF6A4B2BDA03D",
+      "boundary_crc": "0xE74F316E0D6783EE",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../rvfpga.gen/sources_1/bd/accel",
       "name": "accel",
@@ -597,13 +597,29 @@
             "value_src": "default"
           }
         }
+      },
+      "accel_irq": {
+        "type": "intr",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "const_prop"
+          }
+        }
       }
     },
     "components": {
       "matprod_0": {
         "vlnv": "xilinx.com:hls:matprod:1.0",
-        "xci_name": "accel_matprod_0_4",
-        "xci_path": "ip\\accel_matprod_0_4\\accel_matprod_0_4.xci",
+        "xci_name": "accel_matprod_0_8",
+        "xci_path": "ip\\accel_matprod_0_8\\accel_matprod_0_8.xci",
         "inst_hier_path": "matprod_0",
         "interface_ports": {
           "m_axi_gmem": {
@@ -648,6 +664,12 @@
           "matprod_0/ap_clk"
         ]
       },
+      "matprod_0_interrupt": {
+        "ports": [
+          "matprod_0/interrupt",
+          "accel_irq"
+        ]
+      },
       "rst_1": {
         "ports": [
           "rst",
@@ -665,7 +687,7 @@
               "SEG_matprod_0_Reg": {
                 "address_block": "/matprod_0/s_axi_BUS1/Reg",
                 "offset": "0x0000",
-                "range": "16K",
+                "range": "64K",
                 "offset_base_param": "C_S_AXI_BUS1_BASEADDR",
                 "offset_high_param": "C_S_AXI_BUS1_HIGHADDR"
               }

@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan 31 16:30:21 2024" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="accel" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="0" NAME="accel_mem_awid" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="accel_mem_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="accel_mem_awlen" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="accel_mem_awsize" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="accel_mem_awburst" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="accel_mem_awlock" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="accel_mem_awregion" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="accel_mem_awcache" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="accel_mem_awprot" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="accel_mem_awqos" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_mem_awvalid" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_mem_awready" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_AWREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="accel_mem_wid" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_WID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="accel_mem_wdata" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_WDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="accel_mem_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WSTRB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_WSTRB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_mem_wlast" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_WLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_mem_wvalid" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_WVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_mem_wready" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_WREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="accel_mem_bid" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_BID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="accel_mem_bresp" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_BRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_mem_bvalid" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_BVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_mem_bready" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_BREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="accel_mem_arid" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="accel_mem_araddr" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="accel_mem_arlen" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="accel_mem_arsize" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="accel_mem_arburst" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="accel_mem_arlock" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="accel_mem_arregion" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="accel_mem_arcache" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="accel_mem_arprot" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="accel_mem_arqos" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_mem_arvalid" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_mem_arready" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_ARREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="accel_mem_rid" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_RID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="accel_mem_rdata" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_RDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="accel_mem_rresp" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_RRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_mem_rlast" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_RLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_mem_rvalid" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_RVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_mem_rready" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="m_axi_gmem_RREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="5" NAME="accel_ctrl_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_AWADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_AWADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_ctrl_awvalid" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_AWVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_AWVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_ctrl_awready" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_AWREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_AWREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="accel_ctrl_wdata" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_WDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="accel_ctrl_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WSTRB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_WSTRB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_ctrl_wvalid" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_WVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_ctrl_wready" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_WREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="accel_ctrl_bresp" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_BRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_BRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_ctrl_bvalid" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_BVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_BVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_ctrl_bready" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_BREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_BREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="5" NAME="accel_ctrl_araddr" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_ARADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_ARADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_ctrl_arvalid" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_ARVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_ARVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_ctrl_arready" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_ARREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_ARREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="accel_ctrl_rdata" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_RDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="accel_ctrl_rresp" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_RRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="accel_ctrl_rvalid" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_RVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="accel_ctrl_rready" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="s_axi_BUS1_RREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="50000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="ap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="matprod_0" PORT="ap_rst_n"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="matprod_0_m_axi_gmem" DATAWIDTH="32" NAME="accel_mem" TYPE="MASTER">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="50000000"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="accel_ap_clk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="AWID" PHYSICAL="accel_mem_awid"/>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="accel_mem_awaddr"/>
+        <PORTMAP LOGICAL="AWLEN" PHYSICAL="accel_mem_awlen"/>
+        <PORTMAP LOGICAL="AWSIZE" PHYSICAL="accel_mem_awsize"/>
+        <PORTMAP LOGICAL="AWBURST" PHYSICAL="accel_mem_awburst"/>
+        <PORTMAP LOGICAL="AWLOCK" PHYSICAL="accel_mem_awlock"/>
+        <PORTMAP LOGICAL="AWREGION" PHYSICAL="accel_mem_awregion"/>
+        <PORTMAP LOGICAL="AWCACHE" PHYSICAL="accel_mem_awcache"/>
+        <PORTMAP LOGICAL="AWPROT" PHYSICAL="accel_mem_awprot"/>
+        <PORTMAP LOGICAL="AWQOS" PHYSICAL="accel_mem_awqos"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="accel_mem_awvalid"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="accel_mem_awready"/>
+        <PORTMAP LOGICAL="WID" PHYSICAL="accel_mem_wid"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="accel_mem_wdata"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="accel_mem_wstrb"/>
+        <PORTMAP LOGICAL="WLAST" PHYSICAL="accel_mem_wlast"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="accel_mem_wvalid"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="accel_mem_wready"/>
+        <PORTMAP LOGICAL="BID" PHYSICAL="accel_mem_bid"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="accel_mem_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="accel_mem_bvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="accel_mem_bready"/>
+        <PORTMAP LOGICAL="ARID" PHYSICAL="accel_mem_arid"/>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="accel_mem_araddr"/>
+        <PORTMAP LOGICAL="ARLEN" PHYSICAL="accel_mem_arlen"/>
+        <PORTMAP LOGICAL="ARSIZE" PHYSICAL="accel_mem_arsize"/>
+        <PORTMAP LOGICAL="ARBURST" PHYSICAL="accel_mem_arburst"/>
+        <PORTMAP LOGICAL="ARLOCK" PHYSICAL="accel_mem_arlock"/>
+        <PORTMAP LOGICAL="ARREGION" PHYSICAL="accel_mem_arregion"/>
+        <PORTMAP LOGICAL="ARCACHE" PHYSICAL="accel_mem_arcache"/>
+        <PORTMAP LOGICAL="ARPROT" PHYSICAL="accel_mem_arprot"/>
+        <PORTMAP LOGICAL="ARQOS" PHYSICAL="accel_mem_arqos"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="accel_mem_arvalid"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="accel_mem_arready"/>
+        <PORTMAP LOGICAL="RID" PHYSICAL="accel_mem_rid"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="accel_mem_rdata"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="accel_mem_rresp"/>
+        <PORTMAP LOGICAL="RLAST" PHYSICAL="accel_mem_rlast"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="accel_mem_rvalid"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="accel_mem_rready"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_accel_ctrl" DATAWIDTH="32" NAME="accel_ctrl" TYPE="SLAVE">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="50000000"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="16"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="accel_ap_clk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="accel_ctrl_awaddr"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="accel_ctrl_awvalid"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="accel_ctrl_awready"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="accel_ctrl_wdata"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="accel_ctrl_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="accel_ctrl_wvalid"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="accel_ctrl_wready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="accel_ctrl_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="accel_ctrl_bvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="accel_ctrl_bready"/>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="accel_ctrl_araddr"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="accel_ctrl_arvalid"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="accel_ctrl_arready"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="accel_ctrl_rdata"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="accel_ctrl_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="accel_ctrl_rvalid"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="accel_ctrl_rready"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_S_AXI_BUS1_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_BUS1_HIGHADDR" HIGHVALUE="0x00003FFF" INSTANCE="matprod_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="accel_ctrl" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi_BUS1"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="matprod_0"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="2113407719" FULLNAME="/matprod_0" HWVERSION="1.0" INSTANCE="matprod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="matprod" VLNV="xilinx.com:hls:matprod:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_S_AXI_BUS1_ADDR_WIDTH" VALUE="6"/>
+        <PARAMETER NAME="C_S_AXI_BUS1_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_ID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_AWUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_ARUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_WUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_RUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_BUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_USER_VALUE" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_PROT_VALUE" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_CACHE_VALUE" VALUE="&quot;0011&quot;"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_ENABLE_ID_PORTS" VALUE="true"/>
+        <PARAMETER NAME="C_M_AXI_GMEM_ENABLE_USER_PORTS" VALUE="false"/>
+        <PARAMETER NAME="Component_Name" VALUE="accel_matprod_0_4"/>
+        <PARAMETER NAME="clk_period" VALUE="20"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="undef"/>
+        <PARAMETER NAME="II" VALUE="x"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_S_AXI_BUS1_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_S_AXI_BUS1_HIGHADDR" VALUE="0x00003FFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="5" NAME="s_axi_BUS1_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_BUS1_AWVALID" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_BUS1_AWREADY" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_BUS1_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_BUS1_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_BUS1_WVALID" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_BUS1_WREADY" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_BUS1_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_BUS1_BVALID" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_BUS1_BREADY" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="s_axi_BUS1_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_BUS1_ARVALID" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_BUS1_ARREADY" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_BUS1_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_BUS1_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_BUS1_RVALID" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_BUS1_RREADY" SIGIS="undef" SIGNAME="matprod_0_s_axi_BUS1_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_ctrl_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="50000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+        <PORT DIR="O" LEFT="0" NAME="m_axi_gmem_AWID" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_gmem_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_gmem_AWLEN" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_gmem_AWSIZE" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_gmem_AWBURST" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_gmem_AWLOCK" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_gmem_AWREGION" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_gmem_AWCACHE" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_gmem_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_gmem_AWQOS" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_gmem_AWVALID" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_gmem_AWREADY" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m_axi_gmem_WID" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_wid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_gmem_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_gmem_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_gmem_WLAST" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_gmem_WVALID" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_gmem_WREADY" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="m_axi_gmem_BID" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_bid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_gmem_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_gmem_BVALID" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_gmem_BREADY" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m_axi_gmem_ARID" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_gmem_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_gmem_ARLEN" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_gmem_ARSIZE" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_gmem_ARBURST" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_gmem_ARLOCK" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_gmem_ARREGION" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_gmem_ARCACHE" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_gmem_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_gmem_ARQOS" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_gmem_ARVALID" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_gmem_ARREADY" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="m_axi_gmem_RID" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_rid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="m_axi_gmem_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_gmem_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_gmem_RLAST" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_gmem_RVALID" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_gmem_RREADY" SIGIS="undef" SIGNAME="matprod_0_m_axi_gmem_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accel_imp" PORT="accel_mem_rready"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_accel_ctrl" DATAWIDTH="32" NAME="s_axi_BUS1" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="6"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="50000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="accel_ap_clk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_BUS1_AWADDR"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_BUS1_AWVALID"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_BUS1_AWREADY"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_BUS1_WDATA"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_BUS1_WSTRB"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_BUS1_WVALID"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_BUS1_WREADY"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_BUS1_BRESP"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_BUS1_BVALID"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_BUS1_BREADY"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_BUS1_ARADDR"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_BUS1_ARVALID"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_BUS1_ARREADY"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_BUS1_RDATA"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_BUS1_RRESP"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_BUS1_RVALID"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_BUS1_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="matprod_0_m_axi_gmem" DATAWIDTH="32" NAME="m_axi_gmem" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="MAX_READ_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="MAX_WRITE_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="50000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="accel_ap_clk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWID" PHYSICAL="m_axi_gmem_AWID"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_gmem_AWADDR"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="m_axi_gmem_AWLEN"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="m_axi_gmem_AWSIZE"/>
+            <PORTMAP LOGICAL="AWBURST" PHYSICAL="m_axi_gmem_AWBURST"/>
+            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="m_axi_gmem_AWLOCK"/>
+            <PORTMAP LOGICAL="AWREGION" PHYSICAL="m_axi_gmem_AWREGION"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="m_axi_gmem_AWCACHE"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_gmem_AWPROT"/>
+            <PORTMAP LOGICAL="AWQOS" PHYSICAL="m_axi_gmem_AWQOS"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_gmem_AWVALID"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_gmem_AWREADY"/>
+            <PORTMAP LOGICAL="WID" PHYSICAL="m_axi_gmem_WID"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_gmem_WDATA"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_gmem_WSTRB"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="m_axi_gmem_WLAST"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_gmem_WVALID"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_gmem_WREADY"/>
+            <PORTMAP LOGICAL="BID" PHYSICAL="m_axi_gmem_BID"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_gmem_BRESP"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_gmem_BVALID"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_gmem_BREADY"/>
+            <PORTMAP LOGICAL="ARID" PHYSICAL="m_axi_gmem_ARID"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_gmem_ARADDR"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="m_axi_gmem_ARLEN"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="m_axi_gmem_ARSIZE"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="m_axi_gmem_ARBURST"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="m_axi_gmem_ARLOCK"/>
+            <PORTMAP LOGICAL="ARREGION" PHYSICAL="m_axi_gmem_ARREGION"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="m_axi_gmem_ARCACHE"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_gmem_ARPROT"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="m_axi_gmem_ARQOS"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_gmem_ARVALID"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_gmem_ARREADY"/>
+            <PORTMAP LOGICAL="RID" PHYSICAL="m_axi_gmem_RID"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_gmem_RDATA"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_gmem_RRESP"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="m_axi_gmem_RLAST"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_gmem_RVALID"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_gmem_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x07FFFFFF" INSTANCE="accel_mem" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="m_axi_gmem" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="accel_mem"/>
+      </MEMORYMAP>
+      <PERIPHERALS/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
