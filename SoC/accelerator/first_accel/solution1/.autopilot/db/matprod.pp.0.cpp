@@ -1100,14 +1100,18 @@ __attribute__((sdx_kernel("matprod", 0))) void matprod(float *m1, float *m2, flo
 #pragma HLSDIRECTIVE TOP name=matprod
 # 6 "first_accel/matprod.cpp"
 
+#line 6 "C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/directives.tcl"
+#pragma HLSDIRECTIVE TOP name=matprod
+# 6 "first_accel/matprod.cpp"
+
 #pragma HLS INTERFACE s_axilite port=return bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N1 bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N2 bundle=BUS1
 #pragma HLS INTERFACE s_axilite port=N3 bundle=BUS1
 
-#pragma HLS INTERFACE m_axi port = m1 depth=64
-#pragma HLS INTERFACE m_axi port = m2 depth=64
-#pragma HLS INTERFACE m_axi port = m3 depth=64
+#pragma HLS INTERFACE m_axi port = m1 depth=32
+#pragma HLS INTERFACE m_axi port = m2 depth=32
+#pragma HLS INTERFACE m_axi port = m3 depth=32
 
  static float regc=0;
  int i, j, k;
@@ -1116,12 +1120,12 @@ __attribute__((sdx_kernel("matprod", 0))) void matprod(float *m1, float *m2, flo
  float m2_buffer[1024];
  float m3_buffer[1024];
 
- VITIS_LOOP_23_1: for(int i=0; i<N1*N2; i++) m1_buffer[i] = m1[i];
- VITIS_LOOP_24_2: for(int i=0; i<N2*N3; i++) m2_buffer[i] = m2[i];
+ memcpy(m1_buffer, (const float*)m1, N1*N2 * sizeof(float));
+ memcpy(m2_buffer, (const float*)m2, N2*N3 * sizeof(float));
 
- VITIS_LOOP_26_3: for (int i =0; i <N1; i ++) {
-  VITIS_LOOP_27_4: for (int j=0; j<N3; j++) {
-   VITIS_LOOP_28_5: for (int k=0; k<N2; k++) {
+ VITIS_LOOP_26_1: for (int i =0; i <N1; i ++) {
+  VITIS_LOOP_27_2: for (int j=0; j<N3; j++) {
+   VITIS_LOOP_28_3: for (int k=0; k<N2; k++) {
     float mul = m1_buffer[i*N2+k] * m2_buffer[k*N3+j];
     if (k==0) regc = mul;
     else regc += mul;
@@ -1130,5 +1134,5 @@ __attribute__((sdx_kernel("matprod", 0))) void matprod(float *m1, float *m2, flo
   }
  }
 
- VITIS_LOOP_37_6: for(int i=0; i<N1*N3; i++) m3[i] = m3_buffer[i];
+ memcpy((float*)m3, m3_buffer, N1*N3 * sizeof(float));
 }

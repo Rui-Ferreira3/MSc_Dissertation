@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr  2 21:16:00 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr  3 20:51:06 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="accel" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -443,7 +443,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="2113407719" FULLNAME="/matprod_0" HWVERSION="1.0" INSTANCE="matprod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="matprod" VLNV="xilinx.com:hls:matprod:1.0">
+    <MODULE COREREVISION="2113498668" FULLNAME="/matprod_0" HWVERSION="1.0" INSTANCE="matprod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="matprod" VLNV="xilinx.com:hls:matprod:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_S_AXI_BUS1_ADDR_WIDTH" VALUE="6"/>
@@ -461,7 +461,7 @@
         <PARAMETER NAME="C_M_AXI_GMEM_CACHE_VALUE" VALUE="&quot;0011&quot;"/>
         <PARAMETER NAME="C_M_AXI_GMEM_ENABLE_ID_PORTS" VALUE="true"/>
         <PARAMETER NAME="C_M_AXI_GMEM_ENABLE_USER_PORTS" VALUE="false"/>
-        <PARAMETER NAME="Component_Name" VALUE="accel_matprod_0_8"/>
+        <PARAMETER NAME="Component_Name" VALUE="accel_matprod_0_10"/>
         <PARAMETER NAME="clk_period" VALUE="20"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>

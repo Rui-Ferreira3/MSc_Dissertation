@@ -1,2 +1,2 @@
 #define MAX_MEM_SIZE 1024
-#define MAX_DEPTH_SIZE 64
+#define MAX_DEPTH_SIZE 32

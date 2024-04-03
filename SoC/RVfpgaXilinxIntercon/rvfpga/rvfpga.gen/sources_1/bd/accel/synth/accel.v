@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Tue Apr  2 21:16:00 2024
+//Date        : Wed Apr  3 20:51:05 2024
 //Host        : DESKTOP-3C6QEMK running 64-bit major release  (build 9200)
 //Command     : generate_target accel.bd
 //Design      : accel
@@ -253,7 +253,7 @@ module accel
   assign matprod_0_m_axi_gmem_RVALID = accel_mem_rvalid;
   assign matprod_0_m_axi_gmem_WREADY = accel_mem_wready;
   assign rst_1 = rst;
-  accel_matprod_0_8 matprod_0
+  accel_matprod_0_10 matprod_0
        (.ap_clk(clk_1),
         .ap_rst_n(rst_1),
         .interrupt(matprod_0_interrupt),

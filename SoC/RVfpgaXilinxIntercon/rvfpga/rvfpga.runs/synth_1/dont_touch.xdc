@@ -8,17 +8,14 @@
 # Block Designs: bd/accel/accel.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel || ORIG_REF_NAME==accel} -quiet] -quiet
 
-# IP: bd/accel/ip/accel_matprod_0_8/accel_matprod_0_8.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel_matprod_0_8 || ORIG_REF_NAME==accel_matprod_0_8} -quiet] -quiet
+# IP: bd/accel/ip/accel_matprod_0_10/accel_matprod_0_10.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==accel_matprod_0_10 || ORIG_REF_NAME==accel_matprod_0_10} -quiet] -quiet
 
 # Block Designs: bd/interconnect/interconnect.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect || ORIG_REF_NAME==interconnect} -quiet] -quiet
 
 # IP: bd/interconnect/ip/interconnect_xbar_0/interconnect_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_xbar_0 || ORIG_REF_NAME==interconnect_xbar_0} -quiet] -quiet
-
-# IP: bd/interconnect/ip/interconnect_axi_interconnect_0_0/interconnect_axi_interconnect_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_axi_interconnect_0_0 || ORIG_REF_NAME==interconnect_axi_interconnect_0_0} -quiet] -quiet
 
 # IP: bd/interconnect/ip/interconnect_s00_data_fifo_0/interconnect_s00_data_fifo_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_s00_data_fifo_0 || ORIG_REF_NAME==interconnect_s00_data_fifo_0} -quiet] -quiet
@@ -37,6 +34,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnec
 
 # IP: bd/interconnect/ip/interconnect_auto_pc_0/interconnect_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_auto_pc_0 || ORIG_REF_NAME==interconnect_auto_pc_0} -quiet] -quiet
+
+# IP: bd/interconnect/ip/interconnect_axi_interconnect_0_0/interconnect_axi_interconnect_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==interconnect_axi_interconnect_0_0 || ORIG_REF_NAME==interconnect_axi_interconnect_0_0} -quiet] -quiet
 
 # XDC: c:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/rvfpga/rvfpga.gen/sources_1/bd/accel/accel_ooc.xdc
 

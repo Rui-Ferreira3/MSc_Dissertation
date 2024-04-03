@@ -1,17 +1,17 @@
 set SynModuleInfo {
-  {SRCNAME matprod_Pipeline_VITIS_LOOP_23_1 MODELNAME matprod_Pipeline_VITIS_LOOP_23_1 RTLNAME matprod_matprod_Pipeline_VITIS_LOOP_23_1
+  {SRCNAME matprod_Pipeline_1 MODELNAME matprod_Pipeline_1 RTLNAME matprod_matprod_Pipeline_1
     SUBMODULES {
       {MODELNAME matprod_flow_control_loop_pipe_sequential_init RTLNAME matprod_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME matprod_flow_control_loop_pipe_sequential_init_U}
     }
   }
-  {SRCNAME matprod_Pipeline_VITIS_LOOP_24_2 MODELNAME matprod_Pipeline_VITIS_LOOP_24_2 RTLNAME matprod_matprod_Pipeline_VITIS_LOOP_24_2}
-  {SRCNAME matprod_Pipeline_VITIS_LOOP_28_5 MODELNAME matprod_Pipeline_VITIS_LOOP_28_5 RTLNAME matprod_matprod_Pipeline_VITIS_LOOP_28_5
+  {SRCNAME matprod_Pipeline_2 MODELNAME matprod_Pipeline_2 RTLNAME matprod_matprod_Pipeline_2}
+  {SRCNAME matprod_Pipeline_VITIS_LOOP_28_3 MODELNAME matprod_Pipeline_VITIS_LOOP_28_3 RTLNAME matprod_matprod_Pipeline_VITIS_LOOP_28_3
     SUBMODULES {
       {MODELNAME matprod_fadd_32ns_32ns_32_4_full_dsp_1 RTLNAME matprod_fadd_32ns_32ns_32_4_full_dsp_1 BINDTYPE op TYPE fadd IMPL fulldsp LATENCY 3 ALLOW_PRAGMA 1}
       {MODELNAME matprod_fmul_32ns_32ns_32_2_max_dsp_1 RTLNAME matprod_fmul_32ns_32ns_32_2_max_dsp_1 BINDTYPE op TYPE fmul IMPL maxdsp LATENCY 1 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME matprod_Pipeline_VITIS_LOOP_37_6 MODELNAME matprod_Pipeline_VITIS_LOOP_37_6 RTLNAME matprod_matprod_Pipeline_VITIS_LOOP_37_6}
+  {SRCNAME matprod_Pipeline_4 MODELNAME matprod_Pipeline_4 RTLNAME matprod_matprod_Pipeline_4}
   {SRCNAME matprod MODELNAME matprod RTLNAME matprod IS_TOP 1
     SUBMODULES {
       {MODELNAME matprod_mul_32s_32s_32_1_1 RTLNAME matprod_mul_32s_32s_32_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}

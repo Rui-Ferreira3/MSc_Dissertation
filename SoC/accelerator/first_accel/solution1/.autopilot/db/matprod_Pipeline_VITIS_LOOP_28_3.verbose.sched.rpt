@@ -1,0 +1,226 @@
+
+
+================================================================
+== Vitis HLS Report for 'matprod_Pipeline_VITIS_LOOP_28_3'
+================================================================
+* Date:           Wed Apr  3 20:46:17 2024
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        first_accel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  20.00 ns|  12.584 ns|     5.40 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_28_3  |        ?|        ?|         8|          3|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 3, depth = 9
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 1
+  Pipeline-0 : II = 3, D = 9, States = { 1 2 3 4 5 6 7 8 9 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.61>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%phi_mul = alloca i32 1"   --->   Operation 11 'alloca' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%k = alloca i32 1"   --->   Operation 12 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%trunc_ln1_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %trunc_ln1"   --->   Operation 13 'read' 'trunc_ln1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %trunc_ln"   --->   Operation 14 'read' 'trunc_ln_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%mul_ln26_1_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %mul_ln26_1"   --->   Operation 15 'read' 'mul_ln26_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%N2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %N2"   --->   Operation 16 'read' 'N2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.61ns)   --->   "%store_ln0 = store i31 0, i31 %k"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 18 [1/1] (1.61ns)   --->   "%store_ln0 = store i10 0, i10 %phi_mul"   --->   Operation 18 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body16"   --->   Operation 19 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.37>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%k_1 = load i31 %k"   --->   Operation 20 'load' 'k_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%k_cast = zext i31 %k_1"   --->   Operation 21 'zext' 'k_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 22 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (2.43ns)   --->   "%icmp_ln28 = icmp_slt  i32 %k_cast, i32 %N2_read" [first_accel/matprod.cpp:28]   --->   Operation 23 'icmp' 'icmp_ln28' <Predicate = true> <Delay = 2.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (2.66ns)   --->   "%add_ln28 = add i31 %k_1, i31 1" [first_accel/matprod.cpp:28]   --->   Operation 24 'add' 'add_ln28' <Predicate = true> <Delay = 2.66> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln28 = br i1 %icmp_ln28, void %for.inc30.loopexit.exitStub, void %for.body16.split_ifconv" [first_accel/matprod.cpp:28]   --->   Operation 25 'br' 'br_ln28' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%phi_mul_load = load i10 %phi_mul" [first_accel/matprod.cpp:29]   --->   Operation 26 'load' 'phi_mul_load' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%empty = trunc i31 %k_1"   --->   Operation 27 'trunc' 'empty' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (2.12ns)   --->   "%add_ln29 = add i10 %empty, i10 %mul_ln26_1_read" [first_accel/matprod.cpp:29]   --->   Operation 28 'add' 'add_ln29' <Predicate = (icmp_ln28)> <Delay = 2.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i10 %add_ln29" [first_accel/matprod.cpp:29]   --->   Operation 29 'zext' 'zext_ln29' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%m1_buffer_addr = getelementptr i32 %m1_buffer, i32 0, i32 %zext_ln29" [first_accel/matprod.cpp:29]   --->   Operation 30 'getelementptr' 'm1_buffer_addr' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 31 [2/2] (3.25ns)   --->   "%m1_buffer_load = load i10 %m1_buffer_addr" [first_accel/matprod.cpp:29]   --->   Operation 31 'load' 'm1_buffer_load' <Predicate = (icmp_ln28)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 32 [1/1] (2.12ns)   --->   "%add_ln29_2 = add i10 %phi_mul_load, i10 %trunc_ln_read" [first_accel/matprod.cpp:29]   --->   Operation 32 'add' 'add_ln29_2' <Predicate = (icmp_ln28)> <Delay = 2.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (2.12ns)   --->   "%add_ln29_1 = add i10 %phi_mul_load, i10 %trunc_ln1_read" [first_accel/matprod.cpp:29]   --->   Operation 33 'add' 'add_ln29_1' <Predicate = (icmp_ln28)> <Delay = 2.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln29_1 = zext i10 %add_ln29_1" [first_accel/matprod.cpp:29]   --->   Operation 34 'zext' 'zext_ln29_1' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%m2_buffer_addr = getelementptr i32 %m2_buffer, i32 0, i32 %zext_ln29_1" [first_accel/matprod.cpp:29]   --->   Operation 35 'getelementptr' 'm2_buffer_addr' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 36 [2/2] (3.25ns)   --->   "%m2_buffer_load = load i10 %m2_buffer_addr" [first_accel/matprod.cpp:29]   --->   Operation 36 'load' 'm2_buffer_load' <Predicate = (icmp_ln28)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 37 [1/1] (2.43ns)   --->   "%icmp_ln30 = icmp_eq  i31 %k_1, i31 0" [first_accel/matprod.cpp:30]   --->   Operation 37 'icmp' 'icmp_ln30' <Predicate = (icmp_ln28)> <Delay = 2.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (1.61ns)   --->   "%store_ln28 = store i31 %add_ln28, i31 %k" [first_accel/matprod.cpp:28]   --->   Operation 38 'store' 'store_ln28' <Predicate = (icmp_ln28)> <Delay = 1.61>
+ST_2 : Operation 39 [1/1] (1.61ns)   --->   "%store_ln28 = store i10 %add_ln29_2, i10 %phi_mul" [first_accel/matprod.cpp:28]   --->   Operation 39 'store' 'store_ln28' <Predicate = (icmp_ln28)> <Delay = 1.61>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 40 [1/2] (3.25ns)   --->   "%m1_buffer_load = load i10 %m1_buffer_addr" [first_accel/matprod.cpp:29]   --->   Operation 40 'load' 'm1_buffer_load' <Predicate = (icmp_ln28)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 41 [1/2] (3.25ns)   --->   "%m2_buffer_load = load i10 %m2_buffer_addr" [first_accel/matprod.cpp:29]   --->   Operation 41 'load' 'm2_buffer_load' <Predicate = (icmp_ln28)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 4 <SV = 3> <Delay = 12.5>
+ST_4 : Operation 42 [2/2] (12.5ns)   --->   "%mul = fmul i32 %m1_buffer_load, i32 %m2_buffer_load" [first_accel/matprod.cpp:29]   --->   Operation 42 'fmul' 'mul' <Predicate = (icmp_ln28)> <Delay = 12.5> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 12.5> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 12.5>
+ST_5 : Operation 43 [1/2] (12.5ns)   --->   "%mul = fmul i32 %m1_buffer_load, i32 %m2_buffer_load" [first_accel/matprod.cpp:29]   --->   Operation 43 'fmul' 'mul' <Predicate = true> <Delay = 12.5> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 12.5> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 10.3>
+ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%regc_load = load i32 %regc" [first_accel/matprod.cpp:31]   --->   Operation 44 'load' 'regc_load' <Predicate = (!icmp_ln30)> <Delay = 0.00>
+ST_6 : Operation 45 [4/4] (10.3ns)   --->   "%add = fadd i32 %regc_load, i32 %mul" [first_accel/matprod.cpp:31]   --->   Operation 45 'fadd' 'add' <Predicate = (!icmp_ln30)> <Delay = 10.3> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.3> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 53 'ret' 'ret_ln0' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 10.3>
+ST_7 : Operation 46 [3/4] (10.3ns)   --->   "%add = fadd i32 %regc_load, i32 %mul" [first_accel/matprod.cpp:31]   --->   Operation 46 'fadd' 'add' <Predicate = (!icmp_ln30)> <Delay = 10.3> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.3> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 10.3>
+ST_8 : Operation 47 [2/4] (10.3ns)   --->   "%add = fadd i32 %regc_load, i32 %mul" [first_accel/matprod.cpp:31]   --->   Operation 47 'fadd' 'add' <Predicate = (!icmp_ln30)> <Delay = 10.3> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.3> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 11.1>
+ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln28 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [first_accel/matprod.cpp:28]   --->   Operation 48 'specloopname' 'specloopname_ln28' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 49 [1/4] (10.3ns)   --->   "%add = fadd i32 %regc_load, i32 %mul" [first_accel/matprod.cpp:31]   --->   Operation 49 'fadd' 'add' <Predicate = (!icmp_ln30)> <Delay = 10.3> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 10.3> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 50 [1/1] (0.79ns)   --->   "%select_ln30 = select i1 %icmp_ln30, i32 %mul, i32 %add" [first_accel/matprod.cpp:30]   --->   Operation 50 'select' 'select_ln30' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 51 [1/1] (0.00ns)   --->   "%store_ln30 = store i32 %select_ln30, i32 %regc" [first_accel/matprod.cpp:30]   --->   Operation 51 'store' 'store_ln30' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln28 = br void %for.body16" [first_accel/matprod.cpp:28]   --->   Operation 52 'br' 'br_ln28' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 20ns, clock uncertainty: 5.4ns.
+
+ <State 1>: 1.61ns
+The critical path consists of the following:
+	'alloca' operation ('k') [9]  (0 ns)
+	'store' operation ('store_ln0') of constant 0 on local variable 'k' [14]  (1.61 ns)
+
+ <State 2>: 5.38ns
+The critical path consists of the following:
+	'load' operation ('k') on local variable 'k' [18]  (0 ns)
+	'add' operation ('add_ln29', first_accel/matprod.cpp:29) [28]  (2.12 ns)
+	'getelementptr' operation ('m1_buffer_addr', first_accel/matprod.cpp:29) [30]  (0 ns)
+	'load' operation ('m1_buffer_load', first_accel/matprod.cpp:29) on array 'm1_buffer' [31]  (3.26 ns)
+
+ <State 3>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('m1_buffer_load', first_accel/matprod.cpp:29) on array 'm1_buffer' [31]  (3.26 ns)
+
+ <State 4>: 12.6ns
+The critical path consists of the following:
+	'fmul' operation ('mul', first_accel/matprod.cpp:29) [37]  (12.6 ns)
+
+ <State 5>: 12.6ns
+The critical path consists of the following:
+	'fmul' operation ('mul', first_accel/matprod.cpp:29) [37]  (12.6 ns)
+
+ <State 6>: 10.4ns
+The critical path consists of the following:
+	'load' operation ('regc_load', first_accel/matprod.cpp:31) on static variable 'regc' [39]  (0 ns)
+	'fadd' operation ('add', first_accel/matprod.cpp:31) [40]  (10.4 ns)
+
+ <State 7>: 10.4ns
+The critical path consists of the following:
+	'fadd' operation ('add', first_accel/matprod.cpp:31) [40]  (10.4 ns)
+
+ <State 8>: 10.4ns
+The critical path consists of the following:
+	'fadd' operation ('add', first_accel/matprod.cpp:31) [40]  (10.4 ns)
+
+ <State 9>: 11.2ns
+The critical path consists of the following:
+	'fadd' operation ('add', first_accel/matprod.cpp:31) [40]  (10.4 ns)
+	'select' operation ('select_ln30', first_accel/matprod.cpp:30) [41]  (0.796 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

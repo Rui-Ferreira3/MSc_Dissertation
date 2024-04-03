@@ -1,7 +1,6 @@
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 23, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Sequential '
@@ -11,7 +10,7 @@ Args:
   - String:          ' length'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
-  - String:          for.inc.load.4
+  - String:          loop-memcpy-expansion8.load.3
   - String:          ', '
   - String:          ' _XLX_SEP_ '
   - AccessID:        m1seq
@@ -20,9 +19,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_23_1
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:23:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -31,7 +30,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 24, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Sequential '
@@ -41,7 +39,7 @@ Args:
   - String:          ' length'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
-  - String:          for.inc14.load.4
+  - String:          loop-memcpy-expansion2.load.3
   - String:          ', '
   - String:          ' _XLX_SEP_ '
   - AccessID:        m2seq
@@ -50,9 +48,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_24_2
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:24:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -61,7 +59,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 37, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Sequential '
@@ -71,7 +68,7 @@ Args:
   - String:          ' length'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
-  - String:          for.inc66.store.6
+  - String:          loop-memcpy-expansion.store.5
   - String:          ', '
   - String:          ' _XLX_SEP_ '
   - AccessID:        m3seq
@@ -80,9 +77,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_37_6
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:37:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -91,7 +88,6 @@ Args:
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 37, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Could not widen since type '
@@ -105,9 +101,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_37_6
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:37:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -116,7 +112,6 @@ Args:
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 24, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Could not widen since type '
@@ -130,9 +125,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_24_2
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:24:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -141,7 +136,6 @@ Args:
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 23, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Could not widen since type '
@@ -155,9 +149,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_23_1
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:23:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -166,7 +160,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 23, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
@@ -184,9 +177,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_23_1
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:23:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -195,7 +188,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 23, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
@@ -205,9 +197,9 @@ Args:
   - String:          ' length and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_23_1
+  - LoopName:        anonymous
   - String:          '''('
-  - LoopLoc:         'first_accel/matprod.cpp:23:19'
+  - LoopLoc:         ''
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -217,7 +209,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 24, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
@@ -235,9 +226,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_24_2
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:24:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -246,7 +237,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 24, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
@@ -256,9 +246,9 @@ Args:
   - String:          ' length and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_24_2
+  - LoopName:        anonymous
   - String:          '''('
-  - LoopLoc:         'first_accel/matprod.cpp:24:19'
+  - LoopLoc:         ''
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -268,7 +258,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 37, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
@@ -286,9 +275,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_37_6
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'first_accel/matprod.cpp:37:19'
+  - LoopLoc:         ''
   - String:          ' '
   - Function:        'matprod(float*, float*, float*, int, int, int)'
     DebugLoc:        { File: first_accel/matprod.cpp, Line: 6, Column: 0 }
@@ -297,7 +286,6 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: first_accel/matprod.cpp, Line: 37, Column: 19 }
 Function:        _Z7matprodPfS_S_iii
 Args:            
   - String:          'Multiple burst '
@@ -307,9 +295,9 @@ Args:
   - String:          ' length and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_37_6
+  - LoopName:        anonymous
   - String:          '''('
-  - LoopLoc:         'first_accel/matprod.cpp:37:19'
+  - LoopLoc:         ''
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem

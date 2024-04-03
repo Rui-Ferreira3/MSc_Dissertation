@@ -2,57 +2,30 @@
 MainSourceFile:  'C:/Users/MSI/Rui/MSc_Dissertation/SoC/accelerator/first_accel/solution1/.autopilot/db/matprod.pp.0.cpp'
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_23_1:  '
-    FileOffset:      23
-    FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
-    Replacements:    
-      - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62627
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_23_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_24_2:  '
-    FileOffset:      24
-    FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
-    Replacements:    
-      - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62677
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_24_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_26_3:  '
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
     FileOffset:      26
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62728
+        Offset:          62916
         Length:          0
-        ReplacementText: 'VITIS_LOOP_26_3: '
+        ReplacementText: 'VITIS_LOOP_26_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_27_4:  '
+    Message:         'Added loop label VITIS_LOOP_27_2:  '
     FileOffset:      27
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62760
+        Offset:          62948
         Length:          0
-        ReplacementText: 'VITIS_LOOP_27_4: '
+        ReplacementText: 'VITIS_LOOP_27_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_28_5:  '
+    Message:         'Added loop label VITIS_LOOP_28_3:  '
     FileOffset:      28
     FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
     Replacements:    
       - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62790
+        Offset:          62978
         Length:          0
-        ReplacementText: 'VITIS_LOOP_28_5: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_37_6:  '
-    FileOffset:      37
-    FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\matprod.cpp'
-    Replacements:    
-      - FilePath:        'C:\Users\MSI\Rui\MSc_Dissertation\SoC\accelerator\first_accel\solution1\.autopilot\db\matprod.pp.0.cpp'
-        Offset:          62964
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_37_6: '
+        ReplacementText: 'VITIS_LOOP_28_3: '
 ...

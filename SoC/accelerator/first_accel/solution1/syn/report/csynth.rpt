@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'matprod'
 ================================================================
 + General Information: 
-    * Date:           Tue Apr  2 20:24:23 2024
+    * Date:           Wed Apr  3 20:46:20 2024
     * Version:        2022.2 (Build 3670227 on Oct 13 2022)
     * Project:        first_accel
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -15,21 +15,21 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------------------------------+------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
-    |                Modules               | Issue|       | Latency | Latency| Iteration|         | Trip |          |        |         |           |           |     |
-    |                & Loops               | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
-    +--------------------------------------+------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
-    |+ matprod                             |     -|   0.00|        -|       -|         -|        -|     -|        no|  6 (2%)|  18 (7%)|  2531 (1%)|  3630 (5%)|    -|
-    | + matprod_Pipeline_VITIS_LOOP_23_1   |     -|   0.00|        -|       -|         -|        -|     -|        no|       -|        -|   89 (~0%)|  107 (~0%)|    -|
-    |  o VITIS_LOOP_23_1                   |     -|  14.60|        -|       -|         3|        1|     -|       yes|       -|        -|          -|          -|    -|
-    | + matprod_Pipeline_VITIS_LOOP_24_2   |     -|   0.00|        -|       -|         -|        -|     -|        no|       -|        -|   89 (~0%)|  107 (~0%)|    -|
-    |  o VITIS_LOOP_24_2                   |     -|  14.60|        -|       -|         3|        1|     -|       yes|       -|        -|          -|          -|    -|
-    | + matprod_Pipeline_VITIS_LOOP_37_6   |     -|   0.00|        -|       -|         -|        -|     -|        no|       -|        -|   69 (~0%)|  105 (~0%)|    -|
-    |  o VITIS_LOOP_37_6                   |     -|  14.60|        -|       -|         3|        1|     -|       yes|       -|        -|          -|          -|    -|
-    | o VITIS_LOOP_26_3_VITIS_LOOP_27_4    |     -|  14.60|        -|       -|         -|        -|     -|        no|       -|        -|          -|          -|    -|
-    |  + matprod_Pipeline_VITIS_LOOP_28_5  |     -|   2.02|        -|       -|         -|        -|     -|        no|       -|   5 (2%)|  598 (~0%)|  624 (~0%)|    -|
-    |   o VITIS_LOOP_28_5                  |    II|  14.60|        -|       -|         8|        3|     -|       yes|       -|        -|          -|          -|    -|
-    +--------------------------------------+------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    +--------------------------------------+------+-------+---------------------+-----------+----------+---------------------+---------------------+----------+--------+---------+-----------+-----------+-----+
+    |                Modules               | Issue|       |       Latency       |  Latency  | Iteration|                     |         Trip        |          |        |         |           |           |     |
+    |                & Loops               | Type | Slack |       (cycles)      |    (ns)   |  Latency |       Interval      |        Count        | Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
+    +--------------------------------------+------+-------+---------------------+-----------+----------+---------------------+---------------------+----------+--------+---------+-----------+-----------+-----+
+    |+ matprod                             |     -|   0.00|                    -|          -|         -|                    -|                    -|        no|  6 (2%)|  18 (7%)|  2731 (2%)|  3662 (5%)|    -|
+    | + matprod_Pipeline_1                 |     -|   0.00|  4611686018427387904|  9.223e+19|         -|  4611686018427387904|                    -|        no|       -|        -|  171 (~0%)|  146 (~0%)|    -|
+    |  o Loop 1                            |     -|  14.60|  4611686018427387904|  9.223e+19|         2|                    1|  4611686018427387903|       yes|       -|        -|          -|          -|    -|
+    | + matprod_Pipeline_2                 |     -|   0.00|  4611686018427387904|  9.223e+19|         -|  4611686018427387904|                    -|        no|       -|        -|  171 (~0%)|  146 (~0%)|    -|
+    |  o Loop 1                            |     -|  14.60|  4611686018427387904|  9.223e+19|         2|                    1|  4611686018427387903|       yes|       -|        -|          -|          -|    -|
+    | + matprod_Pipeline_4                 |     -|   0.00|  4611686018427387904|  9.223e+19|         -|  4611686018427387904|                    -|        no|       -|        -|  163 (~0%)|  146 (~0%)|    -|
+    |  o Loop 1                            |     -|  14.60|  4611686018427387904|  9.223e+19|         3|                    1|  4611686018427387903|       yes|       -|        -|          -|          -|    -|
+    | o VITIS_LOOP_26_1_VITIS_LOOP_27_2    |     -|  14.60|                    -|          -|         -|                    -|                    -|        no|       -|        -|          -|          -|    -|
+    |  + matprod_Pipeline_VITIS_LOOP_28_3  |     -|   2.02|                    -|          -|         -|                    -|                    -|        no|       -|   5 (2%)|  598 (~0%)|  624 (~0%)|    -|
+    |   o VITIS_LOOP_28_3                  |    II|  14.60|                    -|          -|         8|                    3|                    -|       yes|       -|        -|          -|          -|    -|
+    +--------------------------------------+------+-------+---------------------+-----------+----------+---------------------+---------------------+----------+--------+---------+-----------+-----------+-----+
 
 
 ================================================================
@@ -113,25 +113,7 @@
 ================================================================
  Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
 
-* Inferred Burst Summary
-+--------------+-----------------+-----------+----------+-------+-------------------------------+
-| HW Interface | Loop            | Direction | Length   | Width | Location                      |
-+--------------+-----------------+-----------+----------+-------+-------------------------------+
-| m_axi_gmem   | VITIS_LOOP_23_1 | read      | variable | 32    | first_accel/matprod.cpp:23:19 |
-| m_axi_gmem   | VITIS_LOOP_24_2 | read      | variable | 32    | first_accel/matprod.cpp:24:19 |
-| m_axi_gmem   | VITIS_LOOP_37_6 | write     | variable | 32    | first_accel/matprod.cpp:37:19 |
-+--------------+-----------------+-----------+----------+-------+-------------------------------+
-
-* Inferred Bursts and Widening Missed
-+--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------+
-| HW Interface | Variable | Loop            | Problem                                                                                                 | Resolution | Location                      |
-+--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------+
-| m_axi_gmem   | m3       | VITIS_LOOP_37_6 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | first_accel/matprod.cpp:37:19 |
-| m_axi_gmem   | m2       | VITIS_LOOP_24_2 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | first_accel/matprod.cpp:24:19 |
-| m_axi_gmem   | m1       | VITIS_LOOP_23_1 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | first_accel/matprod.cpp:23:19 |
-+--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------+
-
-    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+  No burst in design
 
 ================================================================
 == Bind Op Report
@@ -140,29 +122,29 @@
 | Name                                 | DSP | Pragma | Variable   | Op   | Impl    | Latency |
 +--------------------------------------+-----+--------+------------+------+---------+---------+
 | + matprod                            | 18  |        |            |      |         |         |
-|   mul_32s_32s_32_1_1_U24             | 3   |        | mul        | mul  | auto    | 0       |
-|   mul_32s_32s_32_1_1_U25             | 3   |        | mul6       | mul  | auto    | 0       |
+|   mul_32s_32s_32_1_1_U24             | 3   |        | mul_ln23   | mul  | auto    | 0       |
+|   mul_32s_32s_32_1_1_U25             | 3   |        | mul_ln24   | mul  | auto    | 0       |
 |   mul_32ns_32ns_64_1_1_U26           | 3   |        | mul_ln26   | mul  | auto    | 0       |
-|   add_ln26_fu_377_p2                 | -   |        | add_ln26   | add  | fabric  | 0       |
-|   add_ln26_1_fu_394_p2               | -   |        | add_ln26_1 | add  | fabric  | 0       |
+|   add_ln26_fu_342_p2                 | -   |        | add_ln26   | add  | fabric  | 0       |
+|   add_ln26_1_fu_359_p2               | -   |        | add_ln26_1 | add  | fabric  | 0       |
 |   mul_10s_10s_10_1_1_U27             | -   |        | mul_ln26_1 | mul  | auto    | 0       |
 |   mac_muladd_10s_10s_10ns_10_4_1_U29 | 1   |        | mul_ln26_2 | mul  | dsp48   | 3       |
 |   mac_muladd_10s_10s_10ns_10_4_1_U29 | 1   |        | add_ln33   | add  | dsp48   | 3       |
-|   add_ln27_fu_423_p2                 | -   |        | add_ln27   | add  | fabric  | 0       |
-|   mul_32s_32s_32_1_1_U28             | 3   |        | mul58      | mul  | auto    | 0       |
-|  + matprod_Pipeline_VITIS_LOOP_23_1  | 0   |        |            |      |         |         |
-|    add_ln23_fu_104_p2                | -   |        | add_ln23   | add  | fabric  | 0       |
-|  + matprod_Pipeline_VITIS_LOOP_24_2  | 0   |        |            |      |         |         |
-|    add_ln24_fu_104_p2                | -   |        | add_ln24   | add  | fabric  | 0       |
-|  + matprod_Pipeline_VITIS_LOOP_28_5  | 5   |        |            |      |         |         |
+|   add_ln27_fu_388_p2                 | -   |        | add_ln27   | add  | fabric  | 0       |
+|   mul_32s_32s_32_1_1_U28             | 3   |        | mul_ln37   | mul  | auto    | 0       |
+|  + matprod_Pipeline_1                | 0   |        |            |      |         |         |
+|    empty_28_fu_112_p2                | -   |        | empty_28   | add  | fabric  | 0       |
+|  + matprod_Pipeline_2                | 0   |        |            |      |         |         |
+|    empty_25_fu_112_p2                | -   |        | empty_25   | add  | fabric  | 0       |
+|  + matprod_Pipeline_VITIS_LOOP_28_3  | 5   |        |            |      |         |         |
 |    add_ln28_fu_126_p2                | -   |        | add_ln28   | add  | fabric  | 0       |
 |    add_ln29_fu_139_p2                | -   |        | add_ln29   | add  | fabric  | 0       |
 |    add_ln29_2_fu_149_p2              | -   |        | add_ln29_2 | add  | fabric  | 0       |
 |    add_ln29_1_fu_154_p2              | -   |        | add_ln29_1 | add  | fabric  | 0       |
 |    fmul_32ns_32ns_32_2_max_dsp_1_U10 | 3   |        | mul        | fmul | maxdsp  | 1       |
 |    fadd_32ns_32ns_32_4_full_dsp_1_U9 | 2   |        | add        | fadd | fulldsp | 3       |
-|  + matprod_Pipeline_VITIS_LOOP_37_6  | 0   |        |            |      |         |         |
-|    add_ln37_fu_109_p2                | -   |        | add_ln37   | add  | fabric  | 0       |
+|  + matprod_Pipeline_4                | 0   |        |            |      |         |         |
+|    empty_22_fu_116_p2                | -   |        | empty_22   | add  | fabric  | 0       |
 +--------------------------------------+-----+--------+------------+------+---------+---------+
 
 
@@ -190,9 +172,9 @@
 | interface | s_axilite port=N1 bundle=BUS1     | first_accel/matprod.cpp:8 in matprod, N1     |
 | interface | s_axilite port=N2 bundle=BUS1     | first_accel/matprod.cpp:9 in matprod, N2     |
 | interface | s_axilite port=N3 bundle=BUS1     | first_accel/matprod.cpp:10 in matprod, N3    |
-| interface | m_axi port = m1 depth=64          | first_accel/matprod.cpp:12 in matprod        |
-| interface | m_axi port = m2 depth=64          | first_accel/matprod.cpp:13 in matprod        |
-| interface | m_axi port = m3 depth=64          | first_accel/matprod.cpp:14 in matprod        |
+| interface | m_axi port = m1 depth=32          | first_accel/matprod.cpp:12 in matprod        |
+| interface | m_axi port = m2 depth=32          | first_accel/matprod.cpp:13 in matprod        |
+| interface | m_axi port = m3 depth=32          | first_accel/matprod.cpp:14 in matprod        |
 +-----------+-----------------------------------+----------------------------------------------+
 
 

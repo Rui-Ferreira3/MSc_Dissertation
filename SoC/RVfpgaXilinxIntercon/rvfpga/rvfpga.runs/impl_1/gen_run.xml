@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1712088978">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1712173883">
   <File Type="ROUTE-PWR" Name="rvfpganexys_power_routed.rpt"/>
   <File Type="PA-TCL" Name="rvfpganexys.tcl"/>
   <File Type="BITSTR-MMI" Name="rvfpganexys.mmi"/>
@@ -2139,9 +2139,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -2152,5 +2150,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="accel_matprod_0_10"/>
   <BlockFileSet Type="BlockSrcs" Name="interconnect_xbar_0"/>
 </GenRun>

@@ -1169,12 +1169,12 @@ void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3) {
  static float regc=0;
  int i, j, k;
 
- float m1_buffer[64*64*4];
- float m2_buffer[64*64*4];
- float m3_buffer[64*64*4];
+ float m1_buffer[1024];
+ float m2_buffer[1024];
+ float m3_buffer[1024];
 
- for(int i=0; i<N1*N2; i++) m1_buffer[i] = m1[i];
- for(int i=0; i<N2*N3; i++) m2_buffer[i] = m2[i];
+ memcpy(m1_buffer, (const float*)m1, N1*N2 * sizeof(float));
+ memcpy(m2_buffer, (const float*)m2, N2*N3 * sizeof(float));
 
  for (int i =0; i <N1; i ++) {
   for (int j=0; j<N3; j++) {
@@ -1187,5 +1187,5 @@ void matprod(float *m1, float *m2, float *m3, int N1, int N2, int N3) {
   }
  }
 
- for(int i=0; i<N1*N3; i++) m3[i] = m3_buffer[i];
+ memcpy((float*)m3, m3_buffer, N1*N3 * sizeof(float));
 }

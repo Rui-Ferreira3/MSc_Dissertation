@@ -618,8 +618,8 @@
     "components": {
       "matprod_0": {
         "vlnv": "xilinx.com:hls:matprod:1.0",
-        "xci_name": "accel_matprod_0_8",
-        "xci_path": "ip\\accel_matprod_0_8\\accel_matprod_0_8.xci",
+        "xci_name": "accel_matprod_0_10",
+        "xci_path": "ip\\accel_matprod_0_10\\accel_matprod_0_10.xci",
         "inst_hier_path": "matprod_0",
         "interface_ports": {
           "m_axi_gmem": {
