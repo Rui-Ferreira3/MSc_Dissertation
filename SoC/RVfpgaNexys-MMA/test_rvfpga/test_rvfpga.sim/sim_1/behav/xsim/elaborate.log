@@ -1,0 +1,39 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L floating_point_v7_1_15 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_protocol_converter_v2_1_27 -L axi_clock_converter_v2_1_26 -L blk_mem_gen_v8_4_5 -L axi_dwidth_converter_v2_1_27 -L axi_vip_v1_1_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'accel_mem_araddr' [../../../../test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:256]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'accel_mem_awaddr' [../../../../test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:268]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'io_araddr' [../../../../test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:313]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'io_awaddr' [../../../../test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:325]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'ram_araddr' [../../../../test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:391]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'ram_awaddr' [../../../../test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:403]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'io_arid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:798]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'io_awid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:810]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'io_bid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:819]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'io_rid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:824]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'ram_arid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:876]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'ram_awid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:888]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'ram_bid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:897]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'ram_rid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/interconnect_wrapper.v:902]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 35 for port 's_axi_bid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.ip_user_files/bd/interconnect/sim/interconnect.v:3252]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 35 for port 's_axi_rid' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.ip_user_files/bd/interconnect/sim/interconnect.v:3257]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'accel_ctrl_araddr' [../../../../test_rvfpga.srcs/sources_1/new/accel.vh:6]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'accel_ctrl_awaddr' [../../../../test_rvfpga.srcs/sources_1/new/accel.vh:9]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'accel_mem_araddr' [../../../../test_rvfpga.srcs/sources_1/new/accel.vh:23]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'accel_mem_arlock' [../../../../test_rvfpga.srcs/sources_1/new/accel.vh:28]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'accel_mem_awaddr' [../../../../test_rvfpga.srcs/sources_1/new/accel.vh:35]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'accel_mem_awlock' [../../../../test_rvfpga.srcs/sources_1/new/accel.vh:40]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 20 for port 'd_i' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:315]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'wb_adr_i' [C:/Users/MSI/Rui/MSc_Dissertation/SoC/RVfpgaXilinxIntercon/test_rvfpga/test_rvfpga.srcs/sources_1/imports/src/SweRVolfSoC/swervolf_core.v:367]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4376]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4631]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_dwidth_converter_v2_1/hdl/axi_dwidth_converter_v2_1_vl_rfs.v:13138]
+WARNING: [VRFC 10-5021] port 'deepsleep' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_dwidth_converter_v2_1/hdl/axi_dwidth_converter_v2_1_vl_rfs.v:8444]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_dwidth_converter_v2_1/hdl/axi_dwidth_converter_v2_1_vl_rfs.v:8996]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+WARNING: [VRFC 10-3705] select index 2 into 'g7s_cc_rst_nsckt.arst_sync_wr' is out of bounds [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_2/simulation/fifo_generator_vlog_beh.v:4830]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
